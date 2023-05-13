@@ -1,0 +1,19 @@
+.contentContainer {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.25s ease-in-out;
+}
+  
+.contentContainer.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bigHeading {
+    font-size: clamp(40px, 8vw, 80px);
+
+}
+
+.smallHeading{
+    font-size: clamp(40px, 8vw, 60px);
+}

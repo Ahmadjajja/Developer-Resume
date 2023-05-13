@@ -1,0 +1,16 @@
+.contentContainer {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.5s ease-in-out;
+}
+  
+.contentContainer.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.straightLine {
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}

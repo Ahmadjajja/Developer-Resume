@@ -1,0 +1,42 @@
+
+
+.viewArchive:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #307b78;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  .viewArchive:hover:after {
+    width: 100%;
+  }
+
+  .viewArchiveTwo:after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #64ffda;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  .viewArchiveTwo:hover:after {
+    width: 100%;
+  }
+
+  .contentContainer {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.25s ease-in-out;
+}
+  
+.contentContainer.show {
+    opacity: 1;
+    transform: translateY(0);
+}

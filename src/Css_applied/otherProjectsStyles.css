@@ -1,0 +1,32 @@
+.content {
+    animation: slideUp 0.25s ease-in-out;
+    transform: translateY(20%);
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+.viewArchive:after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #64ffda;
+    transition: all 0.25s ease-in-out;
+}
+
+.viewArchive:hover:after {
+    width: 100%;
+}

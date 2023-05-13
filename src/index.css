@@ -1,0 +1,21 @@
+* {
+  background-color: #0a192f;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Calibri";
+  src: url("./fonts/Calibri\ Regular.ttf");
+}
+
+@font-face {
+  font-family: "Mono";
+  src: url("./fonts/SFMonoRegular.otf");
+}

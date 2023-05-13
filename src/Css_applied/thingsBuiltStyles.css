@@ -1,0 +1,157 @@
+.contentContainer {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.25s ease-in-out;
+}
+  
+.contentContainer.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.featured__StyledProject {
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.project-content {
+    grid-column: 5 / -1;
+    text-align: right;
+    position: relative;
+    grid-area: 1 / 5 / -1 / -1;
+    grid-row: 3 / -7;
+    margin-right: 17%;
+}
+
+.project-image {
+    grid-column: 1 / 8;
+    box-shadow: 0 10px 30px -15px #0a192f;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    grid-area: 1 / 1 / -5 / 7;
+    position: relative;
+    z-index: 10;
+    opacity: 0.7;
+}
+.project-image-hover {
+    grid-column: 1 / 8;
+    box-shadow: 0 10px 30px -15px #0a192f;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    grid-area: 1 / 1 / -5 / 8;
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+/* For Second Thing */
+.featured__StyledProject2 {
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.project-content2 {
+    grid-column: 1 / -5;
+    position: relative;
+    grid-area: 1 / 1 / -1 / -5;
+    grid-row: 3 / -7;
+    margin-right: 17%;
+}
+
+.project-image2 {
+    grid-column: 6/13;
+    box-shadow: 0 10px 30px -15px #0a192f;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    grid-area: 1 / 6 / -5 / 13;
+    position: relative;
+    z-index: 10;
+}
+
+.project-image-hover2 {
+    grid-column: 6/13;
+    box-shadow: 0 10px 30px -15px #0a192f;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    grid-area: 1 / 6 / -5 / 13;
+    position: relative;
+    z-index: 10;
+}
+
+.description2 {
+    box-shadow: 0 10px 30px -15px #0a192f;
+}
+
+
+/* For Third Thing */
+
+.featured__StyledProject3 {
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.project-content3 {
+    grid-column: 5 / -1;
+    text-align: right;
+    position: relative;
+    grid-area: 1 / 5 / -1 / -1;
+    grid-row: 3 / -7;
+    margin-right: 13%;
+}
+
+.project-image3 {
+    grid-column: 1 / 8;
+    box-shadow: 0 10px 30px -15px #0a192f;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    grid-area: 1 / 1 / -5 / 7;
+    position: relative;
+    z-index: 10;
+    opacity: 0.7;
+}
+
+.project-image3-hover {
+    grid-column: 1 / 8;
+    box-shadow: 0 10px 30px -15px #0a192f;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    grid-area: 1 / 1 / -5 / 9;
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+}
+
+/* Media Queries for First Thing */
+@media (min-width: 850px) {
+    .project-image {
+        grid-area: 1 / 1 / -5 / 8;
+    }
+    .project-image3 {
+        grid-area: 1 / 1 / -5 / 9;
+    }
+}
+
+/* Media Queries for second Thing */
+
+/* @media (min-width: 1080px) {
+    .project-content2 {
+        grid-column: 7 / -1;
+        grid-area: 1 / 1 / -1 / 7;
+    }
+} */

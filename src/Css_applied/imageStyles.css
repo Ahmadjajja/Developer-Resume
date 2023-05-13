@@ -1,0 +1,23 @@
+.contentContainer {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: all 0.25s ease-in-out;
+}
+  
+.contentContainer.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.jzKOZc .wrapper::after {
+    border: 2px solid #64ffda;
+    top: 20px;
+    left: 20px;
+    z-index: -1;
+    content: "";
+    display: block;
+    position: absolute;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    border-radius: 4px;
+}

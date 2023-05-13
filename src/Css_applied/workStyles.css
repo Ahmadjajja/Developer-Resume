@@ -1,0 +1,62 @@
+.contentContainer {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.25s ease-in-out;
+}
+
+.contentContainer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.aboutMe {
+  font-size: clamp(26px, 5vw, 32px);
+}
+
+.blink_me {
+  animation: 0.3s linear condemned_blink_effect;
+}
+
+.TitleUnderThingsBuilt {
+  font-size: clamp(24px, 5vw, 28px);
+  font-weight: 600;
+}
+
+.SecondProjectSVGone {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: #ccd6f6;
+  margin-left: 2.413rem;
+  margin-top: -23px;
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+.viewArchive:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: #64ffda;
+  transition: all 0.25s ease-in-out;
+}
+
+.viewArchive:hover:after {
+  width: 100%;
+}
+/* CSS applied on small screen */ 
+ .smallScreenWorkWidth {
+  width: calc(100% + 50px);
+} 

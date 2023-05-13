@@ -1,0 +1,116 @@
+.hamburger-menu {
+    cursor: pointer;
+    position: relative;
+    padding: 1rem;
+    z-index: 99;
+}
+.active  {
+    background-color: #172a45;  
+    z-index: 99;
+}
+
+.ham-bar {
+    height: 2px;
+    width: 70%;
+    background-color: #64ffda;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+    z-index: 99;
+}
+
+.ham-bar-isActiveFalse {
+    height: 2px;
+    background-color: #64ffda;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform .6s, opacity .8s, top .6s;
+    z-index: 99;
+}
+
+.bar-top-isActiveFalse {
+    width: 45px;
+    top: 25%;
+}
+
+.bar-mid-isActiveFalse {
+    width: 34px;
+    margin-left: 5px;
+}
+
+.bar-bottom-isActiveFalse {
+    top: 75%;
+    width: 24px;
+    margin-left: 10px;
+}
+
+.bar-top {
+    top: 25%;
+}
+
+
+.bar-bottom {
+    top: 75%;
+}
+
+.hamburger-menu.active .bar-mid {
+    opacity: 0;
+    
+    
+}
+
+.hamburger-menu.active .bar-top {
+    transform: translate(-50%, -50%) rotate(-315deg);
+    top: 50%;
+    
+}
+.hamburger-menu.active .bar-bottom {
+    transform: translate(-50%, -50%) rotate(-225deg);
+    top: 50%;
+    
+}
+
+/* Off Screen Menu */
+
+.off-screen-menu {
+    position: fixed;
+    top: 0;
+    right: -75%;
+    background-color: #172a45;
+    height: 110vh;
+    width: 62%;
+    transition: right .5s;
+    z-index: 99;
+}
+
+.off-screen-menu.active {
+    right: 0;
+    z-index: 99;
+    height: 110vh;
+}
+
+
+#logo {
+    color: #64ffda;
+    width: 2.3rem;
+}
+
+.styledLogo {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    transition: all 0.4s ease-in-out;
+}
+.unstyledLogo {
+    transition: all 0.4s ease-in-out;
+}
+
+.main {
+    fill-opacity: 0;
+    stroke-dasharray: 270.1082763671875;
+}

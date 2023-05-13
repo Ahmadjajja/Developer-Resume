@@ -1,0 +1,111 @@
+.my-loader * {
+  width: auto;
+  height: auto;
+  background-color: #0a192f;
+}
+
+.my-loader .body {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.my-loader #logo {
+  color: #64ffda;
+}
+
+.my-loader .majorDiv {
+  transform: scale(2);
+}
+
+.my-loader .main {
+  fill-opacity: 0;
+  stroke-dasharray: 270.1082763671875;
+  animation: main 1s ease-in-out;
+}
+
+.my-loader .textInsideLoader {
+  visibility: visible;
+  animation: fadeIn 0.5s;
+  -webkit-animation: fadeIn 0.5s;
+  -moz-animation: fadeIn 0.5s;
+  -o-animation: fadeIn 0.5s;
+  -ms-animation: fadeIn 0.5s;
+}
+
+.my-loader .text {
+  visibility: hidden;
+}
+
+@keyframes main {
+  0% {
+    stroke-dashoffset: 272;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.75);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(0.25);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
