@@ -40,7 +40,7 @@ const Logos = () => {
           <div className="w-[38%] flex justify-between mt-0 ml-auto mr-auto mb-[40px] logoScreen2:min-w-[155px]">
             {/* Github SVG */}
             <div className="w-[20px] h-[20px]">
-              <a href="https://github.com/Abdullah-9862873" aria-label="GitHub">
+              <a href="https://github.com/Ahmadjajja" target="_blank" aria-label="GitHub">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
@@ -160,7 +160,7 @@ const Logos = () => {
             onMouseOut={() => setGithubSvgHover(false)}
             className="w-[20px] h-[20px] mb-[15px]"
           >
-            <a href="https://github.com/Abdullah-9862873" aria-label="GitHub">
+            <a href="https://github.com/Ahmadjajja" target="_blank" aria-label="GitHub">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 role="img"
@@ -332,9 +332,9 @@ const Logos = () => {
                 ? "straightLine mt-[20px] mb-[25px] mx-auto text-[12px] font-sans text-[#64ffda] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration"
                 : "straightLine my-[20px] mx-auto text-[12px] font-sans text-[#a8b2d1] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration"
             }
-            href="mailto:ag9862873@gmail.com"
+            href="mailto:ahmadjajja86@gmail.com"
           >
-            ag9862873@gmail.com
+            ahmadjajja86@gmail.com
           </a>
           {/* Straight Line */}
           <div className="h-[7.187rem] border-[1px] border-[#a8b2d1]"></div>

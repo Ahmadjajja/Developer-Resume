@@ -111,7 +111,7 @@ const GetInTouch = ({ contactBtnClickedActive }) => {
           } py-[5.5rem] flex justify-center items-center text-[#64ffda] text-[14px]  font-customMono leading-[1] antialiased`}
         >
           <a
-            href="mailto:ag9862873@gmail.com"
+            href="mailto:ahmadjajja86@gmail.com"
             onClick={() => setBtnClicked(true)}
             onMouseOver={() => setBtnHover(true)}
             onMouseOut={() => setBtnHover(false)}

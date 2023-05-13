@@ -48,24 +48,26 @@ const Header = () => {
           showSecondContent ? "show" : ""
         } bigHeading mt-3 block text-[#ccd6f6]  font-semibold  text-[1.5em]  leading-[1.1]  font-calibri antialiased headerScreen1:w-[45rem]`}
       >
-        Abdullah Sultan
+        Ahmad Jajja
       </div>
       <div
         className={`contentContainer ${
           showThirdContent ? "show" : ""
         } smallHeading block  text-[#8892b0]  font-semibold  leading-[1]  font-calibri antialiased headerScreen1:w-[45rem]`}
       >
-        An Enginner, Researcher and Mentor
+        A Full-Stack-Engineer, Researcher and Mentor
       </div>
       <div
         className={`contentContainer ${
           showFourthContent ? "show" : ""
         } description block text-[#8892b0]  mt-[1.16rem] py-2  text-lg antialiased headerScreen1:w-[50rem]`}
       >
-        A Techy with keen interest in Backend and infrastructure Engineering.
+        {/* A Techy with keen interest in Backend and infrastructure Engineering.
         Love to learn new technologies and currently working on Web 3 and
         Metaverse. An aspiring Full-Stack Engineer with a focus on applying Web
-        and Data Structures knowledge to create awesome things.
+        and Data Structures knowledge to create awesome things. */}
+        A Techy with keen interest in Backend Engineering, WEB 3.0 and Metaverse.
+        An aspiring Certified MERN Stack Software Engineer with a focus on Large Scale Systems.
       </div>
       <div
         className={`contentContainer ${
@@ -73,8 +75,8 @@ const Header = () => {
         } pt-[3.125rem] block`}
       >
         <a
-          href="mailto:ag9862873@gmail.com"
-          onClick={() => setBtnClicked(true)}
+          href="mailto:ahmadjajja86@gmail.com"
+          // onClick={() => setBtnClicked(true)}
           onMouseOver={() => setBtnHover(true)}
           onMouseOut={() => setBtnHover(false)}
           className={
