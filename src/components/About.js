@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../Css_applied/aboutStyles.css";
-import simpleProfile from "../images/SimpleProfile.png";
-import shadedProfile from "../images/ShadedProfile.png";
-import simpleProfile2 from "../images/SimpleProfile2.jpg";
-import ShadedProfile2 from "../images/ShadedProfile2.jpg";
+import simpleProfile from "../images/SimpleProfile5.jpg";
+import shadedProfile from "../images/SimpleProfile5.jpg";
+import simpleProfile2 from "../images/SimpleProfile5.jpg";
+import ShadedProfile2 from "../images/SimpleProfile5.jpg";
 
 const About = ({ aboutBtnClickedActive }) => {
   const mySecondImage = useRef();
@@ -130,51 +130,75 @@ const About = ({ aboutBtnClickedActive }) => {
         {/* Section 2 */}
         <div>
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            Hello! I'm Abdullah, a full stack software developer based in
-            Sheikhupura, PK.
+            Hello! I'm Ahmad, a full stack software engineer based in
+            Faisalabad, PK.
           </div>
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            I build things on the internet and love building large scale
-            applications with system design in mind. I always try to be creative
-            and efficient while building websites and application using latest
-            technologies. I have worked in teams and also individually as a
-            freelancer and got valuable learning experiences. Currently, I am
-            expanding my knowledge in Web 3.0 and Metaverse so that I can build
-            things with immersive user experience. I love to teach Computer
-            Science concepts. I have taught over more than 500 students. Love to
-            analyze the requirements and provide the customer exactly what he
-            wants with additional features based on my personal experiences that
-            help in achieving the customer's goals.
-          </div>
-          <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            I am still studying in my undergraduate degree at{" "}
+            I build things on the internet and love building large-scale
+            applications with system design in mind. I have had the opportunity
+            to work on various projects both in teams and as a freelancer, which
+            has provided me with valuable learning experiences. Additionally, I
+            have a passion for teaching Computer Science concepts. In fact, I
+            have been actively involved in teaching as a part of my role as a
             <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block">
-              University of Agriculture, Faisalabad.
+              &nbsp; MERN Stack Trainer &nbsp;
             </a>{" "}
-            I have worked in engineering and development at some{" "}
-            <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen5:block">
-              Software Companies <span> </span>
-            </a>
-            where I work on a wide variety of interesting and meaningful
-            projects on a daily basis.
+            within the
+            <div className="relative inline-block">
+              <a
+                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
+                target="_blank"
+              >
+                Saylani Welfare Mass Training & Job Creation Program.&nbsp;
+              </a>{" "}
+            </div>
+            This teaching experience has allowed me to impart comprehensive
+            lessons on programming languages and technologies, including HTML,
+            CSS,Bootstrap5, JavaScript,Typescript, React JS, NodeJS, MongoDB,
+            and Express JS, to nearly 200 students. I thoroughly enjoy sharing
+            my knowledge and helping others grasp complex concepts in a clear
+            and concise manner. Currently, I am pursuing my undergraduate degree
+            at the
+            <a
+              className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+              href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
+              target="_blank"
+            >
+              &nbsp;Saylani Welfare Mass Training & Job Creation Program.&nbsp;
+            </a>{" "}
+            This teaching experience has allowed me to impart comprehensive
+            lessons on programming languages and technologies, including HTML,
+            CSS,Bootstrap5, JavaScript,Typescript, React JS, NodeJS, MongoDB,
+            and Express JS, to nearly 200 students. I thoroughly enjoy sharing
+            my knowledge and helping others grasp complex concepts in a clear
+            and concise manner. Currently, I am pursuing my undergraduate degree
+            at the
+            <a
+              className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+              href="http://web.uaf.edu.pk/"
+              target="_blank"
+            >
+              &nbsp;University of Agriculture, Faisalabad.
+            </a>{" "}
           </div>
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-5">
             Here are few technologies I have been working on recently:
           </div>
           {/* Technologies I am familiar with */}
-          <div className=" w-[60vw] text-[#8892b0] flex flex-wrap aboutScreen6:w-[10.5rem]">
+          <div className="w-[60vw] text-[#8892b0] flex flex-wrap aboutScreen6:w-[10.5rem]">
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                JavaScript (ES6+)
+                C
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Python
+                C++
               </div>
             </div>
             <div>
@@ -182,63 +206,21 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Hadoop
+                Dart
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Azure
+                Java (OOP + DSA)
               </div>
             </div>
             <div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                Node.js
-              </div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                Expressjs
-              </div>
-            </div>
-            <div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                React Js
-              </div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                Redux DevTool
-              </div>
-            </div>
-            <div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                C Language
-              </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
                 HTML5
-              </div>
-            </div>
-            <div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                C++ (OOP + DSA)
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
@@ -252,13 +234,13 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Tailwind CSS
+                Bootstrap 5
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Bootstrap 5
+                JavaScript (ES6+)
               </div>
             </div>
             <div>
@@ -266,7 +248,83 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                MongoDB
+                Typescript
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                React JS
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                React Native
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Firebase
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                FireStore
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Node JS
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Express JS
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Mongo DB
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Git
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Github
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Rest APIs
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                GraphQL
               </div>
             </div>
           </div>
@@ -302,40 +360,48 @@ const About = ({ aboutBtnClickedActive }) => {
         {/* Section 2 */}
         <div className="w-[49.5136vw] aboutScreen11:w-[51vw] aboutScreen12:w-[49vw]">
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            Hello! I'm Abdullah, a full stack software developer based in
-            Sheikhupura, PK.
+            Hello! I'm Ahmad, a full stack software engineer based in
+            Faisalabad, PK.
           </div>
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            I build things on the internet and love building large scale
-            applications with system design in mind. I always try to be creative
-            and efficient while building websites and application using latest
-            technologies. I have worked in teams and also individually as a
-            freelancer and got valuable learning experiences. Currently, I am
-            expanding my knowledge in Web 3.0 and Metaverse so that I can build
-            things with immersive user experience. I love to teach Computer
-            Science concepts. I have taught over more than 500 students. Love to
-            analyze the requirements and provide the customer exactly what he
-            wants with additional features based on my personal experiences that
-            help in achieving the customer's goals.
-          </div>
-          <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            I am still studying in my undergraduate degree at{" "}
+            I build things on the internet and love building large-scale
+            applications with system design in mind. I have had the opportunity
+            to work on various projects both in teams and as a freelancer, which
+            has provided me with valuable learning experiences. Additionally, I
+            have a passion for teaching Computer Science concepts. In fact, I
+            have been actively involved in teaching as a part of my role as a
             <div className="relative inline-block">
               <a className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block">
-                University of Agriculture,
+                &nbsp; MERN Stack Trainer &nbsp;
               </a>{" "}
             </div>
-            Faisalabad. I have worked in engineering and development at some{" "}
-            <div className="inline-block relative">
-              <a className="spanOneHoverClass text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen5:block">
-                Software Companies
-              </a>
-            </div>{" "}
-            where I work on a wide variety of interesting and meaningful
-            projects on a daily basis.
-          </div>
-          <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-5">
-            Here are few technologies I have been working on recently:
+            within the
+            <div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
+                target="_blank"
+              >
+                &nbsp;Saylani Welfare Mass Training & Job Creation
+                Program.&nbsp;
+              </a>{" "}
+            </div>
+            This teaching experience has allowed me to impart comprehensive
+            lessons on programming languages and technologies, including HTML,
+            CSS,Bootstrap5, JavaScript,Typescript, React JS, NodeJS, MongoDB,
+            and Express JS, to nearly 200 students. I thoroughly enjoy sharing
+            my knowledge and helping others grasp complex concepts in a clear
+            and concise manner. Currently, I am pursuing my undergraduate degree
+            at the
+            <div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="http://web.uaf.edu.pk/"
+                target="_blank"
+              >
+                &nbsp;University of Agriculture, Faisalabad.
+              </a>{" "}
+            </div>
           </div>
           {/* Technologies I am familiar with */}
           <div className="text-[#8892b0] flex flex-wrap">
@@ -344,13 +410,13 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                JavaScript (ES6+)
+                C
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Python
+                C++
               </div>
             </div>
             <div>
@@ -358,63 +424,21 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Hadoop
+                Dart
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Azure
+                Java (OOP + DSA)
               </div>
             </div>
             <div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                Node.js
-              </div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                Expressjs
-              </div>
-            </div>
-            <div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                React Js
-              </div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                Redux DevTool
-              </div>
-            </div>
-            <div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                C Language
-              </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
                 HTML5
-              </div>
-            </div>
-            <div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                C++ (OOP + DSA)
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
@@ -428,21 +452,97 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Tailwind CSS
+                Bootstrap 5
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Bootstrap 5
+                JavaScript (ES6+)
               </div>
             </div>
             <div>
-              <div className="w-[47.5456vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen10:w-[13.1rem]">
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                MongoDB
+                Typescript
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                React JS
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                React Native
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Firebase
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                FireStore
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Node JS
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Express JS
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Mongo DB
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Git
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Github
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Rest APIs
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                GraphQL
               </div>
             </div>
           </div>
