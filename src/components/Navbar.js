@@ -677,7 +677,7 @@ const Navbar = ({
                 <div className="five  mt-4  flex  justify-center  items-center  bg-[#172a45]  text-[#64ffda]  w-[100%]  text-base antialiased">
                   05.
                 </div>
-                <Link
+                {/* <Link
                   to="/pensieve"
                   onClick={() => {
                     setOffScreen(false);
@@ -688,7 +688,7 @@ const Navbar = ({
                   }  bg-[#172a45]  text-lg  py-2  tracking-wide antialiased`}
                 >
                   Blog
-                </Link>
+                </Link> */}
                 <a
                   href="https://drive.google.com/file/d/1fP65vUE3xUaOYgh4zPzKyOMot_bW9DR0/view?usp=share_link"
                   className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[#172a45] border  border-[#64ffda]  rounded  font-mono  text-[#64ffda]  tracking-wide cursor-pointer antialiased"
@@ -853,7 +853,7 @@ const Navbar = ({
                     Contact
                   </span>
                 </span>
-                <Link
+                {/* <Link
                   to="/pensieve"
                   className="text-[13px] p-[10px] no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer mr-[10px] font-customMono myScreen5:px-[5px]"
                 >
@@ -867,7 +867,7 @@ const Navbar = ({
                   >
                     Blog
                   </span>
-                </Link>
+                </Link> */}
                 <a
                 target="_blank"
                   href="https://drive.google.com/file/d/1TIiJvqmbsYI2swVEY_kNgH6MjbhINXFm/view"

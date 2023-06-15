@@ -224,7 +224,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                CSS3, SCSS
+                CSS3, SCSS, SASS
               </div>
             </div>
             <div>
@@ -460,7 +460,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                CSS3, SCSS
+                CSS3, SCSS, SASS
               </div>
             </div>
             <div>
