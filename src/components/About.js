@@ -108,9 +108,8 @@ const About = ({ aboutBtnClickedActive }) => {
       className={`mr-12 ml-12 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem]`}
     >
       <div
-        className={`contentContainer ${
-          isVisible ? "show" : ""
-        } pt-[5.538rem] pb-[2.5rem] relative`}
+        className={`contentContainer ${isVisible ? "show" : ""
+          } pt-[5.538rem] pb-[2.5rem] relative`}
       >
         <div className="inline-block absolute top-[105px] text-[#64ffda] font-customMono text-headerDescriptionFontSize font-normal antialiased aboutScreen3:top-[100px]">
           01.
@@ -123,9 +122,8 @@ const About = ({ aboutBtnClickedActive }) => {
       </div>
       {/* Body Section for < md-screen */}
       <div
-        className={`contentContainer ${
-          isVisibleTwo ? "show" : ""
-        } block aboutScreen8:hidden`}
+        className={`contentContainer ${isVisibleTwo ? "show" : ""
+          } block aboutScreen8:hidden`}
       >
         {/* Section 2 */}
         <div>
@@ -158,21 +156,21 @@ const About = ({ aboutBtnClickedActive }) => {
             CSS,Bootstrap5, JavaScript,Typescript, React JS, NodeJS, MongoDB,
             and Express JS, to nearly 200 students. I thoroughly enjoy sharing
             my knowledge and helping others grasp complex concepts in a clear
-            and concise manner. Currently, I am pursuing my undergraduate degree
-            at the
-            <a
-              className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-              href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
-              target="_blank"
-            >
-              &nbsp;Saylani Welfare Mass Training & Job Creation Program.&nbsp;
-            </a>{" "}
-            This teaching experience has allowed me to impart comprehensive
-            lessons on programming languages and technologies, including HTML,
-            CSS,Bootstrap5, JavaScript,Typescript, React JS, NodeJS, MongoDB,
-            and Express JS, to nearly 200 students. I thoroughly enjoy sharing
-            my knowledge and helping others grasp complex concepts in a clear
-            and concise manner. Currently, I am pursuing my undergraduate degree
+            and concise manner as well as i loves to solve             
+            <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block">
+              &nbsp; DSA &nbsp;
+            </a>{" "} Problem on             <div className="relative inline-block">
+              <a
+                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
+                target="_blank"
+              >
+                leetcode&nbsp;
+              </a>{" "}
+            </div> to improve my coding skills.I am an             
+            <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block">
+              &nbsp; open-source enthusiast &nbsp;
+            </a>{" "}   who is eager to explore new opportunities within the realm of open-source development. My goal is to enhance my skills by working on substantial codebases and contributing to the open-source community. Currently, I am pursuing my undergraduate degree
             at the
             <a
               className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
@@ -353,9 +351,8 @@ const About = ({ aboutBtnClickedActive }) => {
       </div>
       {/* Body Section for > md-screen */}
       <div
-        className={`contentContainer ${
-          isVisibleTwo ? "show" : ""
-        } hidden aboutScreen8:block relative`}
+        className={`contentContainer ${isVisibleTwo ? "show" : ""
+          } hidden aboutScreen8:block relative`}
       >
         {/* Section 2 */}
         <div className="w-[49.5136vw] aboutScreen11:w-[51vw] aboutScreen12:w-[49vw]">
@@ -391,7 +388,26 @@ const About = ({ aboutBtnClickedActive }) => {
             CSS,Bootstrap5, JavaScript,Typescript, React JS, NodeJS, MongoDB,
             and Express JS, to nearly 200 students. I thoroughly enjoy sharing
             my knowledge and helping others grasp complex concepts in a clear
-            and concise manner. Currently, I am pursuing my undergraduate degree
+            and concise manner as well as i loves to solve
+            <div className="relative inline-block">
+              <a className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block">
+                &nbsp; DSA &nbsp;
+              </a>{" "}
+            </div> Problem on 
+            <div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://leetcode.com/ahmadjajja86/"
+                target="_blank"
+              >
+                &nbsp;leetcode&nbsp;
+              </a>{" "}
+            </div> to improve my coding skills.I am an             
+            <div className="relative inline-block">
+              <a className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block">
+                &nbsp;open-source enthusiast &nbsp;
+              </a>{" "}
+            </div> who is eager to explore new opportunities within the realm of open-source development. My goal is to enhance my skills by working on substantial codebases and contributing to the open-source community. Currently, I am pursuing my undergraduate degree
             at the
             <div className="relative inline-block">
               <a
