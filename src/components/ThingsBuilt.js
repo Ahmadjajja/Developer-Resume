@@ -2,18 +2,23 @@ import React, { useState, useEffect, useRef } from "react";
 import "../Css_applied/thingsBuiltStyles.css";
 import MERNBootcamp from "../images/MERN-Bootcamp.jpg"
 import BankApp from "../images/BankApp.png"
+import ReatEstateMblApp from "../images/RealEstateMobileApp.png"
+import CRUDMERN from "../images/CRUDMERN.png"
+import JAVADSA from "../images/JAVADSA.png"
 
 const ThingsBuilt = ({ workBtnClickedActive }) => {
   const [firstThingsMouseOver, setFirstThingMOuseOver] = useState(false);
   const [MERNBootcampMouseOver, setMERNBootcampMOuseOver] = useState(false);
   const [secondThingsMouseOver, setSecondThingMOuseOver] = useState(false);
   const [thirdThingsMouseOver, setThirdThingMOuseOver] = useState(false);
+  const [fourthThingsMouseOver, setFourthThingMOuseOver] = useState(false);
   // Hover On Icons
   const [firstThingGithubHover, setFirstThingGithubHover] = useState(false);
   const [MERNBootcampGithubHover, setMERNBootcampGithubHover] = useState(false);
   const [secondThingGithubHover, setSecondThingGithubHover] = useState(false);
   const [secondThingLinkHover, setSecondThingLinkHover] = useState(false);
   const [thirdThingGithubHover, setThirdThingGithubHover] = useState(false);
+  const [fourthThingGithubHover, setFourthThingGithubHover] = useState(false);
   // Title Appear when Displayed
   const [isVisibleOne, setIsVisibleOne] = useState(false);
   const [titleVisible, setTitleVisible] = useState(false);
@@ -155,6 +160,34 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
     }
   });
 
+  // Fourth Thing Appear when Displayed
+  const [isVisibleFive, setIsVisibleFive] = useState(false);
+  const [fourthThingVisible, setFourthThingVisible] = useState(false);
+  const refFourthThing = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisibleFive(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refFourthThing.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isVisibleFive) {
+      setTimeout(() => {
+        setFourthThingVisible(true);
+      }, 200);
+    }
+  });
+
   // For small Screen
   const yourDiv = document.getElementById("firstDiv");
   function isElementInViewportWithOffset(el, offset = 0) {
@@ -187,6 +220,14 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
   // Third Thing
   window.addEventListener("scroll", function () {
     let element = document.getElementById("thirdThing");
+    if (element && isElementInViewportWithOffset(element)) {
+      element.classList.add("show");
+    }
+  });
+
+  // Fourth Thing
+  window.addEventListener("scroll", function () {
+    let element = document.getElementById("fourthThing");
     if (element && isElementInViewportWithOffset(element)) {
       element.classList.add("show");
     }
@@ -429,7 +470,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
       {/* Things when the Screen >= 768 */}
       <div className={" hidden md:block"}>
         {/* First Thing */}
-
         <div
           ref={refFirstThing}
           class={`contentContainer ${firstThingVisible ? "show" : ""
@@ -496,10 +536,15 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   class="object-top object-contain"
                   onMouseOver={() => setFirstThingMOuseOver(true)}
                   onMouseOut={() => setFirstThingMOuseOver(false)}
+                  // src={
+                  //   firstThingsMouseOver
+                  //     ? "https://res.cloudinary.com/dyoczrvps/image/upload/v1674907366/Portfolio/Learn_Java_DSA_zbjsr1.png"
+                  //     : "https://res.cloudinary.com/dyoczrvps/image/upload/v1674907362/Portfolio/Learn_Java_DSA_elcsx5.jpg"
+                  // }
                   src={
                     firstThingsMouseOver
-                      ? "https://res.cloudinary.com/dyoczrvps/image/upload/v1674907366/Portfolio/Learn_Java_DSA_zbjsr1.png"
-                      : "https://res.cloudinary.com/dyoczrvps/image/upload/v1674907362/Portfolio/Learn_Java_DSA_elcsx5.jpg"
+                      ? JAVADSA
+                      : JAVADSA
                   }
                   alt="image"
                 />
@@ -508,8 +553,284 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
           </div>
         </div>
         {/* Second Thing */}
-
         <div
+          ref={refSecondThing}
+          class={`contentContainer ${secondThingVisible ? "show" : ""
+            } featured__StyledProject2 ml-[5%] mr-[5%]`}
+        >
+          <div class="project-content2 text-left text-[13px] text-[#64ffda] font-customMono bg-transparent antialiased">
+            <p>Featured Project</p>
+            <h3 class="bg-transparent text-[24px] text-[#e6f1ff] font-calibri font-semibold text-left relative z-0 md:opacity-[1]">
+              Bank Web App
+            </h3>
+            <div class="description2 text-[18px] bg-[#172a45] shadow-none text-[#a8b2d1] font-calibri leading-[1.3] py-[10px] text-left relative z-20 rounded mb-[3%] mt-[7%] tbScreen40:px-[20px] tbScreen40:py-[20px]">
+              <p className="text-[#a8b2d1] bg-[#172a45]">
+                Bank-App is a web application allowing users to manage accounts, perform transactions, and view transaction history conveniently.
+              </p>
+            </div>
+            <ul class="bg-transparent text-[13px] text-[#a8b2d1] font-customMono text-left pr-[90px] leading-[1.1] mb-[20px] tbScreen41:pr-[110px] tbScreen42:pr-[128px] tbScreen43:pr-[77px]">
+              <li>HTML5 CSS3 Bootstrap5 React-JS Context-API Firebase Firestore</li>
+            </ul>
+            <div className="tbScreen27:pr-[41px]">
+              <a
+                onMouseOver={() => setSecondThingGithubHover(true)}
+                onMouseOut={() => setSecondThingGithubHover(false)}
+                target="_blank"
+                class="inline-block text-[#ccd6f6] w-[20px] h-[20px] cursor-pointer mt-[14px] antialiased transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration"
+                href="https://github.com/Ahmadjajja/React_Bank"
+                aria-label="GitHub Link"
+              >
+                <svg
+                  className="svgGithubIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke={secondThingGithubHover ? "#64ffda" : "currentColor"}
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github"
+                >
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <span className="inline-block text-[#ccd6f6] w-[20px] h-[20px] cursor-pointer mt-[14px] ml-[10px] antialiased transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration">
+                <a
+                  onMouseOver={() => setSecondThingLinkHover(true)}
+                  onMouseOut={() => setSecondThingLinkHover(false)}
+                  href="https://jajja-bank-app.web.app/"
+                  aria-label="External Link"
+                  class="external"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke={secondThingLinkHover ? "#64ffda" : "currentColor"}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+          <div
+            className={
+              secondThingsMouseOver
+                ? "project-image-hover2"
+                : "project-image2 mix-blend-exclusion"
+            }
+          >
+            <a href="https://github.com/Ahmadjajja/React_Bank" target="_blank">
+              <div>
+                <img
+                  onMouseOver={() => setSecondThingMOuseOver(true)}
+                  onMouseOut={() => setSecondThingMOuseOver(false)}
+                  class="object-top object-contain"
+                  src={
+                    secondThingsMouseOver
+                      ? BankApp
+                      : BankApp
+                  }
+                  alt="image"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        {/* Third Thing */}
+        <div
+          ref={refThirdThing}
+          class={`contentContainer ${thirdThingVisible ? "show" : ""
+            } featured__StyledProject3 ml-[5%] mr-[5%]`}
+        >
+          <div class="project-content3 text-right text-[13px] text-[#64ffda] font-customMono bg-transparent antialiased ">
+            <p className="tbScreen27:pr-[41px]">Featured Project</p>
+            <h3 class="bg-transparent text-[24px] text-[#e6f1ff] font-calibri font-semibold text-right relative z-0 mb-[3%] tbScreen27:pr-[41px] tbScreen26:mb-[0] tbScreen29:mb-[7%] tbScreen27:mb-[1%]">
+              <span className="tbScreen18:opacity-[0] tbScreen34:opacity-[0.5] tbScreen35:opacity-[1] tbScreen27:hidden">
+                R
+              </span>
+              <span className="tbScreen27:opacity-[0] tbScreen37:opacity-[0.5] tbScreen38:opacity-[1] hidden tbScreen27:inline">
+                R
+              </span>
+              <span className="tbScreen18:opacity-[0] tbScreen27:opacity-[0] tbScreen32:opacity-[0.5] tbScreen33:opacity-[1] tbScreen27:hidden">
+                e
+              </span>
+              <span className="tbScreen27:opacity-[0.5] tbScreen39:opacity-[1] hidden tbScreen27:inline">
+                e
+              </span>
+              <span className="tbScreen18:opacity-[0] tbScreen30:opacity-[0.5] tbScreen31:opacity-[1]">
+                a
+              </span>
+              l Estate Mobile App
+            </h3>
+            <div class="text-[18px] bg-[#172a45] text-[#a8b2d1] font-calibri leading-[1.3] text-right relative z-20 shadow-OtherProjectsBoxShadow rounded py-[10px] pl-[3%] pr-[3%] mb-[3%] tbScreen26:pl-[0] tbScreen26:pr-[0] tbScreen26:py-[25px] tbScreen26:mb-[0] tbScreen27:mb-[3%]  tbScreen29:py-[20px] tbScreen29:inline-block tbScreen29:items-end tbScreen29:w-[80%]">
+              <p className="bg-[#172a45]">
+              Real-Estate Mobile App with authentication, dashboard, property management, searching, browsing and call-to-action feature for property tansactions, powered by REST APIs using Node JS.
+              </p>
+            </div>
+            <ul class="bg-transparent text-[13px] text-[#a8b2d1] font-customMono text-right pl-[90px] leading-[1.1] mb-[20px] tbScreen41:pl-[110px] tbScreen42:pl-[128px] tbScreen43:pl-[77px]">
+              <li>ReactNative NativeBase NodeJS ExpressJS MongoDB cloudinary</li>
+            </ul>
+            <ul class="bg-transparent text-[13px] text-[#a8b2d1] font-customMono text-right tbScreen27:pr-[41px]">
+              <li>Markdown</li>
+            </ul>
+            <div className="tbScreen27:pr-[41px] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration">
+              <a
+                onMouseOver={() => setThirdThingGithubHover(true)}
+                onMouseOut={() => setThirdThingGithubHover(false)}
+                target="_blank"
+                class="inline-block text-[#ccd6f6] w-[20px] h-[20px] cursor-pointer mt-[14px] antialiased "
+                href="https://github.com/Ahmadjajja/Hackathon_Frontend_2022_Batch_04"
+                aria-label="GitHub Link"
+              >
+                <svg
+                  className="svgGithubIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke={thirdThingGithubHover ? "#64ffda" : "currentColor"}
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github"
+                >
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div
+            className={
+              thirdThingsMouseOver
+                ? "project-image3-hover"
+                : "project-image3 mix-blend-screen"
+            }
+          >
+            <a href="https://github.com/Ahmadjajja/Hackathon_Frontend_2022_Batch_04" target="_blank">
+              <div>
+                <img
+                  onMouseOver={() => setThirdThingMOuseOver(true)}
+                  onMouseOut={() => setThirdThingMOuseOver(false)}
+                  class="object-top object-contain"
+                  src={
+                    thirdThingsMouseOver
+                      ? ReatEstateMblApp
+                      : ReatEstateMblApp
+                  }
+                  alt="image"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        {/* Fourth Thing */}
+        <div
+          ref={refFourthThing}
+          class={`contentContainer ${fourthThingVisible ? "show" : ""
+            } featured__StyledProject2 ml-[5%] mr-[5%]`}
+        >
+          <div class="project-content2 text-left text-[13px] text-[#64ffda] font-customMono bg-transparent antialiased">
+            <p>Featured Project</p>
+            <h3 class="bg-transparent text-[24px] text-[#e6f1ff] font-calibri font-semibold text-left relative z-0 md:opacity-[1]">
+              CRUD MERN WEB APP
+            </h3>
+            <div class="description2 text-[18px] bg-[#172a45] shadow-none text-[#a8b2d1] font-calibri leading-[1.3] py-[10px] text-left relative z-20 rounded mb-[3%] mt-[7%] tbScreen40:px-[20px] tbScreen40:py-[20px]">
+              <p className="text-[#a8b2d1] bg-[#172a45]">
+              CRUD MERN application for streamlined employee management, allowing seamless creation, retrieval, updating, and deletion of employee records.
+              </p>
+            </div>
+            <ul class="bg-transparent text-[13px] text-[#a8b2d1] font-customMono text-left pr-[90px] leading-[1.1] mb-[20px] tbScreen41:pr-[110px] tbScreen42:pr-[128px] tbScreen43:pr-[77px]">
+              <li>HTML5 CSS3 Bootstrap5 ReactJS NodeJS ExpressJS MongoDB</li>
+            </ul>
+            <div className="tbScreen27:pr-[41px]">
+              <a
+                onMouseOver={() => setFourthThingGithubHover(true)}
+                onMouseOut={() => setFourthThingGithubHover(false)}
+                target="_blank"
+                class="inline-block text-[#ccd6f6] w-[20px] h-[20px] cursor-pointer mt-[14px] antialiased transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration"
+                href="https://github.com/Ahmadjajja/MERN-Projects/tree/main/MERN-Projects/CRUD%20-%20MERN"
+                aria-label="GitHub Link"
+              >
+                <svg
+                  className="svgGithubIcon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke={fourthThingGithubHover ? "#64ffda" : "currentColor"}
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-github"
+                >
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+              <span className="inline-block text-[#ccd6f6] w-[20px] h-[20px] cursor-pointer mt-[14px] ml-[10px] antialiased transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration">
+                {/* <a
+                  onMouseOver={() => setSecondThingLinkHover(true)}
+                  onMouseOut={() => setSecondThingLinkHover(false)}
+                  href="https://jajja-bank-app.web.app/"
+                  aria-label="External Link"
+                  class="external"
+                  target="_blank"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke={secondThingLinkHover ? "#64ffda" : "currentColor"}
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-external-link"
+                  >
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a> */}
+              </span>
+            </div>
+          </div>
+          <div
+            className={
+              secondThingsMouseOver
+                ? "project-image-hover2"
+                : "project-image2 mix-blend-exclusion"
+            }
+          >
+            <a href="https://github.com/Ahmadjajja/MERN-Projects/tree/main/MERN-Projects/CRUD%20-%20MERN" target="_blank">
+              <div>
+                <img
+                  onMouseOver={() => setSecondThingMOuseOver(true)}
+                  onMouseOut={() => setSecondThingMOuseOver(false)}
+                  class="object-top object-contain"
+                  src={
+                    secondThingsMouseOver
+                      ? CRUDMERN
+                      : CRUDMERN
+                  }
+                  alt="image"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+                {/* MERNBootcamp Thing */}
+                <div
           ref={refMERNBootcampThing}
           class={`contentContainer ${MERNBootcampThingVisible ? "show" : ""
             } featured__StyledProject ml-[5%] mr-[5%]`}
@@ -579,186 +900,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                     MERNBootcampMouseOver
                       ? MERNBootcamp
                       : MERNBootcamp
-                  }
-                  alt="image"
-                />
-              </div>
-            </a>
-          </div>
-        </div>
-
-        {/* Second Thing */}
-        <div
-          ref={refSecondThing}
-          class={`contentContainer ${secondThingVisible ? "show" : ""
-            } featured__StyledProject2 ml-[5%] mr-[5%]`}
-        >
-          <div class="project-content2 text-left text-[13px] text-[#64ffda] font-customMono bg-transparent antialiased">
-            <p>Featured Project</p>
-            <h3 class="bg-transparent text-[24px] text-[#e6f1ff] font-calibri font-semibold text-left relative z-0 md:opacity-[1]">
-              Bank Web App
-            </h3>
-            <div class="description2 text-[18px] bg-[#172a45] shadow-none text-[#a8b2d1] font-calibri leading-[1.3] py-[10px] text-left relative z-20 rounded mb-[3%] mt-[7%] tbScreen40:px-[20px] tbScreen40:py-[20px]">
-              <p className="text-[#a8b2d1] bg-[#172a45]">
-                Bank-App is a web application allowing users to manage accounts, perform transactions, and view transaction history conveniently.
-              </p>
-            </div>
-            <ul class="bg-transparent text-[13px] text-[#a8b2d1] font-customMono text-left pr-[90px] leading-[1.1] mb-[20px] tbScreen41:pr-[110px] tbScreen42:pr-[128px] tbScreen43:pr-[77px]">
-              <li>HTML5 CSS3 Bootstrap5 React-JS Context-API Firebase Firestore</li>
-            </ul>
-            <div className="tbScreen27:pr-[41px]">
-              <a
-                onMouseOver={() => setSecondThingGithubHover(true)}
-                onMouseOut={() => setSecondThingGithubHover(false)}
-                target="_blank"
-                class="inline-block text-[#ccd6f6] w-[20px] h-[20px] cursor-pointer mt-[14px] antialiased transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration"
-                href="https://github.com/Ahmadjajja/React_Bank"
-                aria-label="GitHub Link"
-              >
-                <svg
-                  className="svgGithubIcon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke={secondThingGithubHover ? "#64ffda" : "currentColor"}
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-github"
-                >
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-              </a>
-              <span className="inline-block text-[#ccd6f6] w-[20px] h-[20px] cursor-pointer mt-[14px] ml-[10px] antialiased transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration">
-                <a
-                  onMouseOver={() => setSecondThingLinkHover(true)}
-                  onMouseOut={() => setSecondThingLinkHover(false)}
-                  href="https://jajja-bank-app.web.app/"
-                  aria-label="External Link"
-                  class="external"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke={secondThingLinkHover ? "#64ffda" : "currentColor"}
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    class="feather feather-external-link"
-                  >
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-              </span>
-            </div>
-          </div>
-          <div
-            className={
-              secondThingsMouseOver
-                ? "project-image-hover2"
-                : "project-image2 mix-blend-exclusion"
-            }
-          >
-            <a href="https://github.com/Ahmadjajja/React_Bank" target="_blank">
-              <div>
-                <img
-                  onMouseOver={() => setSecondThingMOuseOver(true)}
-                  onMouseOut={() => setSecondThingMOuseOver(false)}
-                  class="object-top object-contain"
-                  src={
-                    secondThingsMouseOver
-                      ? BankApp
-                      : BankApp
-                  }
-                  alt="image"
-                />
-              </div>
-            </a>
-          </div>
-        </div>
-        {/* Third Thing */}
-        <div
-          ref={refThirdThing}
-          class={`contentContainer ${thirdThingVisible ? "show" : ""
-            } featured__StyledProject3 ml-[5%] mr-[5%]`}
-        >
-          <div class="project-content3 text-right text-[13px] text-[#64ffda] font-customMono bg-transparent antialiased ">
-            <p className="tbScreen27:pr-[41px]">Featured Project</p>
-            <h3 class="bg-transparent text-[24px] text-[#e6f1ff] font-calibri font-semibold text-right relative z-0 mb-[3%] tbScreen27:pr-[41px] tbScreen26:mb-[0] tbScreen29:mb-[7%] tbScreen27:mb-[1%]">
-              <span className="tbScreen18:opacity-[0] tbScreen34:opacity-[0.5] tbScreen35:opacity-[1] tbScreen27:hidden">
-                C
-              </span>
-              <span className="tbScreen27:opacity-[0] tbScreen37:opacity-[0.5] tbScreen38:opacity-[1] hidden tbScreen27:inline">
-                C
-              </span>
-              <span className="tbScreen18:opacity-[0] tbScreen27:opacity-[0] tbScreen32:opacity-[0.5] tbScreen33:opacity-[1] tbScreen27:hidden">
-                +
-              </span>
-              <span className="tbScreen27:opacity-[0.5] tbScreen39:opacity-[1] hidden tbScreen27:inline">
-                +
-              </span>
-              <span className="tbScreen18:opacity-[0] tbScreen30:opacity-[0.5] tbScreen31:opacity-[1]">
-                +
-              </span>{" "}
-              DSA in 5 Months
-            </h3>
-            <div class="text-[18px] bg-[#172a45] text-[#a8b2d1] font-calibri leading-[1.3] text-right relative z-20 shadow-OtherProjectsBoxShadow rounded py-[10px] pl-[3%] pr-[3%] mb-[3%] tbScreen26:pl-[0] tbScreen26:pr-[0] tbScreen26:py-[25px] tbScreen26:mb-[0] tbScreen27:mb-[3%]  tbScreen29:py-[20px] tbScreen29:inline-block tbScreen29:items-end tbScreen29:w-[80%]">
-              <p className="bg-[#172a45]">
-                This is the Curriculum to learn C++ DS & advanced Algorithms
-                from scratch to expert.
-              </p>
-            </div>
-            <ul class="bg-transparent text-[13px] text-[#a8b2d1] font-customMono text-right tbScreen27:pr-[41px]">
-              <li>Markdown</li>
-            </ul>
-            <div className="tbScreen27:pr-[41px] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration">
-              <a
-                onMouseOver={() => setThirdThingGithubHover(true)}
-                onMouseOut={() => setThirdThingGithubHover(false)}
-                target="_blank"
-                class="inline-block text-[#ccd6f6] w-[20px] h-[20px] cursor-pointer mt-[14px] antialiased "
-                href="https://github.com/Abdullah-9862873/CPP_DSA"
-                aria-label="GitHub Link"
-              >
-                <svg
-                  className="svgGithubIcon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke={thirdThingGithubHover ? "#64ffda" : "currentColor"}
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-github"
-                >
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div
-            className={
-              thirdThingsMouseOver
-                ? "project-image3-hover"
-                : "project-image3 mix-blend-screen"
-            }
-          >
-            <a href="https://github.com/Abdullah-9862873/CPP_DSA">
-              <div>
-                <img
-                  onMouseOver={() => setThirdThingMOuseOver(true)}
-                  onMouseOut={() => setThirdThingMOuseOver(false)}
-                  class="object-top object-contain"
-                  src={
-                    thirdThingsMouseOver
-                      ? "https://res.cloudinary.com/dyoczrvps/image/upload/v1675977458/Portfolio/try4_d7kons.png"
-                      : "https://res.cloudinary.com/dyoczrvps/image/upload/v1675977758/Portfolio/try4GreenVersion_wypsrh.jpg"
                   }
                   alt="image"
                 />

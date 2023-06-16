@@ -218,21 +218,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                HTML5
-              </div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                CSS3, SCSS, SASS
-              </div>
-            </div>
-            <div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                Bootstrap 5
+                Python
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
@@ -247,6 +233,34 @@ const About = ({ aboutBtnClickedActive }) => {
                   ▹
                 </span>{" "}
                 Typescript
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                HTML5
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                CSS3
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                SCSS, SASS
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Bootstrap 5
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
@@ -418,6 +432,9 @@ const About = ({ aboutBtnClickedActive }) => {
                 &nbsp;University of Agriculture, Faisalabad.
               </a>{" "}
             </div>
+            <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4 mt-4">
+            Here are a few technologies I've been working with recently:
+          </div>
           </div>
           {/* Technologies I am familiar with */}
           <div className="text-[#8892b0] flex flex-wrap">
@@ -454,21 +471,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                HTML5
-              </div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                CSS3, SCSS, SASS
-              </div>
-            </div>
-            <div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
-                </span>{" "}
-                Bootstrap 5
+                Python
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
@@ -483,6 +486,34 @@ const About = ({ aboutBtnClickedActive }) => {
                   ▹
                 </span>{" "}
                 Typescript
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                HTML5
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                CSS3
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                SCSS, SASS
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                Bootstrap 5
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
