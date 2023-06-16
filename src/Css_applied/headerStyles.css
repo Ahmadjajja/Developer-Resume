@@ -17,3 +17,18 @@
 .smallHeading{
     font-size: clamp(40px, 8vw, 60px);
 }
+
+.spanOneHoverClass:after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 0;
+    height: 0.5px;
+    background-color: #64ffda;
+    transition: all 0.25s ease-in-out;
+}
+
+.spanOneHoverClass:hover:after {
+    width: 100%;
+}

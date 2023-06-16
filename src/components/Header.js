@@ -58,12 +58,18 @@ const Header = () => {
         className={`contentContainer ${showFourthContent ? "show" : ""
           } description block text-[#8892b0]  mt-[1.16rem] py-2  text-lg antialiased headerScreen1:w-[50rem]`}
       >
-        {/* A Techy with keen interest in Backend and infrastructure Engineering.
-        Love to learn new technologies and currently working on Web 3 and
-        Metaverse. An aspiring Full-Stack Engineer with a focus on applying Web
-        and Data Structures knowledge to create awesome things. */}
-        A Techy with keen interest in DEVOPS, WEB 3.0 and Metaverse.
-        An aspiring Certified MERN Stack Software Engineer with a focus on Large Scale Systems.
+        A Techy with keen interest in DEVOPS, WEB 3.0 . Love to learn new technologies, currently learning and enhancing my knowledge in docker, kubernates and CI/CD.
+        An aspiring
+        <div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://drive.google.com/file/d/1HAMbxoTU0kpSDj8k-YFjYE14ngWeisZ1/view"
+                target="_blank"
+              >
+                &nbsp;Certified&nbsp;
+              </a>{" "}
+            </div>
+        Full-Stack-Engineer with a focus on Large Scale Systems.
       </div>
       <div
         className={`contentContainer ${showFifthContent ? "show" : ""

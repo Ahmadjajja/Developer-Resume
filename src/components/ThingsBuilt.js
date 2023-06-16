@@ -445,7 +445,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
               Real-Estate Mobile App with authentication, dashboard, property management, searching, browsing and call-to-action feature for property tansactions, powered by REST APIs using Node JS.
             </div>
             <div className="bg-transparent text-[13px] text-[#ccd6f6] font-customMono tbScreen5:text-[11px] tbScreen5:mt-[6px]">
-              Markdown
+              ReactNative Redux NativeBase NodeJS ExpressJS MongoDB cloudinary
             </div>
           </div>
           <div className="relative bg-transparent">
@@ -546,7 +546,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
               MERN Stack Bootcamp
             </div>
             <div className="bg-transparent text-[18px] text-[#a8b2d1] font-calibri leading-[1.3] py-[20px] pl-[3%] text-right tbScreen1:py-[25px] tbScreen3:py-[10px] tbScreen4:py-[15px] tbScreen5:text-[16px] tbScreen5:py-[10px] tbScreen5:leading-[1.1]">
-            This is the class repository of MERN Stack Development Bootcamp that contains all of code samples and related stuff while i'm instructing.
+              This is the class repository of MERN Stack Development Bootcamp that contains all of code samples and related stuff while i'm instructing.
             </div>
             <div className="bg-transparent text-[13px] text-[#ccd6f6] font-customMono tbScreen5:text-[11px] tbScreen5:mt-[6px]">
               Markdown
@@ -793,10 +793,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
               </p>
             </div>
             <ul class="bg-transparent text-[13px] text-[#a8b2d1] font-customMono text-right pl-[90px] leading-[1.1] mb-[20px] tbScreen41:pl-[110px] tbScreen42:pl-[128px] tbScreen43:pl-[77px]">
-              <li>ReactNative NativeBase NodeJS ExpressJS MongoDB cloudinary</li>
-            </ul>
-            <ul class="bg-transparent text-[13px] text-[#a8b2d1] font-customMono text-right tbScreen27:pr-[41px]">
-              <li>Markdown</li>
+              <li>ReactNative Redux NativeBase NodeJS ExpressJS MongoDB cloudinary</li>
             </ul>
             <div className="tbScreen27:pr-[41px] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration">
               <a

@@ -75,7 +75,7 @@
 //             onMouseOut={() => setInstagramSvgHover(false)}
 //             className="w-[20px] h-[20px] mb-[15px]"
 //           >
-//             <a href="https://www.instagram.com/ab__02_/" aria-label="Instagram">
+//             <a href="" aria-label="Instagram">
 //               <svg
 //                 xmlns="http://www.w3.org/2000/svg"
 //                 role="img"
@@ -106,7 +106,7 @@
 //             onMouseOut={() => setTwitterSvgHover(false)}
 //             className="w-[20px] h-[20px] mb-[15px]"
 //           >
-//             <a href="https://twitter.com/Abdullah9862873" aria-label="Twitter">
+//             <a href="https://twitter.com/AhmadJajja786" aria-label="Twitter">
 //               <svg
 //                 xmlns="http://www.w3.org/2000/svg"
 //                 role="img"
@@ -136,7 +136,7 @@
 //             className="w-[20px] h-[20px] mb-[15px]"
 //           >
 //             <a
-//               href="https://www.linkedin.com/in/abdullah-sultan-923883254/"
+//               href="https://www.linkedin.com/in/ahmad-jajja-ba8b34210/"
 //               aria-label="Linkedin"
 //             >
 //               <svg

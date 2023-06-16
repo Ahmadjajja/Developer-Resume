@@ -138,7 +138,7 @@ const About = ({ aboutBtnClickedActive }) => {
             has provided me with valuable learning experiences. Additionally, I
             have a passion for teaching Computer Science concepts. In fact, I
             have been actively involved in teaching as a part of my role as a
-            <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block">
+            <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming font-calibri text-[20px] aboutScreen4:block">
               &nbsp; MERN Stack Trainer &nbsp;
             </a>{" "}
             within the
@@ -153,11 +153,14 @@ const About = ({ aboutBtnClickedActive }) => {
             </div>
             This teaching experience has allowed me to impart comprehensive
             lessons on programming languages and technologies, including HTML,
-            CSS,Bootstrap5, JavaScript,Typescript, React JS, NodeJS, MongoDB,
+            CSS,Bootstrap5, JavaScript,Typescript, React JS,React Native, NodeJS, MongoDB,
             and Express JS, to nearly 200 students. I thoroughly enjoy sharing
             my knowledge and helping others grasp complex concepts in a clear
-            and concise manner as well as i loves to solve             
-            <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block">
+            and concise manner as well as i loves to solve
+            <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+              href="https://github.com/Ahmadjajja/JAVA_DSA"
+              target="_blank"
+            >
               &nbsp; DSA &nbsp;
             </a>{" "} Problem on             <div className="relative inline-block">
               <a
@@ -167,8 +170,8 @@ const About = ({ aboutBtnClickedActive }) => {
               >
                 leetcode&nbsp;
               </a>{" "}
-            </div> to improve my coding skills.I am an             
-            <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block">
+            </div> to improve my coding skills.I am an
+            <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming font-calibri text-[20px] aboutScreen4:block">
               &nbsp; open-source enthusiast &nbsp;
             </a>{" "}   who is eager to explore new opportunities within the realm of open-source development. My goal is to enhance my skills by working on substantial codebases and contributing to the open-source community. Currently, I am pursuing my undergraduate degree
             at the
@@ -382,7 +385,7 @@ const About = ({ aboutBtnClickedActive }) => {
             have a passion for teaching Computer Science concepts. In fact, I
             have been actively involved in teaching as a part of my role as a
             <div className="relative inline-block">
-              <a className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block">
+              <a className="spanOneHoverClass text-[#64ffda] font-calibri text-[20px] aboutScreen4:block">
                 &nbsp; MERN Stack Trainer &nbsp;
               </a>{" "}
             </div>
@@ -399,15 +402,18 @@ const About = ({ aboutBtnClickedActive }) => {
             </div>
             This teaching experience has allowed me to impart comprehensive
             lessons on programming languages and technologies, including HTML,
-            CSS,Bootstrap5, JavaScript,Typescript, React JS, NodeJS, MongoDB,
+            CSS,Bootstrap5, JavaScript,Typescript, React JS,React Native, NodeJS, MongoDB,
             and Express JS, to nearly 200 students. I thoroughly enjoy sharing
             my knowledge and helping others grasp complex concepts in a clear
             and concise manner as well as i loves to solve
             <div className="relative inline-block">
-              <a className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block">
+              <a className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://github.com/Ahmadjajja/JAVA_DSA"
+                target="_blank"
+              >
                 &nbsp; DSA &nbsp;
               </a>{" "}
-            </div> Problem on 
+            </div> Problem on
             <div className="relative inline-block">
               <a
                 className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
@@ -416,9 +422,9 @@ const About = ({ aboutBtnClickedActive }) => {
               >
                 &nbsp;leetcode&nbsp;
               </a>{" "}
-            </div> to improve my coding skills.I am an             
+            </div> to improve my coding skills.I am an
             <div className="relative inline-block">
-              <a className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block">
+              <a className="spanOneHoverClass text-[#64ffda] font-calibri text-[20px] aboutScreen4:block">
                 &nbsp;open-source enthusiast &nbsp;
               </a>{" "}
             </div> who is eager to explore new opportunities within the realm of open-source development. My goal is to enhance my skills by working on substantial codebases and contributing to the open-source community. Currently, I am pursuing my undergraduate degree
@@ -433,8 +439,8 @@ const About = ({ aboutBtnClickedActive }) => {
               </a>{" "}
             </div>
             <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4 mt-4">
-            Here are a few technologies I've been working with recently:
-          </div>
+              Here are a few technologies I've been working with recently:
+            </div>
           </div>
           {/* Technologies I am familiar with */}
           <div className="text-[#8892b0] flex flex-wrap">
