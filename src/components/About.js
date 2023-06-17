@@ -7,7 +7,7 @@ import ShadedProfile2 from "../images/SimpleProfile5.jpg";
 
 const About = ({ aboutBtnClickedActive }) => {
   const mySecondImage = useRef();
-  const myImage = useRef();
+  const myImage = useRef(null);
   const [clickedSm, setClickedSm] = useState(false);
   const [clicked, setClicked] = useState(false);
   // Displaying content after show time
@@ -46,7 +46,7 @@ const About = ({ aboutBtnClickedActive }) => {
 
   useEffect(() => {
     const handleDocumentClick = (e) => {
-      if (!myImage.current.contains(e.target)) {
+      if (myImage.current && !myImage.current.contains(e.target)) {
         setClicked(false);
       }
     };
@@ -55,7 +55,7 @@ const About = ({ aboutBtnClickedActive }) => {
     return () => {
       document.removeEventListener("click", handleDocumentClick);
     };
-  }, [myImage, setClicked]);
+  }, []);
 
   useEffect(() => {
     const handleDocumentClick = (e) => {
