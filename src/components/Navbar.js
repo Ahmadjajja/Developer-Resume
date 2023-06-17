@@ -852,7 +852,7 @@ const Navbar = ({
                     Contact
                   </span>
                 </span>
-                {/* <Link
+                <Link
                   to="/pensieve"
                   className="text-[13px] p-[10px] no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer mr-[10px] font-customMono myScreen5:px-[5px]"
                 >
@@ -866,7 +866,7 @@ const Navbar = ({
                   >
                     Blog
                   </span>
-                </Link> */}
+                </Link>
                 <a
                   href="https://drive.google.com/file/d/1TIiJvqmbsYI2swVEY_kNgH6MjbhINXFm/view"
                   onClick={() => {
