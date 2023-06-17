@@ -7,7 +7,7 @@ const PensieveTags = () => {
   return (
     <div className="ml-12 mr-12 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem] h-[101vh] antialiased">
       <div className="w-[70%] mr-auto ml-auto text-[#64ffda] pt-[100px] text-[14px] font-customMono">
-        <span class="mr-[15px]">←</span>
+        <span className="mr-[15px]">←</span>
         <span className="relative">
           <Link
             to={"/pensieve"}
@@ -34,7 +34,7 @@ const PensieveTags = () => {
               onMouseOver={() => setFirstMemoryHoverUp(true)}
               onMouseOut={() => setFirstMemoryHoverUp(false)}
             >
-              Memories (1)
+              Memories (5)
             </Link>
           </span>
         </div>

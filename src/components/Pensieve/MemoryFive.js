@@ -512,11 +512,11 @@ const MemoryOne = () => {
           } mt-[50px] ml-auto mr-auto w-[70%] myScreen8:w-[100%]`}
       >
         <div className="text-[#ccd6f6] text-myPensieveFont font-semibold leading-[1.1] font-calibri">
-          Year in Review 2018
+          Year in Review 2022
         </div>
         <div>
           <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
-            December 31, 2018
+            December 31, 2022
           </span>
           <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
             {" "}

@@ -7,7 +7,7 @@ import embracingComputerScience from "../../images/SecondListingImage.jpg";
 import turningPoint from "../../images/ThirdListingImage.jpg";
 import sacrifice from "../../images/Year's In Review/2018/sacrifice.jpeg"
 
-const MemoryOne = () => {
+const MemoryFour = () => {
   const [showFirstContent, setShowFirstContent] = useState(false);
   const [showSecondContent, setShowSecondContent] = useState(false);
   const [showThirdContent, setShowThirdContent] = useState(false);
@@ -512,11 +512,11 @@ const MemoryOne = () => {
           } mt-[50px] ml-auto mr-auto w-[70%] myScreen8:w-[100%]`}
       >
         <div className="text-[#ccd6f6] text-myPensieveFont font-semibold leading-[1.1] font-calibri">
-          Year in Review 2018
+          Year in Review 2021
         </div>
         <div>
           <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
-            December 31, 2018
+            December 31, 2021
           </span>
           <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
             {" "}
@@ -771,4 +771,4 @@ const MemoryOne = () => {
   );
 };
 
-export default MemoryOne;
+export default MemoryFour;

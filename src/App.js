@@ -13,8 +13,12 @@ import LogosPensieve from "./components/LogosPensieve";
 import Pensieve from "./components/Pensieve/Pensieve";
 import PensieveTagsMemories from "./components/Pensieve/PensieveTagsMemories";
 import PensieveTags from "./components/Pensieve/PensieveTags";
-import MemoryOne from "./components/Pensieve/MemoryOne";
 import Loader from "./components/loader/Loader";
+import MemoryOne from "./components/Pensieve/MemoryOne";
+import MemoryTwo from "./components/Pensieve/MemoryTwo";
+import MemoryThree from "./components/Pensieve/MemoryThree";
+import MemoryFour from "./components/Pensieve/MemoryFour";
+import MemoryFive from "./components/Pensieve/MemoryFive";
 
 function App() {
   const [showLoader, setShowLoader] = useState(true);
@@ -106,7 +110,7 @@ function App() {
         />
         <Route
           exact
-          path="/posts/year-in-review-2021"
+          path="/posts/year-in-review-2018"
           element={
             <Fragment>
               <Navbar
@@ -116,6 +120,70 @@ function App() {
                 setContactBtnClickedActive={setContactBtnClickedActive}
               />
               <MemoryOne />
+              <Logos />
+            </Fragment>
+          }
+        />
+        <Route
+          exact
+          path="/posts/year-in-review-2019"
+          element={
+            <Fragment>
+              <Navbar
+                setAboutBtnClickedActive={setAboutBtnClickedActive}
+                setExperienceBtnClickedActive={setExperienceBtnClickedActive}
+                setWorkBtnClickedActive={setWorkBtnClickedActive}
+                setContactBtnClickedActive={setContactBtnClickedActive}
+              />
+              <MemoryTwo />
+              <Logos />
+            </Fragment>
+          }
+        />
+        <Route
+          exact
+          path="/posts/year-in-review-2020"
+          element={
+            <Fragment>
+              <Navbar
+                setAboutBtnClickedActive={setAboutBtnClickedActive}
+                setExperienceBtnClickedActive={setExperienceBtnClickedActive}
+                setWorkBtnClickedActive={setWorkBtnClickedActive}
+                setContactBtnClickedActive={setContactBtnClickedActive}
+              />
+              <MemoryThree />
+              <Logos />
+            </Fragment>
+          }
+        />
+        <Route
+          exact
+          path="/posts/year-in-review-2021"
+          element={
+            <Fragment>
+              <Navbar
+                setAboutBtnClickedActive={setAboutBtnClickedActive}
+                setExperienceBtnClickedActive={setExperienceBtnClickedActive}
+                setWorkBtnClickedActive={setWorkBtnClickedActive}
+                setContactBtnClickedActive={setContactBtnClickedActive}
+              />
+              <MemoryFour />
+              <Logos />
+            </Fragment>
+          }
+        />
+        <Route
+          exact
+          path="/posts/year-in-review-2022"
+          element={
+            <Fragment>
+              <Navbar
+                setAboutBtnClickedActive={setAboutBtnClickedActive}
+                setExperienceBtnClickedActive={setExperienceBtnClickedActive}
+                setWorkBtnClickedActive={setWorkBtnClickedActive}
+                setContactBtnClickedActive={setContactBtnClickedActive}
+              />
+              <MemoryFive />
               <Logos />
             </Fragment>
           }
