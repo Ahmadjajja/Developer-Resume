@@ -42,12 +42,12 @@ const PensieveTags = () => {
                 firstMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
               }`}
             >
-              Year in Review 2021
+              Year in Review 2018
             </a>
           </span>
           <p>
             <time className="text-[#8892b0] text-[14px] leading-[1.5] font-normal font-customMono">
-              December 31, 2020
+              December 31, 2018
             </time>
             <span className="text-[#8892b0] text-[14px] leading-[1.5] font-normal font-customMono">
               &nbsp;—&nbsp;

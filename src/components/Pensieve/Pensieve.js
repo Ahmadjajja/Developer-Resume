@@ -134,12 +134,12 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
           </div>
           {/* Title  */}
           <div className="h-[20%] mt-8 bg-[#172a45] antialiased text-[#ccd6f6] text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
-            Year in Review 2021
+            Year in Review 2018
           </div>
           {/* Footer */}
           <div className="bg-[#172a45] flex justify-between">
             <div className="h-[15%] mt-[10px] text-[#8892b0] text-[12px] font-calibri bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
-              31/12/21
+              31/12/18
             </div>
             <div className="text-[12px] text-[#64ffda] h-[15%] mt-[10px] font-customMono bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
               <button
@@ -154,6 +154,7 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };
