@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../../Css_applied/Pensieve/pensieveStyles.css";
 
 const PensieveTags = () => {
+  const [zerothMemoryHoverUp, setZerothMemoryHoverUp] = useState(false);
   const [firstMemoryHoverUp, setFirstMemoryHoverUp] = useState(false);
   const [secondMemoryHoverUp, setSecondMemoryHoverUp] = useState(false);
   const [thirdMemoryHoverUp, setThirdMemoryHoverUp] = useState(false);
@@ -33,6 +34,40 @@ const PensieveTags = () => {
           </a>
         </span>
       </div>
+      {/* Early Life in a Small Village */}
+      <div className="w-[70%] mr-auto ml-auto mt-[5.25rem] flex">
+        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
+        <div>
+          <span className="relative">
+            <a
+              onMouseOver={() => setZerothMemoryHoverUp(true)}
+              onMouseOut={() => setZerothMemoryHoverUp(false)}
+              href="/posts/early-life-in-a-small-village"
+              className={`font-calibri text-[24px] cursor-pointer font-semibold leading-[1.1] ease-whereIWorkedTransitionTiming transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration viewArchiveTwo ${zerothMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
+                }`}
+            >
+              Early Life in a Small Village
+            </a>
+          </span>
+          <p>
+            <time className="text-[#8892b0] text-[14px] leading-[1.5] font-normal font-customMono">
+              December 31, 2017
+            </time>
+            <span className="text-[#8892b0] text-[14px] leading-[1.5] font-normal font-customMono">
+              &nbsp;—&nbsp;
+            </span>
+            <span className="relative">
+              <a
+                aria-current="page"
+                href="/pensieve/tags/memories/"
+                className="text-[#64ffda] text-[14px] font-customMono viewArchiveTwo"
+              >
+                #Memories
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
       {/* Years in Review 2018 */}
       <div className="w-[70%] mr-auto ml-auto mt-[5.25rem] flex">
         <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
@@ -42,9 +77,8 @@ const PensieveTags = () => {
               onMouseOver={() => setFirstMemoryHoverUp(true)}
               onMouseOut={() => setFirstMemoryHoverUp(false)}
               href="/posts/year-in-review-2018"
-              className={`font-calibri text-[24px] cursor-pointer font-semibold leading-[1.1] ease-whereIWorkedTransitionTiming transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration viewArchiveTwo ${
-                firstMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
-              }`}
+              className={`font-calibri text-[24px] cursor-pointer font-semibold leading-[1.1] ease-whereIWorkedTransitionTiming transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration viewArchiveTwo ${firstMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
+                }`}
             >
               Year in Review 2018
             </a>
@@ -77,9 +111,8 @@ const PensieveTags = () => {
               onMouseOver={() => setSecondMemoryHoverUp(true)}
               onMouseOut={() => setSecondMemoryHoverUp(false)}
               href="/posts/year-in-review-2019"
-              className={`font-calibri text-[24px] cursor-pointer font-semibold leading-[1.1] ease-whereIWorkedTransitionTiming transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration viewArchiveTwo ${
-                secondMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
-              }`}
+              className={`font-calibri text-[24px] cursor-pointer font-semibold leading-[1.1] ease-whereIWorkedTransitionTiming transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration viewArchiveTwo ${secondMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
+                }`}
             >
               Year in Review 2019
             </a>
@@ -109,12 +142,11 @@ const PensieveTags = () => {
         <div>
           <span className="relative">
             <a
-              onMouseOver={() => setSecondMemoryHoverUp(true)}
-              onMouseOut={() => setSecondMemoryHoverUp(false)}
+              onMouseOver={() => setThirdMemoryHoverUp(true)}
+              onMouseOut={() => setThirdMemoryHoverUp(false)}
               href="/posts/year-in-review-2020"
-              className={`font-calibri text-[24px] cursor-pointer font-semibold leading-[1.1] ease-whereIWorkedTransitionTiming transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration viewArchiveTwo ${
-                secondMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
-              }`}
+              className={`font-calibri text-[24px] cursor-pointer font-semibold leading-[1.1] ease-whereIWorkedTransitionTiming transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration viewArchiveTwo ${thirdMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
+                }`}
             >
               Year in Review 2020
             </a>
@@ -147,9 +179,8 @@ const PensieveTags = () => {
               onMouseOver={() => setFourthMemoryHoverUp(true)}
               onMouseOut={() => setFourthMemoryHoverUp(false)}
               href="/posts/year-in-review-2021"
-              className={`font-calibri text-[24px] cursor-pointer font-semibold leading-[1.1] ease-whereIWorkedTransitionTiming transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration viewArchiveTwo ${
-                secondMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
-              }`}
+              className={`font-calibri text-[24px] cursor-pointer font-semibold leading-[1.1] ease-whereIWorkedTransitionTiming transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration viewArchiveTwo ${fourthMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
+                }`}
             >
               Year in Review 2021
             </a>
@@ -182,9 +213,8 @@ const PensieveTags = () => {
               onMouseOver={() => setFifthMemoryHoverUp(true)}
               onMouseOut={() => setFifthMemoryHoverUp(false)}
               href="/posts/year-in-review-2022"
-              className={`font-calibri text-[24px] cursor-pointer font-semibold leading-[1.1] ease-whereIWorkedTransitionTiming transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration viewArchiveTwo ${
-                secondMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
-              }`}
+              className={`font-calibri text-[24px] cursor-pointer font-semibold leading-[1.1] ease-whereIWorkedTransitionTiming transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration viewArchiveTwo ${fifthMemoryHoverUp ? "text-[#64ffda]" : "text-[#a8b2d1]"
+                }`}
             >
               Year in Review 2022
             </a>

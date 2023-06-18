@@ -19,6 +19,7 @@ import MemoryTwo from "./components/Pensieve/MemoryTwo";
 import MemoryThree from "./components/Pensieve/MemoryThree";
 import MemoryFour from "./components/Pensieve/MemoryFour";
 import MemoryFive from "./components/Pensieve/MemoryFive";
+import MemoryChildhood from "./components/Pensieve/MemoryChildhood";
 
 function App() {
   const [showLoader, setShowLoader] = useState(true);
@@ -105,6 +106,22 @@ function App() {
               />
               <PensieveTags />
               <LogosPensieve />
+            </Fragment>
+          }
+        />
+        <Route
+          exact
+          path="/posts/early-life-in-a-small-village"
+          element={
+            <Fragment>
+              <Navbar
+                setAboutBtnClickedActive={setAboutBtnClickedActive}
+                setExperienceBtnClickedActive={setExperienceBtnClickedActive}
+                setWorkBtnClickedActive={setWorkBtnClickedActive}
+                setContactBtnClickedActive={setContactBtnClickedActive}
+              />
+              <MemoryChildhood />
+              <Logos />
             </Fragment>
           }
         />

@@ -34,7 +34,7 @@ const PensieveTags = () => {
               onMouseOver={() => setFirstMemoryHoverUp(true)}
               onMouseOut={() => setFirstMemoryHoverUp(false)}
             >
-              Memories (5)
+              Memories (6)
             </Link>
           </span>
         </div>
