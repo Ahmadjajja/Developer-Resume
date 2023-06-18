@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../Css_applied/Pensieve/pensieveStyles.css";
-import year2018 from "../../images/Year's In Review/2018/2018.jpg"
-import failure from "../../images/Year's In Review/2018/failure.jpeg"
-import embracingComputerScience from "../../images/SecondListingImage.jpg";
-import turningPoint from "../../images/ThirdListingImage.jpg";
-import sacrifice from "../../images/Year's In Review/2018/sacrifice.jpeg"
+import year2020 from "../../images/Year's In Review/2020/2020.jpg"
+import exams from "../../images/Year's In Review/2020/exams.jpeg"
+import coding from "../../images/Year's In Review/2020/coding.jpg";
+import admission from "../../images/Year's In Review/2020/admissions.jpeg";
+import mentor from "../../images/Year's In Review/2020/mentor.jpg"
+import start from "../../images/Year's In Review/2020/start.jpeg"
 
 const MemoryThree = () => {
   const [showFirstContent, setShowFirstContent] = useState(false);
@@ -489,6 +490,94 @@ const MemoryThree = () => {
     }
   });
 
+  // Fifth Listing Image
+  const [isFifthListingImage, setFifthListingImage] = useState(false);
+  const [fifthListingImageVisible, setFifthListingImageVisible] =
+    useState(false);
+  const refFifthListingImage = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setFifthListingImage(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refFifthListingImage.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isFifthListingImage) {
+      setTimeout(() => {
+        setFifthListingImageVisible(true);
+      }, 200);
+    }
+  });
+
+  // For Title of sixth Listing
+  const [isSixthListingTitle, setSixthListingTitle] = useState(false);
+  const [sixthListingTitleVisible, setSixthListingTitleVisible] =
+    useState(false);
+  const refSixthListingTitle = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSixthListingTitle(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refSixthListingTitle.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isSixthListingTitle) {
+      setTimeout(() => {
+        setSixthListingTitleVisible(true);
+      }, 200);
+    }
+  });
+
+  // Sixth Listing Description
+  const [isSixthListingDescription, setSixthListingDescription] =
+    useState(false);
+  const [sixthListingDescriptionVisible, setSixthListingDescriptionVisible] =
+    useState(false);
+  const refSixthDescription = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSixthListingDescription(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refSixthDescription.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isSixthListingDescription) {
+      setTimeout(() => {
+        setSixthListingDescriptionVisible(true);
+      }, 200);
+    }
+  });
+
   return (
     <div className="ml-12 mr-12 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem] antialiased myScreen8:ml-8 myScreen8:mr-8">
       {/* Back to All Memories */}
@@ -536,7 +625,7 @@ const MemoryThree = () => {
       <div className="w-[70%] mr-auto ml-auto mt-[40px] myScreen8:w-[100%]">
         <img
           className={`contentContainer ${showThirdContent ? "show" : ""}`}
-          src={year2018}
+          src={year2020}
           alt="PensieveCover"
         />
         {/* Description Header */}
@@ -546,12 +635,11 @@ const MemoryThree = () => {
             } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
         >
           <p className="pl-[1.5em] leading-[1.5] text-[#a8b2d1] italic">
-            In the year 2018, my life took an unexpected turn as I faced a setback in my biology studies.
-            This disappointment led me to make a significant decision for my future, choosing a tech
-            journey in the field of computer science. Despite societal pressures and the allure of other
-            career paths, I embarked on the path of computer science, and my journey began to unfold.
-            This year marked the beginning of a transformative period in my life, where I discovered
-            my passion for technology and made sacrifices to pursue it. Some of the things that happen with me in this year are as follows
+            The year 2020 brought about significant changes and important decisions in my life.
+            From the outbreak of the Covid-19 pandemic to selecting a field of study for my bachelor's
+            degree, navigating university admissions, and embarking on the journey of learning programming
+            languages, this year was filled with transformative experiences. Some of the things that happen
+            with me in this year are as follows
           </p>
         </div>
         {/* Listing */}
@@ -560,16 +648,19 @@ const MemoryThree = () => {
           ref={refListing}
         >
           <li className="mt-[2em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            Failure in Biology
+            Covid-19 and Disrupted Exams
           </li>
           <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            Embracing Computer Science
+            Choosing Coding as a Career
           </li>
           <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            A Turning Point in College
+            University Admission
           </li>
           <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            Sacrifices Made along the Way
+            Meeting Faizan Amin
+          </li>
+          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+            Starting C++
           </li>
         </div>
         {/* Description of Listings */}
@@ -580,7 +671,7 @@ const MemoryThree = () => {
             className={`contentContainer ${firstListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            Failure in Biology
+            Covid-19 and Disrupted Exams
           </h3>
           <div
             ref={refFirstListingDescription}
@@ -588,10 +679,11 @@ const MemoryThree = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              The journey towards computer science truly began when my 10th-grade biology results came in, leaving me
-              dissatisfied with my performance. Although I had passed, I felt compelled to redirect my career aspirations
-              away from the field of biology. It was a moment of self-reflection and realization that prompted me to explore
-              other options that resonated more with my interests and skills.
+              As the year commenced, I dedicated myself to preparing for my 12th-grade exams, with aspirations of achieving
+              high marks for university admissions. My days were packed with intense studying, attending college classes,
+              and engaging in extracurricular activities such as playing cricket. However, the outbreak of the Covid-19
+              pandemic disrupted the education system, and the board exams were canceled. Despite initial disappointment,
+              I accepted the decision and turned my attention to contemplating my future university plans.
             </p>
           </div>
           {/* Image for First Listing Description */}
@@ -599,7 +691,7 @@ const MemoryThree = () => {
             <img
               ref={refFirstListingImage}
               className={`contentContainer ${firstListingImageVisible ? "show" : ""}`}
-              src={failure}
+              src={exams}
               alt="PensieveCover"
             />
           </div>
@@ -611,7 +703,7 @@ const MemoryThree = () => {
             className={`contentContainer ${secondListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            Embracing Computer Science
+            Choosing Coding as a Career
           </h3>
           <div
             ref={refSecondDescription}
@@ -619,25 +711,11 @@ const MemoryThree = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              The pivotal moment in my academic trajectory came when I faced the reality of my biology failure. This was a
-              shocking revelation for me on that time, as most of my relatives were pursuing medical careers, and there was a prevailing
-              belief that success could only be achieved through becoming a doctor. However, I chose to deviate from this
-              conventional path and instead selected the field of computer science for my career.
-            </p>
-          </div>
-          <div
-            ref={refSecondDescription}
-            className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
-          >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              As I embarked on my educational journey after 10th grade, I had three options to
-              choose from for my 12th grade (Intermediate) studies: ICS (Computer Science, Math, Physics),
-              FSC Pre-Medical (Biology, Chemistry, Physics), and FSC Pre-Engineering (Chemistry, Physics, Math).
-              Given my unsatisfactory performance in biology and lack of interest in chemistry, I opted for ICS,
-              as it aligned with my passion for computer science. Although my relatives and family members encouraged
-              me to pursue FSC, I firmly rejected their advice and followed my own aspirations, despite the uncertainty
-              surrounding my future career path.
+              With the cancellation of exams, I was prompted to think creatively about my career path. After seeking advice
+              from my teachers, cousins, and conducting extensive research, I made the decision to pursue coding as my career.
+              Having acquired a solid foundation in computer science during my previous two years of study, I felt confident
+              in this choice. I resolved to pursue a bachelor's degree in computer science, recognizing the tremendous potential
+              and opportunities within the field.
             </p>
           </div>
           {/* Image for First Listing Description */}
@@ -646,7 +724,7 @@ const MemoryThree = () => {
               ref={refSecondListingImage}
               className={`contentContainer ${secondListingImageVisible ? "show" : ""
                 }`}
-              src={embracingComputerScience}
+              src={coding}
               alt="PensieveCover"
             />
           </div>
@@ -658,7 +736,7 @@ const MemoryThree = () => {
             className={`contentContainer ${thirdListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            A Turning Point in College
+            University Admission
           </h3>
           <div
             ref={refThirdDescription}
@@ -666,17 +744,21 @@ const MemoryThree = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              As I stepped into college, I encountered an environment that differed greatly from what I had anticipated.
-              The relaxed atmosphere, lack of attendance requirements, and less-than-stellar teachers initially left me
-              disheartened. However, a fortuitous encounter with a computer science teacher named{" "}
-              <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
-                  Sir Ishaq
+              Once I had determined my career path, the next step was selecting a university. Extensive research led me to
+              consider various options, and initially, I was shortlisted for admission to
+              {" "}<span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo">
+                  the Islamia University Bahawalpur
                 </span>
               </span>{" "}
-              proved to be a turning point. His exceptional teaching skills and passion for the subject sparked a
-              newfound interest within me. Regular attendance became a priority as I delved deeper into the world of
-              computer science and began to understand its intricacies.
+              . However, due to personal reasons, I was unable to submit my documents in time and missed the opportunity. Nonetheless,
+              I persevered and soon found another opportunity by being shortlisted and submitting my documents to
+              {" "}<span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo">
+                  the University of Agriculture
+                </span>
+              </span>{" "}
+              .
             </p>
           </div>
           {/* Image for First Listing Description */}
@@ -685,7 +767,7 @@ const MemoryThree = () => {
               ref={refThirdListingImage}
               className={`contentContainer ${thirdListingImageVisible ? "show" : ""
                 }`}
-              src={turningPoint}
+              src={admission}
               alt="PensieveCover"
             />
           </div>
@@ -698,7 +780,7 @@ const MemoryThree = () => {
             className={`contentContainer ${fourthListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            Sacrifices Made along the Way
+            Meeting Faizan Amin
           </h3>
           <div
             ref={refFourthDescription}
@@ -706,15 +788,16 @@ const MemoryThree = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              In 2018, my passion for cricket was at its peak. I enthusiastically organized cricket tournaments in my village
-              and actively participated in matches held in various neighboring communities. My dream of joining the national
-              cricket team as a batsman burned brightly within me. However, the realization dawned upon me that I lacked the
-              necessary support from my family to pursue a career in cricket. It was during this period that my uncle, my father's brother,
-              provided me with invaluable guidance. He reminded me of my role as the elder brother within our family and emphasized
-              the importance of supporting and making them proud. It became evident that pursuing cricket would not lead me to the
-              international stage or enable me to join a cricket academy. Determined to honor my responsibilities, I made the difficult
-              decision to relinquish my dreams of cricket stardom and focus wholeheartedly on my studies. It was then that I crossed
-              paths with computer science, which ignited a new sense of purpose and set me on the course towards my true passion.
+              Upon arriving in Faisalabad, a city far from my hometown, I experienced a sense of excitement and unfamiliarity.
+              It felt like stepping into a different world. During my university's Orientation Day, I had a life-changing encounter
+              with a remarkable individual named
+              {" "}<span className="relative">
+                <a href="https://github.com/faizan170" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">Faizan Amin</a>
+              </span>{" "}
+              . Despite being only two years older than me, Faizan was already a successful
+              Machine Learning Engineer, earning a salary twice that of doctors. His expertise and success inspired me greatly, and our
+              brief interaction left a lasting impact. From that moment, I felt assured that I had chosen the right path and embarked on my
+              journey with renewed enthusiasm.
             </p>
           </div>
           {/* Image for First Listing Description */}
@@ -723,20 +806,20 @@ const MemoryThree = () => {
               ref={refFourthListingImage}
               className={`contentContainer ${fourthListingImageVisible ? "show" : ""
                 }`}
-              src={sacrifice}
+              src={mentor}
               alt="PensieveCover"
             />
           </div>
         </div>
 
-        {/* Fourth Thing */}
+        {/* Fifth Thing */}
         <div>
           <h3
             ref={refFifthListingTitle}
             className={`contentContainer ${fifthListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            End Remarks and Quotes
+            Starting C++
           </h3>
           <div
             ref={refFifthDescription}
@@ -744,23 +827,69 @@ const MemoryThree = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              Throughout my journey, I encountered setbacks and sacrifices. Giving up my dreams of becoming a cricketer was
-              particularly difficult, but it allowed me to prioritize my family's well-being and take on the role of a responsible
-              elder sibling. By redirecting my focus towards my studies, I discovered a newfound love for computer science and began
-              to nurture my interest in this fascinating field.
+              As my university classes began, I was surprised to discover that the curriculum included only one computer
+              science-related subject out of six, with the remaining subjects focusing on non-technical areas such as
+              physics and mathematics. Recognizing the need to pursue coding independently, I
+              {" "}<span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo">
+                  took the initiative to learn C++
+                </span>
+              </span>{" "}
+              programming on my own. In just twelve days, I grasped the fundamental concepts of both procedural and
+              object-oriented programming paradigms. While my university did not offer a dedicated coding course, my
+              friends from other institutions shared their coding assignments with me, providing opportunities to enhance
+              my
+              {" "}<span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo ">
+                  problem-solving and logic-building skills
+                </span>
+              </span>{" "}
+              . Although there were challenges along the way, such as experiencing
+              delayed payment for completing a client's C++ assignment, the satisfaction of solving complex problems outweighed
+              any monetary reward.
             </p>
           </div>
+          {/* Image for First Listing Description */}
+          <div className="mr-auto ml-auto mt-[40px]">
+            <img
+              ref={refFifthListingImage}
+              className={`contentContainer ${fifthListingImageVisible ? "show" : ""
+                }`}
+              src={start}
+              alt="PensieveCover"
+            />
+          </div>
+        </div>
+        {/* Sixth Thing */}
+        <div>
+          <h3
+            ref={refSixthListingTitle}
+            className={`contentContainer ${sixthListingTitleVisible ? "show" : ""
+              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+          >
+            End Remarks and Quotes
+          </h3>
           <div
-            ref={refFifthDescription}
-            className={`contentContainer ${isFifthListingDescription ? "show" : ""
+            ref={refSixthDescription}
+            className={`contentContainer ${isSixthListingDescription ? "show" : ""
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              "Follow your passion, stay true to yourself, never follow someone else's path unless you're in the woods and
-              you're lost, and you see a path, then, by all means, you should follow that." -{" "}
+              The year 2020 was a transformative period marked by the onset of the Covid-19 pandemic, decision-making processes,
+              university admissions, and the initiation of my coding journey. It challenged me to adapt, reflect, and make choices
+              that would shape my future. As I look back on this year, a quote come to mind:
+            </p>
+          </div>
+          <div
+            ref={refSixthDescription}
+            className={`contentContainer ${isSixthListingDescription ? "show" : ""
+              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+          >
+            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+              "The only way to do great work is to love what you do." - {" "}
               <span className="relative">
                 <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
-                  Ellen DeGeneres
+                  Steve Jobs
                 </span>
               </span>{" "}
             </p>

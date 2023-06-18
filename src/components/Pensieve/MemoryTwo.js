@@ -640,7 +640,7 @@ const MemoryTwo = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              "Truly willing to do something automatically automatically embrace new doors." -{" "}
+              "Truly willing to do something automatically embrace the new doors." -{" "}
               {" "}<span className="relative">
                 <span className="text-[#64ffda] viewArchiveTwo ">
                   Ahmad Jajja
