@@ -263,13 +263,13 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Bootstrap 5
+                Chakra-UI
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                React JS
+                Aunt-Design
               </div>
             </div>
             <div>
@@ -277,7 +277,21 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                React Native
+                Bootstrap-5
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                React-JS
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                React-Native
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
@@ -297,7 +311,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Node JS
+                Node-JS
               </div>
             </div>
             <div>
@@ -305,13 +319,13 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Express JS
+                Express-JS
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Mongo DB
+                Mongo-DB
               </div>
             </div>
             <div>
@@ -333,7 +347,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Rest APIs
+                Rest-APIs
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
@@ -519,13 +533,13 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Bootstrap 5
+                Chakra-UI
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                React JS
+                Aunt-Design
               </div>
             </div>
             <div>
@@ -533,7 +547,21 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                React Native
+                Bootstrap-5
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                React-JS
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ▹
+                </span>{" "}
+                React-Native
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
@@ -553,7 +581,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Node JS
+                Node-JS
               </div>
             </div>
             <div>
@@ -561,13 +589,13 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Express JS
+                Express-JS
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Mongo DB
+                Mongo-DB
               </div>
             </div>
             <div>
@@ -589,7 +617,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ▹
                 </span>{" "}
-                Rest APIs
+                Rest-APIs
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
