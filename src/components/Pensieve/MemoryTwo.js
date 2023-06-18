@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../Css_applied/Pensieve/pensieveStyles.css";
-import year2018 from "../../images/Year's In Review/2018/2018.jpg"
-import failure from "../../images/Year's In Review/2018/failure.jpeg"
-import embracingComputerScience from "../../images/SecondListingImage.jpg";
-import turningPoint from "../../images/ThirdListingImage.jpg";
+import year2019 from "../../images/Year's In Review/2019/2019.jpeg"
+import failure from "../../images/Year's In Review/2019/standOutInCroud.jpg"
+import coding from "../../images/Year's In Review/2019/coding.jpg";
+import thinkOutsideTheBox from "../../images/Year's In Review/2019/thinkingOutsideTheBox.jpeg";
 import sacrifice from "../../images/Year's In Review/2018/sacrifice.jpeg"
 
 const MemoryTwo = () => {
@@ -341,95 +341,6 @@ const MemoryTwo = () => {
     }
   });
 
-  // For Title of Fourth Listing
-  const [isFourthListingTitle, setFourthListingTitle] = useState(false);
-  const [fourthListingTitleVisible, setFourthListingTitleVisible] =
-    useState(false);
-  const refFourthListingTitle = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setFourthListingTitle(true);
-          observer.unobserve(entry.target);
-        }
-      });
-    });
-    observer.observe(refFourthListingTitle.current);
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
-  useEffect(() => {
-    if (isFourthListingTitle) {
-      setTimeout(() => {
-        setFourthListingTitleVisible(true);
-      }, 200);
-    }
-  });
-
-  // Fourth Listing Description
-  const [isFourthListingDescription, setFourthListingDescription] =
-    useState(false);
-  const [fourthListingDescriptionVisible, setFourthListingDescriptionVisible] =
-    useState(false);
-  const refFourthDescription = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setFourthListingDescription(true);
-          observer.unobserve(entry.target);
-        }
-      });
-    });
-    observer.observe(refFourthDescription.current);
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
-  useEffect(() => {
-    if (isFourthListingDescription) {
-      setTimeout(() => {
-        setFourthListingDescriptionVisible(true);
-      }, 200);
-    }
-  });
-
-  // Fourth Listing Image
-  const [isFourthListingImage, setFourthListingImage] = useState(false);
-  const [fourthListingImageVisible, setFourthListingImageVisible] =
-    useState(false);
-  const refFourthListingImage = useRef(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setFourthListingImage(true);
-          observer.unobserve(entry.target);
-        }
-      });
-    });
-    observer.observe(refFourthListingImage.current);
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
-  useEffect(() => {
-    if (isFourthListingImage) {
-      setTimeout(() => {
-        setFourthListingImageVisible(true);
-      }, 200);
-    }
-  });
-
-
   // For Title of Fifth Listing
   const [isFifthListingTitle, setFifthListingTitle] = useState(false);
   const [fifthListingTitleVisible, setFifthListingTitleVisible] =
@@ -536,7 +447,7 @@ const MemoryTwo = () => {
       <div className="w-[70%] mr-auto ml-auto mt-[40px] myScreen8:w-[100%]">
         <img
           className={`contentContainer ${showThirdContent ? "show" : ""}`}
-          src={year2018}
+          src={year2019}
           alt="PensieveCover"
         />
         {/* Description Header */}
@@ -546,12 +457,10 @@ const MemoryTwo = () => {
             } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
         >
           <p className="pl-[1.5em] leading-[1.5] text-[#a8b2d1] italic">
-            In the year 2018, my life took an unexpected turn as I faced a setback in my biology studies.
-            This disappointment led me to make a significant decision for my future, choosing a tech
-            journey in the field of computer science. Despite societal pressures and the allure of other
-            career paths, I embarked on the path of computer science, and my journey began to unfold.
-            This year marked the beginning of a transformative period in my life, where I discovered
-            my passion for technology and made sacrifices to pursue it. Some of the things that happen with me in this year are as follows
+            In 2019, I experienced remarkable achievements in my computer science journey, securing top
+            positions among my peers and excelling in the 11th-grade board exam. Additionally, I embraced
+            the world of programming with enthusiasm, discovering a passion that continues to drive me
+            forward. Some of the things that happen with me in this year are as follows
           </p>
         </div>
         {/* Listing */}
@@ -560,16 +469,13 @@ const MemoryTwo = () => {
           ref={refListing}
         >
           <li className="mt-[2em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            Failure in Biology
+            A Standout in the Crowd
           </li>
           <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            Embracing Computer Science
+            A Conversation That Changed Everything
           </li>
           <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            A Turning Point in College
-          </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            Sacrifices Made along the Way
+            Thinking Outside the Box
           </li>
         </div>
         {/* Description of Listings */}
@@ -580,7 +486,7 @@ const MemoryTwo = () => {
             className={`contentContainer ${firstListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            Failure in Biology
+            A Standout in the Crowd
           </h3>
           <div
             ref={refFirstListingDescription}
@@ -588,10 +494,14 @@ const MemoryTwo = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              The journey towards computer science truly began when my 10th-grade biology results came in, leaving me
-              dissatisfied with my performance. Although I had passed, I felt compelled to redirect my career aspirations
-              away from the field of biology. It was a moment of self-reflection and realization that prompted me to explore
-              other options that resonated more with my interests and skills.
+              In 2019, my journey took an exceptional turn when I received the results of my 11th grade. Despite being initially
+              overshadowed by the academic performance of 150 students who had higher marks than me in the 10th grade, I surpassed
+              expectations and secured the 6th position among a total of 250 students in my college. Moreover, I proudly achieved the
+              1st position in the ICS (Intermediate in Computer Science) batch, setting a remarkable milestone for myself. A significant
+              highlight of this accomplishment was scoring an astonishing 74 out of 75 marks in the computer science subject 11th-grade board exam, becoming the
+              first student in the history of my college, under the guidance of Sir Ishaq, to achieve such an exceptional result. This
+              unexpected achievement not only left me astounded but also instilled a newfound belief in my capabilities, as I embarked
+              on my journey in computer science.
             </p>
           </div>
           {/* Image for First Listing Description */}
@@ -611,7 +521,7 @@ const MemoryTwo = () => {
             className={`contentContainer ${secondListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            Embracing Computer Science
+            A Conversation That Changed Everything
           </h3>
           <div
             ref={refSecondDescription}
@@ -619,25 +529,27 @@ const MemoryTwo = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              The pivotal moment in my academic trajectory came when I faced the reality of my biology failure. This was a
-              shocking revelation for me on that time, as most of my relatives were pursuing medical careers, and there was a prevailing
-              belief that success could only be achieved through becoming a doctor. However, I chose to deviate from this
-              conventional path and instead selected the field of computer science for my career.
-            </p>
-          </div>
-          <div
-            ref={refSecondDescription}
-            className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
-          >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              As I embarked on my educational journey after 10th grade, I had three options to
-              choose from for my 12th grade (Intermediate) studies: ICS (Computer Science, Math, Physics),
-              FSC Pre-Medical (Biology, Chemistry, Physics), and FSC Pre-Engineering (Chemistry, Physics, Math).
-              Given my unsatisfactory performance in biology and lack of interest in chemistry, I opted for ICS,
-              as it aligned with my passion for computer science. Although my relatives and family members encouraged
-              me to pursue FSC, I firmly rejected their advice and followed my own aspirations, despite the uncertainty
-              surrounding my future career path.
+              At the commencement of my second year (12th grade) in college, I was apprehensive about the inclusion of
+              {" "}<span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo ">
+                  programming
+                </span>
+              </span>{" "},
+              particularly the C language, in our curriculum. This concern was further amplified by the remarks of other college
+              students who claimed that programming was an arduous task. However, on the first day of my second year, I sought solace
+              in a conversation with my cousin, Babar, who had completed his BCS (Bachelor of Computer Science). He reassured me, in
+              Urdu, that
+              {"  "}<span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo">
+                  "پروگرامنگ حلوہ ہے حلوہ,"
+                </span>
+              </span>{" "} which translates to "Programming is fun and very easy." This single sentence provided
+              immense relief and ignited my curiosity and fascination with the world of programming, marking
+              <span className="relative">
+                {" "}<span className="text-[#64ffda] viewArchiveTwo ">
+                  the beginning of my coding journey in 2019
+                </span>
+              </span>{" "}.
             </p>
           </div>
           {/* Image for First Listing Description */}
@@ -646,7 +558,7 @@ const MemoryTwo = () => {
               ref={refSecondListingImage}
               className={`contentContainer ${secondListingImageVisible ? "show" : ""
                 }`}
-              src={embracingComputerScience}
+              src={coding}
               alt="PensieveCover"
             />
           </div>
@@ -658,7 +570,7 @@ const MemoryTwo = () => {
             className={`contentContainer ${thirdListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            A Turning Point in College
+            Thinking Outside the Box
           </h3>
           <div
             ref={refThirdDescription}
@@ -666,17 +578,30 @@ const MemoryTwo = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              As I stepped into college, I encountered an environment that differed greatly from what I had anticipated.
-              The relaxed atmosphere, lack of attendance requirements, and less-than-stellar teachers initially left me
-              disheartened. However, a fortuitous encounter with a computer science teacher named{" "}
-              <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
-                  Sir Ishaq
+              While engrossed in my
+              {" "}<span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo">
+                  programming studies
                 </span>
-              </span>{" "}
-              proved to be a turning point. His exceptional teaching skills and passion for the subject sparked a
-              newfound interest within me. Regular attendance became a priority as I delved deeper into the world of
-              computer science and began to understand its intricacies.
+              </span>{" "} for the past three months, a remarkable moment unfolded. I vividly
+              remember encountering a problem-solving exercise in my C language book that focused on the If-else concept.
+              Intrigued, I decided to approach the problem from a different angle and worked through it diligently, using
+              pen and paper, as I did not possess a computer to test my solution. The following day, I excitedly approached
+              my teacher and shared my alternative approach, eager to validate its correctness. With his guidance, I               <span className="relative">
+                {" "}<span className="text-[#64ffda] viewArchiveTwo ">
+                  ran the
+                  code on a computer
+                </span>
+              </span>{" "}, and to my astonishment, it executed flawlessly.
+              {" "}<span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo ">
+                  The indescribable elation I experienced in
+                  that moment was priceless
+                </span>
+              </span>{" "}, fueling my growing interest in coding. Subsequently, I began solving other problems
+              in the book independently, immersing myself in its contents. Through meticulous study, I acquired a comprehensive
+              understanding of the C language and the concepts of relational databases, laying a solid foundation upon which I
+              continued to build.
             </p>
           </div>
           {/* Image for First Listing Description */}
@@ -685,51 +610,13 @@ const MemoryTwo = () => {
               ref={refThirdListingImage}
               className={`contentContainer ${thirdListingImageVisible ? "show" : ""
                 }`}
-              src={turningPoint}
+              src={thinkOutsideTheBox}
               alt="PensieveCover"
             />
           </div>
         </div>
 
-        {/* Fourth Thing */}
-        <div>
-          <h3
-            ref={refFourthListingTitle}
-            className={`contentContainer ${fourthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
-          >
-            Sacrifices Made along the Way
-          </h3>
-          <div
-            ref={refFourthDescription}
-            className={`contentContainer ${isFourthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
-          >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              In 2018, my passion for cricket was at its peak. I enthusiastically organized cricket tournaments in my village
-              and actively participated in matches held in various neighboring communities. My dream of joining the national
-              cricket team as a batsman burned brightly within me. However, the realization dawned upon me that I lacked the
-              necessary support from my family to pursue a career in cricket. It was during this period that my uncle, my father's brother,
-              provided me with invaluable guidance. He reminded me of my role as the elder brother within our family and emphasized
-              the importance of supporting and making them proud. It became evident that pursuing cricket would not lead me to the
-              international stage or enable me to join a cricket academy. Determined to honor my responsibilities, I made the difficult
-              decision to relinquish my dreams of cricket stardom and focus wholeheartedly on my studies. It was then that I crossed
-              paths with computer science, which ignited a new sense of purpose and set me on the course towards my true passion.
-            </p>
-          </div>
-          {/* Image for First Listing Description */}
-          <div className="mr-auto ml-auto mt-[40px]">
-            <img
-              ref={refFourthListingImage}
-              className={`contentContainer ${fourthListingImageVisible ? "show" : ""
-                }`}
-              src={sacrifice}
-              alt="PensieveCover"
-            />
-          </div>
-        </div>
-
-        {/* Fourth Thing */}
+        {/* Fifth Thing */}
         <div>
           <h3
             ref={refFifthListingTitle}
@@ -744,10 +631,7 @@ const MemoryTwo = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              Throughout my journey, I encountered setbacks and sacrifices. Giving up my dreams of becoming a cricketer was
-              particularly difficult, but it allowed me to prioritize my family's well-being and take on the role of a responsible
-              elder sibling. By redirecting my focus towards my studies, I discovered a newfound love for computer science and began
-              to nurture my interest in this fascinating field.
+              Throughout my journey of 2019,  I experienced significant growth and accomplishments in academics and programming. These milestones fueled my passion and set the stage for a promising future in computer science.
             </p>
           </div>
           <div
@@ -756,11 +640,10 @@ const MemoryTwo = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              "Follow your passion, stay true to yourself, never follow someone else's path unless you're in the woods and
-              you're lost, and you see a path, then, by all means, you should follow that." -{" "}
-              <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
-                  Ellen DeGeneres
+              "Truly willing to do something automatically automatically embrace new doors." -{" "}
+              {" "}<span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo ">
+                  Ahmad Jajja
                 </span>
               </span>{" "}
             </p>
