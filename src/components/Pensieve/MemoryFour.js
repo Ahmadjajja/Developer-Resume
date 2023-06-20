@@ -968,7 +968,7 @@ const MemoryFour = () => {
               </span>{" "}
               {" "}<span className="relative">
                 <span className="text-[#64ffda] viewArchiveTwo">
-                  Amin
+                  Amin  
                 </span>
               </span>{" "}
               , a machine learning engineer, whom I connected with on Facebook. With his guidance, I decided to
