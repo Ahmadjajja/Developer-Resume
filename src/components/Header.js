@@ -52,15 +52,15 @@ const Header = () => {
           </div>
           <div
             className={`contentContainer ${showThirdContent ? "show" : ""
-              } smallHeading block  text-[#8892b0]  font-semibold  leading-[1]  font-calibri antialiased headerScreen1:w-[45rem]`}
+              } smallHeading block  text-[#8892b0]  font-semibold  leading-[1]  font-calibri antialiased headerScreen1:w-[90%]`}
           >
-            A Full-Stack-Engineer, Researcher and Mentor
+            A Full-Stack-Engineer and Mentor
           </div>
           <div
             className={`contentContainer ${showFourthContent ? "show" : ""
-              } description block text-[#8892b0]  mt-[1.16rem] py-2  text-lg antialiased headerScreen1:w-[50rem]`}
+              } description block text-[#8892b0]  mt-[1.16rem] py-2  text-lg antialiased headerScreen1:w-[70%]`}
           >
-            A Techy with keen interest in DEVOPS and WEB 3.0 . Love to learn new technologies, currently learning and enhancing my knowledge in docker, kubernates and CI/CD.
+            A Techy with keen interest in Web Development, DEVOPS, WEB 3.0 and machine learning. Love to learn new technologies, currently learning and enhancing my knowledge in docker, kubernates and CI/CD.
             An aspiring
             <div className="relative inline-block">
               <a
@@ -68,7 +68,7 @@ const Header = () => {
                 href="https://drive.google.com/file/d/1HAMbxoTU0kpSDj8k-YFjYE14ngWeisZ1/view"
                 target="_blank"
               >
-                &nbsp;Certified&nbsp;
+                Certified&nbsp;
               </a>{" "}
             </div>
             Full-Stack-Engineer with a focus on Large Scale Systems.

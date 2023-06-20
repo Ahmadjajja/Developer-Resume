@@ -9,8 +9,8 @@ const PensieveTags = () => {
   const [fourthMemoryHoverUp, setFourthMemoryHoverUp] = useState(false);
   const [fifthMemoryHoverUp, setFifthMemoryHoverUp] = useState(false);
   return (
-    <div className="ml-12 mr-12 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem] h-[101vh] antialiased">
-      <div className="w-[70%] mr-auto ml-auto text-[#64ffda] pt-[100px] text-[14px] font-customMono">
+    <div className="sm:ml-12 sm:mr-12  h-[101vh] antialiased">
+      <div className="w-[80%] mr-auto ml-auto text-[#64ffda] pt-[100px] text-[14px] font-customMono">
         <span className="mr-[7px]">←</span>
         <span className="relative">
           <a
@@ -21,7 +21,7 @@ const PensieveTags = () => {
           </a>
         </span>
       </div>
-      <div className="mt-[50px] w-[70%] mr-auto ml-auto flex justify-between">
+      <div className="mt-[50px] w-[80%] mr-auto ml-auto flex justify-between">
         <span className="text-[40px] text-[#ccd6f6] font-calibri font-semibold">
           #Memories
         </span>
@@ -35,7 +35,7 @@ const PensieveTags = () => {
         </span>
       </div>
       {/* Early Life in a Small Village */}
-      <div className="w-[70%] mr-auto ml-auto mt-[5.25rem] flex">
+      <div className="w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
         <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
         <div>
           <span className="relative">
@@ -69,7 +69,7 @@ const PensieveTags = () => {
         </div>
       </div>
       {/* Years in Review 2018 */}
-      <div className="w-[70%] mr-auto ml-auto mt-[5.25rem] flex">
+      <div className="w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
         <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
         <div>
           <span className="relative">
@@ -103,7 +103,7 @@ const PensieveTags = () => {
         </div>
       </div>
       {/* Years in Review 2019 */}
-      <div className="w-[70%] mr-auto ml-auto mt-[5.25rem] flex">
+      <div className="w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
         <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
         <div>
           <span className="relative">
@@ -137,7 +137,7 @@ const PensieveTags = () => {
         </div>
       </div>
       {/* Years in Review 2020 */}
-      <div className="w-[70%] mr-auto ml-auto mt-[5.25rem] flex">
+      <div className="w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
         <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
         <div>
           <span className="relative">
@@ -171,7 +171,7 @@ const PensieveTags = () => {
         </div>
       </div>
       {/* Years in Review 2021 */}
-      <div className="w-[70%] mr-auto ml-auto mt-[5.25rem] flex">
+      <div className="w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
         <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
         <div>
           <span className="relative">
@@ -205,7 +205,7 @@ const PensieveTags = () => {
         </div>
       </div>
       {/* Years in Review 2022 */}
-      <div className="mb-5 w-[70%] mr-auto ml-auto mt-[5.25rem] flex">
+      <div className="mb-5 w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
         <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
         <div>
           <span className="relative">

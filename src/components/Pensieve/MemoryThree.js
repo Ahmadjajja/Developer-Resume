@@ -643,8 +643,8 @@ const MemoryThree = () => {
           </p>
         </div>
         {/* Listing */}
-        <div
-          className={`contentContainer ${listingVisible ? "show" : ""}`}
+        <ul
+          className={`contentContainer ${listingVisible ? "show" : ""} pl-5`}
           ref={refListing}
         >
           <li className="mt-[2em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
@@ -662,7 +662,7 @@ const MemoryThree = () => {
           <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Starting C++
           </li>
-        </div>
+        </ul>
         {/* Description of Listings */}
         {/* First Listing */}
         <div>

@@ -464,8 +464,8 @@ const MemoryTwo = () => {
           </p>
         </div>
         {/* Listing */}
-        <div
-          className={`contentContainer ${listingVisible ? "show" : ""}`}
+        <ul
+          className={`contentContainer ${listingVisible ? "show" : ""} pl-5`}
           ref={refListing}
         >
           <li className="mt-[2em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
@@ -477,7 +477,7 @@ const MemoryTwo = () => {
           <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Thinking Outside the Box
           </li>
-        </div>
+        </ul>
         {/* Description of Listings */}
         {/* First Listing */}
         <div>
