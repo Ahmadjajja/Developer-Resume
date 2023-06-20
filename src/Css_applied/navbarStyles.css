@@ -68,12 +68,10 @@
 .hamburger-menu.active .bar-top {
     transform: translate(-50%, -50%) rotate(-315deg);
     top: 50%;
-    
 }
 .hamburger-menu.active .bar-bottom {
     transform: translate(-50%, -50%) rotate(-225deg);
     top: 50%;
-    
 }
 
 /* Off Screen Menu */

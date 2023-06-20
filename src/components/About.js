@@ -360,7 +360,7 @@ const About = ({ aboutBtnClickedActive }) => {
         </div>
 
         {/* Image Section */}
-        <div className="h-auto py-12">
+        <div className="h-auto pt-12">
           <div className="relative">
             <img
               ref={mySecondImage}
@@ -375,6 +375,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 top: "0px",
                 left: "0px",
                 transition: "all 0.25s cubic-bezier(0.645,0.045,0.355,1)",
+                height: "450px"
               }}
             />
           </div>
@@ -386,7 +387,7 @@ const About = ({ aboutBtnClickedActive }) => {
           } hidden aboutScreen8:block relative`}
       >
         {/* Section 2 */}
-        <div className="w-[49.5136vw] aboutScreen11:w-[51vw] aboutScreen12:w-[49vw]">
+        <div className="w-[46.5136vw] aboutScreen11:w-[51vw] aboutScreen12:w-[49vw]">
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
             Hello! I'm Ahmad, a full stack software engineer based in
             Faisalabad, PK.

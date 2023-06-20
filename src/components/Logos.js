@@ -149,7 +149,7 @@ const Logos = () => {
         className={`contentContainer ${showFirstContent ? "show" : ""
           } hidden logoScreen1:block fixed bottom-0 left-[15px] bg-transparent`}
       >
-        <div className="w-[2.5rem] flex flex-col justify-between items-center pt-[10px]">
+        <div className="w-[2.5rem] flex flex-col justify-between items-center px-[35px] pt-[10px]">
           {/* Github SVG */}
           <div
             onClick={() => {

@@ -327,12 +327,12 @@ const Navbar = ({
             style={divStyle}
             className={
               scrollHeight >= 20
-                ? "w-[100%] pt-2 -translate-y-14 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration shadow-OtherProjectsBoxShadow"
-                : "w-[100%] pt-2 -translate-y-0 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration"
+                ? "w-[100%]  -translate-y-14 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration shadow-OtherProjectsBoxShadow"
+                : "w-[100%]  -translate-y-0 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration"
             }
           >
             <div>
-              <div className="ml-[1.371rem] mt-[1.263rem] mb-[1.263rem] mr-[1.371rem] text-white flex justify-between relative z-[99] myScreen4:w-[16.5rem]">
+              <div className="ml-[1.1rem] mt-[1.263rem] mb-[1.263rem] text-white flex justify-between relative z-[99] myScreen4:w-[16.5rem]">
                 {/* First SVG  ---> LOGO */}
                 {/* Hiding the logo for smaller screeens and making it visible for larger */}
                 <div className="block myScreen8:hidden">
@@ -745,11 +745,11 @@ const Navbar = ({
             style={divStyle}
             className={
               scrollHeight >= 20
-                ? "w-[100%] pt-2 -translate-y-14 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration shadow-OtherProjectsBoxShadow"
-                : "w-[100%] pt-2 -translate-y-0 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration"
+                ? "w-[100%] -translate-y-14 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration shadow-OtherProjectsBoxShadow"
+                : "w-[100%] -translate-y-0 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration"
             }
           >
-            <div className="ml-[1.371rem] mt-[1.263rem]  mb-[1.263rem] mr-[1.371rem] text-white flex justify-between z-50 ">
+            <div className="ml-[1rem] mt-[1.263rem]  mb-[1.263rem] text-white flex justify-between z-50 ">
               {/* First SVG  ---> LOGO */}
               <a
                 href="/"

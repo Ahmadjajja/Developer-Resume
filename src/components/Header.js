@@ -36,11 +36,11 @@ const Header = () => {
     <>
       <div className={{}}>
         <div
-          className={`mr-12  ml-12 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem]`}
+          className={`mr-8  ml-8 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem]`}
         >
           <div
             className={`contentContainer ${showFirstContent ? "show" : ""
-              } py-1 block  text-[#64ffda]  text-lg  font-normal  ml-2  font-customMono antialiased headerScreen1:w-[44.5rem]`}
+              }  block  text-[#64ffda]  text-lg  font-normal  ml-2  font-customMono antialiased headerScreen1:w-[44.5rem]`}
           >
             Hi, my name is
           </div>
@@ -61,7 +61,7 @@ const Header = () => {
               } description block text-[#8892b0]  mt-[1.16rem] py-2  text-lg antialiased headerScreen1:w-[70%]`}
           >
             A Techy with keen interest in Web Development, DEVOPS, WEB 3.0 and machine learning. Love to learn new technologies, currently learning and enhancing my knowledge in docker, kubernates and CI/CD.
-            An aspiring
+            An aspiring{" "}
             <div className="relative inline-block">
               <a
                 className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"

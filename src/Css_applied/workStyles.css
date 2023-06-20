@@ -58,5 +58,5 @@
 }
 /* CSS applied on small screen */ 
  .smallScreenWorkWidth {
-  width: calc(100% + 50px);
+  width: calc(100% );
 } 
