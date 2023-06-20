@@ -481,7 +481,7 @@ const Navbar = ({
                       Blog
                     </Link>
                     <a
-                      href="https://drive.google.com/file/d/1fP65vUE3xUaOYgh4zPzKyOMot_bW9DR0/view?usp=share_link"
+                      href="https://drive.google.com/file/d/1TIiJvqmbsYI2swVEY_kNgH6MjbhINXFm/view?usp=share_link"
                       className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[#172a45] border  border-[#64ffda]  rounded  font-mono  text-[#64ffda]  tracking-wide cursor-pointer antialiased"
                     >
                       Resume
@@ -689,7 +689,7 @@ const Navbar = ({
                   Blog
                 </Link>
                 <a
-                  href="https://drive.google.com/file/d/1fP65vUE3xUaOYgh4zPzKyOMot_bW9DR0/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1TIiJvqmbsYI2swVEY_kNgH6MjbhINXFm/view?usp=share_link"
                   className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[#172a45] border  border-[#64ffda]  rounded  font-mono  text-[#64ffda]  tracking-wide cursor-pointer antialiased"
                 >
                   Resume

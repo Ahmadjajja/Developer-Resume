@@ -487,7 +487,7 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
             if (event.target.classList.contains("viewArchive")) {
               navigate("/pensieve/tags/memories/");
             } else {
-              navigate("/posts/year-in-review-2020");
+              navigate("/posts/year-in-review-2021");
             }
           }}
           className={

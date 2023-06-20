@@ -758,7 +758,7 @@ const OtherProjects = () => {
               className="w-[30px] h-[30px] py-[5px] px-[7px] text-[#a8b2d1] bg-[#172a45]"
             >
               <a
-                href="https://github.com/Abdullah-9862873/Context-Api-Based-Shopping-Summary"
+                href="https://github.com/Ahmadjajja/MERN-Projects/tree/main/MERN-Projects/TODO_React_Native"
                 aria-label="GitHub Link"
                 target="_blank"
               >
