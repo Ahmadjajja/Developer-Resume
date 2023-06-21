@@ -140,7 +140,7 @@ const Navbar = ({
 
   useEffect(() => {
     setTimeout(() => {
-      setHeight("115px");
+      setHeight("93px");
     }, 500);
   }, []);
 

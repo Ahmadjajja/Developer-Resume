@@ -105,7 +105,7 @@ const About = ({ aboutBtnClickedActive }) => {
     <div
       id="ABOUTDIV"
       ref={aboutRef}
-      className={`mr-12 ml-12 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem]`}
+      className={`mr-8 ml-8 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem]`}
     >
       <div
         className={`contentContainer ${isVisible ? "show" : ""
@@ -118,7 +118,7 @@ const About = ({ aboutBtnClickedActive }) => {
           About Me
           <div className="z-[50] w-[10%] inline-block h-[100%] absolute bottom-0 aboutScreen1:hidden"></div>
         </div>
-        <div className="border-[1px] block box-content relative bottom-[17px] w-[56.7%] left-[38%] border-[#303c55] aboutScreen1:hidden aboutScreen2:left-[174px] md:w-[20rem] aboutScreen7:left-[205px]"></div>
+        <div className="border-[1px] block box-content relative bottom-[17px] w-[56.7%] left-[38%] border-[#303c55] aboutScreen1:hidden aboutScreen2:left-[174px] md:w-[20rem] aboutScreen7:left-[50%]"></div>
       </div>
       {/* Body Section for < md-screen */}
       <div

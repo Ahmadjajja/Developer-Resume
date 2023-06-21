@@ -209,7 +209,7 @@ const Work = ({ experienceBtnClickedActive }) => {
   }, [experienceNavClick]);
   return (
     <div id="EXPERIENCEDIV" ref={workRef}>
-      <div className="mr-12 ml-12 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem]">
+      <div className="mr-8 ml-8 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem]">
         {/* Header Section */}
         <div
           id="title"
@@ -223,7 +223,7 @@ const Work = ({ experienceBtnClickedActive }) => {
             Where I've Worked
             <div className="z-[1] w-[20px] inline-block h-[50px] absolute bottom-0 workScreen4:hidden"></div>
           </div>
-          <div className="border-[1px] block box-content mb-[5px] ml-[2%] relative bottom-[60px] w-[48%] left-[47%] border-[#303c55] workScreen4:hidden workScreen6:left-[305px] workScreen7:w-[22rem]"></div>
+          <div className="border-[1px] block box-content mb-[5px] ml-[2%] relative bottom-[60px] w-[48%] left-[47%] border-[#303c55] workScreen4:hidden workScreen6:left-[50%] workScreen7:w-[22rem]"></div>
         </div>
         {/* When screen > 500px */}
         <div

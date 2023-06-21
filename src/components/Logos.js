@@ -35,7 +35,7 @@ const Logos = () => {
   return (
     <div className="logoScreen1:relative">
       {/*  Logos to show when Screen <= 768 */}
-      <div className="ml-12 mr-12 logoScreen1:hidden">
+      <div className="ml-8 mr-8 logoScreen1:hidden">
         <div className="pt-7 flex justify-center items-center">
           <div className="w-[38%] flex justify-between mt-0 ml-auto mr-auto mb-[40px] logoScreen2:min-w-[155px]">
             {/* Github SVG */}

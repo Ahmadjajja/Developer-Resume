@@ -9,7 +9,7 @@ const PensieveTags = () => {
   const [fourthMemoryHoverUp, setFourthMemoryHoverUp] = useState(false);
   const [fifthMemoryHoverUp, setFifthMemoryHoverUp] = useState(false);
   return (
-    <div className="sm:ml-12 sm:mr-12  h-[101vh] antialiased">
+    <div className="sm:ml-8 sm:mr-8  h-[101vh] antialiased">
       <div className="w-[80%] mr-auto ml-auto text-[#64ffda] pt-[100px] text-[14px] font-customMono">
         <span className="mr-[7px]">←</span>
         <span className="relative">

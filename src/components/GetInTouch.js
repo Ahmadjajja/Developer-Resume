@@ -75,7 +75,7 @@ const GetInTouch = ({ contactBtnClickedActive }) => {
   return (
     <div
       id="CONTACTDIV"
-      className="ml-12 mr-12 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] gitScreen1:ml-auto gitScreen1:mr-auto gitScreen1:max-w-[600px] gitScreen2:max-w-[596px] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem] gitScreen3:mb-[8rem]"
+      className="ml-8 mr-8 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] gitScreen1:ml-auto gitScreen1:mr-auto gitScreen1:max-w-[600px] gitScreen2:max-w-[596px] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem] gitScreen3:mb-[8rem]"
     >
       <div>
         <div

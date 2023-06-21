@@ -40,19 +40,19 @@ const Header = () => {
         >
           <div
             className={`contentContainer ${showFirstContent ? "show" : ""
-              }  block  text-[#64ffda]  text-lg  font-normal  ml-2  font-customMono antialiased headerScreen1:w-[44.5rem]`}
+              }  block  text-[#64ffda]  text-lg  font-normal  ml-2  font-customMono antialiased headerScreen1:w-[42.5rem]`}
           >
             Hi, my name is
           </div>
           <div
             className={`contentContainer ${showSecondContent ? "show" : ""
-              } bigHeading mt-3 block text-[#ccd6f6]  font-semibold  text-[1.5em]  leading-[1.1]  font-calibri antialiased headerScreen1:w-[45rem]`}
+              } bigHeading mt-3 block text-[#ccd6f6]  font-semibold  text-[1.5em]  leading-[1.1]  font-calibri antialiased headerScreen1:w-[43rem]`}
           >
             Ahmad Jajja
           </div>
           <div
             className={`contentContainer ${showThirdContent ? "show" : ""
-              } smallHeading block  text-[#8892b0]  font-semibold  leading-[1]  font-calibri antialiased headerScreen1:w-[90%]`}
+              } smallHeading block  text-[#8892b0]  font-semibold  leading-[1]  font-calibri antialiased headerScreen1:w-[90%] marginTop: mt-3`}
           >
             A Full-Stack-Engineer and Mentor
           </div>
