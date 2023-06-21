@@ -1,11 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../Css_applied/Pensieve/pensieveStyles.css";
-import year2018 from "../../images/Year's In Review/2018/2018.jpg"
-import failure from "../../images/Year's In Review/2018/failure.jpeg"
-import embracingComputerScience from "../../images/SecondListingImage.jpg";
-import turningPoint from "../../images/ThirdListingImage.jpg";
-import sacrifice from "../../images/Year's In Review/2018/sacrifice.jpeg"
+import year2022 from "../../images/Year's In Review/2022/2022.jpg"
+import leaving from "../../images/Year's In Review/2022/goodby.jpg"
+import seeraht from "../../images/Year's In Review/2022/MERN.jpeg";
+import hackthon from "../../images/Year's In Review/2022/hackathon.jpg";
+import likeMinded from "../../images/Year's In Review/2022/likeMinded.jpg"
+import SMIT from "../../images/Year's In Review/2022/SMIT.jpg"
+import WEB3 from "../../images/Year's In Review/2022/ME.jpg"
+import students from "../../images/Year's In Review/2022/students.jpeg"
+import MERN2 from "../../images/Year's In Review/2022/MERN2.jpeg"
 
 const MemoryOne = () => {
   const [showFirstContent, setShowFirstContent] = useState(false);
@@ -429,7 +433,6 @@ const MemoryOne = () => {
     }
   });
 
-
   // For Title of Fifth Listing
   const [isFifthListingTitle, setFifthListingTitle] = useState(false);
   const [fifthListingTitleVisible, setFifthListingTitleVisible] =
@@ -489,6 +492,362 @@ const MemoryOne = () => {
     }
   });
 
+  // Fifth Listing Image
+  const [isFifthListingImage, setFifthListingImage] = useState(false);
+  const [fifthListingImageVisible, setFifthListingImageVisible] =
+    useState(false);
+  const refFifthListingImage = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setFifthListingImage(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refFifthListingImage.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isFifthListingImage) {
+      setTimeout(() => {
+        setFifthListingImageVisible(true);
+      }, 200);
+    }
+  });
+
+
+  // For Title of Sixth Listing
+  const [isSixthListingTitle, setSixthListingTitle] = useState(false);
+  const [sixthListingTitleVisible, setSixthListingTitleVisible] =
+    useState(false);
+  const refSixthListingTitle = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSixthListingTitle(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refSixthListingTitle.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isSixthListingTitle) {
+      setTimeout(() => {
+        setSixthListingTitleVisible(true);
+      }, 200);
+    }
+  });
+
+  // Sixth Listing Description
+  const [isSixthListingDescription, setSixthListingDescription] =
+    useState(false);
+  const [sixthListingDescriptionVisible, setSixthListingDescriptionVisible] =
+    useState(false);
+  const refSixthDescription = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSixthListingDescription(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refSixthDescription.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isSixthListingDescription) {
+      setTimeout(() => {
+        setSixthListingDescriptionVisible(true);
+      }, 200);
+    }
+  });
+
+  // Sixth Listing Image
+  const [isSixthListingImage, setSixthListingImage] = useState(false);
+  const [sixthListingImageVisible, setSixthListingImageVisible] =
+    useState(false);
+  const refSixthListingImage = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSixthListingImage(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refSixthListingImage.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isSixthListingImage) {
+      setTimeout(() => {
+        setSixthListingImageVisible(true);
+      }, 200);
+    }
+  });
+
+
+  // For Title of Seventh Listing
+  const [isSeventhListingTitle, setSeventhListingTitle] = useState(false);
+  const [seventhListingTitleVisible, setSeventhListingTitleVisible] =
+    useState(false);
+  const refSeventhListingTitle = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSeventhListingTitle(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refSeventhListingTitle.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isSeventhListingTitle) {
+      setTimeout(() => {
+        setSeventhListingTitleVisible(true);
+      }, 200);
+    }
+  });
+
+  // Seventh Listing Description
+  const [isSeventhListingDescription, setSeventhListingDescription] =
+    useState(false);
+  const [seventhListingDescriptionVisible, setSeventhListingDescriptionVisible] =
+    useState(false);
+  const refSeventhDescription = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSeventhListingDescription(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refSeventhDescription.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isSeventhListingDescription) {
+      setTimeout(() => {
+        setSeventhListingDescriptionVisible(true);
+      }, 200);
+    }
+  });
+
+  // Seventh Listing Image
+  const [isSeventhListingImage, setSeventhListingImage] = useState(false);
+  const [seventhListingImageVisible, setSeventhListingImageVisible] =
+    useState(false);
+  const refSeventhListingImage = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setSeventhListingImage(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refSeventhListingImage.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isSeventhListingImage) {
+      setTimeout(() => {
+        setSeventhListingImageVisible(true);
+      }, 200);
+    }
+  });
+
+
+  // For Title of Eighth Listing
+  const [isEighthListingTitle, setEighthListingTitle] = useState(false);
+  const [eighthListingTitleVisible, setEighthListingTitleVisible] =
+    useState(false);
+  const refEighthListingTitle = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setEighthListingTitle(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refEighthListingTitle.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isEighthListingTitle) {
+      setTimeout(() => {
+        setEighthListingTitleVisible(true);
+      }, 200);
+    }
+  });
+
+  // Eighth Listing Description
+  const [isEighthListingDescription, setEighthListingDescription] =
+    useState(false);
+  const [eighthListingDescriptionVisible, setEighthListingDescriptionVisible] =
+    useState(false);
+  const refEighthDescription = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setEighthListingDescription(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refEighthDescription.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isEighthListingDescription) {
+      setTimeout(() => {
+        setEighthListingDescriptionVisible(true);
+      }, 200);
+    }
+  });
+
+  // Eighth Listing Image
+  const [isEighthListingImage, setEighthListingImage] = useState(false);
+  const [eighthListingImageVisible, setEighthListingImageVisible] =
+    useState(false);
+  const refEighthListingImage = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setEighthListingImage(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refEighthListingImage.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isEighthListingImage) {
+      setTimeout(() => {
+        setEighthListingImageVisible(true);
+      }, 200);
+    }
+  });
+
+
+  // For Title of Ninth Listing
+  const [isNinthListingTitle, setNinthListingTitle] = useState(false);
+  const [ninthListingTitleVisible, setNinthListingTitleVisible] =
+    useState(false);
+  const refNinthListingTitle = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setNinthListingTitle(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refNinthListingTitle.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isNinthListingTitle) {
+      setTimeout(() => {
+        setNinthListingTitleVisible(true);
+      }, 200);
+    }
+  });
+
+  // Ninth Listing Description
+  const [isNinthListingDescription, setNinthListingDescription] =
+    useState(false);
+  const [ninthListingDescriptionVisible, setNinthListingDescriptionVisible] =
+    useState(false);
+  const refNinthDescription = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setNinthListingDescription(true);
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    observer.observe(refNinthDescription.current);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isNinthListingDescription) {
+      setTimeout(() => {
+        setNinthListingDescriptionVisible(true);
+      }, 200);
+    }
+  });
+
   return (
     <div className="ml-12 mr-12 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem] antialiased myScreen8:ml-8 myScreen8:mr-8">
       {/* Back to All Memories */}
@@ -536,7 +895,7 @@ const MemoryOne = () => {
       <div className="w-[70%] mr-auto ml-auto mt-[40px] myScreen8:w-[100%]">
         <img
           className={`contentContainer ${showThirdContent ? "show" : ""}`}
-          src={year2018}
+          src={year2022}
           alt="PensieveCover"
         />
         {/* Description Header */}
@@ -546,12 +905,11 @@ const MemoryOne = () => {
             } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
         >
           <p className="pl-[1.5em] leading-[1.5] text-[#a8b2d1] italic">
-            In the year 2018, my life took an unexpected turn as I faced a setback in my biology studies.
-            This disappointment led me to make a significant decision for my future, choosing a tech
-            journey in the field of computer science. Despite societal pressures and the allure of other
-            career paths, I embarked on the path of computer science, and my journey began to unfold.
-            This year marked the beginning of a transformative period in my life, where I discovered
-            my passion for technology and made sacrifices to pursue it. Some of the things that happen with me in this year are as follows
+            The year 2022 was filled with various accomplishments, challenges, moments of joy, and
+            moments of sadness. It marked a significant transition in my life as I navigated through
+            different experiences and made choices that shaped my journey towards becoming a software
+            engineer. This review will highlight some of the key events and milestones that defined my year
+            are given below:
           </p>
         </div>
         {/* Listing */}
@@ -560,16 +918,28 @@ const MemoryOne = () => {
           ref={refListing}
         >
           <li className="mt-[2em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            Failure in Biology
+            University Friend Circle Affection and Goodbyes
           </li>
           <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            Embracing Computer Science
+            Internship as MERN Stack Developer at Seeraht
           </li>
           <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            A Turning Point in College
+            12-Hour Hackathon at SMIT
           </li>
           <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
-            Sacrifices Made along the Way
+            Joining the Right Company
+          </li>
+          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+            Full Stack Web and Mobile Developer Certification
+          </li>
+          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+            Joining PIAIC for Web 3.0 and Metaverse
+          </li>
+          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+            Offer to Train Students at Saylani (SMIT)
+          </li>
+          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+            Joining a Software House as a MERN Stack Developer
           </li>
         </ul>
         {/* Description of Listings */}
@@ -580,7 +950,7 @@ const MemoryOne = () => {
             className={`contentContainer ${firstListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            Failure in Biology
+            University Friend Circle Affection and Goodbyes
           </h3>
           <div
             ref={refFirstListingDescription}
@@ -588,10 +958,103 @@ const MemoryOne = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              The journey towards computer science truly began when my 10th-grade biology results came in, leaving me
-              dissatisfied with my performance. Although I had passed, I felt compelled to redirect my career aspirations
-              away from the field of biology. It was a moment of self-reflection and realization that prompted me to explore
-              other options that resonated more with my interests and skills.
+              As 2022 began, I found myself immersed in preparing for the final exams of my third semester, which were scheduled
+              for the second week of January. The exams went well, and as the third and fourth semesters commenced, I started
+              engaging more in activities unrelated to coding. I became involved with a circle of friends who were not interested
+              in coding, and slowly but surely, I began to drift away from my passion. While the enjoyment I experienced with this
+              new group was pleasant, I realized that compromising my dedication to coding was not beneficial for my long-term career goals.
+              Unfortunately, none of my friends in this circle shared my enthusiasm for coding, which made it challenging to maintain my focus.
+            </p>
+          </div>
+          <div
+            ref={refFirstListingDescription}
+            className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
+              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+          >
+            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+              As the days went by, I noticed my passion for coding diminishing, despite my awareness that I possessed excellent coding skills at the time.
+              These were difficult days for me as I started experiencing
+              {" "}
+              <span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo ">
+                  feelings of depression and constant overthinking
+                </span>
+              </span>{" "}. It became clear to me that I
+              was not progressing towards my goals and dreams, which further exacerbated my state of mind. The journey to becoming a software engineer is
+              not without its hardships, and during this period, I even missed grasping important concepts in some subjects.
+            </p>
+          </div>
+          <div
+            ref={refFirstListingDescription}
+            className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
+              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+          >
+            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+              Realizing that I needed to break free from this situation, I made the decision to distance myself from my friend circle.
+              This meant separating from a close friend named
+              {" "}
+              <span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo ">
+                  Awais
+                </span>
+              </span>{" "}
+              , whom I considered a brother. It was a heartbreaking choice, but
+              the circumstances surrounding our friendship had become toxic, and I understood that I needed to move forward without him.
+              Letting go of the past, I embarked on a new chapter in my life. This
+              {" "}
+              <span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo ">
+                  transition
+                </span>
+              </span>{" "}
+              marked a significant turning point for me,
+              as I was determined to leave behind all distractions and focus solely on my journey towards becoming a software engineer.
+              Although it may sound simple as I write about it now, the process of letting go and making these changes was not easy.
+            </p>
+          </div>
+          <div
+            ref={refFirstListingDescription}
+            className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
+              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+          >
+            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+              I stepped down from my position as the Class Representative (CR) of my class, a responsibility I had held for
+              four semesters. Additionally, I decided to
+              {" "}
+              <span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                  deactivate my
+                </span>
+              </span>{" "}
+              {" "}
+              <span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                  WhatsApp account
+                </span>
+              </span>{" "}
+              for the next three months, minimizing
+              my use of mobile devices to avoid unnecessary distractions. These choices were not made lightly, but I recognized
+              their importance in reshaping my path towards my desired career.
+            </p>
+          </div>
+          <div
+            ref={refFirstListingDescription}
+            className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
+              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+          >
+            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+              With the end of the fourth semester and the arrival of the summer break, I dedicated myself to working tirelessly
+              to regain my momentum. I committed to coding for extended periods, sometimes investing
+              {" "}
+              <span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo ">
+                  12 to 14 hours a day
+                </span>
+              </span>{" "} to
+              compensate for the time I had lost during the previous four months. It was crucial for me to cover the subjects
+              and concepts I had missed, such as operating systems, data structures, and algorithms. During this period, my
+              passion for coding burned brighter than ever before, fueling my determination and propelling me forward on my
+              journey towards becoming a software engineer.
             </p>
           </div>
           {/* Image for First Listing Description */}
@@ -599,7 +1062,7 @@ const MemoryOne = () => {
             <img
               ref={refFirstListingImage}
               className={`contentContainer ${firstListingImageVisible ? "show" : ""}`}
-              src={failure}
+              src={leaving}
               alt="PensieveCover"
             />
           </div>
@@ -611,7 +1074,7 @@ const MemoryOne = () => {
             className={`contentContainer ${secondListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            Embracing Computer Science
+            Internship as MERN Stack Developer at Seeraht
           </h3>
           <div
             ref={refSecondDescription}
@@ -619,46 +1082,39 @@ const MemoryOne = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              The pivotal moment in my academic trajectory came when I faced the reality of my biology failure. This was a
-              shocking revelation for me on that time, as most of my relatives were pursuing medical careers, and there was a prevailing
-              belief that success could only be achieved through becoming a doctor. However, I chose to deviate from this
-              conventional path and instead selected the field of computer science for my career.
+              During the summer break between my fourth and fifth semesters, I decided to pursue an internship as a MERN Stack
+              developer at Seeraht. During that time i worked under the supervision of
+              {" "}
+              <span className="relative">
+                <a href="https://umairahmad.net/" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                  Sir Umair Ahmad
+                </a>
+              </span>{" "}
+              . This internship proved to be a rigorous and transformative experience. I dedicated myself
+              entirely to coding, even to the point where coding occupied my thoughts even during sleep. Throughout the internship,
+              I worked on various projects, including a bank app and an e-commerce mobile app, while also gaining experience in maintaining
+              existing projects. This period allowed me to sharpen my skills and gain practical industry experience.
             </p>
           </div>
-          <div
-            ref={refSecondDescription}
-            className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
-          >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              As I embarked on my educational journey after 10th grade, I had three options to
-              choose from for my 12th grade (Intermediate) studies: ICS (Computer Science, Math, Physics),
-              FSC Pre-Medical (Biology, Chemistry, Physics), and FSC Pre-Engineering (Chemistry, Physics, Math).
-              Given my unsatisfactory performance in biology and lack of interest in chemistry, I opted for ICS,
-              as it aligned with my passion for computer science. Although my relatives and family members encouraged
-              me to pursue FSC, I firmly rejected their advice and followed my own aspirations, despite the uncertainty
-              surrounding my future career path.
-            </p>
-          </div>
-          {/* Image for First Listing Description */}
+          {/* Image for Second Listing Description */}
           <div className="mr-auto ml-auto mt-[40px]">
             <img
               ref={refSecondListingImage}
               className={`contentContainer ${secondListingImageVisible ? "show" : ""
                 }`}
-              src={embracingComputerScience}
+              src={seeraht}
               alt="PensieveCover"
             />
           </div>
         </div>
-        {/* Thrid Thing */}
+        {/* Third Thing */}
         <div>
           <h3
             ref={refThirdListingTitle}
             className={`contentContainer ${thirdListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            A Turning Point in College
+            12-Hour Hackathon at SMIT
           </h3>
           <div
             ref={refThirdDescription}
@@ -666,26 +1122,26 @@ const MemoryOne = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              As I stepped into college, I encountered an environment that differed greatly from what I had anticipated.
-              The relaxed atmosphere, lack of attendance requirements, and less-than-stellar teachers initially left me
-              disheartened. However, a fortuitous encounter with a computer science teacher named{" "}
+              In August 2022, a 12-hour hackathon was organized at Saylani Mass IT Training (SMIT), specifically for students
+              who had enrolled in the web and mobile app development course the previous year. The hackathon presented the challenge
+              of building a Real Estate Mobile App within the given timeframe. Out of the 70 students who participated, I was among the
+              {" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
-                  Sir Ishaq
+                <span className="text-[#64ffda] viewArchiveTwo ">
+                  top five
                 </span>
               </span>{" "}
-              proved to be a turning point. His exceptional teaching skills and passion for the subject sparked a
-              newfound interest within me. Regular attendance became a priority as I delved deeper into the world of
-              computer science and began to understand its intricacies.
+              , which was a significant achievement considering the initial pool of 800 students who had enrolled in the course.
+              This experience not only showcased my abilities but also taught me valuable lessons in learning how to learn effectively.
             </p>
           </div>
-          {/* Image for First Listing Description */}
+          {/* Image for Third Listing Description */}
           <div className="mr-auto ml-auto mt-[40px]">
             <img
               ref={refThirdListingImage}
               className={`contentContainer ${thirdListingImageVisible ? "show" : ""
                 }`}
-              src={turningPoint}
+              src={hackthon}
               alt="PensieveCover"
             />
           </div>
@@ -698,7 +1154,7 @@ const MemoryOne = () => {
             className={`contentContainer ${fourthListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            Sacrifices Made along the Way
+            Joining the Right Company
           </h3>
           <div
             ref={refFourthDescription}
@@ -706,37 +1162,47 @@ const MemoryOne = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              In 2018, my passion for cricket was at its peak. I enthusiastically organized cricket tournaments in my village
-              and actively participated in matches held in various neighboring communities. My dream of joining the national
-              cricket team as a batsman burned brightly within me. However, the realization dawned upon me that I lacked the
-              necessary support from my family to pursue a career in cricket. It was during this period that my uncle, my father's brother,
-              provided me with invaluable guidance. He reminded me of my role as the elder brother within our family and emphasized
-              the importance of supporting and making them proud. It became evident that pursuing cricket would not lead me to the
-              international stage or enable me to join a cricket academy. Determined to honor my responsibilities, I made the difficult
-              decision to relinquish my dreams of cricket stardom and focus wholeheartedly on my studies. It was then that I crossed
-              paths with computer science, which ignited a new sense of purpose and set me on the course towards my true passion.
+              Following my departure from my previous company, I had the fortune of meeting a friend named
+              {" "}
+              <span className="relative">
+                <a href="https://github.com/AbuHurairah127" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                  Abu Hurairah
+                </a>
+              </span>{" "}
+              during my time at Saylani Mass IT Training. We shared a similar passion for coding and became great companions
+              in our journey. Another person who significantly influenced my career path was my roommate,
+              {" "}
+              <span className="relative">
+                <a href="https://github.com/Abdullah-9862873" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                  Abdullah Sultan
+                </a>
+              </span>{" "}
+              ,
+              who was also a MERN developer and focused on data structures and algorithms. Their presence provided me with
+              the necessary support and motivation to pursue my goals. Surrounding myself with like-minded individuals
+              proved instrumental in my progress.
             </p>
           </div>
-          {/* Image for First Listing Description */}
+          {/* Image for Fourth Listing Description */}
           <div className="mr-auto ml-auto mt-[40px]">
             <img
               ref={refFourthListingImage}
               className={`contentContainer ${fourthListingImageVisible ? "show" : ""
                 }`}
-              src={sacrifice}
+              src={likeMinded}
               alt="PensieveCover"
             />
           </div>
         </div>
 
-        {/* Fourth Thing */}
+        {/* Fifth Thing */}
         <div>
           <h3
             ref={refFifthListingTitle}
             className={`contentContainer ${fifthListingTitleVisible ? "show" : ""
               } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
           >
-            End Remarks and Quotes
+            Full Stack Web and Mobile Developer Certification
           </h3>
           <div
             ref={refFifthDescription}
@@ -744,23 +1210,180 @@ const MemoryOne = () => {
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              Throughout my journey, I encountered setbacks and sacrifices. Giving up my dreams of becoming a cricketer was
-              particularly difficult, but it allowed me to prioritize my family's well-being and take on the role of a responsible
-              elder sibling. By redirecting my focus towards my studies, I discovered a newfound love for computer science and began
-              to nurture my interest in this fascinating field.
+              After dedicating an entire year to SMIT, attending the hackathon, and achieving a commendable position, I was
+              honored to receive the Full Stack Web and Mobile Developer Certification from
+              {" "}
+              <span className="relative">
+                <span className="text-[#64ffda] viewArchiveTwo ">
+                  Hazrat Allama Maulana Muhammad Bashir Farooqi
+                </span>
+              </span>{" "}
+              , the founder of Saylani Mass IT Training. This certification not only represented my technical
+              skills but also symbolized the culmination of my year-long journey and the immense effort I had put into my studies.
             </p>
           </div>
+          {/* Image for Fifth Listing Description */}
+          <div className="mr-auto ml-auto mt-[40px]">
+            <img
+              ref={refFifthListingImage}
+              className={`contentContainer ${fifthListingImageVisible ? "show" : ""
+                }`}
+              src={SMIT}
+              alt="PensieveCover"
+            />
+          </div>
+        </div>
+
+        {/* Sixth Thing */}
+        <div>
+          <h3
+            ref={refSixthListingTitle}
+            className={`contentContainer ${sixthListingTitleVisible ? "show" : ""
+              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+          >
+            Joining PIAIC for Web 3.0 and Metaverse
+          </h3>
           <div
-            ref={refFifthDescription}
-            className={`contentContainer ${isFifthListingDescription ? "show" : ""
+            ref={refSixthDescription}
+            className={`contentContainer ${isSixthListingDescription ? "show" : ""
               } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
           >
             <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
-              "Follow your passion, stay true to yourself, never follow someone else's path unless you're in the woods and
-              you're lost, and you see a path, then, by all means, you should follow that." -{" "}
+              With the announcement of the PIAIC (Pakistan's Institute of Artificial Intelligence and Computing) offering a
+              course on Web 3.0 and Metaverse, my excitement knew no bounds. Joining PIAIC and gaining guidance from this
+              prestigious platform became a key objective for me. Despite the initial disappointment of admissions not being
+              opened in Faisalabad, I made a decision to travel to Lahore from Faisalabad every Sunday at the morning time with
+              {" "}
+              <span className="relative">
+                <a href="https://github.com/AbuHurairah127" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                  Abu Hurairah
+                </a>
+              </span>{" "}
+              to attend classes and returning back Faisalabad on night time on the same day.
+              This marked the beginning of a new chapter, focused on expanding my knowledge in cutting-edge technologies.
+            </p>
+          </div>
+          {/* Image for Sixth Listing Description */}
+          <div className="mr-auto ml-auto mt-[40px]">
+            <img
+              ref={refSixthListingImage}
+              className={`contentContainer ${sixthListingImageVisible ? "show" : ""
+                }`}
+              src={WEB3}
+              alt="PensieveCover"
+            />
+          </div>
+        </div>
+
+        {/* Seventh Thing */}
+        <div>
+          <h3
+            ref={refSeventhListingTitle}
+            className={`contentContainer ${seventhListingTitleVisible ? "show" : ""
+              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+          >
+            Offer to Train Students at Saylani (SMIT)
+          </h3>
+          <div
+            ref={refSeventhDescription}
+            className={`contentContainer ${isSeventhListingDescription ? "show" : ""
+              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+          >
+            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+              Recognizing my performance throughout my time at Saylani Mass IT Training and my success in the hackathon, I
+              was offered an opportunity to train students in the next batch starting in December 2022. Teaching became an
+              enriching experience for me, allowing me to enhance my skills while guiding and inspiring these students on their own
+              journeys.
+            </p>
+          </div>
+          {/* Image for Seventh Listing Description */}
+          <div className="mr-auto ml-auto mt-[40px]">
+            <img
+              ref={refSeventhListingImage}
+              className={`contentContainer ${seventhListingImageVisible ? "show" : ""
+                }`}
+              src={students}
+              alt="PensieveCover"
+            />
+          </div>
+        </div>
+
+        {/* Eighth Thing */}
+        <div>
+          <h3
+            ref={refEighthListingTitle}
+            className={`contentContainer ${eighthListingTitleVisible ? "show" : ""
+              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+          >
+            Joining a Software House as a MERN Stack Developer
+          </h3>
+          <div
+            ref={refEighthDescription}
+            className={`contentContainer ${isEighthListingDescription ? "show" : ""
+              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+          >
+            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+              In the same year, I commenced my employment as a MERN Stack Developer at a reputable software company in Faisalabad.
+              My role primarily involved working on a significant project for a client based in the UAE. This project focused on
+              creating a platform akin to LinkedIn, specifically designed to streamline the employee hiring process. Throughout
+              my tenure, I had the privilege of being mentored by
+              {" "}
+              <span className="relative">
+                <a href="https://www.linkedin.com/in/waleedumer42/" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                  Waleed Umar
+                </a>
+              </span>{" "}
+              , whose invaluable guidance and insights greatly
+              influenced my professional journey. Waleed provided me with constructive feedback, highlighting my strengths and
+              weaknesses, contributing to my personal and technical development.
+            </p>
+          </div>
+          {/* Image for Eighth Listing Description */}
+          <div className="mr-auto ml-auto mt-[40px]">
+            <img
+              ref={refEighthListingImage}
+              className={`contentContainer ${eighthListingImageVisible ? "show" : ""
+                }`}
+              src={MERN2}
+              alt="PensieveCover"
+            />
+          </div>
+        </div>
+
+        {/* Ninth Thing */}
+        <div>
+          <h3
+            ref={refNinthListingTitle}
+            className={`contentContainer ${ninthListingTitleVisible ? "show" : ""
+              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+          >
+            End Remarks and Quotes
+          </h3>
+          <div
+            ref={refNinthDescription}
+            className={`contentContainer ${isNinthListingDescription ? "show" : ""
+              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+          >
+            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+              In conclusion, the year 2022 was a period of immense growth, challenges, and accomplishments. It was a year
+              of self-reflection, resilience, and determination as I navigated through various experiences and pursued my
+              passion for software engineering. The journey was not without its obstacles, but each hurdle served as a
+              stepping stone towards my goals. Through internships, hackathons, certifications, and valuable
+              connections, I gained valuable skills and knowledge that propelled me forward. The support and guidance
+              of mentors and the opportunity to contribute to meaningful projects have been instrumental in shaping my
+              path. As I look back on this transformative year, the following quote resonates with me:
+            </p>
+          </div>
+          <div
+            ref={refNinthDescription}
+            className={`contentContainer ${isNinthListingDescription ? "show" : ""
+              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+          >
+            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+              "Success is not final, failure is not fatal: It is the courage to continue that counts." -{" "}
               <span className="relative">
                 <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
-                  Ellen DeGeneres
+                  Winston Churchill
                 </span>
               </span>{" "}
             </p>
