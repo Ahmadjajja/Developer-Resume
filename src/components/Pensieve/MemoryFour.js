@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../Css_applied/Pensieve/pensieveStyles.css";
-import year2021 from "../../images/Year's In Review/2021/2021-3.webp"
+import year2021 from "../../images/Year's In Review/2021/2021.jpg"
 import AI from "../../images/Year's In Review/2021/AI.webp"
 import DSA from "../../images/Year's In Review/2021/DSA.png"
 import leavingHome from "../../images/Year's In Review/2021/leavingHome.jpg";
