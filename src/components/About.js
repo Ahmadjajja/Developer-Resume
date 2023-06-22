@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../Css_applied/aboutStyles.css";
 import simpleProfile from "../images/SimpleProfile5.jpg";
-import shadedProfile from "../images/SimpleProfile5.jpg";
-import simpleProfile2 from "../images/SimpleProfile5.jpg";
-import ShadedProfile2 from "../images/SimpleProfile5.jpg";
+import shadedProfile from "../images/SimpleProfile5Shaded.jpg";
 
 const About = ({ aboutBtnClickedActive }) => {
   const mySecondImage = useRef();
@@ -638,7 +636,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 ref={myImage}
                 onMouseOver={() => setClicked(true)}
                 onMouseOut={() => setClicked(false)}
-                src={clicked ? simpleProfile2 : ShadedProfile2}
+                src={clicked ? simpleProfile : shadedProfile}
                 alt="profile"
                 className="h-auto w-auto mr-auto ml-auto object-cover transition-ImageTransitionProperty duration-ImageTransitionDuration ease-ImageTransitionTiming delay-ImageTransitionDelay z-10 opacity-100 relative"
                 style={{

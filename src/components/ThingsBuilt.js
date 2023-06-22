@@ -5,6 +5,11 @@ import BankApp from "../images/BankApp.png"
 import ReatEstateMblApp from "../images/RealEstateMobileApp.png"
 import CRUDMERN from "../images/CRUDMERN.png"
 import JAVADSA from "../images/JAVADSA.png"
+import MERNBootcampShaded from "../images/MERN-BootcampShaded.jpg"
+import BankAppShaded from "../images/BankAppShaded.png"
+import ReatEstateMblAppShaded from "../images/RealEstateMobileAppShaded.png"
+import CRUDMERNShaded from "../images/CRUDMERNShaded.png"
+import JAVADSAShaded from "../images/JAVADSAShaded.png"
 
 const ThingsBuilt = ({ workBtnClickedActive }) => {
   const [firstThingsMouseOver, setFirstThingMOuseOver] = useState(false);
@@ -328,7 +333,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                 aria-label="GitHub Link"
               >
                 <svg
-                  className="svgGithubIcon"
+                  className="svgGithubIcon feather feather-github"
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
                   viewBox="0 0 24 24"
@@ -337,7 +342,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-github"
                 >
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -380,7 +384,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   aria-label="GitHub Link"
                 >
                   <svg
-                    className="svgGithubIcon bg-[#2f3b4e] tbScreen58:bg-transparent"
+                    className="svgGithubIcon bg-[#2f3b4e] tbScreen58:bg-transparent feather feather-github"
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"
                     viewBox="0 0 24 24"
@@ -389,7 +393,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="feather feather-github"
                   >
                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                   </svg>
@@ -402,7 +405,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                     target="_blank"
                   >
                     <svg
-                      className="bg-[#2f3b4e] tbScreen58:bg-transparent"
+                      className="bg-[#2f3b4e] tbScreen58:bg-transparent feather feather-external-link"
                       xmlns="http://www.w3.org/2000/svg"
                       role="img"
                       viewBox="0 0 24 24"
@@ -411,7 +414,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="feather feather-external-link"
                     >
                       <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                       <polyline points="15 3 21 3 21 9"></polyline>
@@ -457,7 +459,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                 aria-label="GitHub Link"
               >
                 <svg
-                  className="svgGithubIcon"
+                  className="svgGithubIcon feather feather-github"
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
                   viewBox="0 0 24 24"
@@ -466,7 +468,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-github"
                 >
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -509,7 +510,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   aria-label="GitHub Link"
                 >
                   <svg
-                    className="svgGithubIcon bg-[#2f3b4e] tbScreen58:bg-transparent"
+                    className="svgGithubIcon bg-[#2f3b4e] tbScreen58:bg-transparent feather feather-github"
                     xmlns="http://www.w3.org/2000/svg"
                     role="img"
                     viewBox="0 0 24 24"
@@ -518,7 +519,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className="feather feather-github"
                   >
                     <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                   </svg>
@@ -561,7 +561,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                 aria-label="GitHub Link"
               >
                 <svg
-                  className="svgGithubIcon"
+                  className="svgGithubIcon feather feather-github"
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
                   viewBox="0 0 24 24"
@@ -570,7 +570,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-github"
                 >
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -621,7 +620,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                 aria-label="GitHub Link"
               >
                 <svg
-                  className="svgGithubIcon"
+                  className="svgGithubIcon feather feather-github"
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
                   viewBox="0 0 24 24"
@@ -630,7 +629,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-github"
                 >
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -650,15 +648,10 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   className="object-top object-contain"
                   onMouseOver={() => setFirstThingMOuseOver(true)}
                   onMouseOut={() => setFirstThingMOuseOver(false)}
-                  // src={
-                  //   firstThingsMouseOver
-                  //     ? "https://res.cloudinary.com/dyoczrvps/image/upload/v1674907366/Portfolio/Learn_Java_DSA_zbjsr1.png"
-                  //     : "https://res.cloudinary.com/dyoczrvps/image/upload/v1674907362/Portfolio/Learn_Java_DSA_elcsx5.jpg"
-                  // }
                   src={
                     firstThingsMouseOver
                       ? JAVADSA
-                      : JAVADSA
+                      : JAVADSAShaded
                   }
                   alt="image"
                 />
@@ -695,7 +688,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                 aria-label="GitHub Link"
               >
                 <svg
-                  className="svgGithubIcon"
+                  className="svgGithubIcon feather feather-github"
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
                   viewBox="0 0 24 24"
@@ -704,7 +697,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-github"
                 >
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -753,7 +745,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   src={
                     secondThingsMouseOver
                       ? BankApp
-                      : BankApp
+                      : BankAppShaded
                   }
                   alt="image"
                 />
@@ -805,7 +797,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                 aria-label="GitHub Link"
               >
                 <svg
-                  className="svgGithubIcon"
+                  className="svgGithubIcon feather feather-github"
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
                   viewBox="0 0 24 24"
@@ -814,7 +806,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-github"
                 >
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -837,7 +828,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   src={
                     thirdThingsMouseOver
                       ? ReatEstateMblApp
-                      : ReatEstateMblApp
+                      : ReatEstateMblAppShaded
                   }
                   alt="image"
                 />
@@ -874,7 +865,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                 aria-label="GitHub Link"
               >
                 <svg
-                  className="svgGithubIcon"
+                  className="svgGithubIcon feather feather-github"
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
                   viewBox="0 0 24 24"
@@ -883,7 +874,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-github"
                 >
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -932,7 +922,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   src={
                     secondThingsMouseOver
                       ? CRUDMERN
-                      : CRUDMERN
+                      : CRUDMERNShaded
                   }
                   alt="image"
                 />
@@ -978,7 +968,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                 aria-label="GitHub Link"
               >
                 <svg
-                  className="svgGithubIcon"
+                  className="svgGithubIcon feather feather-github"
                   xmlns="http://www.w3.org/2000/svg"
                   role="img"
                   viewBox="0 0 24 24"
@@ -987,7 +977,6 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="feather feather-github"
                 >
                   <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
                 </svg>
@@ -1010,7 +999,7 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                   src={
                     MERNBootcampMouseOver
                       ? MERNBootcamp
-                      : MERNBootcamp
+                      : MERNBootcampShaded
                   }
                   alt="image"
                 />
