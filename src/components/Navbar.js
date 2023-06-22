@@ -481,7 +481,7 @@ const Navbar = ({
                       Blog
                     </Link>
                     <a
-                      href="https://drive.google.com/file/d/1TIiJvqmbsYI2swVEY_kNgH6MjbhINXFm/view?usp=share_link"
+                      href="https://drive.google.com/file/d/1fgKw7H3PplIenkF-pxfqWdMAnvZcCeA0/view?usp=share_link"
                       className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[#172a45] border  border-[#64ffda]  rounded  font-mono  text-[#64ffda]  tracking-wide cursor-pointer antialiased"
                       target="_blank"
                     >
@@ -690,7 +690,7 @@ const Navbar = ({
                   Blog
                 </Link>
                 <a
-                  href="https://drive.google.com/file/d/1TIiJvqmbsYI2swVEY_kNgH6MjbhINXFm/view?usp=share_link"
+                  href="https://drive.google.com/file/d/1fgKw7H3PplIenkF-pxfqWdMAnvZcCeA0/view?usp=share_link"
                   className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[#172a45] border  border-[#64ffda]  rounded  font-mono  text-[#64ffda]  tracking-wide cursor-pointer antialiased"
                   target="_blank"
                 >
@@ -870,7 +870,7 @@ const Navbar = ({
                   </span>
                 </Link>
                 <a
-                  href="https://drive.google.com/file/d/1TIiJvqmbsYI2swVEY_kNgH6MjbhINXFm/view"
+                  href="https://drive.google.com/file/d/1fgKw7H3PplIenkF-pxfqWdMAnvZcCeA0/view"
                   onClick={() => {
                     setResumeBtnClicked(true);
                   }}
