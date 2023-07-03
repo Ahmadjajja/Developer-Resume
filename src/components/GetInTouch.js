@@ -101,7 +101,7 @@ const GetInTouch = ({ contactBtnClickedActive }) => {
           } text-[#8892b0] text-[20px] font-calibri text-center antialiased mt-[10px] flex flex-wrap
   `}
         >
-          I'm currently in a seach of new and better opportunities. My inbox is
+          I'm currently in a search of new and better opportunities. My inbox is
           always open. Whether you wanna hire or just say hi, I'll try my best
           to get back to you!
         </div>
