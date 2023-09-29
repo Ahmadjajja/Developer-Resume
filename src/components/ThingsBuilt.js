@@ -793,7 +793,10 @@ const ThingsBuilt = ({ workBtnClickedActive }) => {
                 : "project-image2 mix-blend-exclusion"
             }
           >
-            <a href="https://github.com/Ahmadjajja/React_Bank" target="_blank">
+            <a
+              href="https://github.com/Louvivien/AIpodcastgenerator"
+              target="_blank"
+            >
               <div>
                 <img
                   onMouseOver={() => setPodcastThingMOuseOver(true)}
