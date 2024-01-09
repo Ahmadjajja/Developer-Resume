@@ -154,7 +154,7 @@ const About = ({ aboutBtnClickedActive }) => {
             This teaching experience has allowed me to impart comprehensive
             lessons on programming languages and technologies, including HTML,
             CSS,Bootstrap5, JavaScript,Typescript, React JS,React Native,
-            NodeJS, MongoDB, and Express JS, to over 300 students. I thoroughly
+            NodeJS, MongoDB, and Express JS, to 500+ students. I thoroughly
             enjoy sharing my knowledge and helping others grasp complex concepts
             in a clear and concise manner as well as i loves to solve
             <a
@@ -426,7 +426,7 @@ const About = ({ aboutBtnClickedActive }) => {
             This teaching experience has allowed me to impart comprehensive
             lessons on programming languages and technologies, including HTML,
             CSS,Bootstrap5, JavaScript,Typescript, React JS,React Native,
-            NodeJS, MongoDB, and Express JS, to over 300 students. I thoroughly
+            NodeJS, MongoDB, and Express JS, to 500+ students. I thoroughly
             enjoy sharing my knowledge and helping others grasp complex concepts
             in a clear and concise manner as well as i loves to solve
             <div className="relative inline-block">

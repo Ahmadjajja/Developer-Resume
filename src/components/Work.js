@@ -338,7 +338,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
                       <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
                       <div className="leading-[1.22rem]">
-                        Instructed over 300 students.
+                        Instructed 500+ students.
                       </div>
                     </div>
                     <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
@@ -734,7 +734,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
                     <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
                     <div className="leading-[1.22rem]">
-                      Instructed over 300 students.
+                      Instructed 500+ students.
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
