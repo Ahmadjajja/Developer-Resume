@@ -1,5 +1,10 @@
 # Ahmad-Portfolio
 
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+
 <div align="center">
   <img alt="Logo" src="./src/images/logo.png" width="100" />
 </div>
@@ -42,3 +47,15 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+[contributors-shield]: https://img.shields.io/github/contributors/Ahmadjajja/AIpodcastgenerator.svg?style=for-the-badge
+[contributors-url]: https://github.com/Ahmadjajja/AIpodcastgenerator/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Ahmadjajja/AIpodcastgenerator.svg?style=for-the-badge
+[forks-url]: https://github.com/Ahmadjajja/AIpodcastgenerator/network/members
+[stars-shield]: https://img.shields.io/github/stars/Ahmadjajja/AIpodcastgenerator.svg?style=for-the-badge
+[stars-url]: https://github.com/Ahmadjajja/AIpodcastgenerator/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Ahmadjajja/AIpodcastgenerator.svg?style=for-the-badge
+[issues-url]: https://github.com/Ahmadjajja/AIpodcastgenerator/issues
+[license-shield]: https://img.shields.io/github/license/Ahmadjajja/AIpodcastgenerator.svg?style=for-the-badge
+[license-url]: https://github.com/Ahmadjajja/AIpodcastgenerator/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
