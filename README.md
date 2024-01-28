@@ -48,14 +48,14 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-[contributors-shield]: https://img.shields.io/github/contributors/Ahmadjajja/AIpodcastgenerator.svg?style=for-the-badge
-[contributors-url]: https://github.com/Ahmadjajja/AIpodcastgenerator/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Ahmadjajja/AIpodcastgenerator.svg?style=for-the-badge
-[forks-url]: https://github.com/Ahmadjajja/AIpodcastgenerator/network/members
-[stars-shield]: https://img.shields.io/github/stars/Ahmadjajja/AIpodcastgenerator.svg?style=for-the-badge
-[stars-url]: https://github.com/Ahmadjajja/AIpodcastgenerator/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Ahmadjajja/AIpodcastgenerator.svg?style=for-the-badge
-[issues-url]: https://github.com/Ahmadjajja/AIpodcastgenerator/issues
-[license-shield]: https://img.shields.io/github/license/Ahmadjajja/AIpodcastgenerator.svg?style=for-the-badge
-[license-url]: https://github.com/Ahmadjajja/AIpodcastgenerator/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Ahmadjajja/Developer-Resume.svg?style=for-the-badge
+[contributors-url]: https://github.com/Ahmadjajja/Developer-Resume/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Ahmadjajja/Developer-Resume.svg?style=for-the-badge
+[forks-url]: https://github.com/Ahmadjajja/Developer-Resume/network/members
+[stars-shield]: https://img.shields.io/github/stars/Ahmadjajja/Developer-Resume.svg?style=for-the-badge
+[stars-url]: https://github.com/Ahmadjajja/Developer-Resume/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Ahmadjajja/Developer-Resume.svg?style=for-the-badge
+[issues-url]: https://github.com/Ahmadjajja/Developer-Resume/issues
+[license-shield]: https://img.shields.io/github/license/Ahmadjajja/Developer-Resume.svg?style=for-the-badge
+[license-url]: https://github.com/Ahmadjajja/Developer-Resume/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
