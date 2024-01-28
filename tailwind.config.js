@@ -198,7 +198,7 @@ module.exports = {
       opScreen18: { max: "325px" },
       opScreen19: { max: "308px" },
       opScreen20: { max: "289px" },
-      opScreen21: { max: "299px" },
+      opScreen21: { max: "300px" },
       opScreen22: { max: "278px" },
       opScreen23: { max: "273px" },
       opScreen24: { min: "787px" },
