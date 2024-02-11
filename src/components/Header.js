@@ -54,13 +54,14 @@ const Header = () => {
             className={`contentContainer ${showThirdContent ? "show" : ""
               } smallHeading block  text-[#8892b0]  font-semibold  leading-[1]  font-calibri antialiased headerScreen1:w-[90%] marginTop: mt-3`}
           >
-            A Full-Stack-Engineer and Mentor
+            Software Engineer and Trainer
           </div>
           <div
             className={`contentContainer ${showFourthContent ? "show" : ""
               } description block text-[#8892b0]  mt-[1.16rem] py-2  text-lg antialiased headerScreen1:w-[70%]`}
+              style={{ fontFamily : "'Calibre','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif"}}
           >
-            A Techy with keen interest in Web Development, DEVOPS, WEB 3.0 and machine learning. Love to learn new technologies, currently learning and enhancing my knowledge in docker, kubernates and CI/CD.
+            {/* A Techy with keen interest in Web Development, DEVOPS, WEB 3.0 and machine learning. Love to learn new technologies, currently learning and enhancing my knowledge in docker, kubernates and CI/CD.
             An aspiring{" "}
             <div className="relative inline-block">
               <a
@@ -71,7 +72,9 @@ const Header = () => {
                 Certified&nbsp;
               </a>{" "}
             </div>
-            Full-Stack-Engineer with a focus on Large Scale Systems.
+            Full-Stack-Engineer with a focus on Large Scale Systems. */}
+            A Techy's professional journey revolves around crafting large-scale internet web and mobile applications using MERN Stack & React Native. Inspired by technological advancements, currently investing time in Generative AI.
+            A PhD candidate aiming to pursue studies in the United States to advance in the tech field.
           </div>
           <div
             className={`contentContainer ${showFifthContent ? "show" : ""

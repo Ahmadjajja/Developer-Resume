@@ -36,7 +36,7 @@ const PensieveTags = () => {
       </div>
       {/* Early Life in a Small Village */}
       <div className="w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
-        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
+        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">➾</span>
         <div>
           <span className="relative">
             <a
@@ -70,7 +70,7 @@ const PensieveTags = () => {
       </div>
       {/* Years in Review 2018 */}
       <div className="w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
-        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
+        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">➾</span>
         <div>
           <span className="relative">
             <a
@@ -104,7 +104,7 @@ const PensieveTags = () => {
       </div>
       {/* Years in Review 2019 */}
       <div className="w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
-        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
+        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">➾</span>
         <div>
           <span className="relative">
             <a
@@ -138,7 +138,7 @@ const PensieveTags = () => {
       </div>
       {/* Years in Review 2020 */}
       <div className="w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
-        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
+        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">➾</span>
         <div>
           <span className="relative">
             <a
@@ -172,7 +172,7 @@ const PensieveTags = () => {
       </div>
       {/* Years in Review 2021 */}
       <div className="w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
-        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
+        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">➾</span>
         <div>
           <span className="relative">
             <a
@@ -206,7 +206,7 @@ const PensieveTags = () => {
       </div>
       {/* Years in Review 2022 */}
       <div className="mb-5 w-[80%] mr-auto ml-auto mt-[5.25rem] flex">
-        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
+        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">➾</span>
         <div>
           <span className="relative">
             <a

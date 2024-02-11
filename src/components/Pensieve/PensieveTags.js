@@ -23,7 +23,7 @@ const PensieveTags = () => {
         </span>
       </div>
       <div className="w-[70%] mr-auto ml-auto mt-[4.25rem] flex">
-        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">▹</span>
+        <span className="text-[#64ffda] pr-[30px] w-[12px] h-[12px]">➾</span>
         <div>
           <span className="relative">
             <Link

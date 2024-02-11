@@ -106,9 +106,8 @@ const About = ({ aboutBtnClickedActive }) => {
       className={`mr-8 ml-8 myScreen6:ml-[6.338rem] myScreen6:mr-[6.338rem] myScreen7:ml-[9.07rem] myScreen7:mr-[9.07rem]`}
     >
       <div
-        className={`contentContainer ${
-          isVisible ? "show" : ""
-        } pt-[5.538rem] pb-[2.5rem] relative`}
+        className={`contentContainer ${isVisible ? "show" : ""
+          } pt-[5.538rem] pb-[2.5rem] relative`}
       >
         <div className="inline-block absolute top-[105px] text-[#64ffda] font-customMono text-headerDescriptionFontSize font-normal antialiased aboutScreen3:top-[100px]">
           01.
@@ -121,9 +120,8 @@ const About = ({ aboutBtnClickedActive }) => {
       </div>
       {/* Body Section for < md-screen */}
       <div
-        className={`contentContainer ${
-          isVisibleTwo ? "show" : ""
-        } block aboutScreen8:hidden`}
+        className={`contentContainer ${isVisibleTwo ? "show" : ""
+          } block aboutScreen8:hidden`}
       >
         {/* Section 2 */}
         <div>
@@ -132,56 +130,33 @@ const About = ({ aboutBtnClickedActive }) => {
             Faisalabad, PK.
           </div>
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            I build things on the internet and love building large-scale
-            applications with system design in mind. I have had the opportunity
-            to work on various projects both in teams and as a freelancer, which
-            has provided me with valuable learning experiences. Additionally, I
-            have a passion for teaching Computer Science concepts. In fact, I
-            have been actively involved in teaching as a part of my role as a
-            <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming font-calibri text-[20px] aboutScreen4:block">
-              &nbsp; MERN Stack Trainer &nbsp;
-            </a>{" "}
-            within the
+            I specialize in developing robust web and mobile applications using the MERN Stack and React Native. I bring a diverse background, having worked both collaboratively in teams and independently as a freelancer, accumulating valuable experiences along the way.
+            <br />
+            <br />
+            As a tech trainer at the
             <div className="relative inline-block">
               <a
                 className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
                 href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
                 target="_blank"
               >
-                Saylani Welfare Mass Training & Job Creation Program.&nbsp;
+                Saylani Welfare Mass Training & Job Creation Program&nbsp;
               </a>{" "}
             </div>
-            This teaching experience has allowed me to impart comprehensive
-            lessons on programming languages and technologies, including HTML,
-            CSS,Bootstrap5, JavaScript,Typescript, React JS,React Native,
-            NodeJS, MongoDB, and Express JS, to 500+ students. I thoroughly
-            enjoy sharing my knowledge and helping others grasp complex concepts
-            in a clear and concise manner as well as i loves to solve
-            <a
-              className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-              href="https://github.com/Ahmadjajja/JAVA_DSA"
-              target="_blank"
-            >
-              &nbsp; DSA &nbsp;
-            </a>{" "}
-            Problem on{" "}
+            I've taught (wanna see how I provide training to my students?
             <div className="relative inline-block">
               <a
                 className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
                 href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
                 target="_blank"
               >
-                leetcode&nbsp;
+                &nbsp; click here
               </a>{" "}
-            </div>{" "}
-            to improve my coding skills.I am an
-            <a className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming font-calibri text-[20px] aboutScreen4:block">
-              &nbsp; open-source enthusiast &nbsp;
-            </a>{" "}
-            who is eager to explore new opportunities within the realm of
-            open-source development. My goal is to enhance my skills by working
-            on substantial codebases and contributing to the open-source
-            community. Currently, I am pursuing my undergraduate degree at the
+            </div>
+            ) over 500 students, simplifying complex programming concepts and solving 250+ LeetCode questions to sharpen my skills. Actively participating in coding competitions like Google Code Jam and Meta Hacker Cup and hackathons drives my passion for continuous learning and innovation.
+            <br />
+            <br />
+            I am still undergraduate student at the 
             <a
               className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
               href="http://web.uaf.edu.pk/"
@@ -189,7 +164,14 @@ const About = ({ aboutBtnClickedActive }) => {
             >
               &nbsp;University of Agriculture, Faisalabad.
             </a>{" "}
+            and will be graduate in June, 2024.
+            <br />
+            <br />
+            I aim to pursue a PhD in the United States to advance in technology research and innovation.
+
+          
           </div>
+
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-5">
             Here are few technologies I have been working on recently:
           </div>
@@ -198,13 +180,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 C
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 C++
               </div>
@@ -212,13 +194,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Dart
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Java (OOP + DSA)
               </div>
@@ -226,13 +208,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Python
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 JavaScript (ES6+)
               </div>
@@ -240,13 +222,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Typescript
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 HTML5
               </div>
@@ -254,13 +236,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 CSS3
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 SCSS, SASS
               </div>
@@ -268,13 +250,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Chakra-UI
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Aunt-Design
               </div>
@@ -282,13 +264,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Bootstrap-5
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 React-JS
               </div>
@@ -296,13 +278,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 React-Native
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Firebase
               </div>
@@ -310,13 +292,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 FireStore
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Node-JS
               </div>
@@ -324,13 +306,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Express-JS
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Mongo-DB
               </div>
@@ -338,13 +320,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Git
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Github
               </div>
@@ -352,13 +334,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Rest-APIs
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 GraphQL
               </div>
@@ -390,9 +372,8 @@ const About = ({ aboutBtnClickedActive }) => {
       </div>
       {/* Body Section for > md-screen */}
       <div
-        className={`contentContainer ${
-          isVisibleTwo ? "show" : ""
-        } hidden aboutScreen8:block relative`}
+        className={`contentContainer ${isVisibleTwo ? "show" : ""
+          } hidden aboutScreen8:block relative`}
       >
         {/* Section 2 */}
         <div className="w-[46.5136vw] aboutScreen11:w-[51vw] aboutScreen12:w-[49vw]">
@@ -401,6 +382,53 @@ const About = ({ aboutBtnClickedActive }) => {
             Faisalabad, PK.
           </div>
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
+            I specialize in developing robust web and mobile applications using the MERN Stack and React Native. I bring a diverse background, having worked both collaboratively in teams and independently as a freelancer, accumulating valuable experiences along the way.
+            <br />
+            <br />
+            As a tech trainer at the
+            <div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
+                target="_blank"
+              >
+                &nbsp;Saylani Welfare Mass Training & Job Creation
+                Program
+              </a>{" "}
+            </div>
+            I've taught (wanna see how I provide training to my students?<div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://www.linkedin.com/posts/ahmad-jajja_learn-to-code-with-activity-7151895134744256512-Dmyf?utm_source=share&utm_medium=member_desktop"
+                target="_blank"
+              >
+                &nbsp;click here&nbsp;
+              </a>{" "}
+            </div>
+            )
+
+            over 500 students, simplifying complex programming concepts and solving 250+ LeetCode questions to sharpen my skills. Actively participating in coding competitions like Google Code Jam and Meta Hacker Cup and hackathons drives my passion for continuous learning and innovation.
+            <br />
+            <br />
+            I am still undergraduate student at the
+            <div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="http://web.uaf.edu.pk/"
+                target="_blank"
+              >
+                &nbsp;University of Agriculture, Faisalabad
+              </a>{" "}
+            </div>
+            and will be graduate in June, 2024.
+            <br />
+            <br />
+            I aim to pursue a PhD in the United States to advance in technology research and innovation.
+            <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4 mt-4">
+              Here are a few technologies I've been working with recently:
+            </div>
+          </div>
+          {/* <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
             I build things on the internet and love building large-scale
             applications with system design in mind. I have had the opportunity
             to work on various projects both in teams and as a freelancer, which
@@ -409,7 +437,7 @@ const About = ({ aboutBtnClickedActive }) => {
             have been actively involved in teaching as a part of my role as a
             <div className="relative inline-block">
               <a className="spanOneHoverClass text-[#64ffda] font-calibri text-[20px] aboutScreen4:block">
-                &nbsp; MERN Stack Trainer &nbsp;
+                &nbsp; Tech Trainer &nbsp;
               </a>{" "}
             </div>
             within the
@@ -470,19 +498,19 @@ const About = ({ aboutBtnClickedActive }) => {
             <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4 mt-4">
               Here are a few technologies I've been working with recently:
             </div>
-          </div>
+          </div> */}
           {/* Technologies I am familiar with */}
           <div className="text-[#8892b0] flex flex-wrap">
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 C
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 C++
               </div>
@@ -490,13 +518,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Dart
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Java (OOP + DSA)
               </div>
@@ -504,13 +532,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Python
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 JavaScript (ES6+)
               </div>
@@ -518,13 +546,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Typescript
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 HTML5
               </div>
@@ -532,13 +560,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 CSS3
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 SCSS, SASS
               </div>
@@ -546,13 +574,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Chakra-UI
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Aunt-Design
               </div>
@@ -560,13 +588,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Bootstrap-5
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 React-JS
               </div>
@@ -574,13 +602,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 React-Native
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Firebase
               </div>
@@ -588,13 +616,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 FireStore
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Node-JS
               </div>
@@ -602,13 +630,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Express-JS
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Mongo-DB
               </div>
@@ -616,13 +644,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Git
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Github
               </div>
@@ -630,13 +658,13 @@ const About = ({ aboutBtnClickedActive }) => {
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 Rest-APIs
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ▹
+                  ➾
                 </span>{" "}
                 GraphQL
               </div>

@@ -85,30 +85,30 @@ const Work = ({ experienceBtnClickedActive }) => {
     left: secondBarClicked
       ? "134.7px"
       : thirdBarClicked
-      ? "221px"
-      : fourthBarClicked
-      ? "307.842px"
-      : "0px",
+        ? "221px"
+        : fourthBarClicked
+          ? "307.842px"
+          : "0px",
     width: firstBarClicked
       ? `calc(134.7px + ${scrollLeft}px)`
       : secondBarClicked
-      ? `86.3px`
-      : thirdBarClicked
-      ? `86.842px`
-      : fourthBarClicked
-      ? `118px`
-      : `calc(134.7px + ${scrollLeft}px)`,
+        ? `86.3px`
+        : thirdBarClicked
+          ? `86.842px`
+          : fourthBarClicked
+            ? `118px`
+            : `calc(134.7px + ${scrollLeft}px)`,
     height: "2px",
     backgroundColor: "#64ffda",
     transform: firstBarClicked
       ? `translateX(-${scrollLeft}px)`
       : secondBarClicked
-      ? null
-      : thirdBarClicked
-      ? null
-      : fourthBarClicked
-      ? null
-      : `translateX(-${scrollLeft}px)`,
+        ? null
+        : thirdBarClicked
+          ? null
+          : fourthBarClicked
+            ? null
+            : `translateX(-${scrollLeft}px)`,
     transition: "all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1)",
   };
 
@@ -213,9 +213,8 @@ const Work = ({ experienceBtnClickedActive }) => {
         {/* Header Section */}
         <div
           id="title"
-          className={`contentContainer ${
-            isVisible ? "show" : ""
-          } pt-[5.538rem] relative`}
+          className={`contentContainer ${isVisible ? "show" : ""
+            } pt-[5.538rem] relative`}
         >
           <div className="inline-block absolute top-[6.7rem] text-[#64ffda] font-customMono text-headerDescriptionFontSize font-normal antialiased workScreen2:top-[6.5rem] workScreen3:top-[6.3rem]">
             02.
@@ -228,9 +227,8 @@ const Work = ({ experienceBtnClickedActive }) => {
         </div>
         {/* When screen > 500px */}
         <div
-          className={`contentContainer ${
-            isVisibleTwo ? "show" : ""
-          } block workScreen1:hidden`}
+          className={`contentContainer ${isVisibleTwo ? "show" : ""
+            } block workScreen1:hidden`}
         >
           <div className="flex">
             {/* Left Side */}
@@ -241,12 +239,12 @@ const Work = ({ experienceBtnClickedActive }) => {
                     firstBarClicked
                       ? "h-[2.625rem] w-[1.6px] absolute top-0 border border-[#64ffda] rounded transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
                       : secondBarClicked
-                      ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded top-[2.2rem] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
-                      : thirdBarClicked
-                      ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded top-[4.9rem] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
-                      : fourthBarClicked
-                      ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded top-[7.6rem] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
-                      : "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
+                        ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded top-[2.2rem] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
+                        : thirdBarClicked
+                          ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded top-[4.9rem] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
+                          : fourthBarClicked
+                            ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded top-[7.6rem] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
+                            : "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
                   }
                 ></div>
                 {/* Sevenovn */}
@@ -258,8 +256,8 @@ const Work = ({ experienceBtnClickedActive }) => {
                     firstWorkHover
                       ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
                       : firstWorkClicked
-                      ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
-                      : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
+                        : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px]"
                   }
                 >
                   SMIT
@@ -273,8 +271,8 @@ const Work = ({ experienceBtnClickedActive }) => {
                     secondWorkHover
                       ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
                       : secondWorkClicked
-                      ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
-                      : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
+                        : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px]"
                   }
                 >
                   ZWTech
@@ -288,8 +286,8 @@ const Work = ({ experienceBtnClickedActive }) => {
                     thirdWorkHover
                       ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
                       : thirdWorkClicked
-                      ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
-                      : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
+                        : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px]"
                   }
                 >
                   SEERAHT
@@ -303,8 +301,8 @@ const Work = ({ experienceBtnClickedActive }) => {
                     fourthWorkHover
                       ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
                       : fourthWorkClicked
-                      ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
-                      : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
+                        : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px]"
                   }
                 >
                   Freelancing
@@ -319,7 +317,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   {/* For firstWork */}
                   <div>
                     <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
-                      MERN Stack Trainer{" "}
+                      Tech Trainer{" "}
                       <span className="antialiased text-[#64ffda]">@</span>
                       <span className="antialiased text-[#64ffda] relative">
                         <a
@@ -335,14 +333,22 @@ const Work = ({ experienceBtnClickedActive }) => {
                       Dec 2022 - present{" "}
                     </div>
 
+
+                    {/* 
                     <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                      <a href="https://drive.google.com/file/d/1VoW3VGwb0dlfR0XMFlPWOvK1b47_CcIK/view" target="_blank">
+                        <img align="right" alt="" style="margin-top: 30px;" src="../images/SMIT-Click.jpeg" width="480" />
+                      </a>
+                    </div> */}
+
+                    <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                       <div className="leading-[1.22rem]">
                         Instructed 500+ students.
                       </div>
                     </div>
                     <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                      <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                       <div className="leading-[1.22rem]">
                         My role involves delivering comprehensive training
                         sessions on the MERN stack, covering frontend and
@@ -351,7 +357,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                       </div>
                     </div>
                     <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                      <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                       <div className="leading-[1.22rem]">
                         I aim to empower students to become proficient MERN
                         stack developers, providing them with practical
@@ -359,69 +365,123 @@ const Work = ({ experienceBtnClickedActive }) => {
                         using the MERN stack.
                       </div>
                     </div>
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                      <div className="leading-[1.22rem]">
+                        Providing instructions in HTML5, CSS3, SCSS, SASS, Bootstrap 5, JavaScript ES6+, TypeScript, React JS (Context API, Router, State Management), React Native, Redux, Firebase, Firestore, Node JS (ExpressJS, Authentication, API Endpoint Handling), MongoDB, Heroku, Surge, Netlify (Hosting), Git, Github.
+                      </div>
+                    </div>
                     <div className="pt-[1.5rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
                       <div className="leading-[1.22rem]">
-                        Providing instructions in the following disciplines:
+
+                        🔄 Courses
+
                       </div>
                     </div>
+                    {/* 1 */}
                     <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                      <div className="leading-[1.22rem]">HTML 5</div>
-                    </div>
-                    <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                      <div className="text-[#64ffda] pr-[1rem]" style={{ position: "relative", bottom: "3px" }}>➾</div>{" "}
                       <div className="leading-[1.22rem]">
-                        CSS 3, SCSS, SASS and Bootstrap 5
+                        <div className="relative inline-block">
+                          <a
+                            className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                            href="https://github.com/Ahmadjajja/AI-Chatbot"
+                            target="_blank"
+                          >
+                            &nbsp;GenAI_Chatbot_1.0&nbsp;
+                          </a>{" "} (Current)
+                        </div>
                       </div>
                     </div>
-                    <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                      <div className="leading-[1.22rem]">JavaScript ES6+</div>
-                    </div>
-                    <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                      <div className="leading-[1.22rem]">Typescript</div>
-                    </div>
-                    <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    {/* 2 */}
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]" style={{ position: "relative", bottom: "3px" }}>➾</div>{" "}
                       <div className="leading-[1.22rem]">
-                        React JS (Context API, Router, State Management)
+                        <div className="relative inline-block">
+                          <a
+                            className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                            href="https://github.com/Ahmadjajja/Backend_Development.git"
+                            target="_blank"
+                          >
+                            &nbsp;Backend_Development_1.0&nbsp;
+                          </a>{" "} (Completed)
+                        </div>
                       </div>
                     </div>
-                    <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                      <div className="leading-[1.22rem]">React Native </div>
-                    </div>
-                    <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                      <div className="leading-[1.22rem]">Redux</div>
-                    </div>
-                    <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    {/* 3 */}
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]" style={{ position: "relative", bottom: "3px" }}>➾</div>{" "}
                       <div className="leading-[1.22rem]">
-                        Firebase, Firestore
+                        <div className="relative inline-block">
+                          <a
+                            className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                            href="https://github.com/Ahmadjajja/SMIT-Web-and-Mobile-Batch7"
+                            target="_blank"
+                          >
+                            &nbsp;Full_Stack_Development_1.0&nbsp;
+                          </a>{" "} (Current)
+                        </div>
                       </div>
                     </div>
-                    <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    {/* 4 */}
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]" style={{ position: "relative", bottom: "3px" }}>➾</div>{" "}
                       <div className="leading-[1.22rem]">
-                        Node JS (ExpressJS, Authentication, API Endpoint
-                        Handling)
+                        <div className="relative inline-block">
+                          <a
+                            className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                            href="https://github.com/Ahmadjajja/Web_Designing_Crash_Course_A"
+                            target="_blank"
+                          >
+                            &nbsp;Web_Designing_Bootcamp_1.0&nbsp;
+                          </a>{" "} (Completed)
+                        </div>
                       </div>
                     </div>
-                    <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                      <div className="leading-[1.22rem]">MongoDB</div>
-                    </div>
-                    <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    {/* 5 */}
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]" style={{ position: "relative", bottom: "3px" }}>➾</div>{" "}
                       <div className="leading-[1.22rem]">
-                        Heroku, Surge, Netlify (Hosting)
+                        <div className="relative inline-block">
+                          <a
+                            className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                            href="https://github.com/Ahmadjajja/Web_Designing_Crash_Course_B"
+                            target="_blank"
+                          >
+                            &nbsp;Web_Designing_Bootcamp_2.0&nbsp;
+                          </a>{" "} (Completed)
+                        </div>
                       </div>
                     </div>
-                    <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                      <div className="leading-[1.22rem]">Git, Github</div>
+                    {/* 6 */}
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]" style={{ position: "relative", bottom: "3px" }}>➾</div>{" "}
+                      <div className="leading-[1.22rem]">
+                        <div className="relative inline-block">
+                          <a
+                            className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                            href="https://github.com/Ahmadjajja/SMIT-WMA-6-A-E"
+                            target="_blank"
+                          >
+                            &nbsp;Frontend_Web_Development_1.0 &nbsp;
+                          </a>{" "} (Completed)
+                        </div>
+                      </div>
+                    </div>
+                    {/* 7 */}
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]" style={{ position: "relative", bottom: "3px" }}>➾</div>{" "}
+                      <div className="leading-[1.22rem]">
+                        <div className="relative inline-block">
+                          <a
+                            className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                            href="https://github.com/Ahmadjajja/Mobile_Application_Development"
+                            target="_blank"
+                          >
+                            &nbsp;Frontend_Mobile_Development_1.0 &nbsp;
+                          </a>{" "} (Completed)
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -442,7 +502,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   </div>
 
                   <div className="mt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
                       Implemented new features and modified existing ones on the
                       front-end using React JS for a business website similar to
@@ -451,7 +511,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
                       Built a GraphQL API from scratch and modified existing
                       GraphQL APIs using Node.js on the back-end, facilitating
@@ -460,7 +520,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
                       Contributed to the development of a comprehensive platform
                       that streamlined the hiring process for companies,
@@ -493,7 +553,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   </div>
 
                   <div className="mt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
                       Developed and maintained web applications using the MERN
                       stack, focusing on delivering high-quality, scalable, and
@@ -501,7 +561,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
                       Collaborated with cross-functional teams to understand
                       business requirements and implemented technical solutions,
@@ -510,7 +570,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
                       Conducted code reviews, participated in the software
                       development lifecycle, and troubleshooted and debugged
@@ -538,7 +598,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     Nov 2021 - present{" "}
                   </div>
                   <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.3rem]">
                       Developed and delivered a wide range of web-based
                       solutions, utilizing front-end technologies such as HTML,
@@ -547,7 +607,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.3rem]">
                       Built and maintained strong relationships with clients
                       through effective communication and problem-solving
@@ -556,7 +616,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.3rem]">
                       Accomplished in utilizing version control systems such as
                       Git and SVN, and implementing agile methodologies for
@@ -564,7 +624,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.3rem]">
                       Proven ability to work independently as well as part of a
                       team, successfully delivering projects on time and within
@@ -572,14 +632,14 @@ const Work = ({ experienceBtnClickedActive }) => {
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.3rem]">
                       Experience with database management systems such as
                       MongoDB.
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.3rem]">
                       Experience in integrating web applications with
                       third-party APIs and services.
@@ -717,7 +777,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                 {/* For firstWork */}
                 <div>
                   <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
-                    MERN Stack Trainer{" "}
+                    Tech Trainer{" "}
                     <span className="antialiased text-[#64ffda]">@</span>
                     <a
                       href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
@@ -732,13 +792,13 @@ const Work = ({ experienceBtnClickedActive }) => {
                   </div>
 
                   <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
                       Instructed 500+ students.
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
                       My role involves delivering comprehensive training
                       sessions on the MERN stack, covering frontend and backend
@@ -747,7 +807,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
                       I aim to empower students to become proficient MERN stack
                       developers, providing them with practical knowledge and
@@ -755,73 +815,118 @@ const Work = ({ experienceBtnClickedActive }) => {
                       stack.
                     </div>
                   </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Providing instructions in HTML5, CSS3, SCSS, SASS, Bootstrap 5, JavaScript ES6+, TypeScript, React JS (Context API, Router, State Management), React Native, Redux, Firebase, Firestore, Node JS (ExpressJS, Authentication, API Endpoint Handling), MongoDB, Heroku, Surge, Netlify (Hosting), Git, Github.
+                    </div>
+                  </div>
 
                   <div className="pt-[1.5rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
                     <div className="leading-[1.22rem]">
-                      Providing instructions in the following disciplines:
+                      🔄 Courses
                     </div>
                   </div>
+                  {/* 1 */}
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                    <div className="leading-[1.22rem]">HTML 5</div>
-                  </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
-                      CSS 3, SCSS, SASS and Bootstrap 5
+                      <a
+                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                        href="https://github.com/Ahmadjajja/AI-Chatbot"
+                        target="_blank"
+                      >
+
+                        GenAI_Chatbot_1.0&nbsp;
+                      </a>
                     </div>
                   </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                    <div className="leading-[1.22rem]">JavaScript ES6+</div>
-                  </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                    <div className="leading-[1.22rem]">Typescript</div>
-                  </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  {/* 2 */}
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
-                      React JS (Context API, Router, State Management)
+                      <a
+                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                        href="https://github.com/Ahmadjajja/Backend_Development.git"
+                        target="_blank"
+                      >
+
+                        Backend_Development_1.0 &nbsp;
+                      </a>
                     </div>
                   </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                    <div className="leading-[1.22rem]">React Native</div>
-                  </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                    <div className="leading-[1.22rem]">Redux</div>
-                  </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px]antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                    <div className="leading-[1.22rem]">Firebase, Firestore</div>
-                  </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px]antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  {/* 3 */}
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
-                      Node JS (ExpressJS, Authentication, API Endpoint Handling)
+                      <a
+                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                        href="https://github.com/Ahmadjajja/SMIT-Web-and-Mobile-Batch7"
+                        target="_blank"
+                      >
+
+
+                        Full_Stack_Development_1.0  &nbsp;
+                      </a>{" "}
                     </div>
                   </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px]antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  {/* 4 */}
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
-                      Node JS (ExpressJS, Authentication, API Endpoint Handling)
+                      <a
+                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                        href="https://github.com/Ahmadjajja/Web_Designing_Crash_Course_A"
+                        target="_blank"
+                      >
+
+
+                        Web_Designing_Bootcamp_1.0&nbsp;
+                      </a>{" "}
                     </div>
                   </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px]antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                    <div className="leading-[1.22rem]">MongoDB</div>
-                  </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px]antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  {/* 5 */}
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
-                      Heroku, Surge, Netlify (Hosting)
+                      <a
+                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                        href="https://github.com/Ahmadjajja/Web_Designing_Crash_Course_B"
+                        target="_blank"
+                      >
+
+
+                        Web_Designing_Bootcamp_2.0&nbsp;
+                      </a>{" "}
                     </div>
                   </div>
-                  <div className="pt-[0.4rem] text-[#8892b0] font-calibri text-[18px]antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
-                    <div className="leading-[1.22rem]">Git, Github</div>
+                  {/* 6 */}
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      <a
+                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                        href="https://github.com/Ahmadjajja/SMIT-WMA-6-A-E"
+                        target="_blank"
+                      >
+
+                        Frontend_Web_Development_1.0&nbsp;
+                      </a>{" "}
+                    </div>
+                  </div>
+                  {/* 7 */}
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      <a
+                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                        href="https://github.com/Ahmadjajja/Mobile_Application_Development"
+                        target="_blank"
+                      >
+
+                        Frontend_Mobile_Development_1.0&nbsp;
+                      </a>{" "}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -840,7 +945,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                 </div>
 
                 <div className="mt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.22rem]">
                     Implemented new features and modified existing ones on the
                     front-end using React JS for a business website similar to
@@ -849,7 +954,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   </div>
                 </div>
                 <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.22rem]">
                     Built a GraphQL API from scratch and modified existing
                     GraphQL APIs using Node.js on the back-end, facilitating
@@ -858,7 +963,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   </div>
                 </div>
                 <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.22rem]">
                     Contributed to the development of a comprehensive platform
                     that streamlined the hiring process for companies,
@@ -888,7 +993,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                 </div>
 
                 <div className="mt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.22rem]">
                     Developed and maintained web applications using the MERN
                     stack, focusing on delivering high-quality, scalable, and
@@ -896,7 +1001,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   </div>
                 </div>
                 <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.22rem]">
                     Collaborated with cross-functional teams to understand
                     business requirements and implemented technical solutions,
@@ -905,7 +1010,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   </div>
                 </div>
                 <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.22rem]">
                     Conducted code reviews, participated in the software
                     development lifecycle, and troubleshooted and debugged code
@@ -931,7 +1036,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   Nov 2021 - present{" "}
                 </div>
                 <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.3rem]">
                     Developed and delivered a wide range of web-based solutions,
                     utilizing front-end technologies such as HTML, CSS, and
@@ -940,7 +1045,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   </div>
                 </div>
                 <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.3rem]">
                     Built and maintained strong relationships with clients
                     through effective communication and problem-solving skills,
@@ -949,7 +1054,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   </div>
                 </div>
                 <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.3rem]">
                     Accomplished in utilizing version control systems such as
                     Git and SVN, and implementing agile methodologies for
@@ -957,7 +1062,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   </div>
                 </div>
                 <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.3rem]">
                     Proven ability to work independently as well as part of a
                     team, successfully delivering projects on time and within
@@ -965,13 +1070,13 @@ const Work = ({ experienceBtnClickedActive }) => {
                   </div>
                 </div>
                 <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.3rem]">
                     Experience with database management systems such as MongoDB.
                   </div>
                 </div>
                 <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                  <div className="text-[#64ffda] pr-[1rem]">▹</div>{" "}
+                  <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                   <div className="leading-[1.3rem]">
                     Experience in integrating web applications with third-party
                     APIs and services.
