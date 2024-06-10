@@ -1,7 +1,6 @@
-import { React, useState, useEffect, useRef, useLayoutEffect } from "react";
-import { Link } from "react-router-dom";
+import { React, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "../Css_applied/navbarStyles.css";
-import { useNavigate } from "react-router-dom";
 
 const Navbar = ({
   setAboutBtnClickedActive,
@@ -485,7 +484,7 @@ const Navbar = ({
                       className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[#172a45] border  border-[#64ffda]  rounded  font-mono  text-[#64ffda]  tracking-wide cursor-pointer antialiased"
                       target="_blank"
                     >
-                      Resume
+                      CV
                     </a>
                   </div>
                 </div>
@@ -694,7 +693,7 @@ const Navbar = ({
                   className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[#172a45] border  border-[#64ffda]  rounded  font-mono  text-[#64ffda]  tracking-wide cursor-pointer antialiased"
                   target="_blank"
                 >
-                  Resume
+                  CV
                 </a>
               </div>
             </div>
@@ -885,7 +884,7 @@ const Navbar = ({
                       : "py-[10px] px-[25px] mr-4 flex  justify-center  items-center ml-[5px] bg-transparent border  border-[#64ffda]  rounded  font-mono  text-[#64ffda] cursor-pointer antialiased leading-[1]"
                   }
                 >
-                  Resume
+                  CV
                 </a>
               </div>
             </div>
