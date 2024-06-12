@@ -95,62 +95,64 @@ const Work = ({ experienceBtnClickedActive }) => {
     setScrollLeft(event.target.scrollLeft);
   };
 
-  const borderBottomStyle = {
-    position: "absolute",
-    bottom: 0,
-    left: firstBarClicked3
-      ? "70px"
-      : firstBarClicked4
-        ? "221px"
-        : firstBarClicked
-          ? "221px"
-          : firstBarClicked5
-            ? "221px"
-            : secondBarClicked
-              ? "221px"
-              : thirdBarClicked
-                ? "221px"
-                : fourthBarClicked
-                  ? "307.842px"
-                  : "0px",
-    width: firstBarClicked2
-      ? `calc(60px + ${scrollLeft}px)`
-      : firstBarClicked3
-        ? `86.3px`
-        : firstBarClicked4
-          ? `86.3px`
-          : firstBarClicked
-            ? `86.3px`
-            : firstBarClicked5
-              ? `86.3px`
-              : secondBarClicked
-                ? `86.3px`
-                : thirdBarClicked
-                  ? `86.842px`
-                  : fourthBarClicked
-                    ? `118px`
-                    : `calc(134.7px + ${scrollLeft}px)`,
-    height: "2px",
-    backgroundColor: "#64ffda",
-    transform: firstBarClicked2
-      ? `translateX(-${scrollLeft}px)`
-      : firstBarClicked3
-        ? null
-        : firstBarClicked4
-          ? null
-          : firstBarClicked
-            ? null
-            : firstBarClicked5
-              ? null
-              : secondBarClicked
-                ? null
-                : thirdBarClicked
-                  ? null
-                  : fourthBarClicked
-                    ? null
-                    : `translateX(-${scrollLeft}px)`,
-    transition: "all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1)",
-  };
+  // const borderBottomStyle = {
+  //   position: "absolute",
+  //   bottom: 0,
+  //   left: firstBarClicked2
+  //     ? "0px"
+  //     : firstBarClicked3
+  //       ? "102px"
+  //       : firstBarClicked4
+  //         ? "204px"
+  //         : firstBarClicked
+  //           ? "306px"
+  //           : firstBarClicked5
+  //             ? "372px"
+  //             : secondBarClicked
+  //               ? "412px"
+  //               : thirdBarClicked
+  //                 ? "221px"
+  //                 : fourthBarClicked
+  //                   ? "307.842px"
+  //                   : "0px",
+  //   width: firstBarClicked2
+  //     ? `calc(102px + ${scrollLeft}px)`
+  //     : firstBarClicked3
+  //       ? `102px`
+  //       : firstBarClicked4
+  //         ? `102px`
+  //         : firstBarClicked
+  //           ? `64px`
+  //           : firstBarClicked5
+  //             ? `140px`
+  //             : secondBarClicked
+  //               ? `100px`
+  //               : thirdBarClicked
+  //                 ? `86.842px`
+  //                 : fourthBarClicked
+  //                   ? `118px`
+  //                   : `calc(140px + ${scrollLeft}px)`,
+  //   height: "2px",
+  //   backgroundColor: "red",
+  //   transform: firstBarClicked2
+  //     ? `translateX(-${scrollLeft}px)`
+  //     : firstBarClicked3
+  //       ? null
+  //       : firstBarClicked4
+  //         ? null
+  //         : firstBarClicked
+  //           ? null
+  //           : firstBarClicked5
+  //             ? null
+  //             : secondBarClicked
+  //               ? null
+  //               : thirdBarClicked
+  //                 ? null
+  //                 : fourthBarClicked
+  //                   ? null
+  //                   : `translateX(-${scrollLeft}px)`,
+  //   transition: "all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1)",
+  // };
 
   const handleFirstWorkClicked = () => {
     setFirstWorkClicked(true);
@@ -570,7 +572,6 @@ const Work = ({ experienceBtnClickedActive }) => {
               {/* EcoFactor */}
               {(firstWorkClicked2 || noneWorkClicked) && (
                 <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
-                  {/* For firstWork */}
                   <div>
                     <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
                       Co-Founder & Dev Lead{" "}
@@ -612,7 +613,6 @@ const Work = ({ experienceBtnClickedActive }) => {
               {/* lablab.ai */}
               {(firstWorkClicked3) && (
                 <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
-                  {/* For firstWork */}
                   <div>
                     <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
                       Hackathon Enthusiast{" "}
@@ -687,7 +687,6 @@ const Work = ({ experienceBtnClickedActive }) => {
               {/* iCodeGuru */}
               {(firstWorkClicked4) && (
                 <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
-                  {/* For firstWork */}
                   <div>
                     <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
                       Trainer{" "}
@@ -766,7 +765,6 @@ const Work = ({ experienceBtnClickedActive }) => {
               {/* SMIT */}
               {(firstWorkClicked) && (
                 <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
-                  {/* For firstWork */}
                   <div>
                     <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
                       Tech Trainer{" "}
@@ -940,7 +938,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                       <span className="antialiased text-[#64ffda]">@</span>
                       <span className="antialiased text-[#64ffda] relative">
                         <a
-                          href="https://www.linkedin.com/company/icode-guru/mycompany/"
+                          href="https://codeinplace.stanford.edu/"
                           className="viewArchive"
                           target="_blank"
                         >
@@ -1172,67 +1170,67 @@ const Work = ({ experienceBtnClickedActive }) => {
                   onScroll={handleScroll}
                   className="flex smallScreenWorkWidth mb-[30px] border-b-[2px] border-[#303c55] z-0 overflow-x-scroll relative"
                 >
-                  {/* SMIT */}
-                  <div
-                    onClick={handleFirstWorkClicked}
-                    className={
-                      firstWorkClicked
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
-                        : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
-                    }
-                  >
-                    SMIT
-                  </div>
-                  {/* iCodeGuru */}
+                  {/* EcoFactor */}
                   <div
                     onClick={handleFirstWorkClicked2}
                     className={
                       firstWorkClicked2
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
-                    iCodeGuru
+                    EcoFactor
                   </div>
-                  {/* iCodeGuru */}
+                  {/* lablab.ai */}
                   <div
                     onClick={handleFirstWorkClicked3}
                     className={
                       firstWorkClicked3
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
-                    iCodeGuru
+                    lablab.ai
                   </div>
                   {/* iCodeGuru */}
                   <div
                     onClick={handleFirstWorkClicked4}
                     className={
                       firstWorkClicked4
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
                     iCodeGuru
                   </div>
-                  {/* iCodeGuru */}
+                  {/* SMIT */}
+                  <div
+                    onClick={handleFirstWorkClicked}
+                    className={
+                      firstWorkClicked
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
+                    }
+                  >
+                    SMIT
+                  </div>
+                  {/* Stanford University */}
                   <div
                     onClick={handleFirstWorkClicked5}
                     className={
                       firstWorkClicked5
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
-                    iCodeGuru
+                    Stanford Univ.
                   </div>
                   {/* ZWTech  */}
                   <div
                     onClick={handleSecondWorkClicked}
                     className={
                       secondWorkClicked
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
@@ -1243,7 +1241,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     onClick={handleThirdWorkClicked}
                     className={
                       thirdWorkClicked
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
@@ -1254,13 +1252,13 @@ const Work = ({ experienceBtnClickedActive }) => {
                     onClick={handleFourthWorkClicked}
                     className={
                       fourthWorkClicked
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
                     Freelancing
                   </div>
-                  <div style={borderBottomStyle} />
+                  {/* <div style={borderBottomStyle} /> */}
                 </div>
               </div>
             </div>
@@ -1272,67 +1270,68 @@ const Work = ({ experienceBtnClickedActive }) => {
               {/* Companies Names*/}
               <div className="flex">
                 <div className="flex mb-[30px] border-b-[2px] border-[#303c55] z-0 relative">
-                  {/* SMIT*/}
-                  <div
-                    onClick={handleFirstWorkClicked}
-                    className={
-                      firstWorkClicked
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
-                        : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
-                    }
-                  >
-                    SMIT
-                  </div>
-                  {/* iCodeGuru*/}
+
+                  {/* EcoFactor*/}
                   <div
                     onClick={handleFirstWorkClicked2}
                     className={
                       firstWorkClicked2
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
-                    iCodeGuru
+                    EcoFactor
                   </div>
-                  {/* iCodeGuru*/}
+                  {/* lablab.ai*/}
                   <div
                     onClick={handleFirstWorkClicked3}
                     className={
                       firstWorkClicked3
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
-                    iCodeGuru
+                    lablab.ai
                   </div>
                   {/* iCodeGuru*/}
                   <div
                     onClick={handleFirstWorkClicked4}
                     className={
                       firstWorkClicked4
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
                     iCodeGuru
                   </div>
-                  {/* iCodeGuru*/}
+                  {/* SMIT*/}
+                  <div
+                    onClick={handleFirstWorkClicked}
+                    className={
+                      firstWorkClicked
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
+                    }
+                  >
+                    SMIT
+                  </div>
+                  {/* Stanford University */}
                   <div
                     onClick={handleFirstWorkClicked5}
                     className={
                       firstWorkClicked4
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
-                    iCodeGuru
+                    Stanford Univ.
                   </div>
                   {/* ZWTech  */}
                   <div
                     onClick={handleSecondWorkClicked}
                     className={
                       secondWorkClicked
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
@@ -1343,7 +1342,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                     onClick={handleThirdWorkClicked}
                     className={
                       thirdWorkClicked
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
@@ -1354,13 +1353,13 @@ const Work = ({ experienceBtnClickedActive }) => {
                     onClick={handleFourthWorkClicked}
                     className={
                       fourthWorkClicked
-                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
                         : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
                     }
                   >
                     Freelancing
                   </div>
-                  <div style={borderBottomStyle} />
+                  {/* <div style={borderBottomStyle} /> */}
                 </div>
               </div>
             </div>
@@ -1368,10 +1367,192 @@ const Work = ({ experienceBtnClickedActive }) => {
 
           {/* Lower Side */}
           <div className="ml-[10%] w-[70%] relative">
-            {/* First One */}
-            {(firstWorkClicked || noneWorkClicked) && (
+            {/* EcoFactor */}
+            {(firstWorkClicked2 || noneWorkClicked) && (
               <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
-                {/* For firstWork */}
+                <div>
+                  <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
+                    Co-Founder & Dev Lead{" "}
+                    <span className="antialiased text-[#64ffda]">@</span>
+                    <a
+                      href="https://ecofactorsite.netlify.app/"
+                      className="antialiased text-[#64ffda] underline"
+                      target="_blank"
+                    >
+                      EcoFactor
+                    </a>
+                  </div>
+                  <div className="text-[#a8b2d1] font-customMono text-[13px] antialiased">
+                    Feb 2024 - present{" "}
+                  </div>
+
+                  <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+
+                      As a Co-Founder, I'm putting my best efforts with my team into making EcoFactor a reality.
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      As a Dev Lead, my focus is on the development side of our project EcoFactor. I'm handling front-end, AI integration, and backend with my team. We, as Dev members, are working collaboratively on this project.
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      EcoFactor currently consists of a team of 7 members: 4 from Pakistan, 2 from Brazil, and 1 from Latvia.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            {/* lablab.ai */}
+            {(firstWorkClicked3) && (
+              <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
+                <div>
+                  <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
+                    Hackathon Enthusiast{" "}
+                    <span className="antialiased text-[#64ffda]">@</span>
+                    <a
+                      href="https://lablab.ai/"
+                      className="antialiased text-[#64ffda] underline"
+                      target="_blank"
+                    >
+                      lablab.ai
+                    </a>
+                  </div>
+                  <div className="text-[#a8b2d1] font-customMono text-[13px] antialiased">
+                    Jun 2023 - present{" "}
+                  </div>
+
+                  <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      <div className="relative inline-block">
+                        <a
+                          className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                          href="https://lablab.ai/u/@ahmad_jajja288"
+                          target="_blank"
+                        >
+                          Participated&nbsp;
+                        </a>{" "}
+                      </div>
+                      in multiple AI International Hackathons and <div className="relative inline-block">
+                        <a
+                          className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                          href="https://www.linkedin.com/feed/update/urn:li:activity:7176624410651504641/"
+                          target="_blank"
+                        >
+                          won&nbsp;
+                        </a>{" "}
+                      </div>
+                      one of them (Unhallucinate Challenge).
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Focused on enhancing my generative AI skills through these hackathons by building something cool.
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Embraced the advent of ChatGPT, recognizing that everyone has equal opportunities in generative AI.
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      It's worth spending time in hackathons to create truly amazing and innovative projects using generative AI, LLMs, and other AI technologies.
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Spent time in hackathons to create truly amazing and innovative projects using generative AI, LLMs, and other AI technologies.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            {/* iCodeGuru */}
+            {(firstWorkClicked4) && (
+              <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
+                <div>
+                  <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
+                    Trainer{" "}
+                    <span className="antialiased text-[#64ffda]">@</span>
+                    <a
+                      href="https://www.linkedin.com/company/icode-guru/mycompany/"
+                      className="antialiased text-[#64ffda] underline"
+                      target="_blank"
+                    >
+                      iCodeGuru
+                    </a>
+                  </div>
+                  <div className="text-[#a8b2d1] font-customMono text-[13px] antialiased">
+                    Feb 2023 - present{" "}
+                  </div>
+
+                  <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Trainer and moderator at 𝐢𝐂𝐨𝐝𝐞𝐆𝐮𝐫𝐮 platform, with 20,000+ 𝐦𝐞𝐦𝐛𝐞𝐫𝐬.
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Teaching 𝐏𝐲𝐭𝐡𝐨𝐧 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 and 𝐃𝐒𝐀 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞.
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Conducting 𝐰𝐞𝐞𝐤𝐥𝐲 𝐰𝐨𝐫𝐤𝐬𝐡𝐨𝐩𝐬 on key DSA topics to help underprivileged students learn freely.
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Voluntarily taught the 𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲 𝐓𝐞𝐬𝐭 to students.
+                    </div>
+                  </div>
+
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      <a
+                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                        href="https://github.com/Ahmadjajja/LeetCode_Volunteer_Teaching"
+                        target="_blank"
+                      >
+                        (𝐏𝐲𝐭𝐡𝐨𝐧, 𝐃𝐒𝐀, & 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭  &nbsp;
+                      </a>
+                    </div>
+                  </div>
+                  {/* 2 */}
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      <a
+                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                        href="https://www.facebook.com/watch/100063644695494/1341880143172469"
+                        target="_blank"
+                      >
+                        (𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 &nbsp;
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            {/* SMIT */}
+            {(firstWorkClicked) && (
+              <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
                 <div>
                   <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
                     Tech Trainer{" "}
@@ -1528,255 +1709,51 @@ const Work = ({ experienceBtnClickedActive }) => {
                 </div>
               </div>
             )}
-            {/* iCodeGuru Work */}
-            {(firstWorkClicked2) && (
-              <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
-                {/* For firstWork */}
-                <div>
-                  <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
-                    Trainer{" "}
-                    <span className="antialiased text-[#64ffda]">@</span>
-                    <a
-                      href="https://www.linkedin.com/company/icode-guru/mycompany/"
-                      className="antialiased text-[#64ffda] underline"
-                      target="_blank"
-                    >
-                      iCodeGuru
-                    </a>
-                  </div>
-                  <div className="text-[#a8b2d1] font-customMono text-[13px] antialiased">
-                    Feb 2023 - present{" "}
-                  </div>
-
-                  <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Trainer and moderator at 𝐢𝐂𝐨𝐝𝐞𝐆𝐮𝐫𝐮 platform, with 20,000+ 𝐦𝐞𝐦𝐛𝐞𝐫𝐬.
-                    </div>
-                  </div>
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Teaching 𝐏𝐲𝐭𝐡𝐨𝐧 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 and 𝐃𝐒𝐀 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞.
-                    </div>
-                  </div>
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Conducting 𝐰𝐞𝐞𝐤𝐥𝐲 𝐰𝐨𝐫𝐤𝐬𝐡𝐨𝐩𝐬 on key DSA topics to help underprivileged students learn freely.
-                    </div>
-                  </div>
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Voluntarily taught the 𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲 𝐓𝐞𝐬𝐭 to students.
-                    </div>
-                  </div>
-
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      <a
-                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                        href="https://github.com/Ahmadjajja/LeetCode_Volunteer_Teaching"
-                        target="_blank"
-                      >
-                        (𝐏𝐲𝐭𝐡𝐨𝐧, 𝐃𝐒𝐀, & 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭  &nbsp;
-                      </a>
-                    </div>
-                  </div>
-                  {/* 2 */}
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      <a
-                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                        href="https://www.facebook.com/watch/100063644695494/1341880143172469"
-                        target="_blank"
-                      >
-                        (𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 &nbsp;
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-            {/* iCodeGuru Work */}
-            {(firstWorkClicked3) && (
-              <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
-                {/* For firstWork */}
-                <div>
-                  <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
-                    Trainer{" "}
-                    <span className="antialiased text-[#64ffda]">@</span>
-                    <a
-                      href="https://www.linkedin.com/company/icode-guru/mycompany/"
-                      className="antialiased text-[#64ffda] underline"
-                      target="_blank"
-                    >
-                      iCodeGuru
-                    </a>
-                  </div>
-                  <div className="text-[#a8b2d1] font-customMono text-[13px] antialiased">
-                    Feb 2023 - present{" "}
-                  </div>
-
-                  <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Trainer and moderator at 𝐢𝐂𝐨𝐝𝐞𝐆𝐮𝐫𝐮 platform, with 20,000+ 𝐦𝐞𝐦𝐛𝐞𝐫𝐬.
-                    </div>
-                  </div>
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Teaching 𝐏𝐲𝐭𝐡𝐨𝐧 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 and 𝐃𝐒𝐀 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞.
-                    </div>
-                  </div>
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Conducting 𝐰𝐞𝐞𝐤𝐥𝐲 𝐰𝐨𝐫𝐤𝐬𝐡𝐨𝐩𝐬 on key DSA topics to help underprivileged students learn freely.
-                    </div>
-                  </div>
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Voluntarily taught the 𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲 𝐓𝐞𝐬𝐭 to students.
-                    </div>
-                  </div>
-
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      <a
-                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                        href="https://github.com/Ahmadjajja/LeetCode_Volunteer_Teaching"
-                        target="_blank"
-                      >
-                        (𝐏𝐲𝐭𝐡𝐨𝐧, 𝐃𝐒𝐀, & 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭  &nbsp;
-                      </a>
-                    </div>
-                  </div>
-                  {/* 2 */}
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      <a
-                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                        href="https://www.facebook.com/watch/100063644695494/1341880143172469"
-                        target="_blank"
-                      >
-                        (𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 &nbsp;
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-            {/* iCodeGuru Work */}
-            {(firstWorkClicked4) && (
-              <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
-                {/* For firstWork */}
-                <div>
-                  <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
-                    Trainer{" "}
-                    <span className="antialiased text-[#64ffda]">@</span>
-                    <a
-                      href="https://www.linkedin.com/company/icode-guru/mycompany/"
-                      className="antialiased text-[#64ffda] underline"
-                      target="_blank"
-                    >
-                      iCodeGuru
-                    </a>
-                  </div>
-                  <div className="text-[#a8b2d1] font-customMono text-[13px] antialiased">
-                    Feb 2023 - present{" "}
-                  </div>
-
-                  <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Trainer and moderator at 𝐢𝐂𝐨𝐝𝐞𝐆𝐮𝐫𝐮 platform, with 20,000+ 𝐦𝐞𝐦𝐛𝐞𝐫𝐬.
-                    </div>
-                  </div>
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Teaching 𝐏𝐲𝐭𝐡𝐨𝐧 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 and 𝐃𝐒𝐀 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞.
-                    </div>
-                  </div>
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Conducting 𝐰𝐞𝐞𝐤𝐥𝐲 𝐰𝐨𝐫𝐤𝐬𝐡𝐨𝐩𝐬 on key DSA topics to help underprivileged students learn freely.
-                    </div>
-                  </div>
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      Voluntarily taught the 𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲 𝐓𝐞𝐬𝐭 to students.
-                    </div>
-                  </div>
-
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      <a
-                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                        href="https://github.com/Ahmadjajja/LeetCode_Volunteer_Teaching"
-                        target="_blank"
-                      >
-                        (𝐏𝐲𝐭𝐡𝐨𝐧, 𝐃𝐒𝐀, & 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭  &nbsp;
-                      </a>
-                    </div>
-                  </div>
-                  {/* 2 */}
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      <a
-                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                        href="https://www.facebook.com/watch/100063644695494/1341880143172469"
-                        target="_blank"
-                      >
-                        (𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 &nbsp;
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-            {/* iCodeGuru Work */}
+            {/* Stanford Univ. */}
             {(firstWorkClicked5) && (
               <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
-                {/* For firstWork */}
                 <div>
                   <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
-                    Trainer{" "}
+                    Section Leader Mentor{" "}
                     <span className="antialiased text-[#64ffda]">@</span>
                     <a
-                      href="https://www.linkedin.com/company/icode-guru/mycompany/"
+                      href="https://codeinplace.stanford.edu/"
                       className="antialiased text-[#64ffda] underline"
                       target="_blank"
                     >
-                      iCodeGuru
+                      Stanford University
                     </a>
                   </div>
                   <div className="text-[#a8b2d1] font-customMono text-[13px] antialiased">
-                    Feb 2023 - present{" "}
+                    Apr 2024 - Jun 2024{" "}
                   </div>
 
                   <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
                     <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
-                      Trainer and moderator at 𝐢𝐂𝐨𝐝𝐞𝐆𝐮𝐫𝐮 platform, with 20,000+ 𝐦𝐞𝐦𝐛𝐞𝐫𝐬.
+                      Selected as a <div className="relative inline-block">
+                        <a
+                          className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                          href="https://www.linkedin.com/feed/update/urn:li:activity:7186385467846639620/"
+                          target="_blank"
+                        >
+                          Section Leader
+                        </a>{" "}
+                      </div> for 𝐒𝐭𝐚𝐧𝐟𝐨𝐫𝐝’𝐬 𝐂𝐨𝐝𝐞 𝐢𝐧 𝐏𝐥𝐚𝐜𝐞 to teach 𝐏𝐲𝐭𝐡𝐨𝐧 to international students in groups of 10-15.
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
                     <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
-                      Teaching 𝐏𝐲𝐭𝐡𝐨𝐧 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 and 𝐃𝐒𝐀 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞.
+                      Later, I was <div className="relative inline-block">
+                        <a
+                          className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                          href="https://www.linkedin.com/posts/ahmad-jajja_stanfordabrcodeabrinabrplaceabrlearnings-activity-7195142429073633281-zNhV/?utm_source=share&utm_medium=member_desktop"
+                          target="_blank"
+                        >
+                          promoted to Section Leader Mentor
+                        </a>{" "}
+                      </div> for 𝐨𝐧𝐞-𝐨𝐧-𝐨𝐧𝐞 𝐬𝐭𝐮𝐝𝐞𝐧𝐭 𝐬𝐮𝐩𝐩𝐨𝐫𝐭 and taught 56 𝐓𝐞𝐚𝐜𝐡𝐍𝐨𝐰 𝐬𝐞𝐬𝐬𝐢𝐨𝐧𝐬.
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
@@ -1788,39 +1765,19 @@ const Work = ({ experienceBtnClickedActive }) => {
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
                     <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
-                      Voluntarily taught the 𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲 𝐓𝐞𝐬𝐭 to students.
+                      I helped 100+ 𝐢𝐧𝐭𝐞𝐫𝐧𝐚𝐭𝐢𝐨𝐧𝐚𝐥 𝐟𝐨𝐥𝐤𝐬 worldwide, including countries like the 𝐔𝐒𝐀, 𝐂𝐚𝐧𝐚𝐝𝐚, 𝐑𝐮𝐬𝐬𝐢𝐚, 𝐭𝐡𝐞 𝐔𝐊, 𝐈𝐧𝐝𝐢𝐚, 𝐁𝐚𝐧𝐠𝐥𝐚𝐝𝐞𝐬𝐡, 𝐁𝐫𝐚𝐳𝐢𝐥, 𝐆𝐞𝐫𝐦𝐚𝐧𝐲, and others.
                     </div>
                   </div>
-
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
                     <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
-                      <a
-                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                        href="https://github.com/Ahmadjajja/LeetCode_Volunteer_Teaching"
-                        target="_blank"
-                      >
-                        (𝐏𝐲𝐭𝐡𝐨𝐧, 𝐃𝐒𝐀, & 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭  &nbsp;
-                      </a>
-                    </div>
-                  </div>
-                  {/* 2 */}
-                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
-                    <div className="leading-[1.22rem]">
-                      <a
-                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                        href="https://www.facebook.com/watch/100063644695494/1341880143172469"
-                        target="_blank"
-                      >
-                        (𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 &nbsp;
-                      </a>
+                      Observed students aged 18-80, showcasing 𝐮𝐧𝐢𝐯𝐞𝐫𝐬𝐚𝐥 𝐢𝐧𝐭𝐞𝐫𝐞𝐬𝐭 𝐢𝐧 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠, even among those 𝐨𝐯𝐞𝐫 60.
                     </div>
                   </div>
                 </div>
               </div>
             )}
-            {/* Second One */}
+            {/* ZWTech  */}
             {secondWorkClicked && (
               <div className="blink_me">
                 {/* For firstWork */}
@@ -1863,7 +1820,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                 </div>
               </div>
             )}
-            {/* Third One */}
+            {/* SEERAHT */}
             {thirdWorkClicked && (
               <div className="blink_me">
                 {/* For firstWork */}
@@ -1911,7 +1868,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                 </div>
               </div>
             )}
-            {/* Fourth One */}
+            {/* Freelancing */}
             {fourthWorkClicked && (
               <div className="blink_me">
                 {/* For firstWork */}
