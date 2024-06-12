@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.cca4a260.css",
-    "main.js": "/static/js/main.b0e6b66b.js",
+    "main.js": "/static/js/main.ebbba0e7.js",
     "static/media/SecondListingImage.jpg": "/static/media/SecondListingImage.191716ddd00bd0cb77ee.jpg",
     "static/media/ME.jpg": "/static/media/ME.dd142bcdd2b3fdd07063.jpg",
     "static/media/2021.jpg": "/static/media/2021.a989ce52039bc0ff65ec.jpg",
     "static/media/ThirdListingImage.jpg": "/static/media/ThirdListingImage.f62434b971a06e5f8ec3.jpg",
+    "static/media/DPs.gif": "/static/media/DPs.c350ca45c8d6d5113694.gif",
     "static/media/hackathon.jpg": "/static/media/hackathon.7a24cfa4e36592115f76.jpg",
     "static/media/exams.jpeg": "/static/media/exams.f3e84e353bd8cfade64e.jpeg",
     "static/media/SMIT.jpg": "/static/media/SMIT.0ae6a397758ace865113.jpg",
@@ -26,7 +27,6 @@
     "static/media/MERN-Bootcamp.jpg": "/static/media/MERN-Bootcamp.33745c128f550285b402.jpg",
     "static/media/admissions.jpeg": "/static/media/admissions.42af5a9145815bd14ee1.jpeg",
     "static/media/goodby.jpg": "/static/media/goodby.982ca4916359098e9161.jpg",
-    "static/media/DP4.jpg": "/static/media/DP4.b57c6eb27d907dd089db.jpg",
     "static/media/MERN2.jpeg": "/static/media/MERN2.85686875b7013bf475d9.jpeg",
     "static/media/2022.jpg": "/static/media/2022.9551bfd9cbb6c144c279.jpg",
     "static/media/BankApp.png": "/static/media/BankApp.0bcd60851e9dccf3ad99.png",
@@ -56,10 +56,10 @@
     "static/media/leetcode.svg": "/static/media/leetcode.7951fc74c4520a91c54fc246c2a22654.svg",
     "index.html": "/index.html",
     "main.cca4a260.css.map": "/static/css/main.cca4a260.css.map",
-    "main.b0e6b66b.js.map": "/static/js/main.b0e6b66b.js.map"
+    "main.ebbba0e7.js.map": "/static/js/main.ebbba0e7.js.map"
   },
   "entrypoints": [
     "static/css/main.cca4a260.css",
-    "static/js/main.b0e6b66b.js"
+    "static/js/main.ebbba0e7.js"
   ]
 }

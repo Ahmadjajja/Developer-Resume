@@ -404,6 +404,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 cursor: "pointer"
               }}
             />
+            <h1 style={{ color: "white", marginTop: "15px", paddingLeft: "17%", color: "#64ffda" }} >Click the image above ⤣</h1>
           </div>
         </div>
       </div>
@@ -766,7 +767,7 @@ const About = ({ aboutBtnClickedActive }) => {
                   cursor: "pointer"
                 }}
               />
-              <h1 style={{color: "white", marginTop: "12px", paddingLeft: "17%", color: "#64ffda"}} >Hover over the image!!</h1>
+              <h1 style={{ color: "white", marginTop: "12px", paddingLeft: "17%", color: "#64ffda" }} >Hover over the image ⤣</h1>
             </div>
           </div>
         </div>
