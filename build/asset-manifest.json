@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9398ec11.css",
-    "main.js": "/static/js/main.b9311087.js",
+    "main.css": "/static/css/main.cca4a260.css",
+    "main.js": "/static/js/main.b0e6b66b.js",
     "static/media/SecondListingImage.jpg": "/static/media/SecondListingImage.191716ddd00bd0cb77ee.jpg",
     "static/media/ME.jpg": "/static/media/ME.dd142bcdd2b3fdd07063.jpg",
     "static/media/2021.jpg": "/static/media/2021.a989ce52039bc0ff65ec.jpg",
@@ -12,7 +12,6 @@
     "static/media/AIPodcasteGenerator.png": "/static/media/AIPodcasteGenerator.cf943fff109f713cc4d2.png",
     "static/media/thinkingOutsideTheBox.jpeg": "/static/media/thinkingOutsideTheBox.778ec149f99940f34bc9.jpeg",
     "static/media/AIPodcasteGeneratorShaded.jpg": "/static/media/AIPodcasteGeneratorShaded.3fdf48f2afca6d0087c6.jpg",
-    "static/media/SimpleProfile5Shaded.jpg": "/static/media/SimpleProfile5Shaded.234954221c61c526f863.jpg",
     "static/media/MERN-BootcampShaded.jpg": "/static/media/MERN-BootcampShaded.425ed99ba42458bfa9f5.jpg",
     "static/media/villageLife.jpg": "/static/media/villageLife.cf5cf8a1990e19584555.jpg",
     "static/media/Calibri Regular.ttf": "/static/media/Calibri Regular.29c57b05b7345f94042a.ttf",
@@ -20,7 +19,6 @@
     "static/media/JAVADSA.png": "/static/media/JAVADSA.8c9bdb266568538ad724.png",
     "static/media/JAVADSAShaded.png": "/static/media/JAVADSAShaded.e2e840d0ad40decf0dc0.png",
     "static/media/cricket-match2.jpeg": "/static/media/cricket-match2.0687a8bbe9efb2eed297.jpeg",
-    "static/media/SimpleProfile5.jpg": "/static/media/SimpleProfile5.700641d93b518e6e64a4.jpg",
     "static/media/students.jpeg": "/static/media/students.bf85683018bdd476a49c.jpeg",
     "static/media/MERN.jpeg": "/static/media/MERN.6673eb5fecd43ded8b8e.jpeg",
     "static/media/coding.jpg": "/static/media/coding.47bdb284747d54e3ace3.jpg",
@@ -28,6 +26,7 @@
     "static/media/MERN-Bootcamp.jpg": "/static/media/MERN-Bootcamp.33745c128f550285b402.jpg",
     "static/media/admissions.jpeg": "/static/media/admissions.42af5a9145815bd14ee1.jpeg",
     "static/media/goodby.jpg": "/static/media/goodby.982ca4916359098e9161.jpg",
+    "static/media/DP4.jpg": "/static/media/DP4.b57c6eb27d907dd089db.jpg",
     "static/media/MERN2.jpeg": "/static/media/MERN2.85686875b7013bf475d9.jpeg",
     "static/media/2022.jpg": "/static/media/2022.9551bfd9cbb6c144c279.jpg",
     "static/media/BankApp.png": "/static/media/BankApp.0bcd60851e9dccf3ad99.png",
@@ -43,6 +42,7 @@
     "static/media/RealEstateMobileAppShaded.png": "/static/media/RealEstateMobileAppShaded.6e1b5c293525fdf39efb.png",
     "static/media/CRUDMERN.png": "/static/media/CRUDMERN.3c8484a5f6779095def5.png",
     "static/media/CRUDMERNShaded.png": "/static/media/CRUDMERNShaded.7f6374849f5b101c2181.png",
+    "static/media/DP3.jpg": "/static/media/DP3.6ceb4da4fc11a869bc07.jpg",
     "static/media/Uni.jpeg": "/static/media/Uni.f7ae9b9f8321e54b3794.jpeg",
     "static/media/likeMinded.jpg": "/static/media/likeMinded.6a56880ea2c7e7711f09.jpg",
     "static/media/2020.jpg": "/static/media/2020.e0da199b6dbf95b5810c.jpg",
@@ -55,11 +55,11 @@
     "static/media/failure.jpeg": "/static/media/failure.5c82b4ec91fe1bbad4e1.jpeg",
     "static/media/leetcode.svg": "/static/media/leetcode.7951fc74c4520a91c54fc246c2a22654.svg",
     "index.html": "/index.html",
-    "main.9398ec11.css.map": "/static/css/main.9398ec11.css.map",
-    "main.b9311087.js.map": "/static/js/main.b9311087.js.map"
+    "main.cca4a260.css.map": "/static/css/main.cca4a260.css.map",
+    "main.b0e6b66b.js.map": "/static/js/main.b0e6b66b.js.map"
   },
   "entrypoints": [
-    "static/css/main.9398ec11.css",
-    "static/js/main.b9311087.js"
+    "static/css/main.cca4a260.css",
+    "static/js/main.b0e6b66b.js"
   ]
 }

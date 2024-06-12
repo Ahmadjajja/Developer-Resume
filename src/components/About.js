@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../Css_applied/aboutStyles.css";
-import simpleProfile from "../images/SimpleProfile5.jpg";
-import shadedProfile from "../images/SimpleProfile5Shaded.jpg";
+import DP3 from "../images/DP3.jpg";
+import DPs from "../images/DPs.gif";
 
 const About = ({ aboutBtnClickedActive }) => {
   const mySecondImage = useRef();
@@ -390,7 +390,7 @@ const About = ({ aboutBtnClickedActive }) => {
             <img
               ref={mySecondImage}
               onClick={handleSmallImageClick}
-              src={clickedSm ? simpleProfile : shadedProfile}
+              src={clickedSm ? DPs : DP3}
               alt="profile"
               className="h-auto w-auto mr-auto ml-auto object-cover transition-ImageTransitionProperty duration-ImageTransitionDuration ease-ImageTransitionTiming delay-ImageTransitionDelay z-10 opacity-100 relative"
               style={{
@@ -401,6 +401,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 left: "0px",
                 transition: "all 0.25s cubic-bezier(0.645,0.045,0.355,1)",
                 height: "450px",
+                cursor: "pointer"
               }}
             />
           </div>
@@ -752,7 +753,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 ref={myImage}
                 onMouseOver={() => setClicked(true)}
                 onMouseOut={() => setClicked(false)}
-                src={clicked ? simpleProfile : shadedProfile}
+                src={clicked ? DPs : DP3}
                 alt="profile"
                 className="h-auto w-auto mr-auto ml-auto object-cover transition-ImageTransitionProperty duration-ImageTransitionDuration ease-ImageTransitionTiming delay-ImageTransitionDelay z-10 opacity-100 relative"
                 style={{
@@ -762,8 +763,10 @@ const About = ({ aboutBtnClickedActive }) => {
                   top: "0px",
                   left: "0px",
                   transition: "all 0.25s cubic-bezier(0.645,0.045,0.355,1)",
+                  cursor: "pointer"
                 }}
               />
+              <h1 style={{color: "white", marginTop: "12px", paddingLeft: "17%", color: "#64ffda"}} >Hover over the image!!</h1>
             </div>
           </div>
         </div>
