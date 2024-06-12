@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../Css_applied/aboutStyles.css";
 import simpleProfile from "../images/SimpleProfile5.jpg";
 import shadedProfile from "../images/SimpleProfile5Shaded.jpg";
@@ -126,11 +126,10 @@ const About = ({ aboutBtnClickedActive }) => {
         {/* Section 2 */}
         <div>
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            Hello! I'm Ahmad, a full stack software engineer based in
-            Faisalabad, PK.
+            Hello! I'm Ahmad, a full-stack software engineer from Faisalabad, PK.
           </div>
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            I specialize in developing robust web and mobile applications using the MERN Stack and React Native. I bring a diverse background, having worked both collaboratively in teams and independently as a freelancer, accumulating valuable experiences along the way.
+            I have expertise in building Generative AI applications (Python, LLMs, Vectara, RAG), web applications (MERN), and mobile applications (React Native). I bring a diverse background, having worked collaboratively in teams professionally, participated in International Hackathons, worked independently as a freelancer.
             <br />
             <br />
             As a tech trainer at the
@@ -153,23 +152,46 @@ const About = ({ aboutBtnClickedActive }) => {
                 &nbsp; click here
               </a>{" "}
             </div>
-            ) over 500 students, simplifying complex programming concepts and solving 250+ LeetCode questions to sharpen my skills. Actively participating in coding competitions like Google Code Jam and Meta Hacker Cup and hackathons drives my passion for continuous learning and innovation.
+            ) 1000+ students, simplifying complex programming concepts and solving 300+ LeetCode questions to sharpen my skills.
             <br />
             <br />
-            I am still undergraduate student at the 
+            I have
+            <div className="relative inline-block">
+              <a
+                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://lablab.ai/u/@ahmad_jajja288"
+                target="_blank"
+              >
+                &nbsp;participated&nbsp;
+              </a>{" "}
+            </div>
+            in multiple AI International Hackathons and
+            <div className="relative inline-block">
+              <a
+                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7176624410651504641/"
+                target="_blank"
+              >
+                &nbsp;won&nbsp;
+              </a>{" "}
+            </div>
+            one of them (Unhallucinate Challenge).
+            <br />
+            <br />
+            I graduated from the
             <a
               className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
               href="http://web.uaf.edu.pk/"
               target="_blank"
             >
-              &nbsp;University of Agriculture, Faisalabad.
+              &nbsp;University of Agriculture, Faisalabad
             </a>{" "}
-            and will be graduate in June, 2024.
+            in June, 2024.
             <br />
             <br />
-            I aim to pursue a PhD in the United States to advance in technology research and innovation.
+            I aim to pursue further studies in the United States to advance in technology research and innovation.
 
-          
+
           </div>
 
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-5">
@@ -345,6 +367,20 @@ const About = ({ aboutBtnClickedActive }) => {
                 GraphQL
               </div>
             </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                Generative AI
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                LLMs
+              </div>
+            </div>
           </div>
         </div>
 
@@ -378,11 +414,10 @@ const About = ({ aboutBtnClickedActive }) => {
         {/* Section 2 */}
         <div className="w-[46.5136vw] aboutScreen11:w-[51vw] aboutScreen12:w-[49vw]">
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            Hello! I'm Ahmad, a full stack software engineer based in
-            Faisalabad, PK.
+            Hello! I'm Ahmad, a full-stack software engineer from Faisalabad, PK.
           </div>
           <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            I specialize in developing robust web and mobile applications using the MERN Stack and React Native. I bring a diverse background, having worked both collaboratively in teams and independently as a freelancer, accumulating valuable experiences along the way.
+            I have expertise in building Generative AI applications (Python, LLMs, Vectara, RAG), web applications (MERN), and mobile applications (React Native). I bring a diverse background, having worked collaboratively in teams professionally, participated in International Hackathons, worked independently as a freelancer.
             <br />
             <br />
             As a tech trainer at the
@@ -407,10 +442,33 @@ const About = ({ aboutBtnClickedActive }) => {
             </div>
             )
 
-            over 500 students, simplifying complex programming concepts and solving 250+ LeetCode questions to sharpen my skills. Actively participating in coding competitions like Google Code Jam and Meta Hacker Cup and hackathons drives my passion for continuous learning and innovation.
+            1000+ students, simplifying complex programming concepts and solving 300+ LeetCode questions to sharpen my skills.
             <br />
             <br />
-            I am still undergraduate student at the
+            I have
+            <div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://lablab.ai/u/@ahmad_jajja288"
+                target="_blank"
+              >
+                &nbsp;participated&nbsp;
+              </a>{" "}
+            </div>
+            in multiple AI International Hackathons and
+            <div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7176624410651504641/"
+                target="_blank"
+              >
+                &nbsp;won&nbsp;
+              </a>{" "}
+            </div>
+            one of them (Unhallucinate Challenge).
+            <br />
+            <br />
+            I graduated from the
             <div className="relative inline-block">
               <a
                 className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
@@ -419,11 +477,11 @@ const About = ({ aboutBtnClickedActive }) => {
               >
                 &nbsp;University of Agriculture, Faisalabad
               </a>{" "}
+              in June, 2024.
             </div>
-            and will be graduate in June, 2024.
             <br />
             <br />
-            I aim to pursue a PhD in the United States to advance in technology research and innovation.
+            I aim to pursue further studies in the United States to advance in technology research and innovation.
             <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4 mt-4">
               Here are a few technologies I've been working with recently:
             </div>
@@ -526,7 +584,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 <span className="text-[#64ffda] text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Java (OOP + DSA)
+                Java
               </div>
             </div>
             <div>
@@ -667,6 +725,20 @@ const About = ({ aboutBtnClickedActive }) => {
                   ➾
                 </span>{" "}
                 GraphQL
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                Generative AI
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                LLMs
               </div>
             </div>
           </div>

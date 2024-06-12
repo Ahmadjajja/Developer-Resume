@@ -1,15 +1,23 @@
-import { React, useEffect, useState, useRef } from "react";
+import { React, useEffect, useRef, useState } from "react";
 import "../Css_applied/workStyles.css";
 
 const Work = ({ experienceBtnClickedActive }) => {
   // Work
   const [firstWorkClicked, setFirstWorkClicked] = useState(true);
+  const [firstWorkClicked2, setFirstWorkClicked2] = useState(false);
+  const [firstWorkClicked3, setFirstWorkClicked3] = useState(false);
+  const [firstWorkClicked4, setFirstWorkClicked4] = useState(false);
   const [secondWorkClicked, setSecondWorkClicked] = useState(false);
   const [thirdWorkClicked, setThirdWorkClicked] = useState(false);
   const [fourthWorkClicked, setFourthWorkClicked] = useState(false);
   const [noneWorkClicked, setNoneWorkClicked] = useState(true);
+
   // Bar
   const [firstBarClicked, setFirstBarClicked] = useState(false);
+  const [firstBarClicked2, setFirstBarClicked2] = useState(false);
+  const [firstBarClicked3, setFirstBarClicked3] = useState(false);
+  const [firstBarClicked4, setFirstBarClicked4] = useState(false);
+
   const [secondBarClicked, setSecondBarClicked] = useState(false);
   const [thirdBarClicked, setThirdBarClicked] = useState(false);
   const [fourthBarClicked, setFourthBarClicked] = useState(false);
@@ -17,6 +25,10 @@ const Work = ({ experienceBtnClickedActive }) => {
   const [scrollLeft, setScrollLeft] = useState(0);
   // Hover
   const [firstWorkHover, setFirstWorkHover] = useState(false);
+  const [firstWorkHover2, setFirstWorkHover2] = useState(false);
+  const [firstWorkHover3, setFirstWorkHover3] = useState(false);
+  const [firstWorkHover4, setFirstWorkHover4] = useState(false);
+
   const [secondWorkHover, setSecondWorkHover] = useState(false);
   const [thirdWorkHover, setThirdWorkHover] = useState(false);
   const [fourthWorkHover, setFourthWorkHover] = useState(false);
@@ -76,44 +88,66 @@ const Work = ({ experienceBtnClickedActive }) => {
   //__________________________________________________________
 
   const handleScroll = (event) => {
+    console.log("event.target.scrollLeft: ", event)
     setScrollLeft(event.target.scrollLeft);
   };
 
   const borderBottomStyle = {
     position: "absolute",
     bottom: 0,
-    left: secondBarClicked
-      ? "134.7px"
-      : thirdBarClicked
-        ? "221px"
-        : fourthBarClicked
-          ? "307.842px"
-          : "0px",
+    left: firstBarClicked2
+      ? "70px"
+      // : firstBarClicked3
+      //   ? "221px"
+      //   : firstBarClicked4
+      //     ? "221px"
+          : secondBarClicked
+            ? "221px"
+            : thirdBarClicked
+              ? "221px"
+              : fourthBarClicked
+                ? "307.842px"
+                : "0px",
     width: firstBarClicked
-      ? `calc(134.7px + ${scrollLeft}px)`
-      : secondBarClicked
+      ? `calc(60px + ${scrollLeft}px)`
+      : firstBarClicked2
         ? `86.3px`
-        : thirdBarClicked
-          ? `86.842px`
-          : fourthBarClicked
-            ? `118px`
-            : `calc(134.7px + ${scrollLeft}px)`,
+        // : firstBarClicked3
+        //   ? `86.3px`
+        //   : firstBarClicked4
+        //     ? `86.3px`
+            : secondBarClicked
+              ? `86.3px`
+              : thirdBarClicked
+                ? `86.842px`
+                : fourthBarClicked
+                  ? `118px`
+                  : `calc(134.7px + ${scrollLeft}px)`,
     height: "2px",
     backgroundColor: "#64ffda",
     transform: firstBarClicked
       ? `translateX(-${scrollLeft}px)`
-      : secondBarClicked
+      : firstBarClicked2
         ? null
-        : thirdBarClicked
+        : firstBarClicked3
           ? null
-          : fourthBarClicked
+          : firstBarClicked4
             ? null
-            : `translateX(-${scrollLeft}px)`,
+            : secondBarClicked
+              ? null
+              : thirdBarClicked
+                ? null
+                : fourthBarClicked
+                  ? null
+                  : `translateX(-${scrollLeft}px)`,
     transition: "all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1)",
   };
 
   const handleFirstWorkClicked = () => {
     setFirstWorkClicked(true);
+    setFirstWorkClicked2(false);
+    setFirstWorkClicked3(false);
+    setFirstWorkClicked4(false);
 
     setNoneWorkClicked(false);
     setSecondWorkClicked(false);
@@ -121,11 +155,55 @@ const Work = ({ experienceBtnClickedActive }) => {
     setFourthWorkClicked(false);
     handleFirstBarClicked();
   };
+
+  const handleFirstWorkClicked2 = () => {
+    setFirstWorkClicked(false);
+    setFirstWorkClicked2(true);
+    setFirstWorkClicked3(false);
+    setFirstWorkClicked4(false);
+
+    setNoneWorkClicked(false);
+    setSecondWorkClicked(false);
+    setThirdWorkClicked(false);
+    setFourthWorkClicked(false);
+    handleFirstBarClicked2();
+  };
+  const handleFirstWorkClicked3 = () => {
+    setFirstWorkClicked(false);
+    setFirstWorkClicked2(false);
+    setFirstWorkClicked3(true);
+    setFirstWorkClicked4(false);
+
+    setNoneWorkClicked(false);
+    setSecondWorkClicked(false);
+    setThirdWorkClicked(false);
+    setFourthWorkClicked(false);
+    handleFirstBarClicked();
+  };
+  const handleFirstWorkClicked4 = () => {
+    setFirstWorkClicked(false);
+    setFirstWorkClicked2(false);
+    setFirstWorkClicked3(false);
+
+    setFirstWorkClicked4(true);
+
+    setNoneWorkClicked(false);
+    setSecondWorkClicked(false);
+    setThirdWorkClicked(false);
+    setFourthWorkClicked(false);
+    handleFirstBarClicked();
+  };
+
+
   const handleSecondWorkClicked = () => {
     setSecondWorkClicked(true);
 
     setNoneWorkClicked(false);
     setFirstWorkClicked(false);
+    setFirstWorkClicked2(false);
+    setFirstWorkClicked3(false);
+    setFirstWorkClicked4(false);
+
     setThirdWorkClicked(false);
     setFourthWorkClicked(false);
     handleSecondBarClicked();
@@ -135,6 +213,10 @@ const Work = ({ experienceBtnClickedActive }) => {
 
     setNoneWorkClicked(false);
     setFirstWorkClicked(false);
+    setFirstWorkClicked2(false);
+    setFirstWorkClicked3(false);
+    setFirstWorkClicked4(false);
+
     setSecondWorkClicked(false);
     setFourthWorkClicked(false);
     handleThirdBarClicked();
@@ -144,30 +226,87 @@ const Work = ({ experienceBtnClickedActive }) => {
 
     setNoneWorkClicked(false);
     setFirstWorkClicked(false);
+    setFirstWorkClicked2(false);
+    setFirstWorkClicked3(false);
+    setFirstWorkClicked4(false);
+
     setSecondWorkClicked(false);
     setThirdWorkClicked(false);
     handleFourthBarClicked();
   };
   const handleFirstBarClicked = () => {
     setFirstBarClicked(true);
+
+    setFirstBarClicked2(false);
+    setFirstBarClicked3(false);
+    setFirstBarClicked4(false);
+
+    setSecondBarClicked(false);
+    setThirdBarClicked(false);
+    setFourthBarClicked(false);
+  };
+  const handleFirstBarClicked2 = () => {
+    setFirstBarClicked(false);
+
+    setFirstBarClicked2(true);
+    setFirstBarClicked3(false);
+    setFirstBarClicked4(false);
+
+    setSecondBarClicked(false);
+    setThirdBarClicked(false);
+    setFourthBarClicked(false);
+  };
+  const handleFirstBarClicked3 = () => {
+    setFirstBarClicked(false);
+
+    setFirstBarClicked2(false);
+    setFirstBarClicked3(true);
+    setFirstBarClicked4(false);
+
+    setSecondBarClicked(false);
+    setThirdBarClicked(false);
+    setFourthBarClicked(false);
+  };
+  const handleFirstBarClicked4 = () => {
+    setFirstBarClicked(false);
+
+    setFirstBarClicked2(false);
+    setFirstBarClicked3(false);
+    setFirstBarClicked4(true);
+
     setSecondBarClicked(false);
     setThirdBarClicked(false);
     setFourthBarClicked(false);
   };
   const handleSecondBarClicked = () => {
     setFirstBarClicked(false);
+
+    setFirstBarClicked2(false);
+    setFirstBarClicked3(false);
+    setFirstBarClicked4(false);
+
     setSecondBarClicked(true);
     setThirdBarClicked(false);
     setFourthBarClicked(false);
   };
   const handleThirdBarClicked = () => {
     setFirstBarClicked(false);
+
+    setFirstBarClicked2(false);
+    setFirstBarClicked3(false);
+    setFirstBarClicked4(false);
+
     setSecondBarClicked(false);
     setThirdBarClicked(true);
     setFourthBarClicked(false);
   };
   const handleFourthBarClicked = () => {
     setFirstBarClicked(false);
+
+    setFirstBarClicked2(false);
+    setFirstBarClicked3(false);
+    setFirstBarClicked4(false);
+
     setSecondBarClicked(false);
     setThirdBarClicked(false);
     setFourthBarClicked(true);
@@ -233,21 +372,27 @@ const Work = ({ experienceBtnClickedActive }) => {
           <div className="flex">
             {/* Left Side */}
             <div className="w-[20%] myScreen1:w-[8rem] workScreen10:w-[25.5%]">
-              <div className="h-[10.1rem] relative border-l-[1px] border-l-[#8892b0] rounded transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay">
+              <div className="h-[12.1rem] relative border-l-[1px] border-l-[#8892b0] rounded transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay">
                 <div
                   className={
                     firstBarClicked
                       ? "h-[2.625rem] w-[1.6px] absolute top-0 border border-[#64ffda] rounded transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
-                      : secondBarClicked
-                        ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded top-[2.2rem] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
-                        : thirdBarClicked
+                      : firstBarClicked2
+                        ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded top-[2.45rem] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
+                        // : firstBarClicked3
+                        //   ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
+                        //   : firstBarClicked4
+                        //     ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
+                        : secondBarClicked
                           ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded top-[4.9rem] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
-                          : fourthBarClicked
+                          : thirdBarClicked
                             ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded top-[7.6rem] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
-                            : "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
+                            : fourthBarClicked
+                              ? "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded top-[10.1rem] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
+                              : "h-[2.625rem] w-[1.6px] absolute border border-[#64ffda] rounded transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration delay-whereIWorkedTransitionDelay"
                   }
                 ></div>
-                {/* Sevenovn */}
+                {/* SMIT */}
                 <div
                   onMouseOver={() => setFirstWorkHover(true)}
                   onMouseOut={() => setFirstWorkHover(false)}
@@ -261,6 +406,21 @@ const Work = ({ experienceBtnClickedActive }) => {
                   }
                 >
                   SMIT
+                </div>
+                {/* iCodeGuru */}
+                <div
+                  onMouseOver={() => setFirstWorkHover2(true)}
+                  onMouseOut={() => setFirstWorkHover2(false)}
+                  onClick={handleFirstWorkClicked2}
+                  className={
+                    firstWorkHover2
+                      ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
+                      : firstWorkClicked2
+                        ? "h-[2.532rem] text-[#64ffda] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px] bg-[#172a45]"
+                        : "h-[2.532rem] text-[#8892b0] text-[13px] flex items-center font-customMono antialiased cursor-pointer pl-[8.25px]"
+                  }
+                >
+                  iCodeGuru
                 </div>
                 {/* Fourovr  */}
                 <div
@@ -311,7 +471,7 @@ const Work = ({ experienceBtnClickedActive }) => {
             </div>
             {/* Right Side */}
             <div className="ml-[10%] w-[70%] relative workScreen10:w-[70%] workScreen10:ml-[4.5%]">
-              {/* First One */}
+              {/* First One: SMIT */}
               {(firstWorkClicked || noneWorkClicked) && (
                 <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
                   {/* For firstWork */}
@@ -333,18 +493,10 @@ const Work = ({ experienceBtnClickedActive }) => {
                       Dec 2022 - present{" "}
                     </div>
 
-
-                    {/* 
-                    <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
-                      <a href="https://drive.google.com/file/d/1VoW3VGwb0dlfR0XMFlPWOvK1b47_CcIK/view" target="_blank">
-                        <img align="right" alt="" style="margin-top: 30px;" src="../images/SMIT-Click.jpeg" width="480" />
-                      </a>
-                    </div> */}
-
                     <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
                       <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                       <div className="leading-[1.22rem]">
-                        Instructed 500+ students.
+                        Instructed 1000+ students.
                       </div>
                     </div>
                     <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
@@ -480,6 +632,85 @@ const Work = ({ experienceBtnClickedActive }) => {
                           >
                             &nbsp;Frontend_Mobile_Development_1.0 &nbsp;
                           </a>{" "} (Completed)
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {/* iCodeGuru */}
+              {(firstWorkClicked2) && (
+                <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
+                  {/* For firstWork */}
+                  <div>
+                    <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
+                      Trainer{" "}
+                      <span className="antialiased text-[#64ffda]">@</span>
+                      <span className="antialiased text-[#64ffda] relative">
+                        <a
+                          href="https://www.linkedin.com/company/icode-guru/mycompany/"
+                          className="viewArchive"
+                          target="_blank"
+                        >
+                          iCodeGuru
+                        </a>
+                      </span>
+                    </div>
+                    <div className="text-[#a8b2d1] font-customMono text-[13px] antialiased">
+                      Feb 2023 - present{" "}
+                    </div>
+
+                    <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                      <div className="leading-[1.22rem]">
+                        Trainer and moderator at 𝐢𝐂𝐨𝐝𝐞𝐆𝐮𝐫𝐮 platform, with 20,000+ 𝐦𝐞𝐦𝐛𝐞𝐫𝐬.
+                      </div>
+                    </div>
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                      <div className="leading-[1.22rem]">
+                        Teaching 𝐏𝐲𝐭𝐡𝐨𝐧 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 and 𝐃𝐒𝐀 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞.
+                      </div>
+                    </div>
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                      <div className="leading-[1.22rem]">
+                        Conducting 𝐰𝐞𝐞𝐤𝐥𝐲 𝐰𝐨𝐫𝐤𝐬𝐡𝐨𝐩𝐬 on key DSA topics to help underprivileged students learn freely.
+                      </div>
+                    </div>
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                      <div className="leading-[1.22rem]">
+                        Voluntarily taught the 𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲 𝐓𝐞𝐬𝐭 to students.
+                      </div>
+                    </div>
+                    {/* 1 */}
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]" style={{ position: "relative", bottom: "3px" }}>➾</div>{" "}
+                      <div className="leading-[1.22rem]">
+                        <div className="relative inline-block">
+                          <a
+                            className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                            href="https://github.com/Ahmadjajja/LeetCode_Volunteer_Teaching"
+                            target="_blank"
+                          >
+                            &nbsp;(𝐏𝐲𝐭𝐡𝐨𝐧, 𝐃𝐒𝐀, & 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 &nbsp;
+                          </a>{" "}
+                        </div>
+                      </div>
+                    </div>
+                    {/* 2 */}
+                    <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                      <div className="text-[#64ffda] pr-[1rem]" style={{ position: "relative", bottom: "3px" }}>➾</div>{" "}
+                      <div className="leading-[1.22rem]">
+                        <div className="relative inline-block">
+                          <a
+                            className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                            href="https://www.facebook.com/watch/100063644695494/1341880143172469"
+                            target="_blank"
+                          >
+                            &nbsp;(𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭&nbsp;
+                          </a>{" "}
                         </div>
                       </div>
                     </div>
@@ -663,7 +894,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   onScroll={handleScroll}
                   className="flex smallScreenWorkWidth mb-[30px] border-b-[2px] border-[#303c55] z-0 overflow-x-scroll relative"
                 >
-                  {/* Sevenovn */}
+                  {/* SMIT */}
                   <div
                     onClick={handleFirstWorkClicked}
                     className={
@@ -674,7 +905,18 @@ const Work = ({ experienceBtnClickedActive }) => {
                   >
                     SMIT
                   </div>
-                  {/* Fourovr  */}
+                  {/* iCodeGuru */}
+                  <div
+                    onClick={handleFirstWorkClicked2}
+                    className={
+                      firstWorkClicked2
+                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
+                    }
+                  >
+                    iCodeGuru
+                  </div>
+                  {/* ZWTech  */}
                   <div
                     onClick={handleSecondWorkClicked}
                     className={
@@ -719,7 +961,7 @@ const Work = ({ experienceBtnClickedActive }) => {
               {/* Companies Names*/}
               <div className="flex">
                 <div className="flex mb-[30px] border-b-[2px] border-[#303c55] z-0 relative">
-                  {/* Sevenovn*/}
+                  {/* SMIT*/}
                   <div
                     onClick={handleFirstWorkClicked}
                     className={
@@ -730,7 +972,18 @@ const Work = ({ experienceBtnClickedActive }) => {
                   >
                     SMIT
                   </div>
-                  {/* Fourovr  */}
+                  {/* iCodeGuru*/}
+                  <div
+                    onClick={handleFirstWorkClicked2}
+                    className={
+                      firstWorkClicked2
+                        ? "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer bg-[#172a45] whitespace-nowrap px-[15px] w-[100%]"
+                        : "h-[2.532rem] text-[#8892b0] text-[13px] flex flex-wrap items-center font-customMono antialiased cursor-pointer whitespace-nowrap px-[15px] w-[100%]"
+                    }
+                  >
+                    iCodeGuru
+                  </div>
+                  {/* ZWTech  */}
                   <div
                     onClick={handleSecondWorkClicked}
                     className={
@@ -794,7 +1047,7 @@ const Work = ({ experienceBtnClickedActive }) => {
                   <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
                     <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
                     <div className="leading-[1.22rem]">
-                      Instructed 500+ students.
+                      Instructed 1000+ students.
                     </div>
                   </div>
                   <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
@@ -926,6 +1179,79 @@ const Work = ({ experienceBtnClickedActive }) => {
 
                         Frontend_Mobile_Development_1.0&nbsp;
                       </a>{" "}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+            {/* iCodeGuru Work */}
+            {(firstWorkClicked2) && (
+              <div className="blink_me transition-all delay-whereIWorkerdTransitionFinalDelay">
+                {/* For firstWork */}
+                <div>
+                  <div className="text-[#ccd6f6] font-calibri text-[20px] antialiased leading-[1] pb-[10px]">
+                    Trainer{" "}
+                    <span className="antialiased text-[#64ffda]">@</span>
+                    <a
+                      href="https://www.linkedin.com/company/icode-guru/mycompany/"
+                      className="antialiased text-[#64ffda] underline"
+                      target="_blank"
+                    >
+                      iCodeGuru
+                    </a>
+                  </div>
+                  <div className="text-[#a8b2d1] font-customMono text-[13px] antialiased">
+                    Feb 2023 - present{" "}
+                  </div>
+
+                  <div className="pt-[2.3rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Trainer and moderator at 𝐢𝐂𝐨𝐝𝐞𝐆𝐮𝐫𝐮 platform, with 20,000+ 𝐦𝐞𝐦𝐛𝐞𝐫𝐬.
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Teaching 𝐏𝐲𝐭𝐡𝐨𝐧 𝐩𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠 𝐥𝐚𝐧𝐠𝐮𝐚𝐠𝐞 and 𝐃𝐒𝐀 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞.
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Conducting 𝐰𝐞𝐞𝐤𝐥𝐲 𝐰𝐨𝐫𝐤𝐬𝐡𝐨𝐩𝐬 on key DSA topics to help underprivileged students learn freely.
+                    </div>
+                  </div>
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      Voluntarily taught the 𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲 𝐓𝐞𝐬𝐭 to students.
+                    </div>
+                  </div>
+
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      <a
+                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                        href="https://github.com/Ahmadjajja/LeetCode_Volunteer_Teaching"
+                        target="_blank"
+                      >
+                        (𝐏𝐲𝐭𝐡𝐨𝐧, 𝐃𝐒𝐀, & 𝐋𝐞𝐞𝐭𝐂𝐨𝐝𝐞) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭  &nbsp;
+                      </a>
+                    </div>
+                  </div>
+                  {/* 2 */}
+                  <div className="pt-[1rem] text-[#8892b0] font-calibri text-[18px] antialiased flex">
+                    <div className="text-[#64ffda] pr-[1rem]">➾</div>{" "}
+                    <div className="leading-[1.22rem]">
+                      <a
+                        className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                        href="https://www.facebook.com/watch/100063644695494/1341880143172469"
+                        target="_blank"
+                      >
+                        (𝐃𝐮𝐨𝐥𝐢𝐧𝐠𝐨 𝐄𝐧𝐠𝐥𝐢𝐬𝐡 𝐏𝐫𝐨𝐟𝐢𝐜𝐢𝐞𝐧𝐜𝐲) 𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 &nbsp;
+                      </a>
                     </div>
                   </div>
                 </div>
