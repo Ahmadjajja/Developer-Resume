@@ -15,7 +15,7 @@ const Work = ({ experienceBtnClickedActive }) => {
 
   // Bar
   const [firstBarClicked, setFirstBarClicked] = useState(false);
-  const [firstBarClicked2, setFirstBarClicked2] = useState(false);
+  const [firstBarClicked2, setFirstBarClicked2] = useState(true);
   const [firstBarClicked3, setFirstBarClicked3] = useState(false);
   const [firstBarClicked4, setFirstBarClicked4] = useState(false);
   const [firstBarClicked5, setFirstBarClicked5] = useState(false);
