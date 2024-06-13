@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../Css_applied/aboutStyles.css";
-import DP3 from "../images/DP3.jpg";
+import DP from "../images/DP.jpg";
 import DPs from "../images/DPs.gif";
 
 const About = ({ aboutBtnClickedActive }) => {
@@ -142,7 +142,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 Saylani Welfare Mass Training & Job Creation Program&nbsp;
               </a>{" "}
             </div>
-            I've taught (wanna see how I provide training to my students?
+            I've taught 1000+ students by simplifying complex programming concepts (wanna see how I provide training to my students?
             <div className="relative inline-block">
               <a
                 className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
@@ -152,14 +152,35 @@ const About = ({ aboutBtnClickedActive }) => {
                 &nbsp; click here
               </a>{" "}
             </div>
-            ) 1000+ students, simplifying complex programming concepts and solving 300+ LeetCode questions to sharpen my skills.
+            ).
+            <br />
+            <br />
+            I helped over 100 international folks around the globe🌍 solve coding problems in <b>Python</b> as a <div className="relative inline-block">
+              <a
+                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7186385467846639620/"
+                target="_blank"
+              >
+                &nbsp;Section Leader&nbsp;
+              </a>{" "}
+            </div>
+            and <div className="relative inline-block">
+              <a
+                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7186385467846639620/"
+                target="_blank"
+              >
+                &nbsp;Section Leader Mentor&nbsp;
+              </a>{" "}
+            </div>
+            (𝘵𝘦𝘢𝘤𝘩𝘪𝘯𝘨 𝘰𝘯𝘦-𝘰𝘯-𝘰𝘯𝘦).
             <br />
             <br />
             I have
             <div className="relative inline-block">
               <a
                 className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://lablab.ai/u/@ahmad_jajja288"
+                href="https://www.linkedin.com/posts/ahmad-jajja_stanfordabrcodeabrinabrplaceabrlearnings-activity-7195142429073633281-zNhV/?utm_source=share&utm_medium=member_desktop"
                 target="_blank"
               >
                 &nbsp;participated&nbsp;
@@ -390,7 +411,7 @@ const About = ({ aboutBtnClickedActive }) => {
             <img
               ref={mySecondImage}
               onClick={handleSmallImageClick}
-              src={clickedSm ? DPs : DP3}
+              src={clickedSm ? DP : DPs}
               alt="profile"
               className="h-auto w-auto mr-auto ml-auto object-cover transition-ImageTransitionProperty duration-ImageTransitionDuration ease-ImageTransitionTiming delay-ImageTransitionDelay z-10 opacity-100 relative"
               style={{
@@ -433,7 +454,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 Program
               </a>{" "}
             </div>
-            I've taught (wanna see how I provide training to my students?<div className="relative inline-block">
+            I've taught 1000+ students by simplifying complex programming concepts (wanna see how I provide training to my students?<div className="relative inline-block">
               <a
                 className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
                 href="https://www.linkedin.com/posts/ahmad-jajja_learn-to-code-with-activity-7151895134744256512-Dmyf?utm_source=share&utm_medium=member_desktop"
@@ -442,9 +463,30 @@ const About = ({ aboutBtnClickedActive }) => {
                 &nbsp;click here&nbsp;
               </a>{" "}
             </div>
-            )
-
-            1000+ students, simplifying complex programming concepts and solving 300+ LeetCode questions to sharpen my skills.
+            ).
+            <br />
+            <br />
+            I helped over 100 international folks around the globe🌍 solve coding problems in Python as a
+            <div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7186385467846639620/"
+                target="_blank"
+              >
+                &nbsp;Section Leader&nbsp;
+              </a>{" "}
+            </div>
+            and
+            <div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://www.linkedin.com/posts/ahmad-jajja_stanfordabrcodeabrinabrplaceabrlearnings-activity-7195142429073633281-zNhV/?utm_source=share&utm_medium=member_desktop"
+                target="_blank"
+              >
+                &nbsp;Section Leader Mentor&nbsp;
+              </a>{" "}
+            </div>
+            (𝘵𝘦𝘢𝘤𝘩𝘪𝘯𝘨 𝘰𝘯𝘦-𝘰𝘯-𝘰𝘯𝘦).
             <br />
             <br />
             I have
@@ -754,7 +796,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 ref={myImage}
                 onMouseOver={() => setClicked(true)}
                 onMouseOut={() => setClicked(false)}
-                src={clicked ? DPs : DP3}
+                src={clicked ? DP : DPs}
                 alt="profile"
                 className="h-auto w-auto mr-auto ml-auto object-cover transition-ImageTransitionProperty duration-ImageTransitionDuration ease-ImageTransitionTiming delay-ImageTransitionDelay z-10 opacity-100 relative"
                 style={{
