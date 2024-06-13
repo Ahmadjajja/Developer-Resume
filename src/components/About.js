@@ -173,7 +173,15 @@ const About = ({ aboutBtnClickedActive }) => {
                 &nbsp;Section Leader Mentor&nbsp;
               </a>{" "}
             </div>
-            (𝘵𝘦𝘢𝘤𝘩𝘪𝘯𝘨 𝘰𝘯𝘦-𝘰𝘯-𝘰𝘯𝘦).
+            (𝘵𝘦𝘢𝘤𝘩𝘪𝘯𝘨 𝘰𝘯𝘦-𝘰𝘯-𝘰𝘯𝘦) at <div className="relative inline-block">
+              <a
+                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://codeinplace.stanford.edu/"
+                target="_blank"
+              >
+                &nbsp;Stanford's Code in Place&nbsp;
+              </a>{" "}
+            </div>.
             <br />
             <br />
             I have
@@ -486,7 +494,15 @@ const About = ({ aboutBtnClickedActive }) => {
                 &nbsp;Section Leader Mentor&nbsp;
               </a>{" "}
             </div>
-            (𝘵𝘦𝘢𝘤𝘩𝘪𝘯𝘨 𝘰𝘯𝘦-𝘰𝘯-𝘰𝘯𝘦).
+            (𝘵𝘦𝘢𝘤𝘩𝘪𝘯𝘨 𝘰𝘯𝘦-𝘰𝘯-𝘰𝘯𝘦) at <div className="relative inline-block">
+              <a
+                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                href="https://codeinplace.stanford.edu/"
+                target="_blank"
+              >
+                &nbsp;Stanford's Code in Place&nbsp;
+              </a>{" "}
+            </div>.
             <br />
             <br />
             I have

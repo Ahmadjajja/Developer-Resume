@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cca4a260.css",
-    "main.js": "/static/js/main.4c362246.js",
+    "main.js": "/static/js/main.6155f9fc.js",
     "static/media/SecondListingImage.jpg": "/static/media/SecondListingImage.191716ddd00bd0cb77ee.jpg",
     "static/media/ME.jpg": "/static/media/ME.dd142bcdd2b3fdd07063.jpg",
     "static/media/2021.jpg": "/static/media/2021.a989ce52039bc0ff65ec.jpg",
@@ -17,6 +17,8 @@
     "static/media/webDev.jpeg": "/static/media/webDev.b503c7a7dd5e289e61b5.jpeg",
     "static/media/cricket-match2.jpeg": "/static/media/cricket-match2.0687a8bbe9efb2eed297.jpeg",
     "static/media/students.jpeg": "/static/media/students.bf85683018bdd476a49c.jpeg",
+    "static/media/DP.jpg": "/static/media/DP.829a2e82096ad0d162f9.jpg",
+    "static/media/EcoFactor.jpg": "/static/media/EcoFactor.321ac2737424cc684fd4.jpg",
     "static/media/MERN.jpeg": "/static/media/MERN.6673eb5fecd43ded8b8e.jpeg",
     "static/media/coding.jpg": "/static/media/coding.47bdb284747d54e3ace3.jpg",
     "static/media/start.jpeg": "/static/media/start.005201a85b165fcfeea1.jpeg",
@@ -37,7 +39,8 @@
     "static/media/orderTaker.jpg": "/static/media/orderTaker.a0c5ab7d4375c8f3846a.jpg",
     "static/media/JAVADSAShaded.jpg": "/static/media/JAVADSAShaded.dd189c6c07037447f41c.jpg",
     "static/media/CRUDMERN.png": "/static/media/CRUDMERN.3c8484a5f6779095def5.png",
-    "static/media/DP3.jpg": "/static/media/DP3.6ceb4da4fc11a869bc07.jpg",
+    "static/media/EcoFactorShaded.jpg": "/static/media/EcoFactorShaded.8e216921d1745441e011.jpg",
+    "static/media/PlantDiseaseDetection.jpg": "/static/media/PlantDiseaseDetection.0b24a15c7878e805a5d9.jpg",
     "static/media/MERN-BootcampShaded2.jpg": "/static/media/MERN-BootcampShaded2.e4680f9a79bb0cd6005a.jpg",
     "static/media/Uni.jpeg": "/static/media/Uni.f7ae9b9f8321e54b3794.jpeg",
     "static/media/likeMinded.jpg": "/static/media/likeMinded.6a56880ea2c7e7711f09.jpg",
@@ -47,6 +50,7 @@
     "static/media/AIPodcasteGeneratorShaded2.jpg": "/static/media/AIPodcasteGeneratorShaded2.2a2ffb33c2a85395898d.jpg",
     "static/media/CRUDMERNShaded2.jpg": "/static/media/CRUDMERNShaded2.4fc3afab39dad5c54f03.jpg",
     "static/media/DSA.png": "/static/media/DSA.cbde2440d71925fb177a.png",
+    "static/media/PlantDiseaseDetectionShaded.jpg": "/static/media/PlantDiseaseDetectionShaded.f197306dc744a13d758b.jpg",
     "static/media/AI.webp": "/static/media/AI.bb39166a3e18bc1d68cb.webp",
     "static/media/leavingHome.jpg": "/static/media/leavingHome.c2ff3170537ae04ad628.jpg",
     "static/media/cricket-match.webp": "/static/media/cricket-match.5eca6c35dcd27b8fd485.webp",
@@ -56,10 +60,10 @@
     "static/media/leetcode.svg": "/static/media/leetcode.7951fc74c4520a91c54fc246c2a22654.svg",
     "index.html": "/index.html",
     "main.cca4a260.css.map": "/static/css/main.cca4a260.css.map",
-    "main.4c362246.js.map": "/static/js/main.4c362246.js.map"
+    "main.6155f9fc.js.map": "/static/js/main.6155f9fc.js.map"
   },
   "entrypoints": [
     "static/css/main.cca4a260.css",
-    "static/js/main.4c362246.js"
+    "static/js/main.6155f9fc.js"
   ]
 }
