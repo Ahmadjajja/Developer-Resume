@@ -1,0 +1,185 @@
+\documentclass[letterpaper, 11pt]{article}
+
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{graphicx}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+\usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}
+{\scshape\raggedright\large\bfseries}{}{0em}{}[\color{black}\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+\pdfgentounicode=1
+
+\setlist[itemize]{nosep, topsep=2pt, partopsep=0pt, parsep=0pt}
+
+\newcommand{\resumeItem}[1]{\item\small{#1}}
+
+\newcommand{\resumeSubheading}[4]{
+\item
+\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1}\textnormal{, #2} & \textbf{\small #3} \\
+\end{tabular*}
+}
+
+
+\newcommand{\educationSubheading}[4]{
+\item
+\begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+\textbf{#1} & \textbf{\small #2} \\
+\textit{\small #3} & \textit{\small #4} \\
+\end{tabular*}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{%
+        \item
+        \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+        \small #1 & \textbf{\small #2} \\
+        \end{tabular*}
+        }
+
+        \newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+
+\begin{document}
+\begin{minipage}{\textwidth}
+
+\begin{center}
+{\Huge \scshape AHMAD SULTAN} \\[4pt]
+\small
+\href{https://linkedin.com/in/ahmad-jajja}{\underline{linkedin.com/in/ahmad-jajja}} $\diamond$
+% \href{https://ahmad-jajja.com}{\underline{ahmad-jajja.com}} $\diamond$
+\href{https://github.com/Ahmadjajja}{\underline{github.com/Ahmadjajja} (5k+ commits)}  \\[4pt]
+(406) 219-6207
+$\diamond$
+\href{mailto:ahmadjajja86@gmail.com}{\underline{ahmadjajja86@gmail.com}}
+$\diamond$
+\href{https://leetcode.com/ahmadjajja86/}{\underline{leetcode.com/u/ahmadjajja86}}
+\end{center}
+
+\vspace{-8pt}
+
+\section{Education}
+  \resumeSubHeadingListStart
+	\educationSubheading
+  	{Montana State University}{Jan 2025 - Dec 2026}
+  	{Master of Computer Science}{Bozeman, MT}
+	\resumeItemListStart
+	  \resumeItem{\textbf{Graduate Teaching Assistant} (DSA, Web Design, Concepts of Programming Languages)}
+	\resumeItemListEnd
+    \educationSubheading
+  	{University of Agriculture, Faisalabad}{Sep 2020 - Jun 2024}
+  	{Bachelor of Computer Science}{}
+  \resumeSubHeadingListEnd
+
+
+
+\section{Skills}
+\resumeItemListStart
+    \resumeItem{\textbf{Languages}: Python, TypeScript, JavaScript (ES6+), Java, C/C++, SQL}
+    \resumeItem{\textbf{Technologies}: React, Next.js, Node.js, Express, Flask, React Native, MongoDB, PostgreSQL, Firebase, REST, GraphQL, Git}
+    \resumeItem{\textbf{AI/ML \& Cloud}: TensorFlow, OpenAI, LangChain, LLMs, RAG, Agentic AI, Hugging Face, AWS, Docker}
+\resumeItemListEnd
+
+\section{Industry Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading{Software Engineer Intern}{Marsh Labs, Montana State University}{May 2025 -- Sep 2025}{}
+    \resumeItemListStart
+        \resumeItem{Developed a Python desktop app (Tkinter, GeoPandas, Matplotlib) for geospatial mapping, reducing map generation time by \textbf{98\%} (from 1 hour to seconds) for \textbf{100+ researchers}.}
+        \resumeItem{Built an ETL pipeline migrating \textbf{150K+ biological records} from raw CSVs into a structured relational model, reducing data retrieval time by \textbf{70\%}.}
+        \resumeItem{Built an agentic AI pipeline using \textbf{GPT-4o, LangChain, RAG \& function calling} to autonomously filter species datasets and generate county-level maps, saving researchers \textbf{5+ hours per analysis}.}
+  \resumeItemListEnd
+
+    \resumeSubheading{Founding Software Engineer}{Vidava AI}{Sep 2024 -- Dec 2024}{}
+    \resumeItemListStart
+        \resumeItem{Built a \textbf{JavaScript} Chrome extension detecting checkout pages across \textbf{100+ e-commerce sites}, recommending optimal credit cards and increasing user rewards by \textbf{15--30\%}.}
+        \resumeItem{Implemented fuzzy string matching reducing card misidentification by \textbf{90\%}, mapping \textbf{50+ credit cards} across 8 categories.}
+        \resumeItem{Built backend infrastructure using \textbf{Node.js, JWT \& MongoDB}, supporting \textbf{5K+ real-time API requests/month} with \textbf{zero downtime} in production.}
+    \resumeItemListEnd
+
+    \resumeSubheading{Founding Software Engineer}{EcoFactor}{Feb 2024 -- Sep 2024}{}
+    \resumeItemListStart
+        \resumeItem{Co-founded and shipped an AI-powered ESG platform using \textbf{GPT-4, Vectara RAG, Python, Flask \& React}, processing \textbf{500+ sustainability reports} and reducing manual analysis time by \textbf{80\%}.}
+        \resumeItem{Designed REST APIs handling \textbf{10K+ requests/month} with \textbf{99.5\% uptime}, supporting ESG insights for manufacturers.}
+        \resumeItem{Managed a \textbf{7-person engineering team}, owning architecture and code reviews; shipped \textbf{4 core AI modules} on schedule.}
+    \resumeItemListEnd
+
+    \resumeSubheading{Software Engineer}{ZAWTech AI}{Aug 2022 -- Feb 2024}{}
+    \resumeItemListStart
+        \resumeItem{Built \textbf{React \& Node.js GraphQL APIs} powering a recruitment platform, reducing average page load time by \textbf{40\%} for \textbf{1,000+ active hiring teams}.}
+        \resumeItem{Optimized architecture improving dashboard performance by \textbf{35\%}, cutting real-time data processing latency by \textbf{50\%}.}
+        \resumeItem{Shipped \textbf{10+ features} cross-functionally, maintaining \textbf{95\%+} sprint delivery rate across \textbf{6 agile cycles}.}
+    \resumeItemListEnd
+
+    \resumeSubheading{Software Engineer Intern}{Seeraht}{May 2022 -- Aug 2022}{}
+    \resumeItemListStart
+        \resumeItem{Built and shipped an admission portal feature using \textbf{React.js \& Firebase}, processing \textbf{2,000+ applications} and reducing manual admission time by \textbf{80\%}.}
+        \resumeItem{Integrated feature into production system, cutting processing time from \textbf{weeks to hours} across \textbf{2 bi-annual intake cycles}.}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    
+    \section{Projects}
+      \resumeSubHeadingListStart
+        \resumeProjectHeading{\textbf{AI Podcast Generator} $|$ \emph{React, JavaScript, Python, OpenAI, ElevenLabs, Firebase}}
+        {\href{https://github.com/Ahmadjajja/AIpodcastgenerator}{\underline{GitHub}}}
+        \resumeItemListStart
+            \resumeItem{Built an AI platform converting text articles and YouTube content into audio podcasts using \textbf{OpenAI \& ElevenLabs}, reducing podcast creation time from \textbf{hours to minutes}.}
+            \resumeItem{Engineered full-stack workflow with \textbf{React, Python \& Firebase}, supporting \textbf{10+ customizable AI voices} and real-time audio generation without manual scripting.}
+        \resumeItemListEnd
+      \resumeSubHeadingListEnd
+    \section{Awards \& Achievements}
+    \resumeItemListStart
+        \resumeItem{\textbf{1st Place} --- Harvard University CS50x Puzzle Day 2024}
+        \resumeItem{\textbf{Winner} --- Unhallucinate AI Hackathon (lablab.ai) \textbar{} Solved \textbf{350+ LeetCode} problems}
+        \resumeItem{Trained \textbf{2k+ students} in programming, full-stack, and AI as a volunteer trainer (Saylani Mass IT Training Program)---\href{https://www.linkedin.com/feed/update/urn:li:activity:7278956608775204864/}{\underline{LinkedIn post}}}
+    \resumeItemListEnd
+      
+\end{minipage}
+\end{document}

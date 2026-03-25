@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Fragment } from "react";
 import Navbar from "./components/Navbar";
@@ -14,6 +14,7 @@ import Pensieve from "./components/Pensieve/Pensieve";
 import PensieveTagsMemories from "./components/Pensieve/PensieveTagsMemories";
 import PensieveTags from "./components/Pensieve/PensieveTags";
 import Loader from "./components/loader/Loader";
+import ScrollProgress from "./components/ScrollProgress";
 import MemoryOne from "./components/Pensieve/MemoryOne";
 import MemoryTwo from "./components/Pensieve/MemoryTwo";
 import MemoryThree from "./components/Pensieve/MemoryThree";
@@ -39,6 +40,7 @@ function App() {
     <Loader />
   ) : (
     <Router>
+      <ScrollProgress />
       <Routes>
         <Route
           exact

@@ -850,7 +850,7 @@ const MemoryFour = () => {
       {/* Back to All Memories */}
       <div
         className={`contentContainer ${showFirstContent ? "show" : ""
-          } w-[70%] mr-auto ml-auto text-[#64ffda] pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
+          } w-[70%] mr-auto ml-auto text-accent pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
       >
         <span className="mr-[7px]">←</span>
         <span className="relative">
@@ -867,21 +867,21 @@ const MemoryFour = () => {
         className={`contentContainer ${showSecondContent ? "show" : ""
           } mt-[50px] ml-auto mr-auto w-[70%] myScreen8:w-[100%]`}
       >
-        <div className="text-[#ccd6f6] text-myPensieveFont font-semibold leading-[1.1] font-calibri">
+        <div className="text-heading text-myPensieveFont font-semibold leading-[1.1] font-calibri">
           Year in Review 2021
         </div>
         <div>
-          <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+          <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
             December 31, 2021
           </span>
-          <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+          <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
             {" "}
             —{" "}
           </span>
           <span className="relative">
             <Link
               to="/pensieve/tags/memories/"
-              className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
+              className="text-accent text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
             >
               #Memories
             </Link>
@@ -899,9 +899,9 @@ const MemoryFour = () => {
         <div
           ref={refDescription}
           className={`contentContainer ${showFourthContent ? "show" : ""
-            } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+            } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
         >
-          <p className="pl-[1.5em] leading-[1.5] text-[#a8b2d1] italic">
+          <p className="pl-[1.5em] leading-[1.5] text-dim italic">
             The year 2021 was a transformative period for me as I delved into various fields of technology,
             faced challenges, made significant decisions, and took steps towards achieving my career goals.
             In this year in review, I will highlight the key events and experiences that shaped my journey
@@ -915,28 +915,28 @@ const MemoryFour = () => {
           className={`contentContainer ${listingVisible ? "show" : ""} pl-5`}
           ref={refListing}
         >
-          <li className="mt-[2em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[2em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             <p>Exploration of Artificial Intelligence, Machine Learning, and Data Science</p>
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Exploring Data Structures and Algorithms (DSA)
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Leaving Home, Embracing Opportunity
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Local Job Experience
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Exploring the Realm of Software Houses
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Embarking on Web Development
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Joining Saylani Mass IT Training Program (SMIT)
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Sleepless Nights and Determination
           </li>
         </ul>
@@ -947,27 +947,27 @@ const MemoryFour = () => {
           <h3
             ref={refFirstListingTitle}
             className={`contentContainer ${firstListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Exploration of Artificial Intelligence, Machine Learning, and Data Science
           </h3>
           <div
             ref={refFirstListingDescription}
             className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               As 2021 began, I possessed strong coding, problem-solving, and logic-building skills. However, I felt the need
               to move beyond learning a specific coding language and explore new areas in technology. Unsure of the next steps
               to take, I conducted extensive research and sought guidance from various individuals. One person who stood out
               was
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   Faizan
                 </span>
               </span>{" "}
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   Amin  
                 </span>
               </span>{" "}
@@ -978,15 +978,15 @@ const MemoryFour = () => {
           <div
             ref={refFirstListingDescription}
             className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               To gain a better understanding of AI, I reached out to numerous experts in the field of data science, machine
               learning, and AI. Through interactions with over a hundred individuals, I gained valuable insights and knowledge.
               Starting as a beginner in computer science and AI, I faced the challenge of grasping these complex technologies.
               I enrolled in Andrew Ng's
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   "AI for Everyone"
                 </span>
               </span>{" "}
@@ -998,9 +998,9 @@ const MemoryFour = () => {
           <div
             ref={refFirstListingDescription}
             className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               During this time, I dedicated myself to learning about AI, data science, machine learning, big data analytics,statistics and mathematices necesary for this. It was a period of intense self-study and exploration, as I sought to expand my knowledge and
               skills in these domains.
             </p>
@@ -1020,19 +1020,19 @@ const MemoryFour = () => {
           <h3
             ref={refSecondListingTitle}
             className={`contentContainer ${secondListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Exploring Data Structures and Algorithms (DSA)
           </h3>
           <div
             ref={refSecondDescription}
             className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               My journey into data structures and algorithms (DSA) began when I met a person named
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   Ali
                 </span>
               </span>{" "}
@@ -1045,15 +1045,15 @@ const MemoryFour = () => {
           <div
             ref={refSecondDescription}
             className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Ali, who recorded lectures on DSA, generously shared his knowledge with our group of six individuals. I took
               a keen interest in the lectures, especially the topic of linked lists. Through dedicated effort, I became
               proficient in linked lists and proceeded to explore other concepts, such as stacks, queues, graphs, and trees.
               A significant milestone in my DSA journey was when I wrote
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   204 lines of code
                 </span>
               </span>{" "}
@@ -1066,9 +1066,9 @@ const MemoryFour = () => {
           <div
             ref={refSecondDescription}
             className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Despite not having a laptop due to the COVID-19 pandemic, I continued to code using a mobile device to test
               and run my programs. This period of exploration and learning in the field of DSA laid a strong foundation
               for my future endeavors.
@@ -1090,22 +1090,22 @@ const MemoryFour = () => {
           <h3
             ref={refThirdListingTitle}
             className={`contentContainer ${thirdListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Leaving Home, Embracing Opportunity
           </h3>
           <div
             ref={refThirdDescription}
             className={`contentContainer ${thirdListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Driven by a deep passion for learning and technology, I felt limited by the lack of guidance and a coding culture
               in my hometown. Understanding the importance of being in an environment conducive to growth as a software engineer,
               I made a life-changing decision. I decided to leave my home and relocate to Faisalabad, a city known for its tech
               industry, with the intention of pursuing my career aspirations. This decision was based on the belief that i read somewhere written on wall
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   "کہیں پہنچنے کے لئے، کہیں سے نکلنا ضروری ہے"
                 </span>
               </span>{" "} means that
@@ -1115,12 +1115,12 @@ const MemoryFour = () => {
           <div
             ref={refThirdDescription}
             className={`contentContainer ${thirdListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               With no prior arrangements for accommodation, I reached out to
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   Jawad Ahmad
                 </span>
               </span>{" "}, a senior in the field of computer science whom
@@ -1145,16 +1145,16 @@ const MemoryFour = () => {
           <h3
             ref={refFourthListingTitle}
             className={`contentContainer ${fourthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Local Job Experience
           </h3>
           <div
             ref={refFourthDescription}
             className={`contentContainer ${isFourthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Upon my arrival in Faisalabad, I spent approximately 20 days acquainting myself with the city and its technological
               landscape, while also working odd jobs to sustain myself. One such job involved working as an order taker at a restaurant.
               During my time there, I had the serendipitous opportunity to interact with developers who would pass by me on their way
@@ -1164,12 +1164,12 @@ const MemoryFour = () => {
               realization dawned on me -
               {/* I was not meant to be an order taker; my true calling lay in becoming a software engineer. */}
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   "I was not meant to be and
                 </span>
               </span>{" "}
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   order taker; my true calling lay in becoming a software engineer "
                 </span>
               </span>{" "}
@@ -1195,16 +1195,16 @@ const MemoryFour = () => {
           <h3
             ref={refFifthListingTitle}
             className={`contentContainer ${fifthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Exploring the Realm of Software Houses
           </h3>
           <div
             ref={refFifthDescription}
             className={`contentContainer ${isFifthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               After quitting my job, I decided to visit various software companies in Faisalabad to gain exposure and insights
               into the industry. During these visits, I had the opportunity to meet a full-stack software engineer who provided
               valuable advice. He emphasized that C++ was just one language to learn and encouraged me to explore other technologies. While his words were initially harsh, they served as a wake-up call, prompting me to take a new direction.
@@ -1227,20 +1227,20 @@ const MemoryFour = () => {
           <h3
             ref={refSixthListingTitle}
             className={`contentContainer ${sixthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Embarking on Web Development
           </h3>
           <div
             ref={refSixthDescription}
             className={`contentContainer ${isSixthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Despite not having my own laptop, I borrowed a friend's device and began learning web development. I started
               by exploring
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   HTML and CSS
                 </span>
               </span>{" "}
@@ -1248,14 +1248,14 @@ const MemoryFour = () => {
               an online bootcamp on mobile application development led by Naved Sarwar. Eager to enhance my skills, I
               immersed myself in learning
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   JavaScript
                 </span>
               </span>{" "}
               through the bootcamp. Among the students, I was the only one to
               complete all the JavaScript assignments, solving over
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   150 coding problems
                 </span>
               </span>{" "}
@@ -1282,26 +1282,26 @@ const MemoryFour = () => {
           <h3
             ref={refSeventhListingTitle}
             className={`contentContainer ${seventhListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Joining Saylani Mass IT Training Program (SMIT)
           </h3>
           <div
             ref={refSeventhDescription}
             className={`contentContainer ${isSeventhListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               During the summer break between my second and third semester, I received life-changing news. My roommate
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   Sufyan (Who was doing work as react developer)
                 </span>
               </span>{" "}
               informed
               me about the
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   Saylani Mass IT Training Program (SMIT)
                 </span>
               </span>{" "}
@@ -1330,16 +1330,16 @@ const MemoryFour = () => {
           <h3
             ref={refEighthListingTitle}
             className={`contentContainer ${eighthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Sleepless Nights and Determination
           </h3>
           <div
             ref={refEighthDescription}
             className={`contentContainer ${isEighthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               In September 2021, I started university onsite classes after pandemic situation in third semester, excited
               to meet peers who shared my passion for coding and technology. However, I soon realized that the university
               lacked a coding culture, with minimal interest among students in discussing coding-related topics.
@@ -1351,9 +1351,9 @@ const MemoryFour = () => {
           <div
             ref={refEighthDescription}
             className={`contentContainer ${isEighthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               During my third semester at university, I faced numerous challenges. Balancing my university studies and
               maintaining a satisfactory CGPA while simultaneously pursuing web development proved to be demanding.
               Determined to succeed, I adopted a rigorous schedule that involved waking up before dawn, typically
@@ -1381,16 +1381,16 @@ const MemoryFour = () => {
           <h3
             ref={refNinthListingTitle}
             className={`contentContainer ${ninthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             End Remarks and Quotes
           </h3>
           <div
             ref={refNinthDescription}
             className={`contentContainer ${isNinthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
 
               In 2021, I embarked on a transformative journey in coding and web development. Despite challenges and a lack
               of guidance, I remained determined, taking charge of my own learning. Joining Saylani Mass IT Training Program
@@ -1403,12 +1403,12 @@ const MemoryFour = () => {
           <div
             ref={refNinthDescription}
             className={`contentContainer ${isNinthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               "The journey of a thousand miles begins with a single step." -{" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <span className="text-accent viewArchiveTwo cursor-pointer">
                   Lao Tzu
                 </span>
               </span>{" "}

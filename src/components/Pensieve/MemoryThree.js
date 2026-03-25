@@ -583,7 +583,7 @@ const MemoryThree = () => {
       {/* Back to All Memories */}
       <div
         className={`contentContainer ${showFirstContent ? "show" : ""
-          } w-[70%] mr-auto ml-auto text-[#64ffda] pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
+          } w-[70%] mr-auto ml-auto text-accent pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
       >
         <span className="mr-[7px]">←</span>
         <span className="relative">
@@ -600,21 +600,21 @@ const MemoryThree = () => {
         className={`contentContainer ${showSecondContent ? "show" : ""
           } mt-[50px] ml-auto mr-auto w-[70%] myScreen8:w-[100%]`}
       >
-        <div className="text-[#ccd6f6] text-myPensieveFont font-semibold leading-[1.1] font-calibri">
+        <div className="text-heading text-myPensieveFont font-semibold leading-[1.1] font-calibri">
           Year in Review 2020
         </div>
         <div>
-          <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+          <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
             December 31, 2020
           </span>
-          <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+          <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
             {" "}
             —{" "}
           </span>
           <span className="relative">
             <Link
               to="/pensieve/tags/memories/"
-              className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
+              className="text-accent text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
             >
               #Memories
             </Link>
@@ -632,9 +632,9 @@ const MemoryThree = () => {
         <div
           ref={refDescription}
           className={`contentContainer ${showFourthContent ? "show" : ""
-            } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+            } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
         >
-          <p className="pl-[1.5em] leading-[1.5] text-[#a8b2d1] italic">
+          <p className="pl-[1.5em] leading-[1.5] text-dim italic">
             The year 2020 brought about significant changes and important decisions in my life.
             From the outbreak of the Covid-19 pandemic to selecting a field of study for my bachelor's
             degree, navigating university admissions, and embarking on the journey of learning programming
@@ -647,19 +647,19 @@ const MemoryThree = () => {
           className={`contentContainer ${listingVisible ? "show" : ""} pl-5`}
           ref={refListing}
         >
-          <li className="mt-[2em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[2em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Covid-19 and Disrupted Exams
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Choosing Coding as a Career
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             University Admission
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Meeting Faizan Amin
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Starting C++
           </li>
         </ul>
@@ -669,16 +669,16 @@ const MemoryThree = () => {
           <h3
             ref={refFirstListingTitle}
             className={`contentContainer ${firstListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Covid-19 and Disrupted Exams
           </h3>
           <div
             ref={refFirstListingDescription}
             className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               As the year commenced, I dedicated myself to preparing for my 12th-grade exams, with aspirations of achieving
               high marks for university admissions. My days were packed with intense studying, attending college classes,
               and engaging in extracurricular activities such as playing cricket. However, the outbreak of the Covid-19
@@ -701,16 +701,16 @@ const MemoryThree = () => {
           <h3
             ref={refSecondListingTitle}
             className={`contentContainer ${secondListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Choosing Coding as a Career
           </h3>
           <div
             ref={refSecondDescription}
             className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               With the cancellation of exams, I was prompted to think creatively about my career path. After seeking advice
               from my teachers, cousins, and conducting extensive research, I made the decision to pursue coding as my career.
               Having acquired a solid foundation in computer science during my previous two years of study, I felt confident
@@ -734,27 +734,27 @@ const MemoryThree = () => {
           <h3
             ref={refThirdListingTitle}
             className={`contentContainer ${thirdListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             University Admission
           </h3>
           <div
             ref={refThirdDescription}
             className={`contentContainer ${thirdListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Once I had determined my career path, the next step was selecting a university. Extensive research led me to
               consider various options, and initially, I was shortlisted for admission to
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   the Islamia University Bahawalpur
                 </span>
               </span>{" "}
               . However, due to personal reasons, I was unable to submit my documents in time and missed the opportunity. Nonetheless,
               I persevered and soon found another opportunity by being shortlisted and submitting my documents to
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   the University of Agriculture
                 </span>
               </span>{" "}
@@ -778,21 +778,21 @@ const MemoryThree = () => {
           <h3
             ref={refFourthListingTitle}
             className={`contentContainer ${fourthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Meeting Faizan Amin
           </h3>
           <div
             ref={refFourthDescription}
             className={`contentContainer ${isFourthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Upon arriving in Faisalabad, a city far from my hometown, I experienced a sense of excitement and unfamiliarity.
               It felt like stepping into a different world. During my university's Orientation Day, I had a life-changing encounter
               with a remarkable individual named
               {" "}<span className="relative">
-                <a href="https://github.com/faizan170" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">Faizan Amin</a>
+                <a href="https://github.com/faizan170" target="_blank" className="text-accent viewArchiveTwo cursor-pointer">Faizan Amin</a>
               </span>{" "}
               . Despite being only two years older than me, Faizan was already a successful
               Machine Learning Engineer, earning a salary twice that of doctors. His expertise and success inspired me greatly, and our
@@ -817,21 +817,21 @@ const MemoryThree = () => {
           <h3
             ref={refFifthListingTitle}
             className={`contentContainer ${fifthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Starting C++
           </h3>
           <div
             ref={refFifthDescription}
             className={`contentContainer ${isFifthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               As my university classes began, I was surprised to discover that the curriculum included only one computer
               science-related subject out of six, with the remaining subjects focusing on non-technical areas such as
               physics and mathematics. Recognizing the need to pursue coding independently, I
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   took the initiative to learn C++
                 </span>
               </span>{" "}
@@ -840,7 +840,7 @@ const MemoryThree = () => {
               friends from other institutions shared their coding assignments with me, providing opportunities to enhance
               my
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo ">
+                <span className="text-accent viewArchiveTwo ">
                   problem-solving and logic-building skills
                 </span>
               </span>{" "}
@@ -865,16 +865,16 @@ const MemoryThree = () => {
           <h3
             ref={refSixthListingTitle}
             className={`contentContainer ${sixthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             End Remarks and Quotes
           </h3>
           <div
             ref={refSixthDescription}
             className={`contentContainer ${isSixthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               The year 2020 was a transformative period marked by the onset of the Covid-19 pandemic, decision-making processes,
               university admissions, and the initiation of my coding journey. It challenged me to adapt, reflect, and make choices
               that would shape my future. As I look back on this year, a quote come to mind:
@@ -883,12 +883,12 @@ const MemoryThree = () => {
           <div
             ref={refSixthDescription}
             className={`contentContainer ${isSixthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               "The only way to do great work is to love what you do." - {" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <span className="text-accent viewArchiveTwo cursor-pointer">
                   Steve Jobs
                 </span>
               </span>{" "}

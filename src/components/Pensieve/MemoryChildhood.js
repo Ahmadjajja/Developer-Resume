@@ -494,7 +494,7 @@ const MemoryChildhood = () => {
             {/* Back to All Memories */}
             <div
                 className={`contentContainer ${showFirstContent ? "show" : ""
-                    } w-[70%] mr-auto ml-auto text-[#64ffda] pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
+                    } w-[70%] mr-auto ml-auto text-accent pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
             >
                 <span className="mr-[7px]">←</span>
                 <span className="relative">
@@ -511,21 +511,21 @@ const MemoryChildhood = () => {
                 className={`contentContainer ${showSecondContent ? "show" : ""
                     } mt-[50px] ml-auto mr-auto w-[70%] myScreen8:w-[100%]`}
             >
-                <div className="text-[#ccd6f6] text-myPensieveFont font-semibold leading-[1.1] font-calibri">
+                <div className="text-heading text-myPensieveFont font-semibold leading-[1.1] font-calibri">
                     Early Life in a Small Village
                 </div>
                 <div>
-                    <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+                    <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
                         December 31, 2017
                     </span>
-                    <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+                    <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
                         {" "}
                         —{" "}
                     </span>
                     <span className="relative">
                         <Link
                             to="/pensieve/tags/memories/"
-                            className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
+                            className="text-accent text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
                         >
                             #Memories
                         </Link>
@@ -543,9 +543,9 @@ const MemoryChildhood = () => {
                 <div
                     ref={refDescription}
                     className={`contentContainer ${showFourthContent ? "show" : ""
-                        } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+                        } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
                 >
-                    <p className="pl-[1.5em] leading-[1.5] text-[#a8b2d1] italic">
+                    <p className="pl-[1.5em] leading-[1.5] text-dim italic">
                         My journey begins in a small village located in District Bahawalnagar, South Punjab, Pakistan, near the Indian border, on
                         August 25, 2000. As the first boy in my family, my arrival brought immense joy to my parents, prompting
                         my father to distribute sweets throughout the village. This blog post will delve into the early years of
@@ -559,16 +559,16 @@ const MemoryChildhood = () => {
                     className={`contentContainer ${listingVisible ? "show" : ""} pl-5`}
                     ref={refListing}
                 >
-                    <li className="mt-[2em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+                    <li className="mt-[2em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
                         Childhood Joy and Village Games:
                     </li>
-                    <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+                    <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
                         School Days and Cricket Matches
                     </li>
-                    <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+                    <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
                         Father's Fields and Cricket in the Evenings
                     </li>
-                    <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+                    <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
                         Evening Entertainment and Lukkan Chuppai
                     </li>
                 </ul>
@@ -578,16 +578,16 @@ const MemoryChildhood = () => {
                     <h3
                         ref={refFirstListingTitle}
                         className={`contentContainer ${firstListingTitleVisible ? "show" : ""
-                            } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+                            } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
                     >
                         Childhood Joy and Village Games
                     </h3>
                     <div
                         ref={refFirstListingDescription}
                         className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-                            } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+                            } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
                     >
-                        <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+                        <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
                             Like many other Punjabi children in similar villages, my childhood was filled with the simple pleasures of
                             life. I immersed myself in traditional village games, such as Gulli Danda, Kanchy, Ludo, Kite Flying, Kabbadi,
                             Hide and Seek, Pitho Garam, and Chuppan Chupai. Among these, my passion for cricket burned the brightest. Playing
@@ -610,21 +610,21 @@ const MemoryChildhood = () => {
                     <h3
                         ref={refSecondListingTitle}
                         className={`contentContainer ${secondListingTitleVisible ? "show" : ""
-                            } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+                            } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
                     >
                         School Days and Cricket Matches
                     </h3>
                     <div
                         ref={refSecondDescription}
                         className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-                            } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+                            } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
                     >
-                        <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+                        <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
                             My early years of education followed the familiar pattern of most children in the village. I attended a private
                             school up until the eighth grade and later joined a government school for my matriculation studies. Academic
                             pursuits took a backseat to my cricket passion during this time. My friends especially
                             {" "}<span className="relative">
-                                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                                <span className="text-accent viewArchiveTwo cursor-pointer">
                                     sumair
                                 </span>
                             </span>{" "} and I would occasionally skip
@@ -650,16 +650,16 @@ const MemoryChildhood = () => {
                     <h3
                         ref={refThirdListingTitle}
                         className={`contentContainer ${thirdListingTitleVisible ? "show" : ""
-                            } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+                            } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
                     >
                         Father's Fields and Cricket in the Evenings
                     </h3>
                     <div
                         ref={refThirdDescription}
                         className={`contentContainer ${thirdListingDescriptionVisible ? "show" : ""
-                            } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+                            } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
                     >
-                        <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+                        <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
                             After school, I often accompanied my father to his fields. As a retired army personnel, he engaged in
                             agricultural activities, and I would join him in the evenings. These fields became the backdrop for
                             countless cricket matches with my friends. The joy of playing amidst the vast green expanse remains
@@ -684,16 +684,16 @@ const MemoryChildhood = () => {
                     <h3
                         ref={refFourthListingTitle}
                         className={`contentContainer ${fourthListingTitleVisible ? "show" : ""
-                            } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+                            } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
                     >
                         Evening Entertainment and Lukkan Chuppai
                     </h3>
                     <div
                         ref={refFourthDescription}
                         className={`contentContainer ${isFourthListingDescription ? "show" : ""
-                            } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+                            } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
                     >
-                        <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+                        <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
                             Nights in my village were filled with entertainment for the entire family. We would gather around the
                             television to watch movies, drama serials on PTV, and spend quality time together. On occasion, I would
                             venture out with my village friends to play Lukkan Chuppai. This game of hide-and-seek took on a unique
@@ -719,16 +719,16 @@ const MemoryChildhood = () => {
                     <h3
                         ref={refFifthListingTitle}
                         className={`contentContainer ${fifthListingTitleVisible ? "show" : ""
-                            } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+                            } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
                     >
                         End Remarks and Quotes
                     </h3>
                     <div
                         ref={refFifthDescription}
                         className={`contentContainer ${isFifthListingDescription ? "show" : ""
-                            } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+                            } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
                     >
-                        <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+                        <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
                             Reflecting upon my early life, I am grateful for the simple joys and experiences that shaped my journey.
                             Growing up in a small village in South Punjab, Pakistan, surrounded by the bordering beauty of nature,
                             I embraced the spirit of community, playfulness, and the pursuit of my passions. While my academic
@@ -744,12 +744,12 @@ const MemoryChildhood = () => {
                     <div
                         ref={refFifthDescription}
                         className={`contentContainer ${isFifthListingDescription ? "show" : ""
-                            } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+                            } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
                     >
-                        <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+                        <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
                             "Childhood is a canvas upon which we paint memories that last a lifetime." -{" "}
                             <span className="relative">
-                                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                                <span className="text-accent viewArchiveTwo cursor-pointer">
                                     Ahmad Jajja
                                 </span>
                             </span>{" "}

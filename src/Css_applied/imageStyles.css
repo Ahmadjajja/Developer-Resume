@@ -1,7 +1,8 @@
 .contentContainer {
     opacity: 0;
-    transform: translateY(50%);
-    transition: all 0.25s ease-in-out;
+    transform: translateY(24px);
+    transition: opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .contentContainer.show {
@@ -10,14 +11,15 @@
 }
 
 .jzKOZc .wrapper::after {
-    border: 2px solid #64ffda;
-    top: 20px;
-    left: 20px;
+    border: 2px solid rgba(34, 211, 238, 0.35);
+    top: 18px;
+    left: 18px;
     z-index: -1;
     content: "";
     display: block;
     position: absolute;
-    width: calc(100% - 40px);
-    height: calc(100% - 40px);
-    border-radius: 4px;
+    width: calc(100% - 36px);
+    height: calc(100% - 36px);
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(167, 139, 250, 0.12);
 }

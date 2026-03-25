@@ -1,7 +1,8 @@
 .contentContainer {
     opacity: 0;
-    transform: translateY(50%);
-    transition: all 0.5s ease-in-out;
+    transform: translateY(24px);
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .contentContainer.show {

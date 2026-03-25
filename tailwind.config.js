@@ -4,8 +4,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        calibri: "Calibri",
-        customMono: "Mono",
+        calibri: [
+          '"DM Sans"',
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "sans-serif",
+        ],
+        customMono: [
+          '"JetBrains Mono"',
+          '"Mono"',
+          "ui-monospace",
+          "SFMono-Regular",
+          "monospace",
+        ],
       },
       fontSize: {
         headerDescriptionFontSize: "20px",
@@ -43,8 +55,9 @@ module.exports = {
         whereIWorkerdTransitionFinalDelay: "0.5s",
       },
       boxShadow: {
-        imageBoxShadow: "10px 5px 5px rgb(100,255,218)",
-        OtherProjectsBoxShadow: "0 10px 30px -15px rgba(2, 12, 27, 0.7)",
+        imageBoxShadow: "10px 10px 0 rgba(34, 211, 238, 0.12)",
+        OtherProjectsBoxShadow:
+          "0 24px 48px -20px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(34, 211, 238, 0.07)",
       },
       fontSize: {
         myFontClamp: "clamp(24px, 5vw, 32px)",
@@ -60,7 +73,13 @@ module.exports = {
         firstThingBuildGridCol: "1 / 8",
       },
       colors: {
-        headerBtnColor: "rgba(100,255,218,0.1)",
+        accent: "var(--color-accent)",
+        accent2: "var(--color-accent-secondary)",
+        heading: "var(--color-heading)",
+        muted: "var(--color-muted)",
+        dim: "var(--color-dim)",
+        surface: "var(--color-surface)",
+        headerBtnColor: "var(--color-accent-soft)",
       },
     },
     screens: {

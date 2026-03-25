@@ -1,7 +1,8 @@
 .contentContainer {
   opacity: 0;
-  transform: translateY(50%);
-  transition: all 0.25s ease-in-out;
+  transform: translateY(24px);
+  transition: opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contentContainer.show {
@@ -26,7 +27,7 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-  color: #ccd6f6;
+  color: var(--color-heading);
   margin-left: 2.413rem;
   margin-top: -23px;
 }
@@ -49,7 +50,7 @@
   left: 0;
   width: 0;
   height: 0.5px;
-  background-color: #64ffda;
+  background-color: var(--color-accent);
   transition: all 0.25s ease-in-out;
 }
 

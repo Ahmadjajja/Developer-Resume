@@ -1,2 +1,8 @@
 # avoiding node_modules pushing to github.
 node_modules/
+
+.DS_Store
+**/.DS_Store
+
+# Local Netlify folder
+.netlify

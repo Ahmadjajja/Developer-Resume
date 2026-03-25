@@ -5,7 +5,7 @@
     left: 0;
     width: 0;
     height: 0.5px;
-    background-color: #64ffda;
+    background-color: var(--color-accent);
     transition: all 0.25s ease-in-out;
   }
   

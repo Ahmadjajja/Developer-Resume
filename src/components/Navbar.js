@@ -1,6 +1,9 @@
 import { React, useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../Css_applied/navbarStyles.css";
+
+const navTransitionClass =
+  "transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration";
 
 const Navbar = ({
   setAboutBtnClickedActive,
@@ -8,7 +11,6 @@ const Navbar = ({
   setWorkBtnClickedActive,
   setContactBtnClickedActive,
 }) => {
-  const navigate = useNavigate();
   const [isActive, setActive] = useState(false);
   const [isOffScreen, setOffScreen] = useState(false);
   const [scrollHeight, setScrollHeight] = useState(0);
@@ -38,17 +40,29 @@ const Navbar = ({
   const [contactBtnSm, setContactBtnSm] = useState(false);
   const [blogBtnSm, setBlogBtnSm] = useState(false);
 
+  /* Scroll-up: fixed bar must span the viewport (left/right) or the CV clips; parent overflow must not clip. */
   const divStyle = secondCondition
     ? {
+        ...(newStyles || {}),
+        position: "fixed",
+        left: 0,
+        right: 0,
+        top: 0,
         width: "100%",
+        maxWidth: "100vw",
+        boxSizing: "border-box",
+        paddingLeft: "max(1.371rem, env(safe-area-inset-left))",
+        paddingRight: "max(1.371rem, env(safe-area-inset-right))",
         paddingTop: "0.5rem",
-        zIndex: "60",
-        transform: removeTransform ? null : `translateY(${window.scrollY}px)`,
-        boxShadow: "0 10px 30px -15px rgba(2, 12, 27, 0.7)",
-        marginTop: "-15px",
-        ...newStyles,
-        transition: "top 0.5s cubic-bezier(0.645, 0.045, 0.355, 1)",
-        top: `${scrollHeight}px`,
+        zIndex: 60,
+        transform: removeTransform ? undefined : `translateY(${window.scrollY}px)`,
+        boxShadow: "none",
+        backgroundColor: "transparent",
+        marginTop: 0,
+        marginLeft: 0,
+        marginRight: 0,
+        transition:
+          "transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), top 0.35s cubic-bezier(0.16, 1, 0.3, 1)",
       }
     : window.scrollY > 300
     ? {
@@ -58,6 +72,13 @@ const Navbar = ({
         top: "0px",
       }
     : null;
+
+  const navWrapperClassName =
+    scrollHeight >= 20
+      ? secondCondition
+        ? `w-[100%] -translate-y-0 ${navTransitionClass}`
+        : `w-[100%] -translate-y-14 ${navTransitionClass} shadow-OtherProjectsBoxShadow`
+      : `w-[100%] -translate-y-0 ${navTransitionClass}`;
 
   const ToggleClass = () => {
     if (isActive && isOffScreen) {
@@ -317,19 +338,12 @@ const Navbar = ({
         <div
           style={{
             height: height,
-            overflow: "hidden",
+            overflow: "visible",
             transition: "height 1s ease-in-out",
           }}
-          className="block md:hidden"
+          className="block md:hidden w-full min-w-0"
         >
-          <div
-            style={divStyle}
-            className={
-              scrollHeight >= 20
-                ? "w-[100%]  -translate-y-14 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration shadow-OtherProjectsBoxShadow"
-                : "w-[100%]  -translate-y-0 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration"
-            }
-          >
+          <div style={divStyle} className={navWrapperClassName}>
             <div>
               <div className="ml-[1.1rem] mt-[1.263rem] mb-[1.263rem] text-white flex justify-between relative z-[99] myScreen4:w-[16.5rem]">
                 {/* First SVG  ---> LOGO */}
@@ -417,54 +431,54 @@ const Navbar = ({
                     isOffScreen ? "off-screen-menu active" : "off-screen-menu"
                   }
                 >
-                  <div className=" flex  flex-col  justify-center  items-center bg-[#172a45]  mt-[3.5rem] w-[56vw] ml-6 overflow-hidden">
-                    <div className="one  flex  justify-center  items-center bg-[#172a45] w-[100%]  text-[#64ffda]  text-base antialiased">
+                  <div className=" flex  flex-col  justify-center  items-center bg-[var(--color-surface)]  mt-[3.5rem] w-[56vw] ml-6 overflow-hidden">
+                    <div className="one  flex  justify-center  items-center bg-[var(--color-surface)] w-[100%]  text-accent  text-base antialiased">
                       01.
                     </div>
                     <button
                       id="aboutShowDiv"
                       onClick={handleAboutButtonClick}
                       className={`oneDescription  flex  justify-center  items-center w-[100%]  ${
-                        aboutBtnSm ? "text-[#64ffda]" : "text-[#ccd6f6]"
-                      }  bg-[#172a45]  py-2  text-lg  tracking-wide antialiased`}
+                        aboutBtnSm ? "text-accent" : "text-heading"
+                      }  bg-[var(--color-surface)]  py-2  text-lg  tracking-wide antialiased`}
                     >
                       About
                     </button>
 
-                    <div className="two  mt-4  flex  justify-center  items-center  bg-[#172a45]  text-[#64ffda]  w-[100%]  text-base antialiased">
+                    <div className="two  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
                       02.
                     </div>
                     <button
                       onClick={handleExperienceButtonClick}
                       className={`twoDescription  flex  justify-center  items-center  w-[100%]  ${
-                        experienceBtnSm ? "text-[#64ffda]" : "text-[#ccd6f6]"
-                      }  bg-[#172a45]  py-2  text-lg  tracking-wide antialiased`}
+                        experienceBtnSm ? "text-accent" : "text-heading"
+                      }  bg-[var(--color-surface)]  py-2  text-lg  tracking-wide antialiased`}
                     >
                       Experience
                     </button>
-                    <div className="three  mt-4  flex  justify-center  items-center  bg-[#172a45]  text-[#64ffda]  w-[100%]  text-base antialiased">
+                    <div className="three  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
                       03.
                     </div>
                     <button
                       onClick={handleWorkButtonClick}
                       className={`threeDescription  flex  justify-center  items-center  w-[100%]  ${
-                        workBtnSm ? "text-[#64ffda]" : "text-[#ccd6f6]"
-                      }  bg-[#172a45]   py-2  text-lg  tracking-wide antialiased`}
+                        workBtnSm ? "text-accent" : "text-heading"
+                      }  bg-[var(--color-surface)]   py-2  text-lg  tracking-wide antialiased`}
                     >
                       Work
                     </button>
-                    <div className="four  mt-4  flex  justify-center  items-center  bg-[#172a45]  text-[#64ffda]  w-[100%]  text-base antialiased">
+                    <div className="four  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
                       04.
                     </div>
                     <button
                       onClick={handleContactButtonClick}
                       className={`fourDescription  flex  justify-center  items-center  w-[100%]  ${
-                        contactBtnSm ? "text-[#64ffda]" : "text-[#ccd6f6]"
-                      }  bg-[#172a45]  text-lg  py-2  tracking-wide antialiased`}
+                        contactBtnSm ? "text-accent" : "text-heading"
+                      }  bg-[var(--color-surface)]  text-lg  py-2  tracking-wide antialiased`}
                     >
                       Contact
                     </button>
-                    <div className="five  mt-4  flex  justify-center  items-center  bg-[#172a45]  text-[#64ffda]  w-[100%]  text-base antialiased">
+                    <div className="five  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
                       05.
                     </div>
                     <Link
@@ -474,14 +488,14 @@ const Navbar = ({
                         setActive(false);
                       }}
                       className={`fiveDescription  flex  justify-center  items-center  w-[100%]  ${
-                        blogBtnSm ? "text-[#64ffda]" : "text-[#ccd6f6]"
-                      }  bg-[#172a45]  text-lg  py-2  tracking-wide antialiased`}
+                        blogBtnSm ? "text-accent" : "text-heading"
+                      }  bg-[var(--color-surface)]  text-lg  py-2  tracking-wide antialiased`}
                     >
                       Blog
                     </Link>
                     <a
                       href="https://drive.google.com/file/d/1fgKw7H3PplIenkF-pxfqWdMAnvZcCeA0/view?usp=share_link"
-                      className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[#172a45] border  border-[#64ffda]  rounded  font-mono  text-[#64ffda]  tracking-wide cursor-pointer antialiased"
+                      className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[var(--color-surface)] border  border-accent  rounded  font-mono  text-accent  tracking-wide cursor-pointer antialiased"
                       target="_blank"
                     >
                       CV
@@ -616,8 +630,8 @@ const Navbar = ({
                 isOffScreen ? "off-screen-menu active" : "off-screen-menu"
               }
             >
-              <div className=" flex  flex-col  justify-center  items-center bg-[#172a45]  mt-[3.5rem] w-[56vw] ml-6 overflow-hidden">
-                <div className="one  flex  justify-center  items-center bg-[#172a45] w-[100%]  text-[#64ffda]  text-base antialiased">
+              <div className=" flex  flex-col  justify-center  items-center bg-[var(--color-surface)]  mt-[3.5rem] w-[56vw] ml-6 overflow-hidden">
+                <div className="one  flex  justify-center  items-center bg-[var(--color-surface)] w-[100%]  text-accent  text-base antialiased">
                   01.
                 </div>
                 <button
@@ -626,12 +640,12 @@ const Navbar = ({
                     handleAboutButtonClick();
                   }}
                   className={`oneDescription  flex  justify-center  items-center w-[100%]  ${
-                    aboutBtnSm ? "text-[#64ffda]" : "text-[#ccd6f6]"
-                  }  bg-[#172a45]  py-2  text-lg  tracking-wide antialiased`}
+                    aboutBtnSm ? "text-accent" : "text-heading"
+                  }  bg-[var(--color-surface)]  py-2  text-lg  tracking-wide antialiased`}
                 >
                   About
                 </button>
-                <div className="two  mt-4  flex  justify-center  items-center  bg-[#172a45]  text-[#64ffda]  w-[100%]  text-base antialiased">
+                <div className="two  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
                   02.
                 </div>
                 <button
@@ -640,12 +654,12 @@ const Navbar = ({
                     handleExperienceButtonClick();
                   }}
                   className={`twoDescription  flex  justify-center  items-center  w-[100%]  ${
-                    experienceBtnSm ? "text-[#64ffda]" : "text-[#ccd6f6]"
-                  }  bg-[#172a45]  py-2  text-lg  tracking-wide antialiased`}
+                    experienceBtnSm ? "text-accent" : "text-heading"
+                  }  bg-[var(--color-surface)]  py-2  text-lg  tracking-wide antialiased`}
                 >
                   Experience
                 </button>
-                <div className="three  mt-4  flex  justify-center  items-center  bg-[#172a45]  text-[#64ffda]  w-[100%]  text-base antialiased">
+                <div className="three  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
                   03.
                 </div>
                 <button
@@ -654,12 +668,12 @@ const Navbar = ({
                     handleWorkButtonClick();
                   }}
                   className={`threeDescription  flex  justify-center  items-center  w-[100%]  ${
-                    workBtnSm ? "text-[#64ffda]" : "text-[#ccd6f6]"
-                  }  bg-[#172a45]   py-2  text-lg  tracking-wide antialiased`}
+                    workBtnSm ? "text-accent" : "text-heading"
+                  }  bg-[var(--color-surface)]   py-2  text-lg  tracking-wide antialiased`}
                 >
                   Work
                 </button>
-                <div className="four  mt-4  flex  justify-center  items-center  bg-[#172a45]  text-[#64ffda]  w-[100%]  text-base antialiased">
+                <div className="four  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
                   04.
                 </div>
                 <button
@@ -668,12 +682,12 @@ const Navbar = ({
                     handleContactButtonClick();
                   }}
                   className={`fourDescription  flex  justify-center  items-center  w-[100%]  ${
-                    contactBtnSm ? "text-[#64ffda]" : "text-[#ccd6f6]"
-                  }  bg-[#172a45]  text-lg  py-2  tracking-wide antialiased`}
+                    contactBtnSm ? "text-accent" : "text-heading"
+                  }  bg-[var(--color-surface)]  text-lg  py-2  tracking-wide antialiased`}
                 >
                   Contact
                 </button>
-                <div className="five  mt-4  flex  justify-center  items-center  bg-[#172a45]  text-[#64ffda]  w-[100%]  text-base antialiased">
+                <div className="five  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
                   05.
                 </div>
                 <Link
@@ -683,14 +697,14 @@ const Navbar = ({
                     setActive(false);
                   }}
                   className={`fiveDescription  flex  justify-center  items-center  w-[100%]  ${
-                    blogBtnSm ? "text-[#64ffda]" : "text-[#ccd6f6]"
-                  }  bg-[#172a45]  text-lg  py-2  tracking-wide antialiased`}
+                    blogBtnSm ? "text-accent" : "text-heading"
+                  }  bg-[var(--color-surface)]  text-lg  py-2  tracking-wide antialiased`}
                 >
                   Blog
                 </Link>
                 <a
                   href="https://drive.google.com/file/d/1fgKw7H3PplIenkF-pxfqWdMAnvZcCeA0/view?usp=share_link"
-                  className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[#172a45] border  border-[#64ffda]  rounded  font-mono  text-[#64ffda]  tracking-wide cursor-pointer antialiased"
+                  className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[var(--color-surface)] border  border-accent  rounded  font-mono  text-accent  tracking-wide cursor-pointer antialiased"
                   target="_blank"
                 >
                   CV
@@ -737,25 +751,18 @@ const Navbar = ({
         <div
           style={{
             height: height,
-            overflow: "hidden",
+            overflow: "visible",
             transition: "height 1s ease-in-out",
           }}
-          className="hidden md:flex my-[0.4rem] mx-[1.371rem]"
+          className="box-border hidden w-full min-w-0 max-w-full px-[1.371rem] my-[0.4rem] md:flex"
         >
-          <div
-            style={divStyle}
-            className={
-              scrollHeight >= 20
-                ? "w-[100%] -translate-y-14 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration shadow-OtherProjectsBoxShadow"
-                : "w-[100%] -translate-y-0 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration"
-            }
-          >
-            <div className="ml-[1rem] mt-[1.263rem]  mb-[1.263rem] text-white flex justify-between z-50 ">
+          <div style={divStyle} className={navWrapperClassName}>
+            <div className="mt-[1.263rem] mb-[1.263rem] ml-[1rem] flex w-full min-w-0 flex-row flex-wrap items-center justify-between gap-x-2 gap-y-3 text-white z-50">
               {/* First SVG  ---> LOGO */}
               <a
                 href="/"
                 onClick={handleLogoClick}
-                className="cursor-pointer w-11 h-12 flex justify-center items-center"
+                className="shrink-0 cursor-pointer w-11 h-12 flex justify-center items-center"
               >
                 <svg
                   id="logo"
@@ -789,17 +796,17 @@ const Navbar = ({
                   </g>
                 </svg>
               </a>
-              {/* Title */}
-              <div className="flex justify-between items-center antialiased">
-                <div className="text-[13px] p-[10px] no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer mr-[10px] font-customMono myScreen5:px-[5px]">
-                  <span className="text-[#64ffda] mr-[3px]">01.</span>
+              {/* Title — never force nowrap on md; that clipped the CV on typical laptop widths */}
+              <div className="flex min-w-0 max-w-full flex-1 flex-wrap items-center justify-end gap-x-0.5 gap-y-2 antialiased sm:gap-x-1">
+                <div className="text-[13px] px-2 py-2 no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer font-customMono">
+                  <span className="text-accent mr-[3px]">01.</span>
                   <span
                     id="aboutLarge"
                     onClick={handleAboutButtonClick}
                     onMouseOver={() => setAboutMouseOver(true)}
                     onMouseOut={() => setAboutMouseOver(false)}
                     className={
-                      aboutMouseHover ? "text-[#64ffda]" : "text-[#ccd6f6]"
+                      aboutMouseHover ? "text-accent" : "text-heading"
                     }
                   >
                     About
@@ -807,15 +814,15 @@ const Navbar = ({
                 </div>
                 <span
                   id="experienceLarge"
-                  className="text-[13px] p-[10px] no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer mr-[10px] font-customMono myScreen5:px-[5px]"
+                  className="text-[13px] px-2 py-2 no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer font-customMono"
                 >
-                  <span className="text-[#64ffda] mr-[3px]">02.</span>
+                  <span className="text-accent mr-[3px]">02.</span>
                   <span
                     onClick={handleExperienceButtonClick}
                     onMouseOver={() => setExpMouseOver(true)}
                     onMouseOut={() => setExpMouseOver(false)}
                     className={
-                      expMouseHover ? "text-[#64ffda]" : "text-[#ccd6f6]"
+                      expMouseHover ? "text-accent" : "text-heading"
                     }
                   >
                     Experience
@@ -823,15 +830,15 @@ const Navbar = ({
                 </span>
                 <span
                   id="workLarge"
-                  className="text-[13px] p-[10px] no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer mr-[10px] font-customMono myScreen5:px-[5px]"
+                  className="text-[13px] px-2 py-2 no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer font-customMono"
                 >
-                  <span className="text-[#64ffda] mr-[3px]">03.</span>
+                  <span className="text-accent mr-[3px]">03.</span>
                   <span
                     onClick={handleWorkButtonClick}
                     onMouseOver={() => setWorkMouseOver(true)}
                     onMouseOut={() => setWorkMouseOver(false)}
                     className={
-                      workMouseHover ? "text-[#64ffda]" : "text-[#ccd6f6]"
+                      workMouseHover ? "text-accent" : "text-heading"
                     }
                   >
                     Work
@@ -839,15 +846,15 @@ const Navbar = ({
                 </span>
                 <span
                   id="contactLarge"
-                  className="text-[13px] p-[10px] no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer mr-[10px] font-customMono myScreen5:px-[5px]"
+                  className="text-[13px] px-2 py-2 no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer font-customMono"
                 >
-                  <span className="text-[#64ffda] mr-[3px]">04.</span>
+                  <span className="text-accent mr-[3px]">04.</span>
                   <span
                     onClick={handleContactButtonClick}
                     onMouseOver={() => setContactMouseOver(true)}
                     onMouseOut={() => setContactMouseOver(false)}
                     className={
-                      contactMouseHover ? "text-[#64ffda]" : "text-[#ccd6f6]"
+                      contactMouseHover ? "text-accent" : "text-heading"
                     }
                   >
                     Contact
@@ -855,14 +862,14 @@ const Navbar = ({
                 </span>
                 <Link
                   to="/pensieve"
-                  className="text-[13px] p-[10px] no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer mr-[10px] font-customMono myScreen5:px-[5px]"
+                  className="text-[13px] px-2 py-2 no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer font-customMono"
                 >
-                  <span className="text-[#64ffda] mr-[3px]">05.</span>
+                  <span className="text-accent mr-[3px]">05.</span>
                   <span
                     onMouseOver={() => setBlogMouseOver(true)}
                     onMouseOut={() => setBlogMouseOver(false)}
                     className={
-                      blogMouseHover ? "text-[#64ffda]" : "text-[#ccd6f6]"
+                      blogMouseHover ? "text-accent" : "text-heading"
                     }
                   >
                     Blog
@@ -874,14 +881,15 @@ const Navbar = ({
                     setResumeBtnClicked(true);
                   }}
                   target="_blank"
+                  rel="noreferrer"
                   onMouseOver={() => setResumeMouseOver(true)}
                   onMouseOut={() => setResumeMouseOver(false)}
                   className={
                     resumeBtnClicked
-                      ? "py-[10px] px-[25px] mr-4 flex  justify-center  items-center ml-[5px] bg-headerBtnColor border  border-[#64ffda]  rounded  font-mono  text-[#64ffda] cursor-pointer antialiased leading-[1]"
+                      ? "shrink-0 py-2.5 px-5 flex justify-center items-center bg-headerBtnColor border border-accent rounded font-mono text-accent cursor-pointer antialiased leading-[1]"
                       : resumeMouseHover
-                      ? "py-[10px] px-[25px] mr-4 flex  justify-center  items-center ml-[5px] bg-headerBtnColor border  border-[#64ffda]  rounded  font-mono  text-[#64ffda] cursor-pointer antialiased leading-[1]"
-                      : "py-[10px] px-[25px] mr-4 flex  justify-center  items-center ml-[5px] bg-transparent border  border-[#64ffda]  rounded  font-mono  text-[#64ffda] cursor-pointer antialiased leading-[1]"
+                      ? "shrink-0 py-2.5 px-5 flex justify-center items-center bg-headerBtnColor border border-accent rounded font-mono text-accent cursor-pointer antialiased leading-[1]"
+                      : "shrink-0 py-2.5 px-5 flex justify-center items-center bg-transparent border border-accent rounded font-mono text-accent cursor-pointer antialiased leading-[1]"
                   }
                 >
                   CV

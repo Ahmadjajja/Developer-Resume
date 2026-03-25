@@ -1,7 +1,17 @@
+.header-shell {
+    padding-top: clamp(2.5rem, 8vh, 5.5rem);
+    padding-bottom: clamp(3rem, 10vh, 7rem);
+    min-height: min(88vh, 860px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .contentContainer {
     opacity: 0;
-    transform: translateY(50%);
-    transition: all 0.25s ease-in-out;
+    transform: translateY(24px);
+    transition: opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .contentContainer.show {
@@ -11,11 +21,17 @@
 
 .bigHeading {
     font-size: clamp(40px, 8vw, 80px);
+    letter-spacing: -0.03em;
+    text-shadow: 0 4px 56px rgba(34, 211, 238, 0.18);
+}
 
+.bigHeading.text-gradient-hero {
+    text-shadow: none;
 }
 
 .smallHeading{
     font-size: clamp(40px, 8vw, 60px);
+    letter-spacing: -0.025em;
 }
 
 .spanOneHoverClass:after {
@@ -25,7 +41,7 @@
     left: 0;
     width: 0;
     height: 0.5px;
-    background-color: #64ffda;
+    background-color: var(--color-accent);
     transition: all 0.25s ease-in-out;
 }
 

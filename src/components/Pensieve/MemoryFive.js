@@ -853,7 +853,7 @@ const MemoryOne = () => {
       {/* Back to All Memories */}
       <div
         className={`contentContainer ${showFirstContent ? "show" : ""
-          } w-[70%] mr-auto ml-auto text-[#64ffda] pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
+          } w-[70%] mr-auto ml-auto text-accent pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
       >
         <span className="mr-[7px]">←</span>
         <span className="relative">
@@ -870,21 +870,21 @@ const MemoryOne = () => {
         className={`contentContainer ${showSecondContent ? "show" : ""
           } mt-[50px] ml-auto mr-auto w-[70%] myScreen8:w-[100%]`}
       >
-        <div className="text-[#ccd6f6] text-myPensieveFont font-semibold leading-[1.1] font-calibri">
+        <div className="text-heading text-myPensieveFont font-semibold leading-[1.1] font-calibri">
           Year in Review 2022
         </div>
         <div>
-          <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+          <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
             December 31, 2022
           </span>
-          <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+          <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
             {" "}
             —{" "}
           </span>
           <span className="relative">
             <Link
               to="/pensieve/tags/memories/"
-              className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
+              className="text-accent text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
             >
               #Memories
             </Link>
@@ -902,9 +902,9 @@ const MemoryOne = () => {
         <div
           ref={refDescription}
           className={`contentContainer ${showFourthContent ? "show" : ""
-            } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+            } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
         >
-          <p className="pl-[1.5em] leading-[1.5] text-[#a8b2d1] italic">
+          <p className="pl-[1.5em] leading-[1.5] text-dim italic">
             The year 2022 was filled with various accomplishments, challenges, moments of joy, and
             moments of sadness. It marked a significant transition in my life as I navigated through
             different experiences and made choices that shaped my journey towards becoming a software
@@ -917,28 +917,28 @@ const MemoryOne = () => {
           className={`contentContainer ${listingVisible ? "show" : ""} pl-5`}
           ref={refListing}
         >
-          <li className="mt-[2em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[2em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             University Friend Circle Affection and Goodbyes
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Internship as MERN Stack Developer at Seeraht
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             12-Hour Hackathon at SMIT
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Joining the Right Company
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Full Stack Web and Mobile Developer Certification
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Joining PIAIC for Web 3.0 and Metaverse
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Offer to Train Students at Saylani (SMIT)
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Joining a Software House as a MERN Stack Developer
           </li>
         </ul>
@@ -948,16 +948,16 @@ const MemoryOne = () => {
           <h3
             ref={refFirstListingTitle}
             className={`contentContainer ${firstListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             University Friend Circle Affection and Goodbyes
           </h3>
           <div
             ref={refFirstListingDescription}
             className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               As 2022 began, I found myself immersed in preparing for the final exams of my third semester, which were scheduled
               for the second week of January. The exams went well, and as the third and fourth semesters commenced, I started
               engaging more in activities unrelated to coding. I became involved with a circle of friends who were not interested
@@ -969,14 +969,14 @@ const MemoryOne = () => {
           <div
             ref={refFirstListingDescription}
             className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               As the days went by, I noticed my passion for coding diminishing, despite my awareness that I possessed excellent coding skills at the time.
               These were difficult days for me as I started experiencing
               {" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo ">
+                <span className="text-accent viewArchiveTwo ">
                   feelings of depression and constant overthinking
                 </span>
               </span>{" "}. It became clear to me that I
@@ -987,14 +987,14 @@ const MemoryOne = () => {
           <div
             ref={refFirstListingDescription}
             className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Realizing that I needed to break free from this situation, I made the decision to distance myself from my friend circle.
               This meant separating from a close friend named
               {" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo ">
+                <span className="text-accent viewArchiveTwo ">
                   Awais
                 </span>
               </span>{" "}
@@ -1003,7 +1003,7 @@ const MemoryOne = () => {
               Letting go of the past, I embarked on a new chapter in my life. This
               {" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo ">
+                <span className="text-accent viewArchiveTwo ">
                   transition
                 </span>
               </span>{" "}
@@ -1015,20 +1015,20 @@ const MemoryOne = () => {
           <div
             ref={refFirstListingDescription}
             className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               I stepped down from my position as the Class Representative (CR) of my class, a responsibility I had held for
               four semesters. Additionally, I decided to
               {" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <span className="text-accent viewArchiveTwo cursor-pointer">
                   deactivate my
                 </span>
               </span>{" "}
               {" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <span className="text-accent viewArchiveTwo cursor-pointer">
                   WhatsApp account
                 </span>
               </span>{" "}
@@ -1040,14 +1040,14 @@ const MemoryOne = () => {
           <div
             ref={refFirstListingDescription}
             className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               With the end of the fourth semester and the arrival of the summer break, I dedicated myself to working tirelessly
               to regain my momentum. I committed to coding for extended periods, sometimes investing
               {" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo ">
+                <span className="text-accent viewArchiveTwo ">
                   12 to 14 hours a day
                 </span>
               </span>{" "} to
@@ -1072,21 +1072,21 @@ const MemoryOne = () => {
           <h3
             ref={refSecondListingTitle}
             className={`contentContainer ${secondListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Internship as MERN Stack Developer at Seeraht
           </h3>
           <div
             ref={refSecondDescription}
             className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               During the summer break between my fourth and fifth semesters, I decided to pursue an internship as a MERN Stack
               developer at Seeraht. During that time i worked under the supervision of
               {" "}
               <span className="relative">
-                <a href="https://umairahmad.net/" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <a href="https://umairahmad.net/" target="_blank" className="text-accent viewArchiveTwo cursor-pointer">
                   Sir Umair Ahmad
                 </a>
               </span>{" "}
@@ -1112,22 +1112,22 @@ const MemoryOne = () => {
           <h3
             ref={refThirdListingTitle}
             className={`contentContainer ${thirdListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             12-Hour Hackathon at SMIT
           </h3>
           <div
             ref={refThirdDescription}
             className={`contentContainer ${thirdListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               In August 2022, a 12-hour hackathon was organized at Saylani Mass IT Training (SMIT), specifically for students
               who had enrolled in the web and mobile app development course the previous year. The hackathon presented the challenge
               of building a Real Estate Mobile App within the given timeframe. Out of the 70 students who participated, I was among the
               {" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo ">
+                <span className="text-accent viewArchiveTwo ">
                   top five
                 </span>
               </span>{" "}
@@ -1152,20 +1152,20 @@ const MemoryOne = () => {
           <h3
             ref={refFourthListingTitle}
             className={`contentContainer ${fourthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Joining the Right Company
           </h3>
           <div
             ref={refFourthDescription}
             className={`contentContainer ${isFourthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Following my departure from my previous company, I had the fortune of meeting a friend named
               {" "}
               <span className="relative">
-                <a href="https://github.com/AbuHurairah127" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <a href="https://github.com/AbuHurairah127" target="_blank" className="text-accent viewArchiveTwo cursor-pointer">
                   Abu Hurairah
                 </a>
               </span>{" "}
@@ -1173,7 +1173,7 @@ const MemoryOne = () => {
               in our journey. Another person who significantly influenced my career path was my roommate,
               {" "}
               <span className="relative">
-                <a href="https://github.com/Abdullah-9862873" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <a href="https://github.com/Abdullah-9862873" target="_blank" className="text-accent viewArchiveTwo cursor-pointer">
                   Abdullah Sultan
                 </a>
               </span>{" "}
@@ -1200,21 +1200,21 @@ const MemoryOne = () => {
           <h3
             ref={refFifthListingTitle}
             className={`contentContainer ${fifthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Full Stack Web and Mobile Developer Certification
           </h3>
           <div
             ref={refFifthDescription}
             className={`contentContainer ${isFifthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               After dedicating an entire year to SMIT, attending the hackathon, and achieving a commendable position, I was
               honored to receive the Full Stack Web and Mobile Developer Certification from
               {" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo ">
+                <span className="text-accent viewArchiveTwo ">
                   Hazrat Allama Maulana Muhammad Bashir Farooqi
                 </span>
               </span>{" "}
@@ -1239,23 +1239,23 @@ const MemoryOne = () => {
           <h3
             ref={refSixthListingTitle}
             className={`contentContainer ${sixthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Joining PIAIC for Web 3.0 and Metaverse
           </h3>
           <div
             ref={refSixthDescription}
             className={`contentContainer ${isSixthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               With the announcement of the PIAIC (Pakistan's Institute of Artificial Intelligence and Computing) offering a
               course on Web 3.0 and Metaverse, my excitement knew no bounds. Joining PIAIC and gaining guidance from this
               prestigious platform became a key objective for me. Despite the initial disappointment of admissions not being
               opened in Faisalabad, I made a decision to travel to Lahore from Faisalabad every Sunday at the morning time with
               {" "}
               <span className="relative">
-                <a href="https://github.com/AbuHurairah127" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <a href="https://github.com/AbuHurairah127" target="_blank" className="text-accent viewArchiveTwo cursor-pointer">
                   Abu Hurairah
                 </a>
               </span>{" "}
@@ -1280,16 +1280,16 @@ const MemoryOne = () => {
           <h3
             ref={refSeventhListingTitle}
             className={`contentContainer ${seventhListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Offer to Train Students at Saylani (SMIT)
           </h3>
           <div
             ref={refSeventhDescription}
             className={`contentContainer ${isSeventhListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Recognizing my performance throughout my time at Saylani Mass IT Training and my success in the hackathon, I
               was offered an opportunity to train students in the next batch starting in December 2022. Teaching became an
               enriching experience for me, allowing me to enhance my skills while guiding and inspiring these students on their own
@@ -1313,23 +1313,23 @@ const MemoryOne = () => {
           <h3
             ref={refEighthListingTitle}
             className={`contentContainer ${eighthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Joining a Software House as a MERN Stack Developer
           </h3>
           <div
             ref={refEighthDescription}
             className={`contentContainer ${isEighthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               In the same year, I commenced my employment as a MERN Stack Developer at a reputable software company in Faisalabad.
               My role primarily involved working on a significant project for a client based in the UAE. This project focused on
               creating a platform akin to LinkedIn, specifically designed to streamline the employee hiring process. Throughout
               my tenure, I had the privilege of being mentored by
               {" "}
               <span className="relative">
-                <a href="https://www.linkedin.com/in/waleedumer42/" target="_blank" className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <a href="https://www.linkedin.com/in/waleedumer42/" target="_blank" className="text-accent viewArchiveTwo cursor-pointer">
                   Waleed Umar
                 </a>
               </span>{" "}
@@ -1355,16 +1355,16 @@ const MemoryOne = () => {
           <h3
             ref={refNinthListingTitle}
             className={`contentContainer ${ninthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             End Remarks and Quotes
           </h3>
           <div
             ref={refNinthDescription}
             className={`contentContainer ${isNinthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               In conclusion, the year 2022 was a period of immense growth, challenges, and accomplishments. It was a year
               of self-reflection, resilience, and determination as I navigated through various experiences and pursued my
               passion for software engineering. The journey was not without its obstacles, but each hurdle served as a
@@ -1377,12 +1377,12 @@ const MemoryOne = () => {
           <div
             ref={refNinthDescription}
             className={`contentContainer ${isNinthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               "Success is not final, failure is not fatal: It is the courage to continue that counts." -{" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <span className="text-accent viewArchiveTwo cursor-pointer">
                   Winston Churchill
                 </span>
               </span>{" "}

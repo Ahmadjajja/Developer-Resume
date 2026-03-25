@@ -5,14 +5,14 @@
     z-index: 99;
 }
 .active  {
-    background-color: #172a45;  
+    background-color: var(--color-surface);  
     z-index: 99;
 }
 
 .ham-bar {
     height: 2px;
     width: 70%;
-    background-color: #64ffda;
+    background-color: var(--color-accent);
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -24,7 +24,7 @@
 
 .ham-bar-isActiveFalse {
     height: 2px;
-    background-color: #64ffda;
+    background-color: var(--color-accent);
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -80,10 +80,18 @@
     position: fixed;
     top: 0;
     right: -75%;
-    background-color: #172a45;
+    background: linear-gradient(
+        165deg,
+        rgba(24, 24, 27, 0.97) 0%,
+        rgba(9, 9, 11, 0.99) 100%
+    );
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-left: 1px solid rgba(34, 211, 238, 0.12);
+    box-shadow: -16px 0 48px rgba(0, 0, 0, 0.35);
     height: 110vh;
     width: 62%;
-    transition: right .5s;
+    transition: right 0.45s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 99;
 }
 
@@ -95,7 +103,7 @@
 
 
 #logo {
-    color: #64ffda;
+    color: var(--color-accent);
     width: 2.3rem;
 }
 

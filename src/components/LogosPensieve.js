@@ -64,10 +64,10 @@ const LogosPensieve = () => {
                 fill="none"
                 stroke={
                   githubSvgClicked
-                    ? "#64ffda"
+                    ? "var(--color-accent)"
                     : githubSvgHover
-                    ? "#64ffda"
-                    : "#a8b2d1"
+                    ? "var(--color-accent)"
+                    : "var(--color-dim)"
                 }
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -103,10 +103,10 @@ const LogosPensieve = () => {
                 fill="none"
                 stroke={
                   instagramSvgClicked
-                    ? "#64ffda"
+                    ? "var(--color-accent)"
                     : instagramSvgHover
-                    ? "#64ffda"
-                    : "#a8b2d1"
+                    ? "var(--color-accent)"
+                    : "var(--color-dim)"
                 }
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -123,10 +123,10 @@ const LogosPensieve = () => {
                 id="leetcode"
                 stroke={
                   leetcodeSvgClicked
-                    ? "#64ffda"
+                    ? "var(--color-accent)"
                     : leetcodeSvgHover
-                    ? "#64ffda"
-                    : "#a8b2d1"
+                    ? "var(--color-accent)"
+                    : "var(--color-dim)"
                 }
               >
                 <path d="M20.303 16.047h-9.561c-.936 0-1.697-.803-1.697-1.79s.762-1.79 1.697-1.79h9.561c.936 0 1.697.803 1.697 1.79s-.762 1.79-1.697 1.79zm-9.561-2.58c-.385 0-.697.354-.697.79s.312.79.697.79h9.561c.385 0 .697-.354.697-.79s-.312-.79-.697-.79h-9.561z"></path>
@@ -159,10 +159,10 @@ const LogosPensieve = () => {
                 fill="none"
                 stroke={
                   twitterSvgClicked
-                    ? "#64ffda"
+                    ? "var(--color-accent)"
                     : twitterSvgHover
-                    ? "#64ffda"
-                    : "#a8b2d1"
+                    ? "var(--color-accent)"
+                    : "var(--color-dim)"
                 }
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -198,10 +198,10 @@ const LogosPensieve = () => {
                 fill="none"
                 stroke={
                   linkedInSvgClicked
-                    ? "#64ffda"
+                    ? "var(--color-accent)"
                     : linkedInSvgHover
-                    ? "#64ffda"
-                    : "#a8b2d1"
+                    ? "var(--color-accent)"
+                    : "var(--color-dim)"
                 }
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -229,17 +229,17 @@ const LogosPensieve = () => {
           >
             <a
               href="https://www.facebook.com/ahmad.jajja.9081"
-              className="text-[#ccd6f6] text-[1.1rem]"
+              className="text-heading text-[1.1rem]"
               target="_blank"
             >
               <svg
                 stroke="currentColor"
                 fill={
                   facebookSvgClicked
-                    ? "#64ffda"
+                    ? "var(--color-accent)"
                     : facebookSvgHover
-                    ? "#64ffda"
-                    : "#a8b2d1"
+                    ? "var(--color-accent)"
+                    : "var(--color-dim)"
                 }
                 strokeWidth="0"
                 viewBox="0 0 320 512"
@@ -253,7 +253,7 @@ const LogosPensieve = () => {
             </a>
           </div> */}
           {/* Straight Line */}
-          <div className="h-[7.187rem] border-[1px] border-[#a8b2d1]"></div>
+          <div className="h-[7.187rem] border-[1px] border-[var(--color-dim)]"></div>
         </div>
       </div>
 
@@ -272,17 +272,17 @@ const LogosPensieve = () => {
           <a
             className={
               mailClicked
-                ? "straightLine mt-[20px] mb-[30px] mx-auto text-[12px] font-sans text-[#64ffda] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration"
+                ? "straightLine mt-[20px] mb-[30px] mx-auto text-[12px] font-sans text-accent transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration"
                 : mailHover
-                ? "straightLine mt-[20px] mb-[25px] mx-auto text-[12px] font-sans text-[#64ffda] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration"
-                : "straightLine my-[20px] mx-auto text-[12px] font-sans text-[#a8b2d1] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration"
+                ? "straightLine mt-[20px] mb-[25px] mx-auto text-[12px] font-sans text-accent transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration"
+                : "straightLine my-[20px] mx-auto text-[12px] font-sans text-dim transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration"
             }
             href="mailto:ahmadjajja86@gmail.com"
           >
             ahmadjajja86@gmail.com
           </a>
           {/* Straight Line */}
-          <div className="h-[7.187rem] border-[1px] border-[#a8b2d1]"></div>
+          <div className="h-[7.187rem] border-[1px] border-[var(--color-dim)]"></div>
         </div>
       </div>
     </div>

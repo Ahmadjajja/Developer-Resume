@@ -494,7 +494,7 @@ const MemoryOne = () => {
       {/* Back to All Memories */}
       <div
         className={`contentContainer ${showFirstContent ? "show" : ""
-          } w-[70%] mr-auto ml-auto text-[#64ffda] pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
+          } w-[70%] mr-auto ml-auto text-accent pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
       >
         <span className="mr-[7px]">←</span>
         <span className="relative">
@@ -511,21 +511,21 @@ const MemoryOne = () => {
         className={`contentContainer ${showSecondContent ? "show" : ""
           } mt-[50px] ml-auto mr-auto w-[70%] myScreen8:w-[100%]`}
       >
-        <div className="text-[#ccd6f6] text-myPensieveFont font-semibold leading-[1.1] font-calibri">
+        <div className="text-heading text-myPensieveFont font-semibold leading-[1.1] font-calibri">
           Year in Review 2018
         </div>
         <div>
-          <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+          <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
             December 31, 2018
           </span>
-          <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+          <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
             {" "}
             —{" "}
           </span>
           <span className="relative">
             <Link
               to="/pensieve/tags/memories/"
-              className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
+              className="text-accent text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
             >
               #Memories
             </Link>
@@ -543,9 +543,9 @@ const MemoryOne = () => {
         <div
           ref={refDescription}
           className={`contentContainer ${showFourthContent ? "show" : ""
-            } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+            } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
         >
-          <p className="pl-[1.5em] leading-[1.5] text-[#a8b2d1] italic">
+          <p className="pl-[1.5em] leading-[1.5] text-dim italic">
             In the year 2018, my life took an unexpected turn as I faced a setback in my biology studies.
             This disappointment led me to make a significant decision for my future, choosing a tech
             journey in the field of computer science. Despite societal pressures and the allure of other
@@ -559,16 +559,16 @@ const MemoryOne = () => {
           className={`contentContainer ${listingVisible ? "show" : ""} pl-5`}
           ref={refListing}
         >
-          <li className="mt-[2em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[2em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Failure in Biology
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Embracing Computer Science
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             A Turning Point in College
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Sacrifices Made along the Way
           </li>
         </ul>
@@ -578,16 +578,16 @@ const MemoryOne = () => {
           <h3
             ref={refFirstListingTitle}
             className={`contentContainer ${firstListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Failure in Biology
           </h3>
           <div
             ref={refFirstListingDescription}
             className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               The journey towards computer science truly began when my 10th-grade biology results came in, leaving me
               dissatisfied with my performance. Although I had passed, I felt compelled to redirect my career aspirations
               away from the field of biology. It was a moment of self-reflection and realization that prompted me to explore
@@ -609,16 +609,16 @@ const MemoryOne = () => {
           <h3
             ref={refSecondListingTitle}
             className={`contentContainer ${secondListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Embracing Computer Science
           </h3>
           <div
             ref={refSecondDescription}
             className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               The pivotal moment in my academic trajectory came when I faced the reality of my biology failure. This was a
               shocking revelation for me on that time, as most of my relatives were pursuing medical careers, and there was a prevailing
               belief that success could only be achieved through becoming a doctor. However, I chose to deviate from this
@@ -628,9 +628,9 @@ const MemoryOne = () => {
           <div
             ref={refSecondDescription}
             className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               As I embarked on my educational journey after 10th grade, I had three options to
               choose from for my 12th grade (Intermediate) studies: ICS (Computer Science, Math, Physics),
               FSC Pre-Medical (Biology, Chemistry, Physics), and FSC Pre-Engineering (Chemistry, Physics, Math).
@@ -656,21 +656,21 @@ const MemoryOne = () => {
           <h3
             ref={refThirdListingTitle}
             className={`contentContainer ${thirdListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             A Turning Point in College
           </h3>
           <div
             ref={refThirdDescription}
             className={`contentContainer ${thirdListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               As I stepped into college, I encountered an environment that differed greatly from what I had anticipated.
               The relaxed atmosphere, lack of attendance requirements, and less-than-stellar teachers initially left me
               disheartened. However, a fortuitous encounter with a computer science teacher named{" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <span className="text-accent viewArchiveTwo cursor-pointer">
                   Sir Ishaq
                 </span>
               </span>{" "}
@@ -696,16 +696,16 @@ const MemoryOne = () => {
           <h3
             ref={refFourthListingTitle}
             className={`contentContainer ${fourthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Sacrifices Made along the Way
           </h3>
           <div
             ref={refFourthDescription}
             className={`contentContainer ${isFourthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               In 2018, my passion for cricket was at its peak. I enthusiastically organized cricket tournaments in my village
               and actively participated in matches held in various neighboring communities. My dream of joining the national
               cricket team as a batsman burned brightly within me. However, the realization dawned upon me that I lacked the
@@ -734,16 +734,16 @@ const MemoryOne = () => {
           <h3
             ref={refFifthListingTitle}
             className={`contentContainer ${fifthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             End Remarks and Quotes
           </h3>
           <div
             ref={refFifthDescription}
             className={`contentContainer ${isFifthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Throughout my journey, I encountered setbacks and sacrifices. Giving up my dreams of becoming a cricketer was
               particularly difficult, but it allowed me to prioritize my family's well-being and take on the role of a responsible
               elder sibling. By redirecting my focus towards my studies, I discovered a newfound love for computer science and began
@@ -753,13 +753,13 @@ const MemoryOne = () => {
           <div
             ref={refFifthDescription}
             className={`contentContainer ${isFifthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               "Follow your passion, stay true to yourself, never follow someone else's path unless you're in the woods and
               you're lost, and you see a path, then, by all means, you should follow that." -{" "}
               <span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo cursor-pointer">
+                <span className="text-accent viewArchiveTwo cursor-pointer">
                   Ellen DeGeneres
                 </span>
               </span>{" "}

@@ -215,10 +215,10 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
         className={`contentContainer ${titleVisible ? "show" : ""
           }  flex flex-col justify-center items-center mt-[6rem]`}
       >
-        <div className="text-[#ccd6f6] text-[77px] font-calibri antialiased leading-[1.1] font-semibold">
+        <div className="text-heading text-[77px] font-calibri antialiased leading-[1.1] font-semibold">
           Pensieve
         </div>
-        <div className=" mt-[10px] text-[#64ffda] text-[14px] font-customMono cursor-pointer antialiased relative ">
+        <div className=" mt-[10px] text-accent text-[14px] font-customMono cursor-pointer antialiased relative ">
           <span
             onClick={() => {
               window.scrollTo({
@@ -249,13 +249,13 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
           className={
             zerothBoxClicked
               ? `contentContainer ${zerothProjectVisible ? "show" : ""
-              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[#172a45] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[var(--color-surface)] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
               : `contentContainer ${zerothProjectVisible ? "show" : ""
-              } w-[48%] relative py-8 px-7 rounded bg-[#172a45] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative py-8 px-7 rounded bg-[var(--color-surface)] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
           }
         >
           {/* Header Box */}
-          <div className="w-[100%] h-10 bg-[#172a45] flex justify-between items-center">
+          <div className="w-[100%] h-10 bg-[var(--color-surface)] flex justify-between items-center">
             {/* Folder SVG */}
             <div className="bg-transparent h-[40px] w-[40px] pensieve__StyledFolder-sc-1a201yd-5 fcWQAr">
               <svg
@@ -264,7 +264,7 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
                 role="img"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#64ffda"
+                stroke="var(--color-accent)"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -275,20 +275,20 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
             </div>
           </div>
           {/* Title  */}
-          <div className="h-[20%] mt-8 bg-[#172a45] antialiased text-[#ccd6f6] text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
+          <div className="h-[20%] mt-8 bg-[var(--color-surface)] antialiased text-heading text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
             Early Life in a Small Village
           </div>
           {/* Footer */}
-          <div className="bg-[#172a45] flex justify-between">
-            <div className="h-[15%] mt-[10px] text-[#8892b0] text-[12px] font-calibri bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
+          <div className="bg-[var(--color-surface)] flex justify-between">
+            <div className="h-[15%] mt-[10px] text-muted text-[12px] font-calibri bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
               31/12/17
             </div>
-            <div className="text-[12px] text-[#64ffda] h-[15%] mt-[10px] font-customMono bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
+            <div className="text-[12px] text-accent h-[15%] mt-[10px] font-customMono bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
               <button
                 onClick={() => {
                   navigate("/pensieve/tags/memories/");
                 }}
-                className="viewArchive bg-[#172a45]"
+                className="viewArchive bg-[var(--color-surface)]"
               >
                 #Memories
               </button>
@@ -310,13 +310,13 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
           className={
             firstBoxClicked
               ? `contentContainer ${firstProjectVisible ? "show" : ""
-              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[#172a45] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[var(--color-surface)] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
               : `contentContainer ${firstProjectVisible ? "show" : ""
-              } w-[48%] relative py-8 px-7 rounded bg-[#172a45] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative py-8 px-7 rounded bg-[var(--color-surface)] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
           }
         >
           {/* Header Box */}
-          <div className="w-[100%] h-10 bg-[#172a45] flex justify-between items-center">
+          <div className="w-[100%] h-10 bg-[var(--color-surface)] flex justify-between items-center">
             {/* Folder SVG */}
             <div className="bg-transparent h-[40px] w-[40px] pensieve__StyledFolder-sc-1a201yd-5 fcWQAr">
               <svg
@@ -325,7 +325,7 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
                 role="img"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#64ffda"
+                stroke="var(--color-accent)"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -336,20 +336,20 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
             </div>
           </div>
           {/* Title  */}
-          <div className="h-[20%] mt-8 bg-[#172a45] antialiased text-[#ccd6f6] text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
+          <div className="h-[20%] mt-8 bg-[var(--color-surface)] antialiased text-heading text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
             Year in Review 2018
           </div>
           {/* Footer */}
-          <div className="bg-[#172a45] flex justify-between">
-            <div className="h-[15%] mt-[10px] text-[#8892b0] text-[12px] font-calibri bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
+          <div className="bg-[var(--color-surface)] flex justify-between">
+            <div className="h-[15%] mt-[10px] text-muted text-[12px] font-calibri bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
               31/12/18
             </div>
-            <div className="text-[12px] text-[#64ffda] h-[15%] mt-[10px] font-customMono bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
+            <div className="text-[12px] text-accent h-[15%] mt-[10px] font-customMono bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
               <button
                 onClick={() => {
                   navigate("/pensieve/tags/memories/");
                 }}
-                className="viewArchive bg-[#172a45]"
+                className="viewArchive bg-[var(--color-surface)]"
               >
                 #Memories
               </button>
@@ -371,13 +371,13 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
           className={
             secondBoxClicked
               ? `contentContainer ${secondProjectVisible ? "show" : ""
-              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[#172a45] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[var(--color-surface)] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
               : `contentContainer ${secondProjectVisible ? "show" : ""
-              } w-[48%] relative py-8 px-7 rounded bg-[#172a45] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative py-8 px-7 rounded bg-[var(--color-surface)] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
           }
         >
           {/* Header Box */}
-          <div className="w-[100%] h-10 bg-[#172a45] flex justify-between items-center">
+          <div className="w-[100%] h-10 bg-[var(--color-surface)] flex justify-between items-center">
             {/* Folder SVG */}
             <div className="bg-transparent h-[40px] w-[40px] pensieve__StyledFolder-sc-1a201yd-5 fcWQAr">
               <svg
@@ -386,7 +386,7 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
                 role="img"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#64ffda"
+                stroke="var(--color-accent)"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -397,20 +397,20 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
             </div>
           </div>
           {/* Title  */}
-          <div className="h-[20%] mt-8 bg-[#172a45] antialiased text-[#ccd6f6] text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
+          <div className="h-[20%] mt-8 bg-[var(--color-surface)] antialiased text-heading text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
             Year in Review 2019
           </div>
           {/* Footer */}
-          <div className="bg-[#172a45] flex justify-between">
-            <div className="h-[15%] mt-[10px] text-[#8892b0] text-[12px] font-calibri bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
+          <div className="bg-[var(--color-surface)] flex justify-between">
+            <div className="h-[15%] mt-[10px] text-muted text-[12px] font-calibri bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
               31/12/19
             </div>
-            <div className="text-[12px] text-[#64ffda] h-[15%] mt-[10px] font-customMono bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
+            <div className="text-[12px] text-accent h-[15%] mt-[10px] font-customMono bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
               <button
                 onClick={() => {
                   navigate("/pensieve/tags/memories/");
                 }}
-                className="viewArchive bg-[#172a45]"
+                className="viewArchive bg-[var(--color-surface)]"
               >
                 #Memories
               </button>
@@ -432,13 +432,13 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
           className={
             thirdBoxClicked
               ? `contentContainer ${thirdProjectVisible ? "show" : ""
-              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[#172a45] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[var(--color-surface)] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
               : `contentContainer ${thirdProjectVisible ? "show" : ""
-              } w-[48%] relative py-8 px-7 rounded bg-[#172a45] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative py-8 px-7 rounded bg-[var(--color-surface)] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
           }
         >
           {/* Header Box */}
-          <div className="w-[100%] h-10 bg-[#172a45] flex justify-between items-center">
+          <div className="w-[100%] h-10 bg-[var(--color-surface)] flex justify-between items-center">
             {/* Folder SVG */}
             <div className="bg-transparent h-[40px] w-[40px] pensieve__StyledFolder-sc-1a201yd-5 fcWQAr">
               <svg
@@ -447,7 +447,7 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
                 role="img"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#64ffda"
+                stroke="var(--color-accent)"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -458,20 +458,20 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
             </div>
           </div>
           {/* Title  */}
-          <div className="h-[20%] mt-8 bg-[#172a45] antialiased text-[#ccd6f6] text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
+          <div className="h-[20%] mt-8 bg-[var(--color-surface)] antialiased text-heading text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
             Year in Review 2020
           </div>
           {/* Footer */}
-          <div className="bg-[#172a45] flex justify-between">
-            <div className="h-[15%] mt-[10px] text-[#8892b0] text-[12px] font-calibri bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
+          <div className="bg-[var(--color-surface)] flex justify-between">
+            <div className="h-[15%] mt-[10px] text-muted text-[12px] font-calibri bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
               31/12/20
             </div>
-            <div className="text-[12px] text-[#64ffda] h-[15%] mt-[10px] font-customMono bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
+            <div className="text-[12px] text-accent h-[15%] mt-[10px] font-customMono bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
               <button
                 onClick={() => {
                   navigate("/pensieve/tags/memories/");
                 }}
-                className="viewArchive bg-[#172a45]"
+                className="viewArchive bg-[var(--color-surface)]"
               >
                 #Memories
               </button>
@@ -493,13 +493,13 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
           className={
             fourthBoxClicked
               ? `contentContainer ${fourthProjectVisible ? "show" : ""
-              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[#172a45] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[var(--color-surface)] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
               : `contentContainer ${fourthProjectVisible ? "show" : ""
-              } w-[48%] relative py-8 px-7 rounded bg-[#172a45] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative py-8 px-7 rounded bg-[var(--color-surface)] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
           }
         >
           {/* Header Box */}
-          <div className="w-[100%] h-10 bg-[#172a45] flex justify-between items-center">
+          <div className="w-[100%] h-10 bg-[var(--color-surface)] flex justify-between items-center">
             {/* Folder SVG */}
             <div className="bg-transparent h-[40px] w-[40px] pensieve__StyledFolder-sc-1a201yd-5 fcWQAr">
               <svg
@@ -508,7 +508,7 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
                 role="img"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#64ffda"
+                stroke="var(--color-accent)"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -519,20 +519,20 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
             </div>
           </div>
           {/* Title  */}
-          <div className="h-[20%] mt-8 bg-[#172a45] antialiased text-[#ccd6f6] text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
+          <div className="h-[20%] mt-8 bg-[var(--color-surface)] antialiased text-heading text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
             Year in Review 2021
           </div>
           {/* Footer */}
-          <div className="bg-[#172a45] flex justify-between">
-            <div className="h-[15%] mt-[10px] text-[#8892b0] text-[12px] font-calibri bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
+          <div className="bg-[var(--color-surface)] flex justify-between">
+            <div className="h-[15%] mt-[10px] text-muted text-[12px] font-calibri bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
               31/12/21
             </div>
-            <div className="text-[12px] text-[#64ffda] h-[15%] mt-[10px] font-customMono bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
+            <div className="text-[12px] text-accent h-[15%] mt-[10px] font-customMono bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
               <button
                 onClick={() => {
                   navigate("/pensieve/tags/memories/");
                 }}
-                className="viewArchive bg-[#172a45]"
+                className="viewArchive bg-[var(--color-surface)]"
               >
                 #Memories
               </button>
@@ -554,13 +554,13 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
           className={
             fifthBoxClicked
               ? `contentContainer ${fifthProjectVisible ? "show" : ""
-              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[#172a45] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative shadow-OtherProjectsBoxShadow py-8 px-7 rounded bg-[var(--color-surface)] transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-[-10px] mt-4 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
               : `contentContainer ${fifthProjectVisible ? "show" : ""
-              } w-[48%] relative py-8 px-7 rounded bg-[#172a45] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
+              } w-[48%] relative py-8 px-7 rounded bg-[var(--color-surface)] mt-4 transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming duration-whereIWorkedTransitionDuration top-0 opScreen6:w-[32%] opScreen7:w-[48%] opScreen9:w-[31%] opScreen13:w-[100%] cursor-pointer`
           }
         >
           {/* Header Box */}
-          <div className="w-[100%] h-10 bg-[#172a45] flex justify-between items-center">
+          <div className="w-[100%] h-10 bg-[var(--color-surface)] flex justify-between items-center">
             {/* Folder SVG */}
             <div className="bg-transparent h-[40px] w-[40px] pensieve__StyledFolder-sc-1a201yd-5 fcWQAr">
               <svg
@@ -569,7 +569,7 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
                 role="img"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#64ffda"
+                stroke="var(--color-accent)"
                 strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -580,20 +580,20 @@ const Pensieve = ({ aboutClickedInPensieve }) => {
             </div>
           </div>
           {/* Title  */}
-          <div className="h-[20%] mt-8 bg-[#172a45] antialiased text-[#ccd6f6] text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
+          <div className="h-[20%] mt-8 bg-[var(--color-surface)] antialiased text-heading text-[22px] font-calibri font-semibold leading-[1.1] opScreen3:h-[13%] opScreen5:h-[20%] opScreen6:h-[19%] opScreen7:h-[14%] opScreen13:h-[12%] opScreen14:mt-[22px] opScreen21:h-[18%]">
             Year in Review 2022
           </div>
           {/* Footer */}
-          <div className="bg-[#172a45] flex justify-between">
-            <div className="h-[15%] mt-[10px] text-[#8892b0] text-[12px] font-calibri bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
+          <div className="bg-[var(--color-surface)] flex justify-between">
+            <div className="h-[15%] mt-[10px] text-muted text-[12px] font-calibri bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px]">
               31/12/22
             </div>
-            <div className="text-[12px] text-[#64ffda] h-[15%] mt-[10px] font-customMono bg-[#172a45] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
+            <div className="text-[12px] text-accent h-[15%] mt-[10px] font-customMono bg-[var(--color-surface)] flex items-end opScreen2:items-center opScreen3:h-[10%] opScreen5:mt-[23px] opScreen6:h-[13%] opScreen13:h-[22%] opScreen13:items-center opScreen14:mt-[15px] opScreen16:h-[6%] opScreen16:mt-[40px] opScreen17:mt-[20px] relative">
               <button
                 onClick={() => {
                   navigate("/pensieve/tags/memories/");
                 }}
-                className="viewArchive bg-[#172a45]"
+                className="viewArchive bg-[var(--color-surface)]"
               >
                 #Memories
               </button>

@@ -1,5 +1,5 @@
 .content {
-    animation: slideUp 0.25s ease-in-out;
+    animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(20%);
     animation-fill-mode: forwards;
   }
@@ -23,7 +23,7 @@
     left: 0;
     width: 0;
     height: 0.5px;
-    background-color: #64ffda;
+    background-color: var(--color-accent);
     transition: all 0.25s ease-in-out;
 }
 

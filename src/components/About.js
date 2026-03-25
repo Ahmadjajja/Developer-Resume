@@ -109,14 +109,14 @@ const About = ({ aboutBtnClickedActive }) => {
         className={`contentContainer ${isVisible ? "show" : ""
           } pt-[5.538rem] pb-[2.5rem] relative`}
       >
-        <div className="inline-block absolute top-[105px] text-[#64ffda] font-customMono text-headerDescriptionFontSize font-normal antialiased aboutScreen3:top-[100px]">
+        <div className="inline-block absolute top-[105px] text-accent font-customMono text-headerDescriptionFontSize font-normal antialiased aboutScreen3:top-[100px]">
           01.
         </div>{" "}
-        <div className="aboutMe inline-block ml-12 bottom-0 text-[#ccd6f6] text-[32px] font-calibri font-semibold antialiased relative z-[50] aboutScreen1:w-[7.4rem]">
+        <div className="aboutMe inline-block ml-12 bottom-0 text-heading text-[32px] font-calibri font-semibold antialiased relative z-[50] aboutScreen1:w-[7.4rem]">
           About Me
           <div className="z-[50] w-[10%] inline-block h-[100%] absolute bottom-0 aboutScreen1:hidden"></div>
         </div>
-        <div className="border-[1px] block box-content relative bottom-[17px] w-[56.7%] left-[38%] border-[#303c55] aboutScreen1:hidden aboutScreen2:left-[174px] md:w-[20rem] aboutScreen7:left-[50%]"></div>
+        <div className="border-[1px] block box-content relative bottom-[17px] w-[56.7%] left-[38%] border-[rgba(148,163,184,0.2)] aboutScreen1:hidden aboutScreen2:left-[174px] md:w-[20rem] aboutScreen7:left-[50%]"></div>
       </div>
       {/* Body Section for < md-screen */}
       <div
@@ -125,289 +125,215 @@ const About = ({ aboutBtnClickedActive }) => {
       >
         {/* Section 2 */}
         <div>
-          <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            Hello! I'm Ahmad, a full-stack software engineer from Faisalabad, PK.
+          <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-4">
+            I am a first-generation graduate student at Montana State University. I completed my CS undergraduate degree in Pakistan and built 3+ years of software engineering experience across 5 companies.
           </div>
-          <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            I have expertise in building Generative AI applications (Python, LLMs, Vectara, RAG), web applications (MERN), and mobile applications (React Native). I bring a diverse background, having worked collaboratively in teams professionally, participated in International Hackathons, worked independently as a freelancer.
+          <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-4">
+            I develop full-stack and AI products with a focus on practical impact, and I have trained 2,000+ students to start their careers in tech.
             <br />
             <br />
-            As a tech trainer at the
-            <div className="relative inline-block">
-              <a
-                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
-                target="_blank"
-              >
-                Saylani Welfare Mass Training & Job Creation Program&nbsp;
-              </a>{" "}
-            </div>
-            I've taught 1000+ students by simplifying complex programming concepts (wanna see how I provide training to my students?
-            <div className="relative inline-block">
-              <a
-                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
-                target="_blank"
-              >
-                &nbsp; click here
-              </a>{" "}
-            </div>
-            ).
-            <br />
-            <br />
-            I helped over 100 international folks around the globe🌍 solve coding problems in <b>Python</b> as a <div className="relative inline-block">
-              <a
-                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7186385467846639620/"
-                target="_blank"
-              >
-                &nbsp;Section Leader&nbsp;
-              </a>{" "}
-            </div>
-            and <div className="relative inline-block">
-              <a
-                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7186385467846639620/"
-                target="_blank"
-              >
-                &nbsp;Section Leader Mentor&nbsp;
-              </a>{" "}
-            </div>
-            (𝘵𝘦𝘢𝘤𝘩𝘪𝘯𝘨 𝘰𝘯𝘦-𝘰𝘯-𝘰𝘯𝘦) at <div className="relative inline-block">
-              <a
-                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://codeinplace.stanford.edu/"
-                target="_blank"
-              >
-                &nbsp;Stanford's Code in Place&nbsp;
-              </a>{" "}
-            </div>.
-            <br />
-            <br />
-            I have
-            <div className="relative inline-block">
-              <a
-                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://www.linkedin.com/posts/ahmad-jajja_stanfordabrcodeabrinabrplaceabrlearnings-activity-7195142429073633281-zNhV/?utm_source=share&utm_medium=member_desktop"
-                target="_blank"
-              >
-                &nbsp;participated&nbsp;
-              </a>{" "}
-            </div>
-            in multiple AI International Hackathons and
-            <div className="relative inline-block">
-              <a
-                className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7176624410651504641/"
-                target="_blank"
-              >
-                &nbsp;won&nbsp;
-              </a>{" "}
-            </div>
-            one of them (Unhallucinate Challenge).
-            <br />
-            <br />
-            I graduated from the
-            <a
-              className="text-[#64ffda] transition-GetInTouchButtonTransitionProperty  duration-GetInTouchButtonTransitionDuration  ease-GetInTouchButtonTransitionTiming cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-              href="http://web.uaf.edu.pk/"
-              target="_blank"
-            >
-              &nbsp;University of Agriculture, Faisalabad
-            </a>{" "}
-            in June, 2024.
-            <br />
-            <br />
-            I aim to pursue further studies in the United States to advance in technology research and innovation.
-
-
+            I am currently exploring SWE/AI internship opportunities for Summer 2026.
           </div>
 
-          <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-5">
+          <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-5">
             Here are few technologies I have been working on recently:
           </div>
           {/* Technologies I am familiar with */}
-          <div className="w-[60vw] text-[#8892b0] flex flex-wrap aboutScreen6:w-[10.5rem]">
+          <div className="w-[60vw] text-muted flex flex-wrap aboutScreen6:w-[10.5rem]">
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                C
-              </div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                C++
-              </div>
-            </div>
-            <div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                Dart
-              </div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                Java (OOP + DSA)
-              </div>
-            </div>
-            <div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
                 Python
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                TypeScript
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
                 JavaScript (ES6+)
               </div>
-            </div>
-            <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Typescript
-              </div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                HTML5
+                Java
               </div>
             </div>
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                CSS3
+                C/C++
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                SCSS, SASS
-              </div>
-            </div>
-            <div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                Chakra-UI
-              </div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                Aunt-Design
+                SQL
               </div>
             </div>
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Bootstrap-5
+                React
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                React-JS
+                Next.js
               </div>
             </div>
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                React-Native
+                Node.js
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                Express
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                Flask
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                React Native
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                MongoDB
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                PostgreSQL
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
                 Firebase
               </div>
-            </div>
-            <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                FireStore
-              </div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                Node-JS
+                REST
               </div>
             </div>
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Express-JS
+                GraphQL
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Mongo-DB
+                Git
               </div>
             </div>
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                TensorFlow
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                OpenAI
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                LangChain
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                LLMs
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                LLMs
+              </div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                RAG
+              </div>
+            </div>
+            <div>
+              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
                 Git
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Github
+                Agentic AI
               </div>
             </div>
             <div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Rest-APIs
+                Hugging Face
               </div>
               <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                GraphQL
-              </div>
-            </div>
-            <div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                Generative AI
-              </div>
-              <div className="w-[30vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                LLMs
+                AWS, Docker
               </div>
             </div>
           </div>
@@ -433,7 +359,7 @@ const About = ({ aboutBtnClickedActive }) => {
                 cursor: "pointer"
               }}
             />
-            <h1 style={{ color: "white", marginTop: "15px", paddingLeft: "17%", color: "#64ffda" }} >Click the image above ⤣</h1>
+            <h1 style={{ marginTop: "15px", paddingLeft: "17%", color: "var(--color-accent)" }} >Click the image above ⤣</h1>
           </div>
         </div>
       </div>
@@ -444,109 +370,19 @@ const About = ({ aboutBtnClickedActive }) => {
       >
         {/* Section 2 */}
         <div className="w-[46.5136vw] aboutScreen11:w-[51vw] aboutScreen12:w-[49vw]">
-          <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            Hello! I'm Ahmad, a full-stack software engineer from Faisalabad, PK.
+          <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-4">
+            I am a first-generation graduate student at Montana State University. I completed my CS undergraduate degree in Pakistan and built 3+ years of software engineering experience across 5 companies.
           </div>
-          <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            I have expertise in building Generative AI applications (Python, LLMs, Vectara, RAG), web applications (MERN), and mobile applications (React Native). I bring a diverse background, having worked collaboratively in teams professionally, participated in International Hackathons, worked independently as a freelancer.
+          <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-4">
+            I develop full-stack and AI products with a focus on practical impact, and I have trained 2,000+ students to start their careers in tech.
             <br />
             <br />
-            As a tech trainer at the
-            <div className="relative inline-block">
-              <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
-                target="_blank"
-              >
-                &nbsp;Saylani Welfare Mass Training & Job Creation
-                Program
-              </a>{" "}
-            </div>
-            I've taught 1000+ students by simplifying complex programming concepts (wanna see how I provide training to my students?<div className="relative inline-block">
-              <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://www.linkedin.com/posts/ahmad-jajja_learn-to-code-with-activity-7151895134744256512-Dmyf?utm_source=share&utm_medium=member_desktop"
-                target="_blank"
-              >
-                &nbsp;click here&nbsp;
-              </a>{" "}
-            </div>
-            ).
-            <br />
-            <br />
-            I helped over 100 international folks around the globe🌍 solve coding problems in Python as a
-            <div className="relative inline-block">
-              <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7186385467846639620/"
-                target="_blank"
-              >
-                &nbsp;Section Leader&nbsp;
-              </a>{" "}
-            </div>
-            and
-            <div className="relative inline-block">
-              <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://www.linkedin.com/posts/ahmad-jajja_stanfordabrcodeabrinabrplaceabrlearnings-activity-7195142429073633281-zNhV/?utm_source=share&utm_medium=member_desktop"
-                target="_blank"
-              >
-                &nbsp;Section Leader Mentor&nbsp;
-              </a>{" "}
-            </div>
-            (𝘵𝘦𝘢𝘤𝘩𝘪𝘯𝘨 𝘰𝘯𝘦-𝘰𝘯-𝘰𝘯𝘦) at <div className="relative inline-block">
-              <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://codeinplace.stanford.edu/"
-                target="_blank"
-              >
-                &nbsp;Stanford's Code in Place&nbsp;
-              </a>{" "}
-            </div>.
-            <br />
-            <br />
-            I have
-            <div className="relative inline-block">
-              <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://lablab.ai/u/@ahmad_jajja288"
-                target="_blank"
-              >
-                &nbsp;participated&nbsp;
-              </a>{" "}
-            </div>
-            in multiple AI International Hackathons and
-            <div className="relative inline-block">
-              <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7176624410651504641/"
-                target="_blank"
-              >
-                &nbsp;won&nbsp;
-              </a>{" "}
-            </div>
-            one of them (Unhallucinate Challenge).
-            <br />
-            <br />
-            I graduated from the
-            <div className="relative inline-block">
-              <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
-                href="http://web.uaf.edu.pk/"
-                target="_blank"
-              >
-                &nbsp;University of Agriculture, Faisalabad
-              </a>{" "}
-              in June, 2024.
-            </div>
-            <br />
-            <br />
-            I aim to pursue further studies in the United States to advance in technology research and innovation.
-            <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4 mt-4">
+            I am currently exploring SWE/AI internship opportunities for Summer 2026.
+            <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-4 mt-4">
               Here are a few technologies I've been working with recently:
             </div>
           </div>
-          {/* <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4">
+          {/* <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-4">
             I build things on the internet and love building large-scale
             applications with system design in mind. I have had the opportunity
             to work on various projects both in teams and as a freelancer, which
@@ -554,14 +390,14 @@ const About = ({ aboutBtnClickedActive }) => {
             have a passion for teaching Computer Science concepts. In fact, I
             have been actively involved in teaching as a part of my role as a
             <div className="relative inline-block">
-              <a className="spanOneHoverClass text-[#64ffda] font-calibri text-[20px] aboutScreen4:block">
+              <a className="spanOneHoverClass text-accent font-calibri text-[20px] aboutScreen4:block">
                 &nbsp; Tech Trainer &nbsp;
               </a>{" "}
             </div>
             within the
             <div className="relative inline-block">
               <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                className="spanOneHoverClass text-accent cursor-pointer font-calibri text-[20px] aboutScreen4:block"
                 href="https://pk.worldorgs.com/catalog/faisalabad/accountant/saylani-mass-training-faisalabad"
                 target="_blank"
               >
@@ -577,7 +413,7 @@ const About = ({ aboutBtnClickedActive }) => {
             in a clear and concise manner as well as i loves to solve
             <div className="relative inline-block">
               <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                className="spanOneHoverClass text-accent cursor-pointer font-calibri text-[20px] aboutScreen4:block"
                 href="https://github.com/Ahmadjajja/JAVA_DSA"
                 target="_blank"
               >
@@ -587,7 +423,7 @@ const About = ({ aboutBtnClickedActive }) => {
             Problem on
             <div className="relative inline-block">
               <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                className="spanOneHoverClass text-accent cursor-pointer font-calibri text-[20px] aboutScreen4:block"
                 href="https://leetcode.com/ahmadjajja86/"
                 target="_blank"
               >
@@ -596,7 +432,7 @@ const About = ({ aboutBtnClickedActive }) => {
             </div>{" "}
             to improve my coding skills.I am an
             <div className="relative inline-block">
-              <a className="spanOneHoverClass text-[#64ffda] font-calibri text-[20px] aboutScreen4:block">
+              <a className="spanOneHoverClass text-accent font-calibri text-[20px] aboutScreen4:block">
                 &nbsp;open-source enthusiast &nbsp;
               </a>{" "}
             </div>{" "}
@@ -606,42 +442,42 @@ const About = ({ aboutBtnClickedActive }) => {
             community. Currently, I am pursuing my undergraduate degree at the
             <div className="relative inline-block">
               <a
-                className="spanOneHoverClass text-[#64ffda] cursor-pointer font-calibri text-[20px] aboutScreen4:block"
+                className="spanOneHoverClass text-accent cursor-pointer font-calibri text-[20px] aboutScreen4:block"
                 href="http://web.uaf.edu.pk/"
                 target="_blank"
               >
                 &nbsp;University of Agriculture, Faisalabad.
               </a>{" "}
             </div>
-            <div className="text-[#8892b0] font-calibri text-[20px] leading-[1.3] antialiased mb-4 mt-4">
+            <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-4 mt-4">
               Here are a few technologies I've been working with recently:
             </div>
           </div> */}
           {/* Technologies I am familiar with */}
-          <div className="text-[#8892b0] flex flex-wrap">
+          <div className="text-muted flex flex-wrap">
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                C
+                Python
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                C++
+                TypeScript
               </div>
             </div>
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Dart
+                JavaScript (ES6+)
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
                 Java
@@ -649,156 +485,170 @@ const About = ({ aboutBtnClickedActive }) => {
             </div>
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Python
+                C/C++
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                JavaScript (ES6+)
-              </div>
-            </div>
-            <div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                Typescript
-              </div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                HTML5
+                SQL
               </div>
             </div>
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                CSS3
+                React
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                SCSS, SASS
-              </div>
-            </div>
-            <div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                Chakra-UI
-              </div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                Aunt-Design
+                Next.js
               </div>
             </div>
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Bootstrap-5
+                Node.js
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                React-JS
+                Express
               </div>
             </div>
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                React-Native
+                Flask
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                React Native
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                MongoDB
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                PostgreSQL
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
                 Firebase
               </div>
-            </div>
-            <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                FireStore
-              </div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                Node-JS
+                REST
               </div>
             </div>
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Express-JS
+                GraphQL
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Mongo-DB
+                Git
               </div>
             </div>
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                TensorFlow
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                OpenAI
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                LangChain
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                LLMs
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                LLMs
+              </div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
+                  ➾
+                </span>{" "}
+                RAG
+              </div>
+            </div>
+            <div>
+              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
                 Git
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Github
+                Agentic AI
               </div>
             </div>
             <div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                Rest-APIs
+                Hugging Face
               </div>
               <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
+                <span className="text-accent text-[14px] leading-[12px]">
                   ➾
                 </span>{" "}
-                GraphQL
-              </div>
-            </div>
-            <div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                Generative AI
-              </div>
-              <div className="w-[23vw] inline-block font-customMono text-[13px] antialiased aboutScreen6:w-[10.5rem] aboutScreen9:w-[12.1rem]">
-                <span className="text-[#64ffda] text-[14px] leading-[12px]">
-                  ➾
-                </span>{" "}
-                LLMs
+                AWS, Docker
               </div>
             </div>
           </div>
@@ -825,12 +675,11 @@ const About = ({ aboutBtnClickedActive }) => {
                   cursor: "pointer"
                 }}
               />
-              <h1 style={{ color: "white", marginTop: "12px", paddingLeft: "17%", color: "#64ffda" }} >Hover over the image ⤣</h1>
+              <h1 style={{ marginTop: "12px", paddingLeft: "17%", color: "var(--color-accent)" }} >Hover over the image ⤣</h1>
             </div>
           </div>
         </div>
       </div>
-      ;
     </div>
   );
 };

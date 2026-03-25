@@ -1,8 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 
 const GetInTouch = ({ contactBtnClickedActive }) => {
-  const [btnHover, setBtnHover] = useState(false);
-  const [btnClicked, setBtnClicked] = useState(false);
   // Displaying content after show time
   // Title Appear when Displayed
   const [isVisibleOne, setIsVisibleOne] = useState(false);
@@ -82,7 +80,7 @@ const GetInTouch = ({ contactBtnClickedActive }) => {
           ref={refOne}
           className={`contentContainer ${
             titleVisible ? "show" : ""
-          } pt-[5.4rem] text-center text-[#64ffda] font-customMono text-[16px] antialiased`}
+          } pt-[5.4rem] text-center text-accent font-customMono text-[16px] antialiased`}
         >
           <span>04.</span>
           <span className="pl-3">What's Next?</span>
@@ -91,14 +89,14 @@ const GetInTouch = ({ contactBtnClickedActive }) => {
           ref={refOne}
           className={`contentContainer ${
             titleVisible ? "show" : ""
-          } mt-[1.125rem] text-center text-[40px] text-[#ccd6f6] font-calibri leading-[1.1] font-semibold antialiased`}
+          } mt-[1.125rem] text-center text-[40px] text-heading font-calibri leading-[1.1] font-semibold antialiased`}
         >
           Get In Touch
         </div>
         <div
           className={`contentContainer ${
             isBodyVisible ? "show" : ""
-          } text-[#8892b0] text-[20px] font-calibri text-center antialiased mt-[10px] flex flex-wrap
+          } text-muted text-[20px] font-calibri text-center antialiased mt-[10px] flex flex-wrap
   `}
         >
           I'm currently in a search of new and better opportunities. My inbox is
@@ -108,20 +106,11 @@ const GetInTouch = ({ contactBtnClickedActive }) => {
         <div
           className={`contentContainer ${
             isBodyVisible ? "show" : ""
-          } py-[5.5rem] flex justify-center items-center text-[#64ffda] text-[14px]  font-customMono leading-[1] antialiased`}
+          } py-[5.5rem] flex justify-center items-center text-accent text-[14px]  font-customMono leading-[1] antialiased`}
         >
           <a
             href="mailto:ahmadjajja86@gmail.com"
-            onClick={() => setBtnClicked(true)}
-            onMouseOver={() => setBtnHover(true)}
-            onMouseOut={() => setBtnHover(false)}
-            className={
-              btnClicked
-                ? "py-5 px-7 bg-headerBtnColor cursor-pointer border-[1px] rounded border-[#64ffda]] transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming"
-                : btnHover
-                ? "py-5 px-7 bg-headerBtnColor cursor-pointer border-[1px] rounded border-[#64ffda]] transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming"
-                : "py-5 px-7 bg-transparent cursor-pointer border-[1px] rounded border-[#64ffda]] transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming"
-            }
+            className="btn-portfolio-primary no-underline"
           >
             Say Hello
           </a>

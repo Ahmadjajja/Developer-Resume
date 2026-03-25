@@ -405,7 +405,7 @@ const MemoryTwo = () => {
       {/* Back to All Memories */}
       <div
         className={`contentContainer ${showFirstContent ? "show" : ""
-          } w-[70%] mr-auto ml-auto text-[#64ffda] pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
+          } w-[70%] mr-auto ml-auto text-accent pt-[70px] text-[14px] font-customMono myScreen8:w-[100%]`}
       >
         <span className="mr-[7px]">←</span>
         <span className="relative">
@@ -422,21 +422,21 @@ const MemoryTwo = () => {
         className={`contentContainer ${showSecondContent ? "show" : ""
           } mt-[50px] ml-auto mr-auto w-[70%] myScreen8:w-[100%]`}
       >
-        <div className="text-[#ccd6f6] text-myPensieveFont font-semibold leading-[1.1] font-calibri">
+        <div className="text-heading text-myPensieveFont font-semibold leading-[1.1] font-calibri">
           Year in Review 2019
         </div>
         <div>
-          <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+          <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
             December 31, 2019
           </span>
-          <span className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal">
+          <span className="text-accent text-[13px] leading-[1.5] font-customMono font-normal">
             {" "}
             —{" "}
           </span>
           <span className="relative">
             <Link
               to="/pensieve/tags/memories/"
-              className="text-[#64ffda] text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
+              className="text-accent text-[13px] leading-[1.5] font-customMono font-normal viewArchiveTwo cursor-pointer"
             >
               #Memories
             </Link>
@@ -454,9 +454,9 @@ const MemoryTwo = () => {
         <div
           ref={refDescription}
           className={`contentContainer ${showFourthContent ? "show" : ""
-            } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+            } mt-[25px] border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
         >
-          <p className="pl-[1.5em] leading-[1.5] text-[#a8b2d1] italic">
+          <p className="pl-[1.5em] leading-[1.5] text-dim italic">
             In 2019, I experienced remarkable achievements in my computer science journey, securing top
             positions among my peers and excelling in the 11th-grade board exam. Additionally, I embraced
             the world of programming with enthusiasm, discovering a passion that continues to drive me
@@ -468,13 +468,13 @@ const MemoryTwo = () => {
           className={`contentContainer ${listingVisible ? "show" : ""} pl-5`}
           ref={refListing}
         >
-          <li className="mt-[2em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[2em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             A Standout in the Crowd
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             A Conversation That Changed Everything
           </li>
-          <li className="mt-[1em] mb-[1em] text-[#ccd6f6] leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
+          <li className="mt-[1em] mb-[1em] text-heading leading-[1.1] font-semibold text-[1.17em] font-calibri list-disc">
             Thinking Outside the Box
           </li>
         </ul>
@@ -484,16 +484,16 @@ const MemoryTwo = () => {
           <h3
             ref={refFirstListingTitle}
             className={`contentContainer ${firstListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             A Standout in the Crowd
           </h3>
           <div
             ref={refFirstListingDescription}
             className={`contentContainer ${firstListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               In 2019, my journey took an exceptional turn when I received the results of my 11th grade. Despite being initially
               overshadowed by the academic performance of 150 students who had higher marks than me in the 10th grade, I surpassed
               expectations and secured the 6th position among a total of 250 students in my college. Moreover, I proudly achieved the
@@ -519,19 +519,19 @@ const MemoryTwo = () => {
           <h3
             ref={refSecondListingTitle}
             className={`contentContainer ${secondListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             A Conversation That Changed Everything
           </h3>
           <div
             ref={refSecondDescription}
             className={`contentContainer ${secondListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               At the commencement of my second year (12th grade) in college, I was apprehensive about the inclusion of
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo ">
+                <span className="text-accent viewArchiveTwo ">
                   programming
                 </span>
               </span>{" "},
@@ -540,13 +540,13 @@ const MemoryTwo = () => {
               in a conversation with my cousin, Babar, who had completed his BCS (Bachelor of Computer Science). He reassured me, in
               Urdu, that
               {"  "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   "پروگرامنگ حلوہ ہے حلوہ,"
                 </span>
               </span>{" "} which translates to "Programming is fun and very easy." This single sentence provided
               immense relief and ignited my curiosity and fascination with the world of programming, marking
               <span className="relative">
-                {" "}<span className="text-[#64ffda] viewArchiveTwo ">
+                {" "}<span className="text-accent viewArchiveTwo ">
                   the beginning of my coding journey in 2019
                 </span>
               </span>{" "}.
@@ -568,19 +568,19 @@ const MemoryTwo = () => {
           <h3
             ref={refThirdListingTitle}
             className={`contentContainer ${thirdListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             Thinking Outside the Box
           </h3>
           <div
             ref={refThirdDescription}
             className={`contentContainer ${thirdListingDescriptionVisible ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               While engrossed in my
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo">
+                <span className="text-accent viewArchiveTwo">
                   programming studies
                 </span>
               </span>{" "} for the past three months, a remarkable moment unfolded. I vividly
@@ -588,13 +588,13 @@ const MemoryTwo = () => {
               Intrigued, I decided to approach the problem from a different angle and worked through it diligently, using
               pen and paper, as I did not possess a computer to test my solution. The following day, I excitedly approached
               my teacher and shared my alternative approach, eager to validate its correctness. With his guidance, I               <span className="relative">
-                {" "}<span className="text-[#64ffda] viewArchiveTwo ">
+                {" "}<span className="text-accent viewArchiveTwo ">
                   ran the
                   code on a computer
                 </span>
               </span>{" "}, and to my astonishment, it executed flawlessly.
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo ">
+                <span className="text-accent viewArchiveTwo ">
                   The indescribable elation I experienced in
                   that moment was priceless
                 </span>
@@ -621,28 +621,28 @@ const MemoryTwo = () => {
           <h3
             ref={refFifthListingTitle}
             className={`contentContainer ${fifthListingTitleVisible ? "show" : ""
-              } mt-[2em] mb-[1em] font-semibold text-[#ccd6f6] leading-[1.1] text-[2em]`}
+              } mt-[2em] mb-[1em] font-semibold text-heading leading-[1.1] text-[2em]`}
           >
             End Remarks and Quotes
           </h3>
           <div
             ref={refFifthDescription}
             className={`contentContainer ${isFifthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               Throughout my journey of 2019,  I experienced significant growth and accomplishments in academics and programming. These milestones fueled my passion and set the stage for a promising future in computer science.
             </p>
           </div>
           <div
             ref={refFifthDescription}
             className={`contentContainer ${isFifthListingDescription ? "show" : ""
-              } border-t-0 border-b-0 border-r-0 border-l border-[#64ffda] border-[1px]`}
+              } border-t-0 border-b-0 border-r-0 border-l border-accent border-[1px]`}
           >
-            <p className="my-[1em] leading-[1.5] text-[#a8b2d1] italic text-[18px] font-calibri pl-[1.5em] antialiased">
+            <p className="my-[1em] leading-[1.5] text-dim italic text-[18px] font-calibri pl-[1.5em] antialiased">
               "Truly willing to do something automatically embrace the new doors." -{" "}
               {" "}<span className="relative">
-                <span className="text-[#64ffda] viewArchiveTwo ">
+                <span className="text-accent viewArchiveTwo ">
                   Ahmad Jajja
                 </span>
               </span>{" "}
