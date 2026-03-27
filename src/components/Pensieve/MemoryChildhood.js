@@ -750,7 +750,7 @@ const MemoryChildhood = () => {
                             "Childhood is a canvas upon which we paint memories that last a lifetime." -{" "}
                             <span className="relative">
                                 <span className="text-accent viewArchiveTwo cursor-pointer">
-                                    Ahmad Jajja
+                                    Ahmad Sultan
                                 </span>
                             </span>{" "}
                         </p>

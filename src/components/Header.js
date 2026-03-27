@@ -43,7 +43,7 @@ const Header = () => {
             showSecondContent ? "show" : ""
           } bigHeading text-gradient-hero mt-3 block font-semibold text-[1.5em] leading-[1.1] font-calibri antialiased headerScreen1:w-[43rem]`}
         >
-          Ahmad Jajja.
+          Ahmad Sultan.
         </div>
         <div
           className={`contentContainer ${

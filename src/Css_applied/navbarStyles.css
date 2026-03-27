@@ -116,6 +116,15 @@
     transition: all 0.4s ease-in-out;
 }
 
+/* Equal horizontal gutters on desktop: remove SVG nudge from .styledLogo */
+@media (min-width: 768px) {
+    .navbar-desktop svg.styledLogo,
+    .navbar-desktop svg.unstyledLogo {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
 .main {
     fill-opacity: 0;
     stroke-dasharray: 270.1082763671875;

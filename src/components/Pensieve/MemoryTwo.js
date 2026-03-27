@@ -643,7 +643,7 @@ const MemoryTwo = () => {
               "Truly willing to do something automatically embrace the new doors." -{" "}
               {" "}<span className="relative">
                 <span className="text-accent viewArchiveTwo ">
-                  Ahmad Jajja
+                  Ahmad Sultan
                 </span>
               </span>{" "}
             </p>

@@ -5,6 +5,9 @@ import "../Css_applied/navbarStyles.css";
 const navTransitionClass =
   "transition-whereIWorkedTransitionProperty ease-whereIWorkedTransitionTiming delay-whereIWorkerdTransitionDelay duration-whereIWorkedTransitionDuration";
 
+/** Set to true to show Blog (Pensieve) in the navbar again. Pensieve routes remain in App.js. */
+const SHOW_BLOG_IN_NAV = false;
+
 const Navbar = ({
   setAboutBtnClickedActive,
   setExperienceBtnClickedActive,
@@ -40,7 +43,7 @@ const Navbar = ({
   const [contactBtnSm, setContactBtnSm] = useState(false);
   const [blogBtnSm, setBlogBtnSm] = useState(false);
 
-  /* Scroll-up: fixed bar must span the viewport (left/right) or the CV clips; parent overflow must not clip. */
+  /* Scroll-up: fixed bar must span the viewport (left/right) or the Resume button clips; parent overflow must not clip. */
   const divStyle = secondCondition
     ? {
         ...(newStyles || {}),
@@ -51,8 +54,8 @@ const Navbar = ({
         width: "100%",
         maxWidth: "100vw",
         boxSizing: "border-box",
-        paddingLeft: "max(1.371rem, env(safe-area-inset-left))",
-        paddingRight: "max(1.371rem, env(safe-area-inset-right))",
+        paddingLeft: "max(2.75rem, env(safe-area-inset-left))",
+        paddingRight: "max(2.75rem, env(safe-area-inset-right))",
         paddingTop: "0.5rem",
         zIndex: 60,
         transform: removeTransform ? undefined : `translateY(${window.scrollY}px)`,
@@ -345,7 +348,7 @@ const Navbar = ({
         >
           <div style={divStyle} className={navWrapperClassName}>
             <div>
-              <div className="ml-[1.1rem] mt-[1.263rem] mb-[1.263rem] text-white flex justify-between relative z-[99] myScreen4:w-[16.5rem]">
+              <div className="ml-[max(2rem,env(safe-area-inset-left))] mr-[max(2rem,env(safe-area-inset-right))] mt-[1.263rem] mb-[1.263rem] text-white flex justify-between relative z-[99] myScreen4:w-[16.5rem]">
                 {/* First SVG  ---> LOGO */}
                 {/* Hiding the logo for smaller screeens and making it visible for larger */}
                 <div className="block myScreen8:hidden">
@@ -478,27 +481,36 @@ const Navbar = ({
                     >
                       Contact
                     </button>
-                    <div className="five  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
-                      05.
-                    </div>
-                    <Link
-                      to="/pensieve"
-                      onClick={() => {
-                        setOffScreen(false);
-                        setActive(false);
-                      }}
-                      className={`fiveDescription  flex  justify-center  items-center  w-[100%]  ${
-                        blogBtnSm ? "text-accent" : "text-heading"
-                      }  bg-[var(--color-surface)]  text-lg  py-2  tracking-wide antialiased`}
+                    <div
+                      className={
+                        SHOW_BLOG_IN_NAV
+                          ? "contents"
+                          : "hidden"
+                      }
+                      aria-hidden={!SHOW_BLOG_IN_NAV}
                     >
-                      Blog
-                    </Link>
+                      <div className="five  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
+                        05.
+                      </div>
+                      <Link
+                        to="/pensieve"
+                        onClick={() => {
+                          setOffScreen(false);
+                          setActive(false);
+                        }}
+                        className={`fiveDescription  flex  justify-center  items-center  w-[100%]  ${
+                          blogBtnSm ? "text-accent" : "text-heading"
+                        }  bg-[var(--color-surface)]  text-lg  py-2  tracking-wide antialiased`}
+                      >
+                        Blog
+                      </Link>
+                    </div>
                     <a
                       href="https://drive.google.com/file/d/1fgKw7H3PplIenkF-pxfqWdMAnvZcCeA0/view?usp=share_link"
                       className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[var(--color-surface)] border  border-accent  rounded  font-mono  text-accent  tracking-wide cursor-pointer antialiased"
                       target="_blank"
                     >
-                      CV
+                      Resume
                     </a>
                   </div>
                 </div>
@@ -543,7 +555,7 @@ const Navbar = ({
         <div className="block md:hidden">
           <div
             className={
-              "ml-[1.371rem] mt-[1.263rem] mb-[1.263rem] mr-[1.371rem] text-white flex justify-between z-50 myScreen4:w-[16.5rem]"
+              "ml-[max(2rem,env(safe-area-inset-left))] mr-[max(2rem,env(safe-area-inset-right))] mt-[1.263rem] mb-[1.263rem] text-white flex justify-between z-50 myScreen4:w-[16.5rem]"
             }
           >
             {/* First SVG  ---> LOGO */}
@@ -687,27 +699,36 @@ const Navbar = ({
                 >
                   Contact
                 </button>
-                <div className="five  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
-                  05.
-                </div>
-                <Link
-                  to="/pensieve"
-                  onClick={() => {
-                    setOffScreen(false);
-                    setActive(false);
-                  }}
-                  className={`fiveDescription  flex  justify-center  items-center  w-[100%]  ${
-                    blogBtnSm ? "text-accent" : "text-heading"
-                  }  bg-[var(--color-surface)]  text-lg  py-2  tracking-wide antialiased`}
+                <div
+                  className={
+                    SHOW_BLOG_IN_NAV
+                      ? "contents"
+                      : "hidden"
+                  }
+                  aria-hidden={!SHOW_BLOG_IN_NAV}
                 >
-                  Blog
-                </Link>
+                  <div className="five  mt-4  flex  justify-center  items-center  bg-[var(--color-surface)]  text-accent  w-[100%]  text-base antialiased">
+                    05.
+                  </div>
+                  <Link
+                    to="/pensieve"
+                    onClick={() => {
+                      setOffScreen(false);
+                      setActive(false);
+                    }}
+                    className={`fiveDescription  flex  justify-center  items-center  w-[100%]  ${
+                      blogBtnSm ? "text-accent" : "text-heading"
+                    }  bg-[var(--color-surface)]  text-lg  py-2  tracking-wide antialiased`}
+                  >
+                    Blog
+                  </Link>
+                </div>
                 <a
                   href="https://drive.google.com/file/d/1fgKw7H3PplIenkF-pxfqWdMAnvZcCeA0/view?usp=share_link"
                   className="py-[18px] px-[50px] flex  justify-center  items-center  mt-[4rem]  bg-[var(--color-surface)] border  border-accent  rounded  font-mono  text-accent  tracking-wide cursor-pointer antialiased"
                   target="_blank"
                 >
-                  CV
+                  Resume
                 </a>
               </div>
             </div>
@@ -754,10 +775,10 @@ const Navbar = ({
             overflow: "visible",
             transition: "height 1s ease-in-out",
           }}
-          className="box-border hidden w-full min-w-0 max-w-full px-[1.371rem] my-[0.4rem] md:flex"
+          className="box-border hidden w-full min-w-0 max-w-full pl-[max(2.75rem,env(safe-area-inset-left))] pr-[max(2.75rem,env(safe-area-inset-right))] my-[0.4rem] md:flex"
         >
           <div style={divStyle} className={navWrapperClassName}>
-            <div className="mt-[1.263rem] mb-[1.263rem] ml-[1rem] flex w-full min-w-0 flex-row flex-wrap items-center justify-between gap-x-2 gap-y-3 text-white z-50">
+            <div className="navbar-desktop mt-[1.263rem] mb-[1.263rem] flex w-full min-w-0 flex-row flex-wrap items-center justify-between gap-x-2 gap-y-3 text-white z-50">
               {/* First SVG  ---> LOGO */}
               <a
                 href="/"
@@ -796,7 +817,7 @@ const Navbar = ({
                   </g>
                 </svg>
               </a>
-              {/* Title — never force nowrap on md; that clipped the CV on typical laptop widths */}
+              {/* Title — never force nowrap on md; that clipped the Resume button on typical laptop widths */}
               <div className="flex min-w-0 max-w-full flex-1 flex-wrap items-center justify-end gap-x-0.5 gap-y-2 antialiased sm:gap-x-1">
                 <div className="text-[13px] px-2 py-2 no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer font-customMono">
                   <span className="text-accent mr-[3px]">01.</span>
@@ -860,21 +881,30 @@ const Navbar = ({
                     Contact
                   </span>
                 </span>
-                <Link
-                  to="/pensieve"
-                  className="text-[13px] px-2 py-2 no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer font-customMono"
+                <div
+                  className={
+                    SHOW_BLOG_IN_NAV
+                      ? "contents"
+                      : "hidden"
+                  }
+                  aria-hidden={!SHOW_BLOG_IN_NAV}
                 >
-                  <span className="text-accent mr-[3px]">05.</span>
-                  <span
-                    onMouseOver={() => setBlogMouseOver(true)}
-                    onMouseOut={() => setBlogMouseOver(false)}
-                    className={
-                      blogMouseHover ? "text-accent" : "text-heading"
-                    }
+                  <Link
+                    to="/pensieve"
+                    className="text-[13px] px-2 py-2 no-underline transition-whereIWorkedTransitionProperty duration-whereIWorkedTransitionDuration ease-whereIWorkedTransitionTiming cursor-pointer font-customMono"
                   >
-                    Blog
-                  </span>
-                </Link>
+                    <span className="text-accent mr-[3px]">05.</span>
+                    <span
+                      onMouseOver={() => setBlogMouseOver(true)}
+                      onMouseOut={() => setBlogMouseOver(false)}
+                      className={
+                        blogMouseHover ? "text-accent" : "text-heading"
+                      }
+                    >
+                      Blog
+                    </span>
+                  </Link>
+                </div>
                 <a
                   href="https://drive.google.com/file/d/1fgKw7H3PplIenkF-pxfqWdMAnvZcCeA0/view"
                   onClick={() => {
@@ -886,13 +916,13 @@ const Navbar = ({
                   onMouseOut={() => setResumeMouseOver(false)}
                   className={
                     resumeBtnClicked
-                      ? "shrink-0 py-2.5 px-5 flex justify-center items-center bg-headerBtnColor border border-accent rounded font-mono text-accent cursor-pointer antialiased leading-[1]"
+                      ? "ml-5 shrink-0 py-2.5 px-5 flex justify-center items-center bg-headerBtnColor border border-accent rounded font-mono text-accent cursor-pointer antialiased leading-[1]"
                       : resumeMouseHover
-                      ? "shrink-0 py-2.5 px-5 flex justify-center items-center bg-headerBtnColor border border-accent rounded font-mono text-accent cursor-pointer antialiased leading-[1]"
-                      : "shrink-0 py-2.5 px-5 flex justify-center items-center bg-transparent border border-accent rounded font-mono text-accent cursor-pointer antialiased leading-[1]"
+                      ? "ml-5 shrink-0 py-2.5 px-5 flex justify-center items-center bg-headerBtnColor border border-accent rounded font-mono text-accent cursor-pointer antialiased leading-[1]"
+                      : "ml-5 shrink-0 py-2.5 px-5 flex justify-center items-center bg-transparent border border-accent rounded font-mono text-accent cursor-pointer antialiased leading-[1]"
                   }
                 >
-                  CV
+                  Resume
                 </a>
               </div>
             </div>

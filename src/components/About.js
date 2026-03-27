@@ -126,7 +126,7 @@ const About = ({ aboutBtnClickedActive }) => {
         {/* Section 2 */}
         <div>
           <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            I am a first-generation graduate student at Montana State University. I completed my CS undergraduate degree in Pakistan and built 3+ years of software engineering experience across 5 companies.
+            I am a first-generation graduate student at Montana State University. I completed my CS undergraduate degree and built 3+ years of software engineering experience across 5 companies.
           </div>
           <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-4">
             I develop full-stack and AI products with a focus on practical impact, and I have trained 2,000+ students to start their careers in tech.
@@ -371,7 +371,7 @@ const About = ({ aboutBtnClickedActive }) => {
         {/* Section 2 */}
         <div className="w-[46.5136vw] aboutScreen11:w-[51vw] aboutScreen12:w-[49vw]">
           <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-4">
-            I am a first-generation graduate student at Montana State University. I completed my CS undergraduate degree in Pakistan and built 3+ years of software engineering experience across 5 companies.
+            I am a first-generation graduate student at Montana State University. I completed my CS undergraduate degree and built 3+ years of software engineering experience across 5 companies.
           </div>
           <div className="text-muted font-calibri text-[20px] leading-[1.3] antialiased mb-4">
             I develop full-stack and AI products with a focus on practical impact, and I have trained 2,000+ students to start their careers in tech.
